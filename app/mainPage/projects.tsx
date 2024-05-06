@@ -23,7 +23,7 @@ export default function projects() {
 
 type ProjectProps = (typeof projectsData)[number];
 
-function Project({ title, description, imageUrl, tags }: ProjectProps) {
+function Project({ title,type, description, imageUrl, tags }: ProjectProps) {
   return (
     <section
       className="group bg-gray-100 sm:h-[25rem] border border-black/5 overflow-hidden 
@@ -32,12 +32,15 @@ function Project({ title, description, imageUrl, tags }: ProjectProps) {
     >
       <div className="pt-5 pb-8 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full">
         <h3 className="text-2xl">{title}</h3>
+        <p className="mt-2 leading-relaxed text-gray-700">{type}</p>
         <p className="mt-2 leading-relaxed text-gray-700">{description}</p>
+        <p className="mt-2 leading-relaxed text-gray-700">Tools/Langages: React, Figma, Rails</p>
+
         <ul className="flex flex-wrap mt-4 gap-2 sm:mt-auto">
           {tags.map((tag, index) => (
             <li
               key={index}
-              className="bg-black/[0.7] px-3 py-1 text-[0.7rem] tracking-wider text-white rounded-full"
+              className="bg-black/[0.7] px-3 py-1 text-sm tracking-wider text-white rounded-full"
             >
               {tag}
             </li>

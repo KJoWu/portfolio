@@ -7,8 +7,7 @@ import Link from "next/link";
 // sm:w-[35rem]
 export default function Header() {
   return (
-
-    <header className="z-[999999]">
+    <header className="z-[999] relative">
       <motion.div
         className="fixed top-0 right-0 h-[4.5rem] w-full rounded-none border
          border-white border-opacity-40 bg-white bg-opacity-80 shadow-lg
@@ -20,7 +19,7 @@ export default function Header() {
         animate={{ y: 0, x: "0", opacity: 1 }}
       ></motion.div>
 
-      <nav className="flex fixed top-[0.15rem] right-0 h-12 py-2 sm:top-[1.7rem] sm:right-12 sm:h-[initial] sm:py-0 sm:mr-5">
+      <nav className="flex fixed top-[0.15rem] right-0 h-12 py-2 sm:top-[1.7rem] sm:right-12 sm:h-[initial] sm:py-0 sm:mr-5 ">
         <ul
           className="flex w-[22rem] items-center justify-center gap-y-1 text-[0.9rem] font-medium text-gray-800
         sm:w-[initial] sm:flex-norwa- sm:gap-5"

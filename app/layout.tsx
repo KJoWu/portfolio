@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import Header from "./components/header";
 import Intro from "./mainPage/intro";
 import Projects from "./mainPage/projects";
+import Skills from "./mainPage/skills";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -28,17 +29,22 @@ export default function RootLayout({
             w-[31.25rem] rounded-full 
             blur-[10rem]"
         ></div>
-          <div
+        <div
           className="bg-[#d9f1ff] 
             absolute top-[-6rem] 
             left-[11rem] h-[31.25rem] 
             w-[31.25rem] rounded-full 
             blur-[10rem]"
         ></div>
-        <Header/>
-        <Intro/>
-        <Projects/>
-        {children}
+        <Header />
+        <Intro />
+        <Skills />
+        <Projects />
+
+
+
+        <div>
+          This site was designed in Figma, coded in Visual Studio by yours truly, Built with Next.JS + Tailwind + Framer and deployed on Github</div>
       </body>
     </html>
   );

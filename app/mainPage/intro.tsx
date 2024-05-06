@@ -25,7 +25,7 @@ export default function intro() {
           >
             <p className="text-5xl">Hi, I'm Kim</p>
             <p className="text-1xl pt-5 ">
-              I'm a <b>front end developer</b>, <b>product designer</b> and{" "}
+              I'm a <b>Senior Frontend Engineer</b>, <b>product designer</b> and{" "}
               <b>artist</b> with <b>8 years</b> of experience
             </p>
             <p className="">
