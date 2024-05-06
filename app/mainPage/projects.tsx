@@ -6,7 +6,7 @@ import SectionContainer from "../components/sectionContainer";
 
 export default function projects() {
   return (
-    <section className="relative flex flex-col  sm:py-[4rem] sm:px-[8em] bg-white">
+    <section className="relative flex flex-col  sm:py-[4rem] bg-white">
       <SectionHeading>Selected Projects</SectionHeading>
       <SectionContainer>
         <div>
@@ -25,8 +25,9 @@ type ProjectProps = (typeof projectsData)[number];
 
 function Project({ title, description, imageUrl, tags }: ProjectProps) {
   return (
-    <section className="group bg-gray-100 sm:h-[20rem] border border-black/5 overflow-hidden sm:pr-8 relative mb-5 last:mb-0 even:pl-20 sm:flex content-center">
-      <div className="pt-5 pb-8 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full sm:group-even:ml-[18rem] group-even:ml-[18rem]">
+    <section className="group bg-gray-100 sm:h-[20rem] border border-black/5 overflow-hidden 
+    sm:pr-8 even:pr-0 relative sm:flex content-center sm:even:flex-row-reverse mb-5 last:mb-0 ">
+      <div className="pt-5 pb-8 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full">
         <h3 className="text-2xl">{title}</h3>
         <p className="mt-2 leading-relaxed text-gray-700">{description}</p>
         <ul className="flex flex-wrap mt-4 gap-2 sm:mt-auto">
