@@ -6,9 +6,9 @@ import Link from "next/link";
 
 // sm:w-[35rem]
 export default function Header() {
-
   return (
-    <header className="z-[999] ">
+
+    <header className="z-[999999]">
       <motion.div
         className="fixed top-0 right-0 h-[4.5rem] w-full rounded-none border
          border-white border-opacity-40 bg-white bg-opacity-80 shadow-lg
