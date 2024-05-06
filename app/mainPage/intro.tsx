@@ -9,7 +9,7 @@ import { FaGithubSquare } from "react-icons/fa";
 
 export default function intro() {
   return (
-    <section className="relative flex flex-col sm:flex-row items-center justify-between sm:px-[10em]">
+    <section className="relative flex flex-col sm:flex-row items-center justify-between sm:px-[10em] pt-[15rem] pb-[12rem]">
       <div className="w-[22rem]">
         <motion.div
           initial={{ opacity: 0, scale: 0.3 }}
