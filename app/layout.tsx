@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Header from "./components/header";
-import Intro from "./mainPage/intro";
-import Projects from "./mainPage/projects";
-import Skills from "./mainPage/skills";
-import Awards from "./mainPage/awards";
-import ResearchProjects from "./mainPage/researchProjects";
+import Intro from "./home/intro";
+import Projects from "./home/projects";
+import Skills from "./home/skills";
+import Awards from "./home/awards";
+import ResearchProjects from "./home/researchProjects";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
