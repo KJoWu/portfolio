@@ -1,4 +1,3 @@
-import Header from "./_components/header";
 import Intro from "./_home/intro";
 import Projects from "./_home/projects";
 import Skills from "./_home/skills";
@@ -7,7 +6,6 @@ import ResearchProjects from "./_home/researchProjects";
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <Header />
       <Intro />
       <Skills />
       <Projects />

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import Header from "./_components/header";
 
 import "./globals.css";
 
@@ -33,6 +34,8 @@ export default function RootLayout({
             w-[31.25rem] rounded-full 
             blur-[10rem]"
         ></div>
+              <Header />
+
         {children}
 
         <div>
