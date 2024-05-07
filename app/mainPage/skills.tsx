@@ -30,9 +30,8 @@ type SkillListProps = {
 const SkillList = ({ skills, skillType }: SkillListProps) => {
   return (
     <div className="my-5 last:my-0">
-      <h3 className="mb-2">{skillType}</h3>
-      <ul className="flex flex-wrap gap-2  text-white gap-x-7 gap-y-3">
-        {skills.map((skill, index) => (
+      <ul className="flex flex-wrap gap-2  gap-x-7 gap-y-3">
+      <h3 className="mb-2">{skillType}:</h3>{skills.map((skill, index) => (
           <motion.li
             //className="bg-indigo-900  hover:bg-indigo-00 transition px-4 py-2 rounded-full"
             //className="bg-white text-slate-800 hover:bg-indigo-100 transition px-4 py-2 rounded-full"
@@ -60,7 +59,8 @@ export default function Skills() {
     <section className="py-[3.5rem]">
       <SectionHeading>My Stack</SectionHeading>
       <SectionContainer>
-        <SkillList skills={technicalSkills} skillType={"Languages / Frameworks / Dev Tools"} />
+        <SkillList skills={technicalSkills} skillType={"Languages"} />
+        <SkillList skills={technicalSkills} skillType={"Frameworks + Tehnical Tools"} />
         <SkillList skills={designSkills} skillType={"Design Tools"} />
       </SectionContainer>
     </section>

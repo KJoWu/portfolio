@@ -4,6 +4,8 @@ import Header from "./components/header";
 import Intro from "./mainPage/intro";
 import Projects from "./mainPage/projects";
 import Skills from "./mainPage/skills";
+import Awards from "./mainPage/awards";
+import ResearchProjects from "./mainPage/researchProjects";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -40,11 +42,13 @@ export default function RootLayout({
         <Intro />
         <Skills />
         <Projects />
+        <Awards/>
+        <ResearchProjects/>
 
 
 
         <div>
-          This site was designed in Figma, coded in Visual Studio by yours truly, Built with Next.JS + Tailwind + Framer and deployed on Github</div>
+          This site was sketched out in Figma, coded in Visual Studio by yours truly, prettied up with Tailwind and Framer, and deployed on Github</div>
       </body>
     </html>
   );
