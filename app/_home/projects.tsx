@@ -1,9 +1,9 @@
 import React from "react";
-import SectionHeading from "../components/sectionHeading";
+import SectionHeading from "../_components/sectionHeading";
 import { projectsData, researchProjectsData } from "../lib/projectData";
-import ProjectThumbnail from "../components/projectThumbnail";
-import ProjectThumbnailSmall from "../components/projectThumbnailSmall";
-import SectionContainer from "../components/sectionContainer";
+import ProjectThumbnail from "../_components/projectThumbnail";
+import ProjectThumbnailSmall from "../_components/projectThumbnailSmall";
+import SectionContainer from "../_components/sectionContainer";
 
 export default function projects() {
   return (

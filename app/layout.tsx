@@ -1,11 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import Header from "./components/header";
-import Intro from "./home/intro";
-import Projects from "./home/projects";
-import Skills from "./home/skills";
-import Awards from "./home/awards";
-import ResearchProjects from "./home/researchProjects";
+
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -38,14 +33,7 @@ export default function RootLayout({
             w-[31.25rem] rounded-full 
             blur-[10rem]"
         ></div>
-        <Header />
-        <Intro />
-        <Skills />
-        <Projects />
-        <Awards/>
-        <ResearchProjects/>
-
-
+        {children}
 
         <div>
           This site was sketched out in Figma, coded in Visual Studio by yours truly, prettied up with Tailwind and Framer, and deployed on Github</div>

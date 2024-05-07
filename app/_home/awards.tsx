@@ -1,5 +1,5 @@
 import React from "react";
-import SectionContainer from "../components/sectionContainer";
+import SectionContainer from "../_components/sectionContainer";
 
 export default function Awards() {
   return (

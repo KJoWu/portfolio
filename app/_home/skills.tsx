@@ -1,12 +1,12 @@
 "use client";
 
 import React from "react";
-import SectionContainer from "../components/sectionContainer";
+import SectionContainer from "../_components/sectionContainer";
 import { technicalSkills } from "../lib/projectData";
 import { designSkills } from "../lib/projectData";
 
 import { motion } from "framer-motion";
-import SectionHeading from "../components/sectionHeading";
+import SectionHeading from "../_components/sectionHeading";
 
 const fadeInAnimationVariants = {
   initial: {

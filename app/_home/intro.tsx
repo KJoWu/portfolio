@@ -2,13 +2,10 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import Link from "next/link";
-import { BsArrowRight, BsLinkedin } from "react-icons/bs";
-import SectionContainer from "../components/sectionContainer";
-import { HiDownload } from "react-icons/hi";
-import { FaGithubSquare } from "react-icons/fa";
+import { BsLinkedin } from "react-icons/bs";
+import SectionContainer from "../_components/sectionContainer";
 
-export default function intro() {
+export default function Intro() {
   return (
     <SectionContainer>
       <section className="relative flex flex-col sm:flex-row justify-between pt-[15rem] pb-[12rem]">
