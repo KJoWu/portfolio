@@ -3,19 +3,13 @@ import React from "react";
 import { motion } from "framer-motion";
 import { links } from "../lib/pageLinks";
 import Link from "next/link";
-// import ThemeSwitch from "./themeSwitch";
-import { useTheme } from "../_context/themeContext";
-import { BsMoon, BsSun } from "react-icons/bs";
-import { useRouter } from 'next/router';
 
 
 export default function Header() {
-  const { isDarkTheme, toggleTheme } = useTheme();
-
   return (
     <header className="z-[999] relative">
       <motion.div
-        className="fixed top-0 right-9 h-[4.5rem] w-full rounded-none border
+        className="fixed top-0 right-4 h-[4.5rem] w-full rounded-none border
          border-white border-opacity-40 bg-white bg-opacity-80 shadow-lg
           shadow-black/[0.03] backdrop-blur-[0.5rem] 
           sm:top-6 sm:h-[3rem]  sm:w-[21rem] sm:rounded-full sm:mr-10
@@ -44,14 +38,6 @@ export default function Header() {
               </Link>
             </motion.li>
           ))}
-          <motion.button
-            className="flex w-full justify-center px-3 py-3 items-center hover:text-gray-950 transition"
-            onClick={toggleTheme}
-            initial={{ y: -100, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-          >
-            {isDarkTheme ? <BsMoon /> : <BsSun />}
-          </motion.button>
         </ul>
       </nav>
     </header>

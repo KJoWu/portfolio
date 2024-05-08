@@ -4,6 +4,7 @@
 import { Inter } from "next/font/google";
 import Header from "./_components/header";
 import "./globals.css";
+import ThemeSwitch from "./_components/themeSwitch";
 import ThemeContextProvider from "./_context/themeContext";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -41,6 +42,9 @@ export default function RootLayout({
           <Header />
 
           {children}
+
+          <ThemeSwitch />
+
           <div>
             This site was sketched out in Figma, coded in Visual Studio by yours
             truly, prettied up with Tailwind and Framer, and deployed on Github
