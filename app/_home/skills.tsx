@@ -30,11 +30,11 @@ const SkillList = ({ skills, skillType }: SkillListProps) => {
   return (
     <div className="my-5 last:my-0">
       <ul className="flex flex-wrap gap-2  gap-x-7 gap-y-3">
-      <h3 className="mb-2">{skillType}:</h3>{skills.map((skill, index) => (
+      <h3 className="mb-2 text-lime-400">{skillType}:</h3>{skills.map((skill, index) => (
           <motion.li
             //className="bg-indigo-900  hover:bg-indigo-00 transition px-4 py-2 rounded-full"
             //className="bg-white text-slate-800 hover:bg-indigo-100 transition px-4 py-2 rounded-full"
-            className="text-sm text-indigo-800 hover:text-indigo-800 transition rounded-full first:px-0"
+            className="text-sm font-light	 text-white transition rounded-full first:px-0"
 
             key={index}
             initial="initial"
@@ -55,8 +55,8 @@ const SkillList = ({ skills, skillType }: SkillListProps) => {
 
 export default function Skills() {
   return (
-    <section className="py-[3.5rem]">
-      <SectionHeading>My Stack</SectionHeading>
+    <section className="py-[3.5rem] bg-[#4229d6]">
+      <SectionHeading><span className="text-lime-400">My Stack</span></SectionHeading>
       <SectionContainer>
         <SkillList skills={technicalSkills} skillType={"Languages & Frameworks"} />
         <SkillList skills={technicalTools} skillType={"Tehnical Tools"} />

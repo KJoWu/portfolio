@@ -1,6 +1,8 @@
 import React from "react";
 import Image from "next/image";
 import { researchProjectsData } from "../lib/projectData";
+import { playFair, poppins } from "../fonts";
+
 
 type ProjectThumbnailSmallProps = (typeof researchProjectsData)[number];
 
@@ -11,38 +13,41 @@ export default function ProjectThumbnailSmall({
   imageUrl,
   tags,
   skills,
-  bg,
   bgHover,
   tagsBg,
+  bg,
 }: ProjectThumbnailSmallProps) {
-  const backdrop = `${bg}-50`
   return (
     <section
-      className={`group ${backdrop} sm:h-[30rem] overflow-hidden 
-    sm:pr-8 relative sm:flex content-center mb-5 last:mb-0
-        hover:bg-gray-200 hover:cursor-pointer  transition-all w-full`}
+      className={`group ${bg} sm:h-[30rem] overflow-hidden sm:pr-8 even:pr-0 relative 
+      sm:flex content-center sm:even:flex-row-reverse mb-5 last:mb-0 hover:bg-[#f2f1fd]
+      hover:cursor-pointer transition-all w- drop-shadow-md`}
     >
-      <div className="pt-5 pb-8 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full ">
-        <h3 className="text-2xl">{title}</h3>
-        <p className="mt-2 leading-relaxed text-gray-700">{type}</p>
-        <p className="mt-2 leading-relaxed text-gray-700">{description}</p>
+      <div className="pt-5 pb-12 px-5 sm:pl-16  sm:pt-16  flex flex-col h-full ">
+        
+        <h3 className={`text-3xl font-semibold ${poppins.className} text-[#4229d6]`}>{title}</h3>
+        
+        <p className="mt-5 text-lg  leading-relaxed text-gray-700">{type}</p>
+        <p className="mt-2 text-lg font-light  leading-relaxed text-gray-700 ">
+          {description}
+        </p>
 
-        <div className=" sm:mt-auto">
-          <ul className="flex flex-wrap mt-4 gap-2">
+        <div className="sm:mt-auto">
+          <ul className="flex flex-wrap mt-4 gap-3">
             {skills.map((skill, index) => (
               <li
                 key={index}
-                className="bg-black/[0.7] px-3 py-1 text-sm tracking-wider text-white rounded-full"
+                className={`bg-[#4229d6] font-light px-3 py-1 text-sm tracking-wider text-white rounded-md`}
               >
                 {skill}
               </li>
             ))}
           </ul>
-          <ul className="flex flex-wrap mt-4 gap-2">
+          <ul className="flex flex-wrap mt-4 gap-3">
             {tags.map((tag, index) => (
               <li
                 key={index}
-                className="bg-red-500 px-3 py-1 text-sm tracking-wider text-white rounded-full"
+                className={`bg-[#4229d6] font-light px-3 py-1 text-sm tracking-wider text-white rounded-md`}
               >
                 {tag}
               </li>
@@ -50,17 +55,7 @@ export default function ProjectThumbnailSmall({
           </ul>
         </div>
       </div>
-      <Image
-        src={imageUrl}
-        alt={title}
-        quality={95}
-        className="absolute top-[8rem] -left-[-15rem] w-[32rem] rounded-t-lg shadow-2xl 
-        transition
-        group-hover:scale-[1.05]
-        group-hover:-translate-x-3
-        group-hover:translate-y-3
-        group-hover:-rotate-2"
-      />
+
     </section>
   );
 }

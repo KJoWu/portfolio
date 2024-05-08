@@ -1,13 +1,12 @@
 "use client";
 
 // import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import Header from "./_components/header";
 import "./globals.css";
 import ThemeSwitch from "./_components/themeSwitch";
 import ThemeContextProvider from "./_context/themeContext";
+import { poppins } from "./fonts";
 
-const inter = Inter({ subsets: ["latin"] });
 
 export default function RootLayout({
   children,
@@ -23,7 +22,7 @@ export default function RootLayout({
           content="Kimberly is a senior software developer with 8 years of experience, specializing in Front end and Product design"
         />
       </head>
-      <body className={`${inter.className} bg-gray-100 text-gray-950`}>
+      <body className={`${poppins.className} bg-gray-100 text-[##030712]`}>
         <ThemeContextProvider>
           <div
             className="bg-[#ffebec] x

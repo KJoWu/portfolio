@@ -4,6 +4,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { BsLinkedin } from "react-icons/bs";
 import SectionContainer from "../_components/sectionContainer";
+import { playFair, poppins } from "../fonts";
 
 export default function Intro() {
   return (
@@ -15,17 +16,15 @@ export default function Intro() {
             animate={{ opacity: 1, scale: 1 }}
             transition={{
               type: "spring",
-              stiffness: 125,
               delay: 0.5,
               duration: 0.2,
             }}
           >
-            <p className="text-5xl">Hi, I'm Kim</p>
-            <p className="text-1xl pt-5 ">
-              I'm a <b>Senior Fronsstend Engineer</b>, <b>product designer</b> and{" "}
-              <b>artist</b> with <b>8 years</b> of experience
+            <p className={`text-6xl font-extrabold ${poppins.className}`}>Hi, I'm <span className="text-[#4229d6]">Kim</span>.</p>
+            <p className={`text-2xl pt-5  ${poppins.className}`}>
+              I'm a Senior Frontend Engineer, product designer and artist.
             </p>
-            <p className="">
+            <p className="pt-3 font-light text-lg">
               Currently working on next gen products involving llm and AI
             </p>
           </motion.div>

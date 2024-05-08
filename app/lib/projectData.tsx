@@ -40,12 +40,12 @@ export const projectsData = [
 
 export const researchProjectsData = [
   {
-    title: "Campaign Proposal Content Management System",
+    title: "Medical Research Illustrator",
     description: "Develope a user experience for a large scale application",
     type: "Desktop Application",
     imageUrl: app1,
-    skills: ["Figma", "React", "Redux Forms", "Ruby on Rails"],
-    tags: ["Product Designer", "Full Stack Developer"],
+    skills: ["Photoshop"],
+    tags: ["In House Illustrator"],
     bg: "bg-violet-500",
     tagsBg: "bg-violet-200",
     bgHover: "bg-violet-300",
@@ -60,18 +60,7 @@ export const researchProjectsData = [
     tagsBg: "bg-violet-10",
     bg: "bg-violet-50",
     bgHover: "bg-violet-300",
-  },
-  {
-    title: "Physical Contrusction",
-    type: "Mobile Application",
-    description: "How can we seamlessly coordinate a lab",
-    imageUrl: app3,
-    skills: ["Figma", "React", "Redux Forms", "Ruby on Rails"],
-    tags: ["Physical Skills"],
-    tagsBg: "bg-violet-10",
-    bg: "bg-violet-50",
-    bgHover: "bg-violet-100",
-  },
+  }
 ] as const;
 
 export const technicalSkills = [
