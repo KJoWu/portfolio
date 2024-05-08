@@ -87,36 +87,19 @@ export const projectsData = [
     "GraphQL",
     "Python",
     "C#",
-    "Heroku", 
-    "GCS",
-    "AWS",
-    "Git",
     "Tailwind",
     "AntDesign/Material UI/Bootstrap",
     "Css/Sass/BEM"
   ] as const;
   
-  export const frameworks = [
-    "Next.js",
-    "React.Js",
-    "Redux",
-    "TypeScript",
-    "Ruby on Rails",
-    "Motion",
-    "GraphQL",
-    "Python",
-    "C#",
+  export const technicalTools = [
     "Heroku", 
     "GCS",
     "AWS",
     "Git",
-    "Tailwind",
-    "AntDesign/Material UI/Bootstrap",
-    "Css/Sass/BEM"
   ] as const;
-  
 
-  export const designSkills = [
+  export const designTools = [
     "Figma", 
     "AdobePhotoshop/Illustrator/After Effects",
     "Clip Studio", 

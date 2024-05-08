@@ -5,7 +5,7 @@ import Awards from "./_home/awards";
 import ResearchProjects from "./_home/researchProjects";
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+    <main>
       <Intro />
       <Skills />
       <Projects />

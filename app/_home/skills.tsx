@@ -2,8 +2,7 @@
 
 import React from "react";
 import SectionContainer from "../_components/sectionContainer";
-import { technicalSkills } from "../lib/projectData";
-import { designSkills } from "../lib/projectData";
+import { designTools, technicalTools, technicalSkills } from "../lib/projectData";
 
 import { motion } from "framer-motion";
 import SectionHeading from "../_components/sectionHeading";
@@ -59,9 +58,9 @@ export default function Skills() {
     <section className="py-[3.5rem]">
       <SectionHeading>My Stack</SectionHeading>
       <SectionContainer>
-        <SkillList skills={technicalSkills} skillType={"Languages"} />
-        <SkillList skills={technicalSkills} skillType={"Frameworks + Tehnical Tools"} />
-        <SkillList skills={designSkills} skillType={"Design Tools"} />
+        <SkillList skills={technicalSkills} skillType={"Languages & Frameworks"} />
+        <SkillList skills={technicalTools} skillType={"Tehnical Tools"} />
+        <SkillList skills={designTools} skillType={"Design Tools"} />
       </SectionContainer>
     </section>
   );
