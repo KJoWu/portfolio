@@ -60,6 +60,17 @@ export const researchProjectsData = [
     tagsBg: "bg-violet-10",
     bg: "bg-violet-50",
     bgHover: "bg-violet-300",
+  },
+  {
+    title: "Colledge Data Sharing",
+    type: "Mobile Application",
+    description: "How can we improve Canada data for users across Canada",
+    imageUrl: app2,
+    skills: ["Figma", "React", "Redux Forms", "Ruby on Rails"],
+    tags: ["Mobile", "React Native", "Product Design"],
+    tagsBg: "bg-violet-10",
+    bg: "bg-violet-50",
+    bgHover: "bg-violet-300",
   }
 ] as const;
 

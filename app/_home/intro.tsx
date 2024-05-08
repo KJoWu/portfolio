@@ -9,8 +9,9 @@ import { playFair, poppins } from "../fonts";
 export default function Intro() {
   return (
     <SectionContainer>
-      <section className="relative flex flex-col sm:flex-row justify-between pt-[15rem] pb-[12rem]">
-        <div className="w-[22rem]">
+      <section className="flex flex-col sm:flex-row justify-between pt-[15rem] pb-[12rem]">
+        <div className="absolute inset-0 h-full w-full bg-white bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px] [mask-image:radial-gradient(ellipse_50%_50%_at_50%_20%,#000_60%,transparent_100%)] z-1"/>
+        <div className="w-[22rem] relative">
           <motion.div
             initial={{ opacity: 0, scale: 0.3 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -21,6 +22,7 @@ export default function Intro() {
             }}
           >
             <p className={`text-6xl font-extrabold ${poppins.className}`}>Hi, I'm <span className="text-[#4229d6]">Kim</span>.</p>
+            
             <p className={`text-2xl pt-5  ${poppins.className}`}>
               I'm a Senior Frontend Engineer, product designer and artist.
             </p>
@@ -49,7 +51,11 @@ export default function Intro() {
           </motion.div>
         </div>
 
-        <div>Icon on Right Use a big picture</div>
+        <div className="relative">
+            <p>Meiya Reinking Art Award</p>
+            <p>District of Edmonton Art Award</p>
+
+        </div>
       </section>
     </SectionContainer>
   );

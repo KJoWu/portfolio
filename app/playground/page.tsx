@@ -10,18 +10,17 @@ export default function Playground() {
       <SectionHeading>
         <h1>Playground</h1>
         <p>Projects Experiments & Ideas</p>
-        <span className="pt-7" />
-
-        <SectionContainer>
-          <div className="grid grid-cols-2 gap-2">
-            {researchProjectsData.map((project, index) => (
-              <React.Fragment key={index}>
-                <ProjectThumbnailSmall {...project} />
-              </React.Fragment>
-            ))}
-          </div>
-        </SectionContainer>
       </SectionHeading>
+
+      <SectionContainer>
+        <div className="grid grid-cols-2 gap-2">
+          {researchProjectsData.map((project, index) => (
+            <React.Fragment key={index}>
+              <ProjectThumbnailSmall {...project} />
+            </React.Fragment>
+          ))}
+        </div>
+      </SectionContainer>
     </div>
   );
 }

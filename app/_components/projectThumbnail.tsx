@@ -36,7 +36,7 @@ export default function ProjectThumbnail({
             {skills.map((skill, index) => (
               <li
                 key={index}
-                className={`bg-[#4229d6] font-light px-3 py-1 text-sm tracking-wider text-white rounded-md`}
+                className={`${tagsBg} px-3 py-1 text-sm tracking-wider text-white rounded-md`}
               >
                 {skill}
               </li>
@@ -46,7 +46,7 @@ export default function ProjectThumbnail({
             {tags.map((tag, index) => (
               <li
                 key={index}
-                className={`bg-[#4229d6] font-light px-3 py-1 text-sm tracking-wider text-white rounded-md`}
+                className={`bg-[#4229d6] px-3 py-1 text-sm tracking-wider text-white rounded-md`}
               >
                 {tag}
               </li>
