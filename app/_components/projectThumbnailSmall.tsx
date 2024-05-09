@@ -3,7 +3,6 @@ import Image from "next/image";
 import { researchProjectsData } from "../lib/projectData";
 import { playFair, poppins } from "../fonts";
 
-
 type ProjectThumbnailSmallProps = (typeof researchProjectsData)[number];
 
 export default function ProjectThumbnailSmall({
@@ -19,16 +18,19 @@ export default function ProjectThumbnailSmall({
 }: ProjectThumbnailSmallProps) {
   return (
     <section
-      className={`group ${bg} sm:h-[30rem] overflow-hidden sm:pr-8 even:pr-0 relative 
-      sm:flex content-center sm:even:flex-row-reverse mb-5 last:mb-0 hover:bg-[#f2f1fd]
+      className={`group bg-white sm:h-[30rem] overflow-hidden relative 
+      sm:flex content-center hover:bg-[red]
       hover:cursor-pointer transition-all w- drop-shadow-md`}
     >
       <div className="pt-5 pb-12 px-5 sm:pl-16  sm:pt-16  flex flex-col h-full ">
-        
-        <h3 className={`text-3xl font-semibold ${poppins.className} text-[#4229d6]`}>{title}</h3>
-        
+        <h3
+          className={`text-3xl font-semibold ${poppins.className} text-[#4229d6]`}
+        >
+          {title}
+        </h3>
+
         <p className="mt-5 text-lg  leading-relaxed text-gray-700">{type}</p>
-        <p className="mt-2 text-lg font-light  leading-relaxed text-gray-700 ">
+        <p className="mt-2 text-lg  font-thin leading-relaxed text-gray-700 ">
           {description}
         </p>
 
@@ -37,7 +39,7 @@ export default function ProjectThumbnailSmall({
             {skills.map((skill, index) => (
               <li
                 key={index}
-                className={`bg-[#4229d6] font-light px-3 py-1 text-sm tracking-wider text-white rounded-md`}
+                className={`hover:bg-[#4229d6] font-light px-3 py-1 text-sm tracking-wider text-white rounded-md`}
               >
                 {skill}
               </li>
@@ -47,7 +49,7 @@ export default function ProjectThumbnailSmall({
             {tags.map((tag, index) => (
               <li
                 key={index}
-                className={`bg-[#4229d6] font-light px-3 py-1 text-sm tracking-wider text-white rounded-md`}
+                className={`hove:bg-[#4229d6] font-light px-3 py-1 text-sm tracking-wider text-white rounded-md`}
               >
                 {tag}
               </li>
@@ -55,7 +57,6 @@ export default function ProjectThumbnailSmall({
           </ul>
         </div>
       </div>
-
     </section>
   );
 }
