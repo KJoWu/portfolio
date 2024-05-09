@@ -1,5 +1,5 @@
 import app1 from "../../public/app1.jpg";
-import app2 from "../../public/app2.jpg";
+import app2 from "../../public/app2.png";
 import app3 from "../../public/app3.jpg";
 
 export const projectsData = [
@@ -41,7 +41,7 @@ export const projectsData = [
 export const researchProjectsData = [
   {
     title: "Medical Research Illustrator",
-    description: "Develope a user experience for a large scale application",
+    description: "Artist, designed the portfolio for a research paper",
     type: "Desktop Application",
     imageUrl: app1,
     skills: ["Photoshop"],
@@ -77,7 +77,7 @@ export const researchProjectsData = [
 export const artProjectsData = [
   {
     title: "Medical Research Illustrator",
-    description: "Develope a user experience for a large scale application",
+    description: "Artist, designed the portfolio for a research paper",
     type: "Desktop Application",
     imageUrl: app1,
     skills: ["Photoshop"],
