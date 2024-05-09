@@ -1,43 +1,32 @@
 import React from "react";
 import Image from "next/image";
-import { artProjectsData } from "../lib/projectData";
+import { videoData } from "../lib/projectData";
 import { playFair, poppins } from "../fonts";
+import YouTubeEmbed from "./video";
 
-type ProjectThumbnailSmallProps = (typeof artProjectsData)[number];
+type ProjectThumbnailSmallProps = (typeof videoData)[number];
 
 export default function ProjectThumbnailSmall({
   title,
-  type,
   description,
-  imageUrl,
-  tags,
-  skills,
-  bgHover,
-  tagsBg,
-  bg,
+  url
 }: ProjectThumbnailSmallProps) {
   return (
-    <div>
-      <section className={`sm:h-[30rem] overflow-hidden relative`}>
-        <div className="w-[full] h-[20rem] overflow-hidden  bg-black`">
-          <Image
-            src={imageUrl}
-            alt={title}
-            quality={95}
-            className="object-cover"
-          />
+    <div className="pb-5">
+      <div className={`sm:h-[20rem] overflow-hidden relative`}>
+        <div className="container mx-auto mt-1">
+          <YouTubeEmbed url={url} />
         </div>
+      </div>
+      <h3
+        className={`text-lg font-semibold p-2 ${poppins.className} text-gray-900 bg-lime-300 w-fit  mt-[0rem]`}
+      >
+        {title}
+      </h3>
 
-        <h3
-          className={`text-lg font-semibold pt-5 ${poppins.className} text-gray-900]`}
-        >
-          {title}
-        </h3>
-
-        <p className="pt-1 text-md font-light text-sm leading-relaxed text-gray-700">
-          {description}
-        </p>
-      </section>
+      <p className="pt-2 text-md font-light text-md leading-relaxed text-gray-700">
+        {description}
+      </p>
     </div>
   );
 }
