@@ -1,15 +1,15 @@
 "use client";
 import React from "react";
-import AdditionalProjectSection from "./additionalProjectSection";
-import ProjectHighlightSection from "./projectHighlightSection";
+import ProjectSection from "./projectSection";
+import FeatureSection from "./featureSection";
 
 export default function Playground() {
   return (
     <div className="relative">
-      <ProjectHighlightSection />
+      <FeatureSection />
 
-      <div className="relative bg-white-400 pt-[5rem] pb-[3rem]">
-        <AdditionalProjectSection />
+      <div className="relative bg-white-400 pt-[3rem] pb-[3rem]">
+        <ProjectSection />
       </div>
     </div>
   );

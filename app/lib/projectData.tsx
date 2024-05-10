@@ -1,160 +1,213 @@
-import app1 from "../../public/app1.jpg";
-import app2 from "../../public/app2.png";
-import app3 from "../../public/app3.jpg";
+import { describe } from "node:test";
 import p1 from "../../public/placeholder.png";
+import shirt1 from "../../public/shirt-1.jpg";
+import shirt2 from "../../public/shirt-2.jpg";
+import shirt3 from "../../public/shirt-3.jpg";
 
-export const webappData=[
+export const webappData = [
   {
-    title: "University of Alberta Orientation || ",
-    url:p1,
-    description: "Directed and produced the orientation video for the faculty of science"
+    title: "Doctors Plus Website",
+    url: p1,
+    description: "Doctors Plus Data",
   },
   {
-    title: "University of Alberta Orientation |",
-    url:p1,
-    description: "Directed and produced the orientation video for the faculty of science.",
-  }
-]
+    title: "mockups",
+    url: p1,
+    description: "Cultr Website",
+  },
+];
 
-export const projectsData = [
+export const designData = [
   {
-    title: "Campaign Proposal Content Management System",
-    description: "Develope a user experience for a large scale application",
-    type: "Desktop Application",
-    imageUrl: app1,
-    skills: ["Figma", "React", "Redux Forms", "Ruby on Rails"],
-    tags: ["Product Designer", "Full Stack Developer"],
-    bg: "bg-zinc-50",
-    tagsBg: "bg-zinc-400",
-    bgHover: "hover:bg-zinc-200",
+    title: "UofA Science Week",
+    url: shirt1,
+    description:
+      "Official logo & design for University of Alberta's Science Week",
   },
   {
-    title: "Colledge Data Sharing",
-    type: "Progressive Mobile Application",
-    description: "How can we improve Canada data for users across Canada",
-    imageUrl: app2,
-    skills: ["Figma", "React", "Ruby on Rails"],
-    tags: ["Mobile", "React Native", "Product Design"],
-    bg: "bg-zinc-50",
-    tagsBg: "bg-zinc-400",
-    bgHover: "hover:bg-zinc-200",
+    title: "Link Crew",
+    url: shirt3,
+    description: "Official design for Harry Ainlay's Link Crew",
   },
   {
-    title: "Physical Contrusction",
-    type: "Mobile Application",
-    description: "How can we seamlessly coordinate a lab",
-    imageUrl: app3,
-    skills: ["Figma", "React", "Redux Forms", "Ruby on Rails"],
-    tags: ["Physical Skills"],
-    bg: "bg-zinc-50",
-    tagsBg: "bg-zinc-400",
-    bgHover: "hover:bg-zinc-200",
+    title: "Kids Help Phone",
+    url: shirt2,
+    description: "1st place winning design",
   },
-] as const;
+  {
+    title: "Medical Lab Logo",
+    url: p1,
+    description: "Logo used for MLS at the University of Alberta Hospital",
+  },
+  {
+    title: "Mural for Crestwoodd Elimentary School",
+    url: p1,
+    description: "Crestwoood mUral",
+  },
+  {
+    title: "Harry Ainlay Cover",
+    url: p1,
+    description: "Crestwoood mUral",
+  },
+];
 
-export const researchProjectsData = [
+export const researchData = [
   {
-    title: "Medical Research Illustrator",
-    description: "Artist, designed the portfolio for a research paper",
-    type: "Desktop Application",
-    imageUrl: app1,
-    skills: ["Photoshop"],
-    tags: ["In House Illustrator"],
-    bg: "bg-violet-500",
-    tagsBg: "bg-violet-200",
-    bgHover: "bg-violet-300",
+    title: "Lice Research Data",
+    url: p1,
+    description: "Data for lice research",
   },
   {
-    title: "Colledge Data Sharing",
-    type: "Mobile Application",
-    description: "How can we improve Canada data for users across Canada",
-    imageUrl: app2,
-    skills: ["Figma", "React", "Redux Forms", "Ruby on Rails"],
-    tags: ["Mobile", "React Native", "Product Design"],
-    tagsBg: "bg-violet-10",
-    bg: "bg-violet-50",
-    bgHover: "bg-violet-300",
+    title: "Medical Research paper",
+    url: p1,
+    description: "Medical Resarch",
+  },
+];
+
+export const editorialsData = [
+  ...researchData,
+  {
+    title: "Faculty of Art Editorial",
+    url: p1,
+    description: "Editorials for Faculty for Art",
   },
   {
-    title: "Colledge Data Sharing",
-    type: "Mobile Application",
-    description: "How can we improve Canada data for users across Canada",
-    imageUrl: app2,
-    skills: ["Figma", "React", "Redux Forms", "Ruby on Rails"],
-    tags: ["Mobile", "React Native", "Product Design"],
-    tagsBg: "bg-violet-10",
-    bg: "bg-violet-50",
-    bgHover: "bg-violet-300",
-  }
-] as const;
+    title: "Faculty of Art Editorial",
+    url: p1,
+    description: "Editorials for Faculty for Art",
+  },
+  {
+    title: "Faculty of Art Editorial",
+    url: p1,
+    description: "Editorials for Faculty for Art",
+  },
+  {
+    title: "Engineer Editorial",
+    url: p1,
+    description: "Paper for Engineer",
+  },
+  {
+    title: "Engineer Editorial",
+    url: p1,
+    description: "Paper for Engineer",
+  },
+  {
+    title: "Engineer Editorial",
+    url: p1,
+    description: "Paper for Engineer",
+  },
+  {
+    title: "Engineer Editorial",
+    url: p1,
+    description: "Paper for Engineer",
+  },
+];
 
 export const videoData = [
   {
     title: "University of Alberta Orientation || ",
-    url:"https://www.youtube.com/watch?v=75c2_TTHWYc",
-    description: "Directed and produced the orientation video for the faculty of science"
+    url: "https://www.youtube.com/watch?v=75c2_TTHWYc",
+    description:
+      "Directed and produced the orientation video for the faculty of science",
   },
   {
     title: "University of Alberta Orientation |",
-    url:"https://www.youtube.com/watch?v=3qGofRsp6nc",
-    description: "Directed and produced the orientation video for the faculty of science.",
+    url: "https://www.youtube.com/watch?v=3qGofRsp6nc",
+    description:
+      "Directed and produced the orientation video for the faculty of science.",
   },
   {
     title: "Draw My Life",
-    url:"https://www.youtube.com/watch?v=N4UTFSjxV9U",
-    description: "Made a draw my life. Yes, I drew all that in 2 weeks and yes, that's my voice",
+    url: "https://www.youtube.com/watch?v=N4UTFSjxV9U",
+    description:
+      "Made a draw my life. Yes, I drew all that in 2 weeks and yes, that's my voice",
   },
   {
     title: "Games",
-    url:"https://www.youtube.com/watch?v=N4UTFSjxV9U",
+    url: "https://www.youtube.com/watch?v=N4UTFSjxV9U",
     description: "AWards: One best video for game. Game video promo",
   },
   {
     title: "Kaye Institute Promotional",
-    url:"https://www.youtube.com/watch?v=cRgB0sU_IpI",
+    url: "https://www.youtube.com/watch?v=cRgB0sU_IpI",
     description: "Editor for promo video",
   },
   {
     title: "StoryHoard",
-    url:"https://www.youtube.com/watch?v=3J25JH9TEEo",
+    url: "https://www.youtube.com/watch?v=3J25JH9TEEo",
     description: "Made a funny advertismenet for our app in Unviersity",
   },
 ] as const;
 
-export const featuredData = [
+export const hobbyData = [
   {
-    title: "University of Alberta Orientation || ",
-    url:p1,
-    description: "Directed and produced the orientation video for the faculty of science"
+    title: "IB Arts ",
+    url: p1,
+    description: "Protoflios for Art IB",
   },
   {
-    title: "University of Alberta Orientation |",
-    url:p1,
-    description: "Directed and produced the orientation video for the faculty of science.",
-  }
-] as const;
+    title: "Artist Conventions",
+    url: p1,
+    description: "I like drawing and conventioning!",
+  },
+  {
+    title: "District Art Award of Edmonton",
+    url: p1,
+    description: "District of Art",
+  },
+  {
+    title: "Mural for Crestwoodd Elimentary School",
+    url: p1,
+    description: "Crestwoood mUral",
+  },
+  {
+    title: "Harry Ainlay Cover",
+    url: p1,
+    description: "Crestwoood mUral",
+  },
+];
 
-export const technicalSkills = [
-  "Next.js",
-  "React.Js",
-  "Redux",
-  "TypeScript",
-  "Ruby on Rails",
-  "Motion",
-  "GraphQL",
-  "Python",
-  "C#",
-  "Tailwind",
-  "AntDesign/Material UI/Bootstrap",
-  "Css/Sass/BEM",
-] as const;
+export const projects = {
+  web: {
+    label: "Desktop & Mobile Apps",
+    description: "I've been an avid supporter of hackathons",
 
-export const technicalTools = ["Heroku", "GCS", "AWS", "Git"] as const;
+    data: webappData,
+  },
+  video: {
+    label: "Videography",
+    description: "I've been involved with many fun and incredibly creative pursuits from music videos to animations",
 
-export const designTools = [
-  "Figma",
-  "AdobePhotoshop/Illustrator/After Effects",
-  "Clip Studio",
-  "Paint Tool Sai",
-  "Gimp",
+    data: videoData,
+  },
+  editorials: {
+    label: "Design",
+    description: "I do a lot of design ranging from editorials to compeitions",
+    data: editorialsData,
+  },
+  // design: {
+  //   label: "Design Work",
+  //   data: designData,
+  // },
+  traditional: {
+    label: "Hobby",
+    description: "I do a lot of design ranging from editorials to compeitions",
+
+    data: hobbyData,
+  },
+} as const;
+
+export const featuredPlaygroundProjects = [
+  {
+    title: "AI project",
+    url: p1,
+    description:
+      "Directed and produced the orientation video for the faculty of science",
+  },
+  {
+    title: "UI Review",
+    url: p1,
+    description:
+      "Directed and produced the orientation video for the faculty of science.",
+  },
 ] as const;

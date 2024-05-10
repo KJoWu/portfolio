@@ -2,7 +2,7 @@
 
 import React from "react";
 import SectionContainer from "../_components/sectionContainer";
-import { designTools, technicalTools, technicalSkills } from "../lib/projectData";
+import { designTools, technicalTools, technicalSkills } from "../lib/workData";
 
 import { motion } from "framer-motion";
 import SectionHeading from "../_components/sectionHeading";

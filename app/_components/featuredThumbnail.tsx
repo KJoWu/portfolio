@@ -1,15 +1,15 @@
 import React from "react";
 import Image from "next/image";
-import { featuredData } from "../lib/projectData";
-import { playFair, poppins } from "../fonts";
+import { featuredPlaygroundProjects } from "../lib/projectData";
+import { poppins } from "../fonts";
 
-type FeaturedThumbnailProps = (typeof featuredData)[number];
+type FeaturedDataProps = (typeof featuredPlaygroundProjects)[number];
 
 export default function FeaturedThumbnail({
   title,
   description,
   url,
-}: FeaturedThumbnailProps) {
+}: FeaturedDataProps) {
   return (
     <div className="bg-white">
       <Image src={url} alt={title} quality={95} className="w-[32rem]" />

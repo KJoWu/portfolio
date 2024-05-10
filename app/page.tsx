@@ -1,5 +1,5 @@
 import Intro from "./_home/intro";
-import Projects from "./_home/projects";
+import Work from "./_home/work";
 import Skills from "./_home/skills";
 import Awards from "./_home/awards";
 import ResearchProjects from "./_home/researchProjects";
@@ -9,7 +9,7 @@ export default function Home() {
     <main>
       <Intro />
       <Skills />
-      <Projects />
+      <Work />
       <Awards />
       <ResearchProjects />
     </main>
