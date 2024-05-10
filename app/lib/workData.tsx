@@ -1,6 +1,6 @@
 import app1 from "../../public/app1.jpg";
-import app2 from "../../public/app2.png";
-import app3 from "../../public/app3.jpg";
+import app2 from "../../public/app1.jpg";
+import app3 from "../../public/app1.jpg";
 
 export const workData = [
   {

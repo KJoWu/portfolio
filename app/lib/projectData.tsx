@@ -1,19 +1,69 @@
-import { describe } from "node:test";
 import p1 from "../../public/placeholder.png";
 import shirt1 from "../../public/shirt-1.jpg";
 import shirt2 from "../../public/shirt-2.jpg";
 import shirt3 from "../../public/shirt-3.jpg";
+import research1 from "../../public/research1.png";
+import research2 from "../../public/research2.jpg";
+import research3 from "../../public/research3.png";
+import editorial2 from "../../public/editorial2.png";
+import editorial3 from "../../public/editorial3.png";
+import editorial4 from "../../public/editorial4.jpg";
+import editorial5 from "../../public/editorial5.jpg";
+import editorial6 from "../../public/editorial6.jpg";
+import editorial8 from "../../public/editorial8.jpg";
+import editorial10 from "../../public/editorial10.jpg";
+import editorial11 from "../../public/editorial11.jpg";
+import design1 from "../../public/design1.jpg";
+import hobby1 from "../../public/hobby1.png";
+import hobby2 from "../../public/hobby2.png";
+import hobby3 from "../../public/hobby3.png";
+import hobby4 from "../../public/hobby4.png";
+import hobby5 from "../../public/hobby5.png";
+import hobby6 from "../../public/hobby6.jpg";
+import hobby7 from "../../public/hobby7.png";
+import app1 from "../../public/app1.jpg";
+import app2 from "../../public/app2.png";
+import app3 from "../../public/app3.png";
+import app4 from "../../public/app4.png";
+import app5 from "../../public/app5.png";
+
 
 export const webappData = [
   {
-    title: "Doctors Plus Website",
+    title: "Hi Ai",
     url: p1,
-    description: "Doctors Plus Data",
+    description: "Ai Chatbox built in NextJs and Open Ai",
   },
   {
-    title: "mockups",
+    title: "Bouncing QR Codes",
+    url: app2,
+    description: "New take on QR codes, won fan favorite. Built with React js",
+  },
+  {
+    title: "Canadian University Finding App",
     url: p1,
-    description: "Cultr Website",
+    description: "The Canadian Open Data Hackathon (Figma)",
+  },
+  {
+    title: "Interactive Property Selector",
+    url: app2,
+    description: "A property selecting tool using the cluster feature from Mapbox built on React.js",
+  },
+  {
+    title: "Cultr",
+    url: app1,
+    description: "Website equipped with a web scraping tool designed to collect data on BCorp corporations. Built with Python and Bootstrap",
+  },
+  {
+    title: "DrugBank",
+    url: app4,
+    contain: true,
+    description: "Web scraping utility in Python to gather information on specific drug interactions",
+  },
+  {
+    title: "Tales of Rosmeary",
+    url: app5,
+    description: "Fun experimental game developed with the Neverwinter Engine",
   },
 ];
 
@@ -35,72 +85,84 @@ export const designData = [
     description: "1st place winning design",
   },
   {
-    title: "Medical Lab Logo",
-    url: p1,
-    description: "Logo used for MLS at the University of Alberta Hospital",
-  },
-  {
-    title: "Mural for Crestwoodd Elimentary School",
-    url: p1,
-    description: "Crestwoood mUral",
-  },
-  {
-    title: "Harry Ainlay Cover",
-    url: p1,
-    description: "Crestwoood mUral",
-  },
+    title: "Crestwood School Mural Painting",
+    url: design1,
+    description: "Designed and painted an 8' x 10' mural for Crestwood School",
+  }
 ];
 
 export const researchData = [
   {
-    title: "Lice Research Data",
-    url: p1,
-    description: "Data for lice research",
+    title: "Medical Research Article",
+    url: research3,
+    description: "Scientific illustrator for Dr. Khouloud and colleagues' medical article",
   },
   {
-    title: "Medical Research paper",
-    url: p1,
-    description: "Medical Resarch",
+    title: "Feather Lice Database Curation",
+    url: research1,
+    description: "Digitally extracted 100+ Albertan lice specimens, compiling them into a high-resolution database for future identification.",
+    cover: true
   },
+  {
+    title: "Feather Lice Database Curation",
+    url: research2,
+    description: "Digitally extracted 100+ Albertan lice specimens, compiling them into a high-resolution database for future identification.",
+    cover: true
+  }
 ];
 
 export const editorialsData = [
+  ...designData,
+  {
+    title: "Faculty of Engineering Newsletter ",
+    url: editorial3,
+    contain: true,
+    description: "Editorial designer for the Faculty of Engineering at the University of Alberta",
+  },
+  {
+    title: "Faculty of Engineering Newsletter ",
+    url: editorial2,
+    contain: true,
+    description: "Editorial designer for the Faculty of Engineering at the University of Alberta",
+  },
+  {
+    title: "Faculty of Arts Exhibition",
+    url: editorial4,
+    contain: true,
+    description: "Editorial designer for the Faculty of Arts at the University of Alberta",
+  },
+  {
+    title: "Faculty of Arts Exhibition",
+    url: editorial5,
+    contain: true,
+    description: "Editorial designer for the Faculty of Arts at the University of Alberta",
+  },
+  {
+    title: "Faculty of Arts Exhibition",
+    url: editorial6,
+    contain: true,
+    description: "Editorial designer for the Faculty of Arts at the University of Alberta",
+  },
+  {
+    title: "Faculty of Arts Exhibition",
+    url: editorial8,
+    contain: true,
+    description: "Editorial designer for the Faculty of Arts at the University of Alberta",
+  },
+  {
+    title: "Faculty of Arts Exhibition",
+    url: editorial10,
+    contain: true,
+    description: "Editorial designer for the Faculty of Arts at the University of Alberta",
+  },
+  {
+    title: "Faculty of Arts Exhibition",
+    url: editorial11,
+    contain: true,
+    description: "Editorial designer for the Faculty of Arts at the University of Alberta",
+  },
   ...researchData,
-  {
-    title: "Faculty of Art Editorial",
-    url: p1,
-    description: "Editorials for Faculty for Art",
-  },
-  {
-    title: "Faculty of Art Editorial",
-    url: p1,
-    description: "Editorials for Faculty for Art",
-  },
-  {
-    title: "Faculty of Art Editorial",
-    url: p1,
-    description: "Editorials for Faculty for Art",
-  },
-  {
-    title: "Engineer Editorial",
-    url: p1,
-    description: "Paper for Engineer",
-  },
-  {
-    title: "Engineer Editorial",
-    url: p1,
-    description: "Paper for Engineer",
-  },
-  {
-    title: "Engineer Editorial",
-    url: p1,
-    description: "Paper for Engineer",
-  },
-  {
-    title: "Engineer Editorial",
-    url: p1,
-    description: "Paper for Engineer",
-  },
+
 ];
 
 export const videoData = [
@@ -108,63 +170,96 @@ export const videoData = [
     title: "University of Alberta Orientation || ",
     url: "https://www.youtube.com/watch?v=75c2_TTHWYc",
     description:
-      "Directed and produced the orientation video for the faculty of science",
+      "Directed and produced the orientation  video for the Faculty of Science",
   },
   {
     title: "University of Alberta Orientation |",
     url: "https://www.youtube.com/watch?v=3qGofRsp6nc",
     description:
-      "Directed and produced the orientation video for the faculty of science.",
+      "Directed and produced the orientation video for the Faculty of Science",
   },
   {
-    title: "Draw My Life",
+    title: "Porphyrius: Draw my Life",
     url: "https://www.youtube.com/watch?v=N4UTFSjxV9U",
     description:
-      "Made a draw my life. Yes, I drew all that in 2 weeks and yes, that's my voice",
+      "Illustrated, voiced and produced a Draw my Life Animation Short",
   },
   {
     title: "Games",
-    url: "https://www.youtube.com/watch?v=N4UTFSjxV9U",
+    url: "https://drive.google.com/file/d/1ANh6OVhLOYORJFJuokruTSKsj4v5totM/view?usp=sharing",
     description: "AWards: One best video for game. Game video promo",
   },
   {
     title: "Kaye Institute Promotional",
     url: "https://www.youtube.com/watch?v=cRgB0sU_IpI",
-    description: "Editor for promo video",
+    description: "Created the promotional video",
   },
   {
     title: "StoryHoard",
     url: "https://www.youtube.com/watch?v=3J25JH9TEEo",
-    description: "Made a funny advertismenet for our app in Unviersity",
+    description: "Produced a promo for a software engineer class",
   },
 ] as const;
 
+export const otherData = [
+  {
+    title: "Hackathon",
+    url: hobby3,
+    description: "Organized and ran a 2 Day Shark Tank themed Hackathon",
+  },
+  {
+    title: "Technical Wall",
+    url: hobby4,
+    description: "Set up and built a technical lab",
+  },
+];
+
+
 export const hobbyData = [
+
   {
-    title: "IB Arts ",
-    url: p1,
-    description: "Protoflios for Art IB",
+    title: "",
+    url: hobby3,
+    description:
+      "",
   },
   {
-    title: "Artist Conventions",
-    url: p1,
-    description: "I like drawing and conventioning!",
+    title: "",
+    url: hobby4,
+    description:
+      "",
   },
   {
-    title: "District Art Award of Edmonton",
-    url: p1,
-    description: "District of Art",
+    title: "",
+    url: hobby5,
+    description:
+      "",
   },
   {
-    title: "Mural for Crestwoodd Elimentary School",
-    url: p1,
-    description: "Crestwoood mUral",
+    title: "",
+    url: hobby1,
+    description:
+      "",
   },
   {
-    title: "Harry Ainlay Cover",
-    url: p1,
-    description: "Crestwoood mUral",
+    title: "",
+    url: hobby2,
+    description:
+      "",
+
   },
+  {
+    title: "",
+    url: hobby6,
+    description:
+      "",
+  },
+  {
+    title: "",
+    url: hobby7,
+    description:
+      "",
+  }
 ];
 
 export const projects = {
@@ -176,23 +271,24 @@ export const projects = {
   },
   video: {
     label: "Videography",
-    description: "I've been involved with many fun and incredibly creative pursuits from music videos to animations",
+    description:
+      "I've been involved with many fun and incredibly creative pursuits from music videos to animations",
 
     data: videoData,
   },
   editorials: {
-    label: "Design",
-    description: "I do a lot of design ranging from editorials to compeitions",
+    label: "Illustrations",
+    description: "I enjoy taking on a variety of design projects. This includes producing editorials, creating eye-catching promotional materials and illustrating graphics for corporate businesses and organizations",
     data: editorialsData,
   },
-  // design: {
-  //   label: "Design Work",
-  //   data: designData,
-  // },
+  nonCode: {
+    label: "Other",
+    description: "List of Non-design/developer work",
+    data: otherData,
+  },
   traditional: {
     label: "Hobby",
-    description: "I do a lot of design ranging from editorials to compeitions",
-
+    description: "Art is my passion. I love attending conventions and drawing caricatures of attendees as well as keeping up with the latest games and shows. My tools of choice are Cintiq 24 Pro and a black MUJI 0.5mm pen",
     data: hobbyData,
   },
 } as const;

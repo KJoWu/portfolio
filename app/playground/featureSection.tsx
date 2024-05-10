@@ -19,7 +19,7 @@ export default function ProjectHighlightSection() {
           Here are projects I've worked on, still on the experiemental phase
         </p>
         <p className="bg-white text-sm  w-fit font-light px-2 py-1">
-          (please note page is still under construction)
+          (note page is still under construction)
         </p>
       </SectionHeading>
       <SectionContainer>

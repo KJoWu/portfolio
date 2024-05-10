@@ -7,8 +7,8 @@ export const links = [
     name: "Playground",
     hash: "/playground",
   },
-  {
-    name: "About",
-    hash: "/about",
-  }
+  // {
+  //   name: "About",
+  //   hash: "/about",
+  // }
 ] as const;

@@ -15,6 +15,7 @@ interface ProjectData {
   title: string;
   description: string;
   url: string;
+  contain:boolean;
 }
 
 interface ProjectThumbnailProps {
@@ -26,8 +27,10 @@ export default function ProjectThumbnail({
   projectData,
   selectedOption,
 }: ProjectThumbnailProps) {
-  const { title, url, description } = projectData;
+  const { title, url, description, contain } = projectData;
+  const containTag = typeof projectData.contain !== 'undefined'? "object-contain" : "object-cover";
 
+  console.log(containTag)
   if (selectedOption === "video") {
     return (
       <div>
@@ -54,12 +57,12 @@ export default function ProjectThumbnail({
         src={url}
         alt={title}
         quality={95}
-        className="object-cover sm:h-[20rem] bg-black"
+        className={`${containTag} sm:h-[20rem] bg-black`}
       />
       <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-30 bg-gray-950 bg-opacity-80 group-hover:opacity-100 text-center">
         <div className="text-white p-5">
           <h3 className="text-2xl font-semibold">{title}</h3>
-          <p className="text-sm pt-3 leading-6 font-normal">{description}</p>
+          <p className="text-sm pt-3 leading-6 font-thin">{description}</p>
         </div>
       </div>
     </div>

@@ -15,12 +15,12 @@ export default function ProjectSection() {
 
   return (
     <SectionContainer>
-      <div className="flex mb-7 gap-16">
+      <div className="flex mb-7 gap-12 pt-5">
         {/* Menu Section */}
         {Object.keys(projects).map((menuOption: string) => (
           <button
             key={menuOption}
-            className={`group text-indigo-700 transition duration-300 text-lg`}
+            className={`group text-indigo-700 transition duration-300  text-xl`}
             onClick={() => handleTypeClick(menuOption)}
           >
             {(projects as any)[menuOption].label}

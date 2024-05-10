@@ -24,6 +24,7 @@ export default function RootLayout({
       </head>
       <body className={`${poppins.className} bg-gray-100 text-[##030712]`}>
         <ThemeContextProvider>
+          {/* gradient */}
           <div
             className="bg-[#ffebec] x
             absolute top-[-6rem] 
