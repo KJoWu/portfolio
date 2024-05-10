@@ -26,7 +26,21 @@ import app2 from "../../public/app2.png";
 import app3 from "../../public/app3.png";
 import app4 from "../../public/app4.png";
 import app5 from "../../public/app5.png";
+import app6 from "../../public/app6.png";
+import other1 from "../../public/other1.png";
 
+export const featuredData = [
+  {
+    title: "Hi Ai",
+    url: p1,
+    description: "Ai Chatbox built in NextJs and Open Ai",
+  },
+  {
+    title: "Bouncing QR Codes",
+    url: app2,
+    description: "New take on QR codes, won fan favorite. Built with React js",
+  },
+]
 
 export const webappData = [
   {
@@ -48,6 +62,11 @@ export const webappData = [
     title: "Interactive Property Selector",
     url: app2,
     description: "A property selecting tool using the cluster feature from Mapbox built on React.js",
+  },
+  {
+    title: "Detective Murder Mystery Game",
+    url: app6,
+    description: "An interactive web game built with React.js",
   },
   {
     title: "Cultr",
@@ -204,8 +223,8 @@ export const videoData = [
 export const otherData = [
   {
     title: "Hackathon",
-    url: hobby3,
-    description: "Organized and ran a 2 Day Shark Tank themed Hackathon",
+    url: other1,
+    description: "Organized and ran a 2 Day Virtual Shark Tank themed Hackathon",
   },
   {
     title: "Technical Wall",
@@ -273,7 +292,6 @@ export const projects = {
     label: "Videography",
     description:
       "I've been involved with many fun and incredibly creative pursuits from music videos to animations",
-
     data: videoData,
   },
   editorials: {
@@ -290,7 +308,7 @@ export const projects = {
     label: "Hobby",
     description: "Art is my passion. I love attending conventions and drawing caricatures of attendees as well as keeping up with the latest games and shows. My tools of choice are Cintiq 24 Pro and a black MUJI 0.5mm pen",
     data: hobbyData,
-  },
+  }
 } as const;
 
 export const featuredPlaygroundProjects = [

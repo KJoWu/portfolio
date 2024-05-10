@@ -1,10 +1,11 @@
 import React from "react";
 import SectionHeading from "../_components/sectionHeading";
 import SectionContainer from "../_components/sectionContainer";
-import { featuredPlaygroundProjects } from "../lib/projectData";
-import FeaturedThumbnail from "../_components/featuredThumbnail";
+import { featuredData } from "../lib/projectData";
+import ProjectThumbnail from "../_components/projectThumbnail";
 
 export default function ProjectHighlightSection() {
+
   return (
     <div
       className={` pt-[7rem] pb-[3rem] bg-cover bg-fixed`}
@@ -24,9 +25,12 @@ export default function ProjectHighlightSection() {
       </SectionHeading>
       <SectionContainer>
         <div className="grid grid-cols-2 gap-3">
-          {featuredPlaygroundProjects.map((project, index) => (
+          {featuredData.map((project, index) => (
             <React.Fragment key={index}>
-              <FeaturedThumbnail {...project} />
+              <ProjectThumbnail
+                projectData={project}
+                selectedOption={"featured"}
+              />            
             </React.Fragment>
           ))}
         </div>
