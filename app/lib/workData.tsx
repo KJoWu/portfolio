@@ -1,10 +1,10 @@
-import app1 from "../../public/app1.jpg";
-import app2 from "../../public/app1.jpg";
-import app3 from "../../public/app1.jpg";
+import app1 from "../../public/22.jpg";
+import app2 from "../../public/22.jpg";
+import app3 from "../../public/22.jpg";
 
 export const workData = [
   {
-    title: "Campaign Proposal Content Management System",
+    title: "Campaign Proposal CMS",
     description: "Develope a user experience for a large scale application",
     type: "Desktop Application",
     imageUrl: app1,
@@ -16,6 +16,42 @@ export const workData = [
   },
   {
     title: "Interactive Map for Property Campaign",
+    type: "Progressive Mobile Application",
+    description: "How can we improve Canada data for users across Canada",
+    imageUrl: app2,
+    skills: ["Figma", "React", "Ruby on Rails"],
+    tags: ["Mobile", "React Native", "Product Design"],
+    bg: "bg-zinc-50",
+    tagsBg: "bg-zinc-400",
+    bgHover: "hover:bg-zinc-200",
+  },
+] as const;
+
+export const caseStudyData = [
+  {
+    title: "Screen Review",
+    description: "Develope a user experience for a large scale application",
+    type: "Desktop Application",
+    imageUrl: app1,
+    skills: ["Figma", "React", "Redux Forms", "Ruby on Rails"],
+    tags: ["Product Designer", "Full Stack Developer"],
+    bg: "bg-zinc-50",
+    tagsBg: "bg-zinc-400",
+    bgHover: "hover:bg-zinc-200",
+  },
+  {
+    title: "IMBD Case Study",
+    type: "Progressive Mobile Application",
+    description: "How can we improve Canada data for users across Canada",
+    imageUrl: app2,
+    skills: ["Figma", "React", "Ruby on Rails"],
+    tags: ["Mobile", "React Native", "Product Design"],
+    bg: "bg-zinc-50",
+    tagsBg: "bg-zinc-400",
+    bgHover: "hover:bg-zinc-200",
+  },
+  {
+    title: "Canadian School Picker",
     type: "Progressive Mobile Application",
     description: "How can we improve Canada data for users across Canada",
     imageUrl: app2,

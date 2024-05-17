@@ -36,7 +36,7 @@ const SkillList = ({ skills, skillType }: SkillListProps) => {
           <motion.li
             //className="bg-indigo-900  hover:bg-indigo-00 transition px-4 py-2 rounded-full"
             //className="bg-white text-slate-800 hover:bg-indigo-100 transition px-4 py-2 rounded-full"
-            className="text-sm font-light	transition rounded-full mb-2"
+            className="text-sm 	transition rounded-full mb-2"
 
             key={index}
             initial="initial"
@@ -58,9 +58,9 @@ const SkillList = ({ skills, skillType }: SkillListProps) => {
 
 export default function Skills() {
   return (
-    <section className="pb-[3rem]">
+    <section className="pb-[3rem] skillls">
       <SectionContainer>
-        <div className="grid grid-cols-2 gap-5">
+        <div className="grid grid-row-2 gap-5">
         <SkillList skills={technicalSkills} skillType={"Languages & Frameworks"} />
         <SkillList skills={technicalTools} skillType={"Tools"} />
         </div>
@@ -68,3 +68,5 @@ export default function Skills() {
     </section>
   );
 }
+
+

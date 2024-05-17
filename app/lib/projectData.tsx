@@ -297,11 +297,6 @@ export const projects = {
     description: "I've been an avid supporter of hackathons",
     data: webappData,
   },
-  ai: {
-    label: "AI Centered",
-    description: "Applications built with AI",
-    data: aiData,
-  },
   video: {
     label: "Videography",
     description:

@@ -6,13 +6,15 @@ import { BsLinkedin } from "react-icons/bs";
 import SectionContainer from "../_components/sectionContainer";
 import { inter, poppins } from "../fonts";
 import Skills from "./skills";
+import Drawing from "./drawing";
 
 export default function Intro() {
   return (
     <div>
-      <div className="absolute inset-0 h-full w-full bg-white bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px] [mask-image:radial-gradient(ellipse_50%_50%_at_50%_20%,#000_60%,transparent_100%)] z-1" />
+      <div className="fixed inset-0 h-full w-full bg-white bg-[radial-gradient(#677fb363_1px,transparent_1px)] [background-size:16px_16px] z-[-1]"></div>
+      <div className="absolute inset-0 h-full w-full" />
       <SectionContainer>
-        <section className={`flex flex-col sm:flex-row justify-between pt-[12rem] pb-[15rem] ${inter.className}`}>
+        <section className={`flex flex-col sm:flex-row justify-between pt-[8rem] pb-[5rem] ${inter.className}`}>
           <div className="w-[25rem] relative">
             <motion.div
               initial={{ opacity: 0, scale: 0.3 }}
@@ -23,27 +25,28 @@ export default function Intro() {
                 duration: 0.2,
               }}
             >
-              <p className={`text-5xl font-bold ${inter.className}`}>
+              <p className={`text-5xl font-bold ${poppins.className} bg-white`}>
                 Hi, I'm <span className="text-[#4229d6]">Kim</span>.
               </p>
 
-              <p className={`text-xl pt-5  ${poppins.className}`}>
+              <p className={`text-xl pt-5  ${poppins.className} leading-9 bg-white`}>
                 I'm a Senior Frontend Engineer, product designer and artist.
               </p>
-              {/* <p className="pt-3  font-light  text-6l">
-                Currently working on 
-              </p> */}
+              <div className={`pt-3 leading-8  bg-white ${poppins.className} font-light`}>
+                <p>Recepient of the Meiya Reinking Art Award</p>
+                <p>District of Edmonton Art Award</p>
+              </div>
             </motion.div>
 
             <motion.div
-              className="flex flex-col sm:flex-row text-sm mt-9 gap-2"
+              className="flex flex-col sm:flex-row mt-16 gap-2"
               initial={{ opacity: 0, y: 100 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{
                 delay: 0.9,
               }}
             >
-              <button className="bg-gray-900 hover:scale-110 transition hover:bg-gray-800 text-white px-4 py-2 rounded-full">
+              <button className="bg-[#4229d6] hover:scale-110 transition hover:bg-gray-800 text-[white] px-4 py-2 rounded-full ">
                 Contact Me
               </button>
               <button className="bg-white hover:bg-gray-100 px-4 rounded-full hover:scale-110 transition text-gray-700">
@@ -56,12 +59,10 @@ export default function Intro() {
           </div>
 
           <div className="relative">
-            <p>Meiya Reinking Art Award</p>
-            <p>District of Edmonton Art Award</p>
+            {/* <Drawing /> */}
           </div>
         </section>
       </SectionContainer>
-      <Skills/>
     </div>
   );
 }

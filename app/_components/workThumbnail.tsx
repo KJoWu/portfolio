@@ -7,19 +7,15 @@ type WorkThumbnailProps = (typeof workData)[number];
 
 export default function WorkThumbnail({
   title,
-  type,
   description,
   imageUrl,
-  tags,
   skills,
-  bgHover,
-  tagsBg,
   bg,
 }: WorkThumbnailProps) {
   return (
     <div>
       <section
-        className={`group ${bg} sm:h-[25rem] overflow-hidden sm:pr-8 relative 
+        className={`group ${bg} sm:h-[18rem] overflow-hidden sm:pr-8 relative 
       sm:flex content-center  mb-5 last:mb-0 hover:bg-[#f2f1fd]
       hover:cursor-pointer transition-all drop-shadow-md`}
       >
@@ -27,30 +23,27 @@ export default function WorkThumbnail({
           src={imageUrl}
           alt={title}
           quality={95}
-          className="absolute top-8 -right-[8rem] w-[32rem] rounded-t-lg shadow-2xl transition group-hover:scale-[1.05] group-hover:-translate-x-3 group-hover:translate-y-3 group-hover:-rotate-2"
+          className="absolute "
         />
       </section>
       <div>
-        <h3 className={`text-[24px] font-semibold  ${inter.className}`}>{title}</h3>
-        <p className={`text-14 font-light text-sm ${inter.className} leading-relaxed text-gray-500`}>{type}</p>
-        <p className={`mt-1 text-16 font-light ${inter.className}  leading-relaxed text-gray-700 `}>
+        <h3 className={`text-xl font-semibold mb-3 tracking-wide  ${inter.className}`}>{title}</h3>
+        {/* <p className={`font-light text-sm ${inter.className} leading-relaxed text-gray-500 tracking-wider`}>{type}</p> */}
+        <p className={`mt-1 ${poppins.className}  font-light  text-sm leading-relaxed`}>
           {description}
         </p>
-
-
-      </div>
-      <div className="sm:mt-auto">
-        <ul className="flex flex-wrap mt-4 gap-3">
+        <ul className="flex flex-wrap gap-x-3 mt-1">
           {skills.map((skill, index) => (
-            <li
-              key={index}
-              className={`${tagsBg} px-3 py-1 text-sm tracking-wider text-white rounded-md`}
-            >
+            <li key={index} className={`${poppins.className} tracking-wide text-gray-500 font-light text-sm`}>
               {skill}
+              {index < skills.length - 1 && " /"}
             </li>
           ))}
         </ul>
-        <ul className="flex flex-wrap mt-4 gap-3">
+
+
+      </div>
+      {/* <ul className="flex flex-wrap mt-4 gap-3">
           {tags.map((tag, index) => (
             <li
               key={index}
@@ -59,8 +52,7 @@ export default function WorkThumbnail({
               {tag}
             </li>
           ))}
-        </ul>
-      </div>
+        </ul> */}
     </div>
   );
 }

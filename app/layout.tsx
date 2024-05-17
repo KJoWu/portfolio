@@ -5,7 +5,7 @@ import Header from "./_components/header";
 import "./globals.css";
 import ThemeSwitch from "./_components/themeSwitch";
 import ThemeContextProvider from "./_context/themeContext";
-import { poppins } from "./fonts";
+import { poppins, inter } from "./fonts";
 
 
 export default function RootLayout({
@@ -24,28 +24,13 @@ export default function RootLayout({
       </head>
       <body className={`${poppins.className} bg-gray-100 text-[##030712]`}>
         <ThemeContextProvider>
-          {/* gradient */}
-          <div
-            className="bg-[#ffebec] x
-            absolute top-[-6rem] 
-            right-[11rem] h-[31.25rem] 
-            w-[31.25rem] rounded-full 
-            blur-[10rem]"
-          ></div>
-          <div
-            className="bg-[#d9f1ff] 
-            absolute top-[-6rem] 
-            left-[11rem] h-[31.25rem] 
-            w-[31.25rem] rounded-full 
-            blur-[10rem]"
-          ></div>
           <Header />
 
           {children}
 
           <ThemeSwitch />
 
-          <div className="text-center">
+          <div className={`p-3 text-center text-gray-600 font-light ${poppins.className} text-sm tracking-wide bg-white`}>
           &copy; Kim 2024. This site was designed in Figma, coded in Visual Studio by yours truly, styled with Tailwind and Framer, and deployed on GitHub.
           </div>
         </ThemeContextProvider>
