@@ -70,11 +70,31 @@ export const webappData = [
   },
   {
     title: "Cultr",
-    contain:true,
+    contain: true,
     url: app1,
     description: "Website equipped with a web scraping tool designed to collect data on BCorp corporations. Built with Python and Bootstrap",
   },
 ];
+
+
+export const aiData = [
+  {
+    title: "Hi Ai",
+    url: p1,
+    description: "Ai Chatbox built in NextJs and Open Ai",
+  },
+  {
+    title: "Lorem Ipsum Ai Builder",
+    url: p1,
+    description: "Extension for fun Lorem Ipsum",
+  },
+  {
+    title: "Color Theory",
+    url: app2,
+    description: "Extension that allows you to pick colors for a website",
+  },
+]
+
 
 export const designData = [
   {
@@ -275,8 +295,12 @@ export const projects = {
   web: {
     label: "Desktop & Mobile Apps",
     description: "I've been an avid supporter of hackathons",
-
     data: webappData,
+  },
+  ai: {
+    label: "AI Centered",
+    description: "Applications built with AI",
+    data: aiData,
   },
   video: {
     label: "Videography",

@@ -12,9 +12,9 @@ export default function ProjectHighlightSection() {
       // style={{ backgroundImage: `url("./a2.png")` }}
     >
       <SectionHeading>
-        <h1 className="text-3xl px-3 -fit">Playground</h1>
+        <h1 className="text-3xl">Playground</h1>
 
-        <p className=" text-xl  w-fit font-light px-2 pt-3  pb-2">
+        <p className=" text-xl  w-fit font-light pt-3  pb-2">
           Projects I've worked on, still on the experiemental phase
         </p>
       </SectionHeading>

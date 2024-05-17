@@ -45,9 +45,8 @@ export default function RootLayout({
 
           <ThemeSwitch />
 
-          <div>
-            This site was sketched out in Figma, coded in Visual Studio by yours
-            truly, prettied up with Tailwind and Framer, and deployed on Github
+          <div className="text-center">
+          &copy; Kim 2024. This site was designed in Figma, coded in Visual Studio by yours truly, styled with Tailwind and Framer, and deployed on GitHub.
           </div>
         </ThemeContextProvider>
       </body>

@@ -15,7 +15,7 @@ export const workData = [
     bgHover: "hover:bg-zinc-200",
   },
   {
-    title: "Colledge Data Sharing",
+    title: "Interactive Map for Property Campaign",
     type: "Progressive Mobile Application",
     description: "How can we improve Canada data for users across Canada",
     imageUrl: app2,
