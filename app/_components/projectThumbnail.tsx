@@ -39,11 +39,12 @@ export default function ProjectThumbnail({
             <YouTubeEmbed url={url} />
           </div>
         </div>
-        <div className="bg-slate-200 text-gray-900 p-5">
-          <h3 className={`text-md font-bold ${poppins.className}  w-fit`}>
+        <div className="text-gray-900 mt-3">
+        {/* <div className="bg-slate-200 text-gray-900 p-5"> */}
+          <h3 className={`text-md font-bold  w-fit`}>
             {title}
           </h3>
-          <p className="pt-1 text-md font-light text-md leading-relaxed ">
+          <p className="pt-1 text-gray-500 font-light text-sm leading-relaxed ">
             {description}
           </p>
         </div>

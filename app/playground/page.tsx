@@ -8,7 +8,7 @@ export default function Playground() {
     <div className="relative">
       <FeatureSection />
 
-      <div className="relative bg-white-400 pt-[3rem] pb-[3rem]">
+      <div className="relative bg-[white] pt-[3rem] pb-[3rem]">
         <ProjectSection />
       </div>
     </div>

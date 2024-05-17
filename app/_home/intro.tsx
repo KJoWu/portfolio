@@ -4,14 +4,15 @@ import React from "react";
 import { motion } from "framer-motion";
 import { BsLinkedin } from "react-icons/bs";
 import SectionContainer from "../_components/sectionContainer";
-import { playFair, poppins } from "../fonts";
+import { inter, poppins } from "../fonts";
+import Skills from "./skills";
 
 export default function Intro() {
   return (
     <div>
       <div className="absolute inset-0 h-full w-full bg-white bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px] [mask-image:radial-gradient(ellipse_50%_50%_at_50%_20%,#000_60%,transparent_100%)] z-1" />
       <SectionContainer>
-        <section className="flex flex-col sm:flex-row justify-between pt-[15rem] pb-[10rem]">
+        <section className={`flex flex-col sm:flex-row justify-between pt-[12rem] pb-[15rem] ${inter.className}`}>
           <div className="w-[25rem] relative">
             <motion.div
               initial={{ opacity: 0, scale: 0.3 }}
@@ -22,16 +23,16 @@ export default function Intro() {
                 duration: 0.2,
               }}
             >
-              <p className={`text-6xl font-extrabold ${poppins.className}`}>
+              <p className={`text-5xl font-bold ${inter.className}`}>
                 Hi, I'm <span className="text-[#4229d6]">Kim</span>.
               </p>
 
-              <p className={`text-3xl pt-5  ${poppins.className}`}>
+              <p className={`text-xl pt-5  ${poppins.className}`}>
                 I'm a Senior Frontend Engineer, product designer and artist.
               </p>
-              <p className="pt-3 text-2xl font-light  text-6l">
-                Currently working on next gen products involving llm and AI
-              </p>
+              {/* <p className="pt-3  font-light  text-6l">
+                Currently working on 
+              </p> */}
             </motion.div>
 
             <motion.div
@@ -60,6 +61,7 @@ export default function Intro() {
           </div>
         </section>
       </SectionContainer>
+      <Skills/>
     </div>
   );
 }

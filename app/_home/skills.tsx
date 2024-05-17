@@ -28,13 +28,15 @@ type SkillListProps = {
 
 const SkillList = ({ skills, skillType }: SkillListProps) => {
   return (
-    <div className="my-5 last:my-0">
-      <ul className="flex flex-wrap gap-2  gap-x-7 gap-y-3">
-      <h3 className="mb-2 text-lime-400">{skillType}:</h3>{skills.map((skill, index) => (
+    <ul className="mb-4">
+      <h3 className="mb-2 text-[#4229d6]">{skillType}:</h3>
+      < div className="flex flex-wrap gap-x-[1rem]">
+
+        {skills.map((skill, index) => (
           <motion.li
             //className="bg-indigo-900  hover:bg-indigo-00 transition px-4 py-2 rounded-full"
             //className="bg-white text-slate-800 hover:bg-indigo-100 transition px-4 py-2 rounded-full"
-            className="text-sm font-light	 text-white transition rounded-full first:px-0"
+            className="text-sm font-light	transition rounded-full mb-2"
 
             key={index}
             initial="initial"
@@ -48,19 +50,20 @@ const SkillList = ({ skills, skillType }: SkillListProps) => {
             {skill}
           </motion.li>
         ))}
-      </ul>
-    </div>
+      </div>
+
+    </ul>
   );
 };
 
 export default function Skills() {
   return (
-    <section className="py-[3.5rem] bg-[#4229d6]">
-      <SectionHeading><span className="text-lime-400">My Stack</span></SectionHeading>
+    <section className="pb-[3rem]">
       <SectionContainer>
+        <div className="grid grid-cols-2 gap-5">
         <SkillList skills={technicalSkills} skillType={"Languages & Frameworks"} />
-        <SkillList skills={technicalTools} skillType={"Tehnical Tools"} />
-        <SkillList skills={designTools} skillType={"Design Tools"} />
+        <SkillList skills={technicalTools} skillType={"Tools"} />
+        </div>
       </SectionContainer>
     </section>
   );

@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <main>
       <Intro />
-      <Skills />
+      {/* <Skills /> */}
       <Work />
       <Awards />
       <ResearchProjects />

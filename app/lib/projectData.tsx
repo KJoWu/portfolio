@@ -70,19 +70,9 @@ export const webappData = [
   },
   {
     title: "Cultr",
+    contain:true,
     url: app1,
     description: "Website equipped with a web scraping tool designed to collect data on BCorp corporations. Built with Python and Bootstrap",
-  },
-  {
-    title: "DrugBank",
-    url: app4,
-    contain: true,
-    description: "Web scraping utility in Python to gather information on specific drug interactions",
-  },
-  {
-    title: "Tales of Rosmeary",
-    url: app5,
-    description: "Fun experimental game developed with the Neverwinter Engine",
   },
 ];
 

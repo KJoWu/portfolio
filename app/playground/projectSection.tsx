@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import SectionContainer from "../_components/sectionContainer";
 import ProjectGallery from "./projectGallery";
 import { projects } from "../lib/projectData";
+import { inter } from "../fonts";
 
 export default function ProjectSection() {
   const [selectedOption, setActiveType] = useState<string>("web");
@@ -15,12 +16,12 @@ export default function ProjectSection() {
 
   return (
     <SectionContainer>
-      <div className="flex mb-7 gap-12 pt-5">
+      <div className="flex mb-7 gap-12">
         {/* Menu Section */}
         {Object.keys(projects).map((menuOption: string) => (
           <button
             key={menuOption}
-            className={`group text-indigo-700 transition duration-300  text-xl`}
+            className={`group text-indigo-700 transition duration-300 ${inter.className}`}
             onClick={() => handleTypeClick(menuOption)}
           >
             {(projects as any)[menuOption].label}

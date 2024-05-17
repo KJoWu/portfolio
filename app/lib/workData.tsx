@@ -25,17 +25,6 @@ export const workData = [
     tagsBg: "bg-zinc-400",
     bgHover: "hover:bg-zinc-200",
   },
-  {
-    title: "Physical Contrusction",
-    type: "Mobile Application",
-    description: "How can we seamlessly coordinate a lab",
-    imageUrl: app3,
-    skills: ["Figma", "React", "Redux Forms", "Ruby on Rails"],
-    tags: ["Physical Skills"],
-    bg: "bg-zinc-50",
-    tagsBg: "bg-zinc-400",
-    bgHover: "hover:bg-zinc-200",
-  },
 ] as const;
 
 export const researchWorkData = [
@@ -74,6 +63,12 @@ export const researchWorkData = [
   },
 ] as const;
 
+export const designTools = [
+  "Figma", "Sketch",
+  "AdobePhotoshop/Illustrator/After Effects",
+  "Clip Studio",
+  "Paint Tool Sai",
+] as const;
 
 
 export const technicalSkills = [
@@ -82,21 +77,13 @@ export const technicalSkills = [
   "Redux",
   "TypeScript",
   "Ruby on Rails",
-  "Motion",
   "GraphQL",
   "Python",
   "C#",
   "Tailwind",
   "AntDesign/Material UI/Bootstrap",
-  "Css/Sass/BEM",
+  "CSS/Sass/BEM",
 ] as const;
 
-export const technicalTools = ["Heroku", "GCS", "AWS", "Git"] as const;
+export const technicalTools = ["Heroku", "GCS", "AWS", "Git", ...designTools] as const;
 
-export const designTools = [
-  "Figma",
-  "AdobePhotoshop/Illustrator/After Effects",
-  "Clip Studio",
-  "Paint Tool Sai",
-  "Gimp",
-] as const;
