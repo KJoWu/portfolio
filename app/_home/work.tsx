@@ -10,7 +10,7 @@ export default function Work() {
     <section className="relative flex flex-col  sm:py-[3rem] bg-[white]">
       <SectionHeading>
         <p className={`${poppins.className}`}>Work Experience + Case Studies</p>
-        <p className={`${poppins.className} text-sm text-gray-500 pt-2 font-light tracking-wide`}>Password available upon request</p>
+        {/* <p className={`${poppins.className} text-sm text-gray-500 pt-2 font-light tracking-wide`}>Password available upon request</p> */}
 
       </SectionHeading>
       <SectionContainer>
@@ -21,7 +21,7 @@ export default function Work() {
             </React.Fragment>
           ))}
         </div>
-        <div className="grid grid-cols-3 gap-12 mt-16">
+        <div className="grid grid-cols-2 gap-12 mt-10">
           {caseStudyData.map((project, index) => (
             <React.Fragment key={index}>
               <WorkThumbnail {...project} />

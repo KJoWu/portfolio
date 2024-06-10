@@ -11,7 +11,6 @@ import Drawing from "./drawing";
 export default function Intro() {
   return (
     <div>
-      <div className="fixed inset-0 h-full w-full bg-white bg-[radial-gradient(#677fb363_1px,transparent_1px)] [background-size:16px_16px] z-[-1]"></div>
       <div className="absolute inset-0 h-full w-full" />
       <SectionContainer>
         <section className={`flex flex-col sm:flex-row justify-between pt-[8rem] pb-[5rem] ${inter.className}`}>

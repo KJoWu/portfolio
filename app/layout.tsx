@@ -22,7 +22,7 @@ export default function RootLayout({
           content="Kimberly is a senior software developer with 8 years of experience, specializing in Front end and Product design"
         />
       </head>
-      <body className={`${poppins.className} bg-gray-100 text-[##030712]`}>
+      <body className={`${poppins.className} text-[##030712]`}>
         <ThemeContextProvider>
           <Header />
 
@@ -31,7 +31,7 @@ export default function RootLayout({
           <ThemeSwitch />
 
           <div className={`p-3 text-center text-gray-600 font-light ${poppins.className} text-sm tracking-wide bg-white`}>
-          &copy; Kim 2024. This site was designed in Figma, coded in Visual Studio by yours truly, styled with Tailwind and Framer, and deployed on GitHub.
+          &copy; Kim 2024. This site was designed in Figma, coded in Next JS by yours truly, styled with Tailwind and Framer, and deployed on GitHub.
           </div>
         </ThemeContextProvider>
       </body>

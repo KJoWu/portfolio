@@ -15,15 +15,15 @@ export default function WorkThumbnail({
   return (
     <div>
       <section
-        className={`group ${bg} sm:h-[18rem] overflow-hidden sm:pr-8 relative 
-      sm:flex content-center  mb-5 last:mb-0 hover:bg-[#f2f1fd]
-      hover:cursor-pointer transition-all drop-shadow-md`}
+        className={`group ${bg} sm:h-[25rem] overflow-hidden sm:pr-8 relative 
+  sm:flex content-center mb-5 last:mb-0 hover:bg-[#f2f1fd]
+  hover:cursor-pointer transition-all drop-shadow-md`}
       >
         <Image
           src={imageUrl}
           alt={title}
           quality={95}
-          className="absolute "
+          className="absolute inset-0 w-full h-full object-cover"
         />
       </section>
       <div>
@@ -43,16 +43,6 @@ export default function WorkThumbnail({
 
 
       </div>
-      {/* <ul className="flex flex-wrap mt-4 gap-3">
-          {tags.map((tag, index) => (
-            <li
-              key={index}
-              className={`bg-[#4229d6] px-3 py-1 text-sm tracking-wider text-white rounded-md`}
-            >
-              {tag}
-            </li>
-          ))}
-        </ul> */}
     </div>
   );
 }
