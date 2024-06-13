@@ -77,25 +77,62 @@ export const ScopingSection = () => {
         </h2>
         <UserStories />
 
-        <section className="mb-12">
-          <h2 className="text-2xl font-semibold mb-4">Why Focus on Post-Booking Experience?</h2>
-          <div className="text-gray-700">
-            <p>Focusing on the post-booking experience is essential because it directly impacts user retention. Research indicates that users often prefer to book flights on desktop computers for a more detailed view and ease of use, but rely heavily on mobile apps for accessing boarding passes and other travel-related information during their journey <a href="https://example.com" className="text-blue-500 underline">【source 1】</a>. Ensuring a seamless experience in these moments is crucial for retaining users and building trust in the app.</p>
-          </div>
-        </section>
-        <div className="text-gray-700">
-          <p>Having gathered the necessary insights, I was ready to create the mockups. The context for these mockups is after the user has purchased their ticket and is preparing for their journey on the day of onboarding. Based on my findings, I focused on the following user pathways:</p>
-          <ul className="list-disc list-inside ml-4">
-            <li>
-              <b>Users Not Logged In:</b> Ensuring that new or infrequent users could easily access their boarding passes without navigating through multiple screens.
+        <section className="bg-white py-8">
+    <div className="container mx-auto px-4 lg:px-6">
+
+      <section className="bg-white border border-gray-200 rounded-lg p-4 mb-8">
+        <h2 className="text-3xl font-extrabold text-blue-900 mb-4">Identifying the Pain Points</h2>
+        <p className="mb-4 text-lg text-black">
+          A heuristic evaluation and user feedback from various platforms revealed significant usability issues in the Flair Airlines app. Key pain points include:
+        </p>
+        <ul className="list-disc pl-6 space-y-3 text-black">
+          {[
+            { title: 'Confusing Navigation and External Redirects', description: 'The app frequently redirects users to the website, causing confusion and decreasing retention.' },
+            { title: 'Inefficient Login and Data Retrieval', description: 'The login process is cumbersome, often requiring emails for retrieving crucial information like QR codes.' },
+            { title: 'Inconsistent Design and Information', description: 'Inconsistencies in terminology, color schemes, and information quantity confuse users and degrade the experience.' },
+            { title: 'Redundant Information Requests and Pages', description: 'Users are asked for information that should be available within the app, leading to redundancy.' }
+          ].map((point, index) => (
+            <li key={index} className="flex items-start hover:bg-blue-50 p-2 rounded transition">
+              <div className="text-blue-500 mr-2">&#8226;</div>
+              <div><strong>{point.title}:</strong> {point.description}</div>
             </li>
-            <li>
-              <b>Users Already Logged In:</b> Prioritizing efficiency so that frequent travelers could quickly access their boarding passes with minimal effort.
+          ))}
+        </ul>
+      </section>
+
+
+      <section className="bg-blue-100 border border-blue-200 rounded-lg p-4 mb-8">
+        <p className="text-lg text-blue-900 font-semibold">
+          "Addressing these usability issues is essential for improving the app's functionality, retaining user trust, and providing a seamless travel experience for Flair Airlines passengers."
+        </p>
+      </section>
+
+      <section className="bg-white border border-gray-200 rounded-lg p-4 mb-8">
+        <h2 className="text-3xl font-extrabold text-blue-900 mb-4">Why Focus on Post-Booking Experience?</h2>
+        <p className="mb-4 text-lg text-black">
+          Focusing on the post-booking experience is essential because it directly impacts user retention. Research indicates that users often prefer to book flights on desktop computers for a more detailed view and ease of use, but rely heavily on mobile apps for accessing boarding passes and other travel-related information during their journey. Ensuring a seamless experience in these moments is crucial for retaining users and building trust in the app.
+        </p>
+        <p className="mb-4 text-lg text-black">
+          Having gathered the necessary insights, I was ready to create the mockups. The context for these mockups is after the user has purchased their ticket and is preparing for their journey on the day of onboarding. Based on my findings, I focused on the following user pathways:
+        </p>
+        <ul className="list-disc pl-6 space-y-3 text-black">
+          {[
+            { title: 'Users Not Logged In', description: 'Ensuring that new or infrequent users could easily access their boarding passes without navigating through multiple screens.' },
+            { title: 'Users Already Logged In', description: 'Prioritizing efficiency so that frequent travelers could quickly access their boarding passes with minimal effort.' }
+          ].map((pathway, index) => (
+            <li key={index} className="flex items-start hover:bg-blue-50 p-2 rounded transition">
+              <div className="text-blue-500 mr-2">&#8226;</div>
+              <div><strong>{pathway.title}:</strong> {pathway.description}</div>
             </li>
-          </ul>
-          <p>I also incorporated a complex user scenario into the design, such as a father traveling with multiple family members. Recognizing the fast-paced, high-stress environment of airports, my design prioritized efficiency and quick access to information.   Additionally, I plan to revisit the heuristic evaluation conducted at the beginning of the case study and address some of those concerns in the redesign process.
-          </p>
-        </div>
+          ))}
+        </ul>
+        <p className="mt-4 text-lg text-black">
+          I also incorporated a complex user scenario into the design, such as a father traveling with multiple family members. Recognizing the fast-paced, high-stress environment of airports, my design prioritized efficiency and quick access to information. Additionally, I plan to revisit the heuristic evaluation conducted at the beginning of the case study and address some of those concerns in the redesign process.
+        </p>
+      </section>
+
+    </div>
+  </section>
 
       </section>
     </>

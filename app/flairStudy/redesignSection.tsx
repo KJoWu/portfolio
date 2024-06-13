@@ -74,9 +74,6 @@ export const RedesignSection = () => {
           </ul>
         </div>
 
-        <p className="text-gray-700">
-          By focusing on these improvements, we aim to create a more intuitive and user-friendly experience for travelers using the Flair app on their travel day.
-        </p>
       </div>
     </>
   );
