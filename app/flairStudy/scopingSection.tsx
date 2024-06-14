@@ -25,7 +25,7 @@ const UserStories = () => {
             <p className="text-gray-600 mb-2"><strong>Age:</strong> 40</p>
             <p className="text-gray-600 mb-2"><strong>Occupation:</strong> Software Engineer</p>
             <p className="text-gray-600 mb-2"><strong>Travel Frequency:</strong> Twice a year</p>
-            <p className="text-gray-600 mb-4"><strong>Tech Savviness:</strong> Medium</p>
+            <p className="text-gray-600 mb-4"><strong>Tech Savviness:</strong> Low</p>
             <p className="mb-4">David plans family vacations and needs a reliable, user-friendly app to ensure smooth travel, especially with young children. He will use whatever method is easiest but prefers modern solutions.
             </p>
             <blockquote className="italic text-gray-700">"Traveling with kids is stressful enough. I need an app that makes things easier, not harder."</blockquote>
@@ -81,37 +81,10 @@ export const ScopingSection = () => {
     <div className="container mx-auto px-4 lg:px-6">
 
       <section className="bg-white border border-gray-200 rounded-lg p-4 mb-8">
-        <h2 className="text-3xl font-extrabold text-blue-900 mb-4">Identifying the Pain Points</h2>
-        <p className="mb-4 text-lg text-black">
-          A heuristic evaluation and user feedback from various platforms revealed significant usability issues in the Flair Airlines app. Key pain points include:
-        </p>
-        <ul className="list-disc pl-6 space-y-3 text-black">
-          {[
-            { title: 'Confusing Navigation and External Redirects', description: 'The app frequently redirects users to the website, causing confusion and decreasing retention.' },
-            { title: 'Inefficient Login and Data Retrieval', description: 'The login process is cumbersome, often requiring emails for retrieving crucial information like QR codes.' },
-            { title: 'Inconsistent Design and Information', description: 'Inconsistencies in terminology, color schemes, and information quantity confuse users and degrade the experience.' },
-            { title: 'Redundant Information Requests and Pages', description: 'Users are asked for information that should be available within the app, leading to redundancy.' }
-          ].map((point, index) => (
-            <li key={index} className="flex items-start hover:bg-blue-50 p-2 rounded transition">
-              <div className="text-blue-500 mr-2">&#8226;</div>
-              <div><strong>{point.title}:</strong> {point.description}</div>
-            </li>
-          ))}
-        </ul>
-      </section>
-
-
-      <section className="bg-blue-100 border border-blue-200 rounded-lg p-4 mb-8">
-        <p className="text-lg text-blue-900 font-semibold">
-          "Addressing these usability issues is essential for improving the app's functionality, retaining user trust, and providing a seamless travel experience for Flair Airlines passengers."
-        </p>
-      </section>
-
-      <section className="bg-white border border-gray-200 rounded-lg p-4 mb-8">
         <h2 className="text-3xl font-extrabold text-blue-900 mb-4">Why Focus on Post-Booking Experience?</h2>
         <p className="mb-4 text-lg text-black">
           Focusing on the post-booking experience is essential because it directly impacts user retention. Research indicates that users often prefer to book flights on desktop computers for a more detailed view and ease of use, but rely heavily on mobile apps for accessing boarding passes and other travel-related information during their journey. Ensuring a seamless experience in these moments is crucial for retaining users and building trust in the app.
-        </p>
+        </p>F
         <p className="mb-4 text-lg text-black">
           Having gathered the necessary insights, I was ready to create the mockups. The context for these mockups is after the user has purchased their ticket and is preparing for their journey on the day of onboarding. Based on my findings, I focused on the following user pathways:
         </p>
@@ -126,9 +99,6 @@ export const ScopingSection = () => {
             </li>
           ))}
         </ul>
-        <p className="mt-4 text-lg text-black">
-          I also incorporated a complex user scenario into the design, such as a father traveling with multiple family members. Recognizing the fast-paced, high-stress environment of airports, my design prioritized efficiency and quick access to information. Additionally, I plan to revisit the heuristic evaluation conducted at the beginning of the case study and address some of those concerns in the redesign process.
-        </p>
       </section>
 
     </div>

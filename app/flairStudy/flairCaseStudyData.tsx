@@ -21,7 +21,7 @@ const sectionVariants = {
 
 const FlairCaseStudyData = () => {
   return (
-    <div className="ml-[12em]  mt-44">
+    <div className="ml-[8em]  mt-44">
       <div className="container mx-auto px-4 max-w-4xl ml-[5em]">
 
         {/******************************************************** Section Cutoff */}

@@ -26,15 +26,16 @@ export const HeuristicSection = () => {
         </div>
       </div>
 
-    <div className="w-full overflow-x-scroll relative border-2 border-dashed border-gray-300 rounded-lg shadow-lg">
-      <div className="w-max">
-        <Image src={issue2} alt={"issue 1"} quality={95} style={{ maxHeight: '500px', width: 'auto' }} />
+      <div className="w-full overflow-x-scroll relative border-2 border-dashed border-gray-300 rounded-lg shadow-lg">
+        <div className="w-max">
+        <Image src={issue2} alt={"issue 1"} quality={95} className="max-h-[700px] w-auto p-3" />
+        </div>
+
       </div>
 
-    </div>
-
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 gap-y-10 text-md ">
-        <div>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 gap-y-10 text-md">
+        <div className="relative pl-10 flex items-start">
+          <div className="absolute left-0 top-0 flex items-center justify-center w-8 h-8 text-lg font-bold text-gray-500">1</div>
           <div>
             <h2 className="text-lg font-semibold text-gray-800 mb-2 mt-3">Website Redirection</h2>
             <p className="text-gray-700 font-light text-sm leading-6">
@@ -42,7 +43,8 @@ export const HeuristicSection = () => {
             </p>
           </div>
         </div>
-        <div>
+        <div className="relative pl-10 flex items-start">
+          <div className="absolute left-0 top-0 flex items-center justify-center w-8 h-8 text-lg font-bold text-gray-500">2</div>
           <div>
             <h2 className="text-lg font-semibold text-gray-800 mb-2 mt-3">Lack of User Data on App</h2>
             <p className="text-gray-700 font-light text-sm leading-6">
@@ -50,15 +52,17 @@ export const HeuristicSection = () => {
             </p>
           </div>
         </div>
-        <div>
+        <div className="relative pl-10 flex items-start">
+          <div className="absolute left-0 top-0 flex items-center justify-center w-8 h-8 text-lg font-bold text-gray-500">3</div>
           <div>
             <h2 className="text-lg font-semibold text-gray-800 mb-2 mt-3">Redundant Information Requests</h2>
-            <p className="text-gray-700 font-light text-sm leading-6" >
-              Alright, lets say I do log into Flair via the app. I go to the reservation Flair still asks for my reservation number even when logged in.</p>
+            <p className="text-gray-700 font-light text-sm leading-6">
+              Alright, lets say I do log into Flair via the app. I go to the reservation Flair still asks for my reservation number even when logged in.
+            </p>
           </div>
         </div>
-
-        <div>
+        <div className="relative pl-10 flex items-start">
+          <div className="absolute left-0 top-0 flex items-center justify-center w-8 h-8 text-lg font-bold text-gray-500">4</div>
           <div>
             <h2 className="text-md font-semibold text-gray-800 mb-2 mt-3">Redundant Pages</h2>
             <p className="text-gray-700 font-light text-sm leading-6">
@@ -66,8 +70,8 @@ export const HeuristicSection = () => {
             </p>
           </div>
         </div>
-
-        <div>
+        <div className="relative pl-10 flex items-start">
+          <div className="absolute left-0 top-0 flex items-center justify-center w-8 h-8 text-lg font-bold text-gray-500">5</div>
           <div>
             <h2 className="text-md font-semibold text-gray-800 mb-2 mt-3">Incorrect Information</h2>
             <p className="text-gray-700 font-light text-sm leading-7">
@@ -75,6 +79,7 @@ export const HeuristicSection = () => {
             </p>
           </div>
         </div>
+
 
         <div>
 

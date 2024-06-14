@@ -1,3 +1,6 @@
+import scene from "../../public/airportScene.jpg";
+import Image from "next/image";
+
 export const IntroSection = () => {
   return (
     <div className="leading-8">
@@ -31,17 +34,28 @@ export const IntroSection = () => {
         </div>
       </section>
 
-      <section className="mb-12">
-        <h2 className="text-2xl mb-4">Setting the Scene</h2>
-        <div className="text-gray-700 ">
-          <p>Imagine this: You've just purchased a flight with Flair Airlines from home, and the booking process was smooth. On the day of your flight, you're at the airport with your suitcase in one hand and your phone in the other. This is when the real challenge begins.
-          </p>
-          <blockquote className="border-l-4 border-blue-500 pl-4 my-4">
-            "As you approach the check-in counter, anxiety builds. The app isn't working as you expected, so you remember your boarding pass is in your email. You open the email app, search for the pass, and hope your internet is stable. Or maybe you took a screenshot, but now you’re frantically scrolling through your crowded photo gallery. Minutes tick by, and your stress rises. This is not the seamless travel experience you envisioned.
-            "
-          </blockquote>
-        </div>
-      </section>
+      {/* <section className="mb-16 p-8 max-w-4xl mx-auto bg-white shadow-lg rounded-lg">
+  <div className="text-center text-gray-800">
+    <h2 className="text-3xl font-light mb-6">Setting the Scene</h2>
+    <p className="mb-6 font-light max-w-2xl mx-auto leading-relaxed">
+      Imagine a seamless travel experience with Flair Airlines. Your booking process was smooth, and now you're at the airport. But, the real challenge begins here.
+    </p>
+    <blockquote className="p-8 max-w-2xl mx-auto bg-gray-100 shadow-inner rounded-lg border-l-4 border-red-500">
+      <div className="text-lg leading-7 text-gray-700">
+        <p className="mb-4 font-light">As you approach the check-in counter, anxiety builds.</p>
+        <p className="mb-4 font-light"><span className="underline decoration-red-500">The app isn't working.</span></p>
+        <p className="mb-4 font-light">You remember your boarding pass is in your email and scramble through your messages to find the QR code.</p>
+        <p className="mb-4 font-light"><span className="underline decoration-red-500">It's not there.</span></p>
+        <p className="mb-4 font-light">You recall saving a screenshot, so you go through your gallery, your memes to find the photo.</p>
+        <p className="mb-4 font-light">The lines build up behind you, the minutes to your flight tick by...</p>
+        <p className="mb-4 font-light"><span className="underline decoration-red-500">Your stress rises.</span></p>
+        <p className="mb-4 font-light">This is not the seamless travel experience you envisioned.</p>
+      </div>
+    </blockquote>
+  </div>
+</section> */}
+
+
     </div>
   )
 }
