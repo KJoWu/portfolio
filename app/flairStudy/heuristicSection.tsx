@@ -10,30 +10,29 @@ import Image from "next/image";
 
 export const HeuristicSection = () => {
   return (
-    <div className="leading-8">
-      <h2 className="text-2xl font-semibold mb-4 leading-6">Initial Discovery</h2>
+    <div className="leading-8 mt-">
+      <h1 className="text-3xl font-semibold text-gray-900 mt-20 uppercase"> Initial Evaluation</h1>
 
 
-      <p className="mb-4 font-light leading-8">
-        To better understand this issues, I conducted a heuristic evaluation with a previous flight I had and replicated my friend's experience. Here’s what I noticed:
-      </p>
-
-
-
-      <div className="grid grid-cols-1  gap-8 gap-y-10 text-md ">
-        <div>
-          <Image src={issue1} alt={"issue 1"} quality={95} />
-        </div>
+      <div className="font-light leading-relaxed  text-gray-700">
+        <p className="mt-8 mb-6">
+          To understand how users interact with the app, I performed a heuristic evaluation and followed my friend's user journey to fetch booking information. Here's what I found:
+        </p>
+        <b>User flow for retrieving a Booked FLight</b>
       </div>
 
-      <div className="w-full overflow-x-scroll relative border-2 border-dashed border-gray-300 rounded-lg shadow-lg">
+
+      <div className="w-full overflow-x-scroll relative  rounded-lg shadow-lg mb-10">
         <div className="w-max">
-        <Image src={issue2} alt={"issue 1"} quality={95} className="max-h-[700px] w-auto p-3" />
+          <Image src={issue2} alt={"issue 1"} quality={95} className="max-h-[650px] w-auto p-3" />
         </div>
-
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 gap-y-10 text-md">
+
+      <b className="mt-10">Issues uncovered:</b>
+
+
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 gap-y-10 text-md mt-5 mb-5">
         <div className="relative pl-10 flex items-start">
           <div className="absolute left-0 top-0 flex items-center justify-center w-8 h-8 text-lg font-bold text-gray-500">1</div>
           <div>
@@ -79,8 +78,6 @@ export const HeuristicSection = () => {
             </p>
           </div>
         </div>
-
-
         <div>
 
           <div>
@@ -91,6 +88,38 @@ export const HeuristicSection = () => {
           </div>
         </div>
       </div>
+
+
+
+    <p>I've highlighted other issues notieced (We will revist these on the redesign)</p>
+
+
+    <div className="grid grid-cols-3 gap-10 text-md h-full py-12">
+      <section
+        className="col-span-2 flex items-center rounded-xl"
+      >
+        <div className="text-gray-800 w-full">
+
+          <div className="relative flex items-center mb-8">
+            <h1 className="text-3xl font-semibold text-gray-900 uppercase"> Context</h1>
+          </div>
+          
+
+          <div className="font-light leading-relaxed text-base text-gray-700">
+            <p className="mb-8">
+              Flair Airlines, a Canadian budget airline, is favored for its affordable fares and convenient routes. However, when a friend deleted the app after struggling to access their boarding pass, it highlighted a significant issue. This seemingly simple task proved to be quite complicated. Intrigued by these challenges, I decided to investigate.
+            </p>
+            <div className="text-xl text-gray-800 ">
+              How can we redesign the digital boarding pass process to be more intuitive, reliable, and stress-free for Flair Airlines passengers?
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <Image src={issue1} alt={"issue 1"} quality={95} className="rounded-xl w-full h-full object-contain bg-black" />
+    </div>
+
+
     </div>
 
   );
