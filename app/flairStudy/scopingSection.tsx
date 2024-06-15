@@ -65,13 +65,6 @@ const UserStories = () => {
 export const ScopingSection = () => {
   return (
     <>
-
-
-
-      <p className="text-gray-700">
-        By focusing on these improvements, we aim to create a more intuitive and user-friendly experience for travelers using the Flair app on their travel day.
-      </p>
-
       <section className="mb-12">
         <h2 className="text-2xl font-semibold mb-4">Planning the User Pathways
         </h2>

@@ -4,14 +4,36 @@ import app2 from "../../public/22.jpg";
 
 const Takeaways = () => {
   return (
-    <section className="bg-white py-8">
-    <div className="container mx-auto px-4 lg:px-6">
+    <div className="pb-[10em]">
 
-      <section className="bg-white">
-        <h2 className="text-3xl font-extrabold text-blue-900 mb-4">Identifying the Pain Points</h2>
-        <p className="mb-4 text-lg text-black">
-          A heuristic evaluation and user feedback from various platforms revealed significant usability issues in the Flair Airlines app. Key pain points include:
-        </p>
+      <section className="">
+
+        <div className="mb-8">
+          <h1 className="font-bold text-4xl text-gray-800 leading-10 leading-[1.2em]"> Defining and Understanding the Critical Issues: Insights from Visual Investigation and User Study
+          </h1>
+          <hr className="border-t-4 border-[#b2ff94] my-4 w-[10em]" />
+        </div>
+
+
+
+
+        <blockquote className="text-xl italic font-semibold text-gray-900 dark:text-white my-10">
+          <svg className="w-8 h-8 text-gray-400 dark:text-gray-600 mb-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 14">
+            <path d="M6 0H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3H2a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Zm10 0h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3h-1a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Z" />
+          </svg>
+          <p>          Imagine you're at the airport, navigating through the hectic rush of security, constantly checking screens for gate changes, and feeling the weight of time ticking down to your departure. In such a high-stress environment, every piece of information becomes crucial.
+          </p>
+        </blockquote>
+        <p>
+          In our previous section, we uncovered critical issues from both visual investigation and user study. Users expressed significant stress when essential functionalities like retrieving boarding passes failed within the app. This stress is exacerbated in airports, known as some of the most stressful environments due to their time-sensitive nature and the high stakes involved in catching flights.
+          </p>
+          <p>
+
+            <p>
+              90% of users find airports as stressful as hospitals
+            </p>
+
+          Our findings resonate deeply with these realities. Users' frustrations with confusing app designs and unreliable functionalities directly correlate with the stress they experience in airports. Access to accurate and timely information through the app is not merely a convenience but a necessity to navigate this demanding environment smoothly.        </p>
         <ul className="list-disc pl-6 space-y-3 text-black">
           {[
             { title: 'Confusing Navigation and External Redirects', description: 'The app frequently redirects users to the website, causing confusion and decreasing retention.' },
@@ -69,9 +91,7 @@ const Takeaways = () => {
           "Addressing these usability issues is essential for improving the app's functionality, retaining user trust, and providing a seamless travel experience for Flair Airlines passengers."
         </p>
       </section>
-
     </div>
-  </section>
   );
 }
 

@@ -13,6 +13,9 @@ import { IntroSection } from './IntroSection';
 import { PurposeSection } from './purposeSection';
 import { ProblemSection } from './problemSection';
 import { ScopingSection } from './scopingSection';
+import CaseSection from './caseSection';
+import { playFair, inter, poppins } from "../fonts";
+
 
 const sectionVariants = {
   hidden: { y: 50 },
@@ -21,8 +24,8 @@ const sectionVariants = {
 
 const FlairCaseStudyData = () => {
   return (
-    <div className="ml-[8em]  mt-44">
-      <div className="container mx-auto px-4 max-w-4xl ml-[5em]">
+    <div className="ml-[1em] mt-44">
+      <div className={`container mx-auto px-4 ${poppins.className}`}>
 
         {/******************************************************** Section Cutoff */}
 
@@ -33,7 +36,9 @@ const FlairCaseStudyData = () => {
           variants={sectionVariants}
           transition={{ duration: 0.5 }}
         >
-          <IntroSection />
+          <CaseSection>
+            <IntroSection />
+          </CaseSection>
         </motion.section>
 
         {/******************************************************** Section Cutoff */}
@@ -47,7 +52,10 @@ const FlairCaseStudyData = () => {
           variants={sectionVariants}
           transition={{ duration: 0.5 }}
         >
-          <ProblemSection />
+          <CaseSection>
+            <ProblemSection />
+          </CaseSection>
+
         </motion.section>
         {/******************************************************** Section Cutoff */}
         <motion.section
@@ -57,35 +65,10 @@ const FlairCaseStudyData = () => {
           variants={sectionVariants}
           transition={{ duration: 0.5 }}
         >
-          <HeuristicSection />
-        </motion.section>
+          <CaseSection>
 
-        {/******************************************************** Section Cutoff */}
-
-        <motion.section
-          id="section3"
-          className="relative font-light pb-20"
-          whileInView="visible"
-          variants={sectionVariants}
-          transition={{ duration: 0.5 }}
-        >
-
-          <UserStorySection />
-
-        </motion.section>
-        {/******************************************************** Section Cutoff */}
-
-
-
-        <motion.section
-          id="section3"
-          className="relative font-light pb-20"
-          whileInView="visible"
-          variants={sectionVariants}
-          transition={{ duration: 0.5 }}
-        >
-
-          <PurposeSection />
+            <HeuristicSection />
+          </CaseSection>
 
         </motion.section>
 
@@ -99,7 +82,46 @@ const FlairCaseStudyData = () => {
           transition={{ duration: 0.5 }}
         >
 
-          <ScopingSection />
+          <CaseSection>
+
+            <UserStorySection />
+          </CaseSection>
+
+
+        </motion.section>
+        {/******************************************************** Section Cutoff */}
+
+
+
+        <motion.section
+          id="section3"
+          className="relative font-light pb-20"
+          whileInView="visible"
+          variants={sectionVariants}
+          transition={{ duration: 0.5 }}
+        >
+          <CaseSection bg="bg-slate-100">
+
+            <PurposeSection />
+          </CaseSection>
+
+
+        </motion.section>
+
+        {/******************************************************** Section Cutoff */}
+
+        <motion.section
+          id="section3"
+          className="relative font-light pb-20"
+          whileInView="visible"
+          variants={sectionVariants}
+          transition={{ duration: 0.5 }}
+        >
+          <CaseSection>
+
+            <ScopingSection />
+          </CaseSection>
+
 
         </motion.section>
 
@@ -113,8 +135,11 @@ const FlairCaseStudyData = () => {
           variants={sectionVariants}
           transition={{ duration: 0.5 }}
         >
+          <CaseSection>
 
-          <RedesignSection />
+            <RedesignSection />
+          </CaseSection>
+
 
         </motion.section>
 
