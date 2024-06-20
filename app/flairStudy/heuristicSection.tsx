@@ -114,8 +114,8 @@ export const HeuristicSection = () => {
 
       </div >
 
-      <div className="grid grid-cols-12 gap-10 text-md h-full py-12">
-        <section className="col-span-4  flex items-center">
+      <div className="grid grid-cols-5 gap-10 text-md h-full py-12">
+        <section className="col-span-2  flex items-center">
           <div className="text-gray-800 w-full">
             <div className="inline-flex items-center bg-red-500 text-white text-sm px-3 py-1 rounded-full mb-4">
               <ExclamationCircleIcon className="h-5 w-5 mr-2" />
@@ -129,22 +129,27 @@ export const HeuristicSection = () => {
 
             <div className="font-light leading-8 text-base text-gray-700  col-span-2">
               <p className="mb-8">
-                The app exhibits a diverse range of colors, text sizes, and fonts for buttons and other elements, leading to a fragmented visual hierarchy. <span className="font-semibold">The lack of a cohesive theme results in a chaotic and unpolished appearance.</span> Inconsistent visual elements disrupt the user experience, complicating navigation and overwhelming users. As a result, users may find it challenging to comprehend the visual structure and information architecture, causing frustration and inefficiency.
+                The app's diverse colors, text sizes, and fonts create a fragmented visual hierarchy, resulting in a chaotic and unpolished appearance. Inconsistent elements disrupt the user experience, complicating navigation and overwhelming users. This makes it challenging to understand the visual structure, causing frustration and inefficiency.
+
               </p>
-
-
               <p className="pt-2">
-                Implementing a unified design system is essential for crafting an intuitive and visually appealing user interface, ensuring a seamless and enjoyable user experience.
+                Implementing a unified design system is essential for crafting an intuitive, visually appealing user interface, ensuring a seamless and enjoyable experience.
               </p>
 
             </div>
           </div>
         </section>
 
-        <Image src={issueVisuals} alt={"issue 1"} quality={95} className="rounded-xl w-full h-full object-contain bg-white col-span-8" />
+        <Image src={issueVisuals} alt={"issue 1"} quality={95} className="rounded-xl w-full h-full object-contain bg-white col-span-3" />
       </div>
 
-      <div className="font-light leading-8 text-base text-gray-700">Based on the heuristic investigation, it is clear that the app suffers from significant usability issues caused by inconsistent design, poor user retention, and frequent redirects to the website. These issues create a chaotic user experience, with a lack of cohesive design making navigation difficult and frustrating. Users are forced to repeatedly enter information, diminishing the app's personalization and convenience. Additionally, frequent redirections disrupt the seamless experience expected from a native app, leading users to question its value and ultimately seek more reliable and user-friendly alternatives.
+      <div className="font-light leading-8 text-base text-gray-700">The heuristic investigation reveals major usability issues in the app: inconsistent design, poor user retention, and frequent website redirects. These problems create a frustrating user experience, with difficult navigation and repeated data entry. Frequent redirections disrupt the native app experience, leading users to seek more reliable alternatives.
+
+
+
+
+
+
 
 
       </div>

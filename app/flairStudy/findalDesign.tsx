@@ -23,7 +23,7 @@ export const FinalDesign = () => {
         <div>
           <h2 className="text-xl font-semibold text-gray-800">Consistency in Theme and Colors</h2>
           <p className="text-gray-700">
-            The theme and colors used in the app play a crucial role in creating a cohesive user experience. Currently, there is a lack of consistency, with one app using green and black while the website and this app share different colors. Establishing a consistent color theme across all platforms would enhance brand recognition and user experience. However, since the color theme is not defined for this project, we will adhere to the current design and make necessary adjustments within this framework.
+          Establishing a consistent color theme across all platforms would enhance brand recognition and user experience. Since the color theme is not defined for this project, we will adhere to the current design and make necessary adjustments within this framework.
           </p>
         </div>
 

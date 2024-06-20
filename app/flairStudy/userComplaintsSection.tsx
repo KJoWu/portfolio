@@ -63,7 +63,7 @@ export const UserComplaintsSection = () => {
         </div>
 
         <div className="leading-8 mt-8">
-          The user feedback underscores significant behavioral and emotional challenges with the app, confirming findings from the heuristic evaluation. Users encountered stress and financial losses when unable to retrieve boarding passes, affecting their confidence during security checks. Additionally, frustrations with the app's confusing design prompted consideration of switching to competitors. 
+          The user feedback underscores significant behavioral and emotional challenges with the app, confirming findings from the heuristic evaluation.
         </div>
 
 

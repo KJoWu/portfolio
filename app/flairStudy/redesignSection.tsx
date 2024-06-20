@@ -21,31 +21,34 @@ export const RedesignSection = () => {
 
       <div className="space-y-4">
         <div>
-          <h2 className="text-xl font-semibold text-gray-800">Consistency in Theme and Colors</h2>
-          <p className="text-gray-700">
-            The theme and colors used in the app play a crucial role in creating a cohesive user experience. Currently, there is a lack of consistency, with one app using green and black while the website and this app share different colors. Establishing a consistent color theme across all platforms would enhance brand recognition and user experience. However, since the color theme is not defined for this project, we will adhere to the current design and make necessary adjustments within this framework.
+          <h2 className="text-xl font-semibold text-gray-800">Benchmarking Competitor Successes to Enhance UI Design</h2>
+          <p className="mb-6 text-gray-700 leading-8 mt-6">
+            We will examine top Canadian competitors like Air Canada, as well as other airlines that have successfully implemented boarding passes, such as Delta and American Airlines, to improve the UI.
+
           </p>
         </div>
 
         <div>
-          <div className="grid grid-cols-5 gap-10 text-md h-full py-30">
-            <Image src={designMenu} alt="menu" quality={95} className="rounded-xl w-full h-full object-contain bg-white col-span-3" />
+          <h2 className="text-xl font-semibold text-gray-800">Consistency in Theme and Colors</h2>
+          <p className="mb-6 text-gray-700 leading-8 mt-6">
+            Establishing a consistent color theme across all platforms would enhance brand recognition and user experience. While promotional ads use the signature green, black, and purple, the app and web app lean more into pastel colors with images. Since the color theme is not defined for this project, we will adhere to the current design and make necessary adjustments within this framework.
+          </p>
+        </div>
 
+        <div>
+          <div className="grid grid-cols-5 gap-10 text-md h-full py-[2em]">
             <section className="col-span-2 flex items-center rounded-xl">
               <div className="text-gray-800 w-full">
-                <div className="relative flex items-center mb-8">
-                  <h1 className="text-2xl font-semibold text-gray-900">Enhancing the Menu Options</h1>
-                </div>
                 <div className="font-light leading-relaxed text-base text-gray-700 col-span-3">
-                  <h2 className="text-xl font-semibold text-gray-800">Improving the Menu Options</h2>
-                  <ul className="list-disc list-inside ml-4 text-gray-700 space-y-2">
-                    <li><strong>Simplify Navigation:</strong> Consolidate the top hamburger menu and bottom menu into a single bottom menu to reduce user confusion and streamline access.</li>
-                    <li><strong>Relocate In-Flight Page:</strong> Move the in-flight suggestion page to the hamburger menu to declutter the main navigation and make the bottom menu more concise.</li>
-                    <li><strong>Track User Interactions:</strong> Implement a heat map to monitor page usage, allowing for data-driven adjustments to optimize navigation based on actual user behavior.</li>
+                  <h2 className="text-xl font-semibold text-gray-800">Streamlining Navigation</h2>
+                  <ul className="list-disc list-inside ml-4 text-gray-700 space-y-2 mb-6 text-gray-700 leading-8 mt-6">
+                    <li><strong>Simplify Navigation:</strong> Consolidate the top hamburger menu and bottom menu into a single bottom menu called "More Info" to reduce user confusion and streamline access.</li>
+                    <li><strong>Relocate In-Flight Page:</strong>  The In-Flight page, which informs users how to access Flair online, is not directly related to booking flights. Consider relocating it to the "More Info" tab. Prior to implementing this change, deploy a heat map to analyze user interaction metrics and determine the page's usability and frequency of use.</li>
                   </ul>
                 </div>
               </div>
             </section>
+            <Image src={designMenu} alt="menu" quality={95} className="rounded-xl w-full object-contain bg-white col-span-3 h-[30em]" />
           </div>
 
           <div className="grid grid-cols-5 gap-10 text-md h-full pt-36 pb-20">
