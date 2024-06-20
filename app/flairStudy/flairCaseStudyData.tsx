@@ -24,7 +24,7 @@ const sectionVariants = {
 
 const FlairCaseStudyData = () => {
   return (
-    <div className="ml-[1em] mt-44">
+    <div className="ml-[5em] mt-44">
       <div className={`container mx-auto px-4 ${poppins.className}`}>
 
         {/******************************************************** Section Cutoff */}
@@ -66,7 +66,6 @@ const FlairCaseStudyData = () => {
           transition={{ duration: 0.5 }}
         >
           <CaseSection>
-
             <HeuristicSection />
           </CaseSection>
 
@@ -83,7 +82,6 @@ const FlairCaseStudyData = () => {
         >
 
           <CaseSection>
-
             <UserStorySection />
           </CaseSection>
 
@@ -100,8 +98,7 @@ const FlairCaseStudyData = () => {
           variants={sectionVariants}
           transition={{ duration: 0.5 }}
         >
-          <CaseSection bg="bg-slate-100">
-
+          <CaseSection>
             <PurposeSection />
           </CaseSection>
 
@@ -118,7 +115,6 @@ const FlairCaseStudyData = () => {
           transition={{ duration: 0.5 }}
         >
           <CaseSection>
-
             <ScopingSection />
           </CaseSection>
 

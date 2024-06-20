@@ -44,7 +44,7 @@ export const HeuristicSection = () => {
 
         <section className="col-span-3 flex items-center rounded-xl">
           <div className="text-gray-800 w-full">
-            <div className="inline-flex items-center bg-red-500 text-white text-sm px-3 py-1 rounded-full mb-2">
+            <div className="inline-flex items-center bg-red-500 text-white text-sm px-3 py-1 rounded-full mb-5">
               <ExclamationCircleIcon className="h-5 w-5 mr-2" />
               Excessive Website Redirects
             </div>
@@ -75,7 +75,7 @@ export const HeuristicSection = () => {
 
         <section className="col-span-1 flex items-center rounded-xl">
           <div className="text-gray-800 w-full">
-            <div className="inline-flex items-center bg-red-500 text-white text-sm px-3 py-1 rounded-full mb-2">
+            <div className="inline-flex items-center bg-red-500 text-white text-sm px-3 py-1 rounded-full mb-4">
               <ExclamationCircleIcon className="h-5 w-5 mr-2" />
               Data Retention Issues
             </div>
@@ -101,7 +101,7 @@ export const HeuristicSection = () => {
           className="col-span-1 flex items-center rounded-xl"
         >
           <div className="text-gray-800 w-full">
-            <div className="inline-flex items-center bg-red-500 text-white text-sm px-3 py-1 rounded-full mb-2">
+            <div className="inline-flex items-center bg-red-500 text-white text-sm px-3 py-1 rounded-full mb-4">
               <ExclamationCircleIcon className="h-5 w-5 mr-2" />
               Disjointed Design
             </div>
@@ -153,7 +153,7 @@ export const HeuristicSection = () => {
       <section className="col-span-1 flex items-center rounded-xl">
         <div className="text-gray-800 w-full">
           {/* Issue Header */}
-          <div className="inline-flex items-center bg-red-500 text-white text-sm px-3 py-1 rounded-full mb-2">
+          <div className="inline-flex items-center bg-red-500 text-white text-sm px-3 py-1 rounded-full mb-4">
             <ExclamationCircleIcon className="h-5 w-5 mr-2" />
             {currentIssue === 1 ? 'Usability Issues due to Design' : 'Header Issue'}
           </div>

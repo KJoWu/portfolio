@@ -4,49 +4,60 @@ import app2 from "../../public/22.jpg";
 
 const Takeaways = () => {
   return (
-    <div className="pb-[10em]">
+    <div className="">
 
       <section className="">
 
         <div className="mb-8">
-          <h1 className="font-bold text-4xl text-gray-800 leading-10 leading-[1.2em]"> Defining and Understanding the Critical Issues: Insights from Visual Investigation and User Study
+          <h1 className="font-bold text-4xl text-gray-800  leading-[1.3em]"> Defining and Understanding the Critical Issues: Insights from Visual Investigation and User Study
           </h1>
           <hr className="border-t-4 border-[#b2ff94] my-4 w-[10em]" />
         </div>
 
-
-
-
-        <blockquote className="text-xl italic font-semibold text-gray-900 dark:text-white my-10">
+        <blockquote className="text-xl italic font-base text-gray-900 dark:text-white my-10 w-[40em]">
           <svg className="w-8 h-8 text-gray-400 dark:text-gray-600 mb-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 14">
             <path d="M6 0H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3H2a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Zm10 0h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3h-1a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Z" />
           </svg>
-          <p>          Imagine you're at the airport, navigating through the hectic rush of security, constantly checking screens for gate changes, and feeling the weight of time ticking down to your departure. In such a high-stress environment, every piece of information becomes crucial.
+          <p>     "A third of British respondents found the airport experience more stressful than the working week, and a quarter thought it even more stressful than moving.
+          </p>
+          <p className="mt-[.5em]">
+            <cite className="text-gray-500 dark:text-gray-400">Source: <a href="https://www.finavia.fi/en/newsroom/2018/stressed-airport-three-main-causes-airport-stress-and-how-helsinki-airport-tries" className="underline text-blue-600 dark:text-blue-400">Finavia</a></cite>
           </p>
         </blockquote>
-        <p>
-          In our previous section, we uncovered critical issues from both visual investigation and user study. Users expressed significant stress when essential functionalities like retrieving boarding passes failed within the app. This stress is exacerbated in airports, known as some of the most stressful environments due to their time-sensitive nature and the high stakes involved in catching flights.
-          </p>
-          <p>
 
-            <p>
-              90% of users find airports as stressful as hospitals
+
+        <p className="mb-6 text-gray-700">
+          Through comprehensive visual investigation and user studies, we identified critical issues within the Flair app that significantly impact user experience. Users reported high levels of stress when essential functionalities, such as retrieving boarding passes, failed. This stress is particularly pronounced in airports, which are inherently stressful due to their time-sensitive nature and the high stakes involved in catching flights. Our findings highlight the direct correlation between users' frustrations with the app's confusing design and unreliable functionalities and the stress they experience in airport settings. Access to accurate and timely information through the app is not merely a convenience but a necessity for navigating this demanding environment smoothly.
+
+        </p>
+
+        <div className="max-w-7xl mx-auto">
+
+          <section className="mb-10">
+            <h2 className="text-2xl font-semibold text-gray-800 mb-4">Stress Reduction and User Satisfaction</h2>
+            <p className="text-gray-700 mb-4">
+              Airports are inherently stressful environments. A reliable app can significantly reduce user stress by providing timely and accurate information, ensuring users have a smoother travel experience. A well-functioning app can also alleviate the emotional burden of navigating air travel, providing peace of mind and a more pleasant journey. By improving navigation, login processes, design consistency, and reducing redundant information requests, we can significantly enhance the user experience and emotional well-being.
+              Redirects to the website cause confusion and disrupt the user journey, increasing stress levels. Clear navigation retains users and reduces frustration. As observed, users questions the value of the app if the product intentionally redirects to the website. The lack of good UI (please reword that to make it sound better) through inconsistent styles, text and coloring was also seen by the user.
+              We've also have eveidence that users had to manually make screenshots of QR codes, a feature that should not need a workaround since it already exists on the app. Furthermore, it doesn't seem like there's anything unique the app offers over the site. If we want users to continue using the site, the issues above must be addressed.
             </p>
+          </section>
 
-          Our findings resonate deeply with these realities. Users' frustrations with confusing app designs and unreliable functionalities directly correlate with the stress they experience in airports. Access to accurate and timely information through the app is not merely a convenience but a necessity to navigate this demanding environment smoothly.        </p>
-        <ul className="list-disc pl-6 space-y-3 text-black">
-          {[
-            { title: 'Confusing Navigation and External Redirects', description: 'The app frequently redirects users to the website, causing confusion and decreasing retention.' },
-            { title: 'Inefficient Login and Data Retrieval', description: 'The login process is cumbersome, often requiring emails for retrieving crucial information like QR codes.' },
-            { title: 'Inconsistent Design and Information', description: 'Inconsistencies in terminology, color schemes, and information quantity confuse users and degrade the experience.' },
-            { title: 'Redundant Information Requests and Pages', description: 'Users are asked for information that should be available within the app, leading to redundancy.' }
-          ].map((point, index) => (
-            <li key={index} className="flex items-start hover:bg-blue-50 p-2 rounded transition">
-              <div className="text-blue-500 mr-2">&#8226;</div>
-              <div><strong>{point.title}:</strong> {point.description}</div>
-            </li>
-          ))}
-        </ul>
+          <section className="mb-10">
+            <h2 className="text-2xl font-semibold text-gray-800 mb-4">Competitive Edge and Financial Impact</h2>
+            <p className="text-gray-700">
+              Competitors have already addressed similar issues, providing smoother and more reliable user experiences. To remain competitive, Flair must match or exceed these standards. User frustration and dissatisfaction lead to churn, resulting in potential revenue loss. By improving the UX/UI, we can enhance user loyalty and reduce attrition rates. Simplified navigation, efficient login processes, consistent design, and optimized information handling are critical to competing effectively and protecting revenue.
+            </p>
+          </section>
+
+          <section className="mb-10">
+            <h2 className="text-2xl font-semibold text-gray-800 mb-4">Technical Challenges</h2>
+            <p className="text-gray-700 mb-4">
+              Addressing these issues comes with its own set of technical challenges. Ensuring seamless integration with existing backend systems for login and data retrieval can be complex, requiring robust APIs and reliable data synchronization. Implementing real-time updates for flight information and QR codes requires a strong backend infrastructure capable of handling high traffic and providing instant data. Achieving consistency across iOS, Android, and Web platforms can be challenging but is essential for a unified user experience. Careful planning and execution are necessary to overcome these technical challenges.
+            </p>
+          </section>
+        </div>
+
+
       </section>
 
       <section className="bg-white">
@@ -86,7 +97,7 @@ const Takeaways = () => {
         </div>
       </section>
 
-      <section className="bg-blue-100 border border-blue-200 rounded-lg p-4 mb-8">
+      <section className="bg-blue-100 border border-blue-200 rounded-lg p-4 my-9">
         <p className="text-lg text-blue-900 font-semibold">
           "Addressing these usability issues is essential for improving the app's functionality, retaining user trust, and providing a seamless travel experience for Flair Airlines passengers."
         </p>
