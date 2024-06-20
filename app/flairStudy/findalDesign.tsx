@@ -39,9 +39,9 @@ export const FinalDesign = () => {
                 <div className="font-light leading-relaxed text-base text-gray-700 col-span-3">
                   <h2 className="text-xl font-semibold text-gray-800">Improving the Menu Options</h2>
                   <ul className="list-disc list-inside ml-4 text-gray-700 space-y-2">
-                    <li><strong>Simplify Navigation:</strong> Consolidate the top hamburger menu and bottom menu into a single bottom menu to reduce user confusion and streamline access.</li>
-                    <li><strong>Relocate In-Flight Page:</strong> Move the in-flight suggestion page to the hamburger menu to declutter the main navigation and make the bottom menu more concise.</li>
-                    <li><strong>Track User Interactions:</strong> Implement a heat map to monitor page usage, allowing for data-driven adjustments to optimize navigation based on actual user behavior.</li>
+                    <li><span className="semibold">Simplify Navigation:</span> Consolidate the top hamburger menu and bottom menu into a single bottom menu to reduce user confusion and streamline access.</li>
+                    <li><span className="bold">Relocate In-Flight Page:</span> Move the in-flight suggestion page to the hamburger menu to declutter the main navigation and make the bottom menu more concise.</li>
+                    <li><span className="font-semibold">Track User Interactions:</span> Implement a heat map to monitor page usage, allowing for data-driven adjustments to optimize navigation based on actual user behavior.</li>
                   </ul>
                 </div>
               </div>

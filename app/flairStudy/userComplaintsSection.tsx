@@ -41,7 +41,7 @@ export const UserComplaintsSection = () => {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-12 mt-6">
           <FeedbackCard
-            imageSrc={complaint1}
+            imageSrc={complaint1} 
             title="User Dissatisfaction Leading to Competitor Migration"
             description="Due to poor styling and the inability to obtain necessary information, users were left highly dissatisfied. This frustration led many to cancel flights, abandon the app, and switch to competitors, resulting in a significant loss of customer loyalty and engagement."
           />
