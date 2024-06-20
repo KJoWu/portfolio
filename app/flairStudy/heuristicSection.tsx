@@ -1,4 +1,3 @@
-import issueScreen1 from "../../public/filler.png";
 import issue1 from "../../public/issue1.png";
 import issue2 from "../../public/issue2.jpg";
 import { ExclamationCircleIcon } from "@heroicons/react/24/solid"
@@ -32,11 +31,6 @@ export const HeuristicSection = () => {
             To understand how users interact with the app, I performed a heuristic evaluation and followed my friend's user journey to fetch booking information. Here's what I found:
           </p>
           <b>User flow for retrieving a Booked FLight</b>
-        </div>
-        <div className="w-full rounded-lg shadow-lg mb-10">
-          <div className="w-full h-48 relative">
-            <Image src={issue2} alt="Issue 2" layout="fill" objectFit="contain" quality={95} className="rounded-lg" />
-          </div>
         </div>
       </div>
 
@@ -144,47 +138,47 @@ export const HeuristicSection = () => {
 
 
       <div className="grid grid-cols-3 gap-10 text-md h-full py-36">
-      {/* Issue Image */}
-      <div className="col-span-2">
-        <Image src={currentIssue === 1 ? issue1 : issue2} alt={`issue ${currentIssue}`} quality={95} className="rounded-xl w-full h-full object-contain bg-black" />
-      </div>
-
-      {/* Issue Description */}
-      <section className="col-span-1 flex items-center rounded-xl">
-        <div className="text-gray-800 w-full">
-          {/* Issue Header */}
-          <div className="inline-flex items-center bg-red-500 text-white text-sm px-3 py-1 rounded-full mb-4">
-            <ExclamationCircleIcon className="h-5 w-5 mr-2" />
-            {currentIssue === 1 ? 'Usability Issues due to Design' : 'Header Issue'}
-          </div>
-          {/* Issue Title */}
-          <div className="relative flex items-center mb-8">
-            <h1 className="text-2xl font-semibold text-gray-900">
-              {currentIssue === 1 ? 'Confusing Usability Issues due to Design' : 'Header Issue Title'}
-            </h1>
-          </div>
-          {/* Issue Description */}
-          <div className="font-light leading-relaxed text-base text-gray-700">
-            <p className="mb-8">
-              {currentIssue === 1
-                ? `Flair Airlines, a Canadian budget airline, is favored for its affordable fares and convenient routes. However, when a friend deleted the app after struggling to access their boarding pass, it highlighted a significant issue. This seemingly simple task proved to be quite complicated. Intrigued by these challenges, I decided to investigate.`
-                : `Description for Header Issue`}
-            </p>
-          </div>
+        {/* Issue Image */}
+        <div className="col-span-2">
+          <Image src={currentIssue === 1 ? issue1 : issue2} alt={`issue ${currentIssue}`} quality={95} className="rounded-xl w-full h-full object-contain bg-black" />
         </div>
-      </section>
 
-      {/* Toggle Buttons */}
-      <div className="col-span-3 flex justify-center gap-4">
-        <button onClick={() => handleToggleIssue(1)} className={`btn ${currentIssue === 1 ? 'btn-active' : ''}`}>
-          Issue 1
-        </button>
-        <button onClick={() => handleToggleIssue(2)} className={`btn ${currentIssue === 2 ? 'btn-active' : ''}`}>
-          Issue 2
-        </button>
-        {/* Add more buttons for additional issues */}
+        {/* Issue Description */}
+        <section className="col-span-1 flex items-center rounded-xl">
+          <div className="text-gray-800 w-full">
+            {/* Issue Header */}
+            <div className="inline-flex items-center bg-red-500 text-white text-sm px-3 py-1 rounded-full mb-4">
+              <ExclamationCircleIcon className="h-5 w-5 mr-2" />
+              {currentIssue === 1 ? 'Usability Issues due to Design' : 'Header Issue'}
+            </div>
+            {/* Issue Title */}
+            <div className="relative flex items-center mb-8">
+              <h1 className="text-2xl font-semibold text-gray-900">
+                {currentIssue === 1 ? 'Confusing Usability Issues due to Design' : 'Header Issue Title'}
+              </h1>
+            </div>
+            {/* Issue Description */}
+            <div className="font-light leading-relaxed text-base text-gray-700">
+              <p className="mb-8">
+                {currentIssue === 1
+                  ? `Flair Airlines, a Canadian budget airline, is favored for its affordable fares and convenient routes. However, when a friend deleted the app after struggling to access their boarding pass, it highlighted a significant issue. This seemingly simple task proved to be quite complicated. Intrigued by these challenges, I decided to investigate.`
+                  : `Description for Header Issue`}
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* Toggle Buttons */}
+        <div className="col-span-3 flex justify-center gap-4">
+          <button onClick={() => handleToggleIssue(1)} className={`btn ${currentIssue === 1 ? 'btn-active' : ''}`}>
+            Issue 1
+          </button>
+          <button onClick={() => handleToggleIssue(2)} className={`btn ${currentIssue === 2 ? 'btn-active' : ''}`}>
+            Issue 2
+          </button>
+          {/* Add more buttons for additional issues */}
+        </div>
       </div>
-    </div>
 
 
 
@@ -198,7 +192,7 @@ export const HeuristicSection = () => {
 
             <div className="inline-flex items-center bg-red-500 text-white text-sm px-3 py-1 rounded-full mb-2">
               <ExclamationCircleIcon className="h-5 w-5 mr-2" />
-               Usability Issues due to Design
+              Usability Issues due to Design
             </div>
             <div className="relative flex items-center mb-8">
               <h1 className="text-2xl font-semibold text-gray-900">Confusing Usability Issues due to Design

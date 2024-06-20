@@ -2,6 +2,8 @@ import designHome from "../../public/design_home.png";
 import designHome1 from "../../public/design_home1.png";
 import designMenu from "../../public/design_menu.png";
 import designBooking from "../../public/design_fetchBooking.png";
+import designLoggedIn from "../../public/design_loggedIn.png";
+
 
 import Image from "next/image";
 
@@ -19,10 +21,10 @@ export const RedesignSection = () => {
         </div>
 
         <div>
-          <div className="grid grid-cols-3 gap-10 text-md h-full py-30">
-            <Image src={designMenu} alt="menu" quality={95} className="rounded-xl w-full h-full object-contain bg-black col-span-2" />
+          <div className="grid grid-cols-5 gap-10 text-md h-full py-30">
+            <Image src={designMenu} alt="menu" quality={95} className="rounded-xl w-full h-full object-contain bg-white col-span-3" />
 
-            <section className="col-span-1 flex items-center rounded-xl">
+            <section className="col-span-2 flex items-center rounded-xl">
               <div className="text-gray-800 w-full">
                 <div className="relative flex items-center mb-8">
                   <h1 className="text-2xl font-semibold text-gray-900">Enhancing the Menu Options</h1>
@@ -47,9 +49,6 @@ export const RedesignSection = () => {
                   <h1 className="text-2xl font-semibold text-gray-900">Enhancing the Booking Page</h1>
                 </div>
                 <div className="font-light leading-relaxed text-base text-gray-700 col-span-3">
-                  <p>
-                    As part of the redesign, I focused on improving the homepage, which directly impacts the onboarding user interface. Key updates include:
-                  </p>
                   <ul className="list-disc list-inside ml-4 text-gray-700 space-y-2">
                     <li><strong>Toggle Functionality for Airplane Icon:</strong> The airplane icon is now a toggle button, letting users easily select start and end dates. This streamlines date selection and improves usability.</li>
                     <li><strong>Enhanced Travel Information Display:</strong> The travel box now displays detailed traveler info (e.g., "2 adults, 3 children") instead of just the number of travelers, providing clearer information at a glance.</li>
@@ -58,12 +57,12 @@ export const RedesignSection = () => {
                 </div>
               </div>
             </section>
-            <Image src={designHome} alt="issue 1" quality={95} className="rounded-xl w-full h-full object-contain bg-black col-span-3" />
+            <Image src={designHome} alt="issue 1" quality={95} className="rounded-xl w-full h-full object-contain bg-white col-span-3" />
 
           </div>
 
           <div className="grid grid-cols-5 gap-10 text-md h-full pb-36">
-            <Image src={designHome} alt="issue 2" quality={95} className="rounded-xl w-full h-full object-contain bg-black col-span-3" />
+            <Image src={designHome} alt="issue 2" quality={95} className="rounded-xl w-full h-full object-contain bg-white col-span-3" />
 
             <section className="col-span-2 flex items-center rounded-xl">
               <div className="text-gray-800 w-full">
@@ -92,19 +91,53 @@ export const RedesignSection = () => {
 
         <div className="grid grid-cols-5 gap-10 text-md h-full py-30">
 
-            <section className="col-span-2 flex items-center rounded-xl">
-              <div className="text-gray-800 w-full">
-                <div className="relative flex items-center mb-8">
-                  <h1 className="text-2xl font-semibold text-gray-900">Enhancing the Onboarding Phase</h1>
-                </div>
-                <div className="font-light leading-relaxed text-base text-gray-700 col-span-3">
-                  Flair currently lacks incentives for users to create an account. Introducing a compelling CTA (call-to-action) button can address this. This button can highlight to users that logging in will streamline their experience by automatically displaying their booking information
-                </div>
+          <section className="col-span-2 flex items-center rounded-xl">
+            <div className="text-gray-800 w-full">
+              <div className="relative flex items-center mb-8">
+                <h1 className="text-2xl font-semibold text-gray-900">Enhancing the Onboarding Phase</h1>
               </div>
-            </section>
-            <Image src={designBooking} alt="issue 1" quality={95} className="rounded-xl w-full h-full object-contain bg-black col-span-3" />
+              <div className="font-light leading-relaxed text-base text-gray-700 col-span-3">
+                Flair currently lacks incentives to encourage users to create an account. Introducing a compelling CTA (call-to-action) button that emphasizes a 'fast' experience can address this. This button can highlight that logging in will streamline their experience by automatically displaying their booking information
+              </div>
+            </div>
+          </section>
+          <Image src={designBooking} alt="issue 1" quality={95} className="rounded-xl w-full h-full object-contain bg-white col-span-3" />
 
-          </div>
+        </div>
+
+
+        <div className="grid grid-cols-7 gap-10 text-md h-full py-36">
+          <Image src={designLoggedIn} alt="issue 1" quality={95} className="rounded-xl w-full h-full object-contain bg-white col-span-5" />
+
+          <section className="col-span-2 flex items-center rounded-xl">
+            <div className="text-gray-800 w-full">
+              <div className="relative flex items-center mb-8">
+                <h1 className="text-2xl font-semibold text-gray-900">Enhancing Data Retention and Accessibility for Logged-In Users</h1>
+              </div>
+              <div className="font-light leading-relaxed text-base text-gray-700 col-span-3">
+                One of the most common complaints was about data retention and users not being able to find their boarding passes. To address this, we can add a notification for their boarding pass on the main page. Additionally, on the trip page, we can prominently display their boarding information and check-in time, making it easily accessible.
+              </div>
+            </div>
+          </section>
+        </div>
+
+
+        <div className="grid grid-cols-7 gap-10 text-md h-full py-36">
+
+          <section className="col-span-2 flex items-center rounded-xl">
+            <div className="text-gray-800 w-full">
+              <div className="relative flex items-center mb-8">
+                <h1 className="text-2xl font-semibold text-gray-900">Enhancing Data Retention and Accessibility for Logged-In Users</h1>
+              </div>
+              <div className="font-light leading-relaxed text-base text-gray-700 col-span-3">
+                One of the most common complaints was about data retention and users not being able to find their boarding passes. To address this, we can add a notification for their boarding pass on the main page. Additionally, on the trip page, we can prominently display their boarding information and check-in time, making it easily accessible.
+              </div>
+            </div>
+          </section>
+          <Image src={designLoggedIn} alt="issue 1" quality={95} className="rounded-xl w-full h-full object-contain bg-white col-span-5" />
+
+        </div>
+
       </div>
     </>
   );

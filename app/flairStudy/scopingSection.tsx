@@ -23,7 +23,8 @@ const UserStories = () => {
               <p className="text-gray-600 mb-4"><strong>Tech Savviness:</strong> High</p>
             </div>
 
-            <p className="mb-4">Sarah frequently travels for work and relies on airline apps to manage her schedule. She values efficiency and clarity in the app's design to reduce stress and maximize productivity.</p>
+            <p className="mb-4">Sarah frequently travels for work and relies on airline apps. She values efficiency and clarity,  <span className="bg-[#b2ff94]">likes receiving notifications, and prefers having her information, including boarding times, readily available </span> without navigating through multiple buttons.
+            </p>
             <blockquote className="italic text-gray-700">"I need to access my boarding pass in seconds, not minutes. My schedule is too tight for any delays."</blockquote>
           </div>
         </div>
@@ -36,7 +37,7 @@ const UserStories = () => {
             <p className="text-gray-600 mb-2"><strong>Occupation:</strong> Industrial Manager</p>
             <p className="text-gray-600 mb-2"><strong>Travel Frequency:</strong> Twice a year</p>
             <p className="text-gray-600 mb-4"><strong>Tech Savviness:</strong> Low to Medium</p>
-            <p className="mb-4">David plans family vacations and needs a reliable, user-friendly app to ensure smooth travel for him and his larger family. He will use whatever method is easiest and prefers modern solutions.
+            <p className="mb-4">David plans family vacations and <span className="bg-[#b2ff94]">needs a reliable, user-friendly app to  ensure smooth travel for him and his large family </span> . He will use whatever method is easiest and prefers modern solutions.
             </p>
             <blockquote className="italic text-gray-700">"Traveling with kids is stressful enough. I need an app that makes things easier, not harder."</blockquote>
           </div>
@@ -50,29 +51,28 @@ const UserStories = () => {
             <p className="text-gray-600 mb-2"><strong>Travel Frequency:</strong> Frequently</p>
             <p className="text-gray-600 mb-4"><strong>Tech Savviness:</strong> High</p>
             <p className="mb-4">
-              The squad is a dynamic group of young influencers that frequently travel to create unique content. They are tech-savvy users and will quickly share their experiences, good or bad, with their large online audience.
-
+            The squad is a dynamic group of young influencers who frequently travel to create unique content. They are tech-savvy users who <span className="bg-[#b2ff94]">prefer modern, sleek apps </span> and will quickly share their experiences, good or bad, with their large online audience.
             </p>
             <blockquote className="italic text-gray-700">"Our followers expect the best from us, and we expect the same from our travel app. If it fails, our audience will definitely hear about it"</blockquote>
           </div>
         </div>
         <div className="bg-white shadow-md rounded-lg p-6 flex space-x-6">
           <div>
-          <Image src={profile5} alt="Image 2" quality={95} className="w-full h-48 object-cover mb-4 rounded-lg shadow-lg" />
+            <Image src={profile5} alt="Image 2" quality={95} className="w-full h-48 object-cover mb-4 rounded-lg shadow-lg" />
             <h2 className="text-xl font-semibold mb-2">Crystal Wang</h2>
             <p className="text-gray-600 mb-2"><strong>Age:</strong> 24</p>
             <p className="text-gray-600 mb-2"><strong>Occupation:</strong> Undergrad Student</p>
             <p className="text-gray-600 mb-2"><strong>Travel Frequency:</strong> Based on travel deals</p>
             <p className="text-gray-600 mb-4"><strong>Tech Savviness:</strong>Medium</p>
             <p className="mb-4">
-            Crystal loves exploring new cities and countries whenever she finds a good deal. As a student, she is mindful of her budget and looks for affordable travel options.
+              Crystal loves exploring new cities and countries whenever she finds a good deal. As a student, she is mindful of her budget and  <span className="bg-[#b2ff94]">looks for affordable travel options.</span>
             </p>
             <blockquote className="italic text-gray-700">"I’m always on the lookout for great travel deals. I need an app that helps me find and book trips affordably, without interfering with my studies."</blockquote>
           </div>
         </div>
         <div className="bg-white shadow-md rounded-lg p-6 flex space-x-6">
           <div>
-          <Image src={profile2} alt="Image 2" quality={95} className="w-full h-48 object-cover mb-4 rounded-lg shadow-lg" />
+            <Image src={profile2} alt="Image 2" quality={95} className="w-full h-48 object-cover mb-4 rounded-lg shadow-lg" />
             <h2 className="text-xl font-semibold mb-2">Bob Anderson</h2>
             <p className="text-gray-600 mb-2"><strong>Age:</strong> 50</p>
             <p className="text-gray-600 mb-2"><strong>Occupation:</strong> Retired School Principal</p>
