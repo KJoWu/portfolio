@@ -10,7 +10,14 @@ import Image from "next/image";
 export const RedesignSection = () => {
   return (
     <>
-      <h1 className="text-2xl font-bold text-gray-900">Designing the Travel Day User Pathway</h1>
+
+
+      <div className="mb-8">
+        <h1 className="font-bold text-4xl text-gray-800  leading-[1.3em]"> Redesigning the App</h1>
+        <hr className="border-t-4 border-[#b2ff94] my-4 w-[10em]" />
+      </div>
+
+
 
       <div className="space-y-4">
         <div>

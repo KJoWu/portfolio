@@ -2,8 +2,6 @@ import issue1 from "../../public/issue1.png";
 import issue2 from "../../public/issue2.jpg";
 import { ExclamationCircleIcon } from "@heroicons/react/24/solid"
 
-import React, { useState } from 'react';
-
 
 import Image from "next/image";
 
@@ -12,11 +10,6 @@ import Image from "next/image";
 
 
 export const HeuristicSection = () => {
-  const [currentIssue, setCurrentIssue] = useState(1); // State to track current issue
-
-  const handleToggleIssue = (issueNumber: number) => {
-    setCurrentIssue(issueNumber);
-  };
 
   return (
     <div className="leading-8 mt-8">
@@ -25,16 +18,11 @@ export const HeuristicSection = () => {
         </h1>
         <hr className="border-t-4 border-[#b2ff94] my-4 w-[10em]" />
       </div>
-      <div className="bg-black p-3 mt-5">
-        <div className="font-light leading-relaxed  text-gray-700">
-          <p className="mt-8 mb-6 text-base">
-            To understand how users interact with the app, I performed a heuristic evaluation and followed my friend's user journey to fetch booking information. Here's what I found:
-          </p>
-          <b>User flow for retrieving a Booked FLight</b>
-        </div>
-      </div>
+      <p className="font-light leading-8 text-base text-gray-700">
+        To gain a comprehensive understanding of user interactions with the app, I conducted a heuristic evaluation on the primary pages, with a particular focus on those related to checking the boarding pass.
+      </p>
 
-      <div className="grid grid-cols-7 gap-10 text-md h-full py-36">
+      <div className="grid grid-cols-7 gap-10 text-md h-full py-12">
 
         <section className="col-span-3 flex items-center rounded-xl">
           <div className="text-gray-800 w-full">
@@ -47,15 +35,17 @@ export const HeuristicSection = () => {
             </div>
 
 
-            <div className="font-light leading-relaxed text-base text-gray-700 col-span-1">
+            <div className="font-light leading-8 text-base text-gray-700 col-span-1">
               <p className="mb-8">
-                90% of the main action buttons in the app redirect to the website, leading to inconsistent usability issues that disrupt the user experience and cause frustration and disengagement. This practice compromises the unique value proposition of a native app. If an app frequently redirects to a website, it fails to deliver its intended value.
-
+                Roughly 90% of the main action buttons in the app redirect to the website, leading to inconsistent usability and disrupting the user experience. This practice compromises the unique value proposition of a native app.
+                <p className="text-[#ff6c6c] font-medium	">
+                  If the app frequently redirects users to a website, it diminishes the perceived value of the app itself, as it forces users to rely on another product.
+                </p>
               </p>
             </div>
           </div>
         </section>
-        <Image src={issue1} alt={"issue 1"} quality={95} className="rounded-xl w-full h-full object-contain bg-black col-span-4" />
+        <Image src={issue1} alt={"issue 1"} quality={95} className="rounded-xl w-full h-full object-contain bg-white col-span-4" />
 
 
       </div>
@@ -64,8 +54,8 @@ export const HeuristicSection = () => {
 
 
 
-      <div className="grid grid-cols-3 gap-10 text-md h-full py-36">
-        <Image src={issue1} alt={"issue 1"} quality={95} className="rounded-xl w-full h-full object-contain bg-black col-span-2" />
+      <div className="grid grid-cols-3 gap-10 text-md h-full py-12">
+        <Image src={issue1} alt={"issue 1"} quality={95} className="rounded-xl w-full h-full object-contain bg-white col-span-2" />
 
         <section className="col-span-1 flex items-center rounded-xl">
           <div className="text-gray-800 w-full">
@@ -78,10 +68,10 @@ export const HeuristicSection = () => {
             </div>
 
 
-            <div className="font-light leading-relaxed text-base text-gray-700 col-span-1">
+            <div className="font-light leading-8 text-base text-gray-700  col-span-1">
               <p className="mb-8">
-                When the app redirects to the website, including the login page, users are not returned to the app. This lack of data retention means users must repeatedly enter information such as flight details, QR codes, and boarding passes, making the app significantly less user-friendly. This inconvenience and potential for errors are particularly problematic for time-sensitive tasks like check-in and boarding. Disrupting the seamless experience users expect, the app becomes less efficient and reliable, driving users to seek more convenient alternatives.
-
+                As mentioned, main user flows, such as user login, are redirected to the website and not returned to the app. This means users must repeatedly enter information like flight details, QR codes, and boarding passes, making the app less user-friendly and personalized. This is especially problematic for time-sensitive tasks like check-in and boarding, disrupting the seamless experience users expect.                 <p className="text-[#ff6c6c] font-medium">
+                  If the app cannot retain and manage user data effectively, it fails to provide the personalized and streamlined experience users anticipate from a native application.</p>
               </p>
             </div>
           </div>
@@ -90,7 +80,7 @@ export const HeuristicSection = () => {
       </div>
 
 
-      <div className="grid grid-cols-3 gap-10 text-md h-full py-36">
+      <div className="grid grid-cols-3 gap-10 text-md h-full py-12">
         <section
           className="col-span-1 flex items-center rounded-xl"
         >
@@ -105,9 +95,9 @@ export const HeuristicSection = () => {
             </div>
 
 
-            <div className="font-light leading-relaxed text-base text-gray-700 col-span-1">
+            <div className="font-light leading-8 text-base text-gray-700  col-span-1">
               <p className="mb-8">
-                The app features a wide array of colors, text sizes, and fonts for buttons and other elements, resulting in a disjointed visual hierarchy. This lack of a cohesive design theme makes the app appear chaotic and unprofessional. Inconsistent visual elements disrupt the user experience by complicating navigation and overwhelming users. Users may struggle to understand the visual structure and information architecture, leading to frustration and inefficiency. A unified design system is crucial for creating an intuitive and visually appealing user interface, ensuring a seamless and enjoyable user experience.
+                The app features a wide array of colors, text sizes, and fonts for buttons and other elements, resulting in a disjointed visual hierarchy. This lack of a cohesive design theme makes the app appear chaotic and unpolished. Inconsistent visual elements disrupt the user experience by complicating navigation and overwhelming users. Users may struggle to understand the visual structure and information architecture, leading to frustration and inefficiency. A unified design system is crucial for creating an intuitive and visually appealing user interface, ensuring a seamless and enjoyable user experience.
 
 
 
@@ -132,83 +122,13 @@ export const HeuristicSection = () => {
           </div>
         </section>
 
-        <Image src={issue1} alt={"issue 1"} quality={95} className="rounded-xl w-full h-full object-contain bg-black col-span-2" />
+        <Image src={issue1} alt={"issue 1"} quality={95} className="rounded-xl w-full h-full object-contain bg-white col-span-2" />
       </div>
 
+      <p className="font-light leading-8 text-base text-gray-700 ">Based on the heuristic investigation, it is clear that the app suffers from significant usability issues caused by inconsistent design, poor user retention, and frequent redirects to the website. These issues create a chaotic user experience, with a lack of cohesive design making navigation difficult and frustrating. Users are forced to repeatedly enter information, diminishing the app's personalization and convenience. Additionally, frequent redirections disrupt the seamless experience expected from a native app, leading users to question its value and ultimately seek more reliable and user-friendly alternatives.
 
 
-      <div className="grid grid-cols-3 gap-10 text-md h-full py-36">
-        {/* Issue Image */}
-        <div className="col-span-2">
-          <Image src={currentIssue === 1 ? issue1 : issue2} alt={`issue ${currentIssue}`} quality={95} className="rounded-xl w-full h-full object-contain bg-black" />
-        </div>
-
-        {/* Issue Description */}
-        <section className="col-span-1 flex items-center rounded-xl">
-          <div className="text-gray-800 w-full">
-            {/* Issue Header */}
-            <div className="inline-flex items-center bg-red-500 text-white text-sm px-3 py-1 rounded-full mb-4">
-              <ExclamationCircleIcon className="h-5 w-5 mr-2" />
-              {currentIssue === 1 ? 'Usability Issues due to Design' : 'Header Issue'}
-            </div>
-            {/* Issue Title */}
-            <div className="relative flex items-center mb-8">
-              <h1 className="text-2xl font-semibold text-gray-900">
-                {currentIssue === 1 ? 'Confusing Usability Issues due to Design' : 'Header Issue Title'}
-              </h1>
-            </div>
-            {/* Issue Description */}
-            <div className="font-light leading-relaxed text-base text-gray-700">
-              <p className="mb-8">
-                {currentIssue === 1
-                  ? `Flair Airlines, a Canadian budget airline, is favored for its affordable fares and convenient routes. However, when a friend deleted the app after struggling to access their boarding pass, it highlighted a significant issue. This seemingly simple task proved to be quite complicated. Intrigued by these challenges, I decided to investigate.`
-                  : `Description for Header Issue`}
-              </p>
-            </div>
-          </div>
-        </section>
-
-        {/* Toggle Buttons */}
-        <div className="col-span-3 flex justify-center gap-4">
-          <button onClick={() => handleToggleIssue(1)} className={`btn ${currentIssue === 1 ? 'btn-active' : ''}`}>
-            Issue 1
-          </button>
-          <button onClick={() => handleToggleIssue(2)} className={`btn ${currentIssue === 2 ? 'btn-active' : ''}`}>
-            Issue 2
-          </button>
-          {/* Add more buttons for additional issues */}
-        </div>
-      </div>
-
-
-
-      <div className="grid grid-cols-3 gap-10 text-md h-full py-36">
-        <Image src={issue1} alt={"issue 1"} quality={95} className="rounded-xl w-full h-full object-contain bg-black col-span-2" />
-
-        <section
-          className="col-span-1 flex items-center rounded-xl"
-        >
-          <div className="text-gray-800 w-full">
-
-            <div className="inline-flex items-center bg-red-500 text-white text-sm px-3 py-1 rounded-full mb-2">
-              <ExclamationCircleIcon className="h-5 w-5 mr-2" />
-              Usability Issues due to Design
-            </div>
-            <div className="relative flex items-center mb-8">
-              <h1 className="text-2xl font-semibold text-gray-900">Confusing Usability Issues due to Design
-              </h1>
-            </div>
-
-
-            <div className="font-light leading-relaxed text-base text-gray-700 col-span-1">
-              <p className="mb-8">
-                Flair Airlines, a Canadian budget airline, is favored for its affordable fares and convenient routes. However, when a friend deleted the app after struggling to access their boarding pass, it highlighted a significant issue. This seemingly simple task proved to be quite complicated. Intrigued by these challenges, I decided to investigate.
-              </p>
-            </div>
-          </div>
-        </section>
-
-      </div>
+      </p>
 
     </div>
 

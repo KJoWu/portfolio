@@ -28,7 +28,7 @@ export const ProblemSection = () => {
             </blockquote>
 
 
-            <div className={`font-light leading-8 text-base text-gray-700 ${poppins.className}`}>
+            <div className={`font-light leading-8 text-base text-gray-700`}>
               <p className="mb-8">
                 <b className="text-lg font-medium">Flair Airlines</b> is a Canadian budget airline, is favored for its affordable fares and convenient routes. However, when a friend deleted the app after struggling to access their boarding pass, it highlighted a significant issue.<br /> <span className="bg-[#b2ff94]">This seemingly simple task proved to be quite complicated.</span>  I decided to investigate.
               </p>

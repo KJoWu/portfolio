@@ -7,7 +7,7 @@ import bannerImage from "../../public/banner.png";
 import SectionContainer from '../_components/sectionContainer';
 // import { FlairCaseStudy } from './flairCaseStudy';
 import { HeuristicSection } from './heuristicSection';
-import { UserStorySection } from './userStorySection';
+import { UserComplaintsSection } from './userComplaintsSection';
 import { RedesignSection } from './redesignSection';
 import { IntroSection } from './IntroSection';
 import { PurposeSection } from './purposeSection';
@@ -82,7 +82,7 @@ const FlairCaseStudyData = () => {
         >
 
           <CaseSection>
-            <UserStorySection />
+            <UserComplaintsSection />
           </CaseSection>
 
 

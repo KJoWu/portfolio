@@ -93,7 +93,7 @@ export const ScopingSection = () => {
   return (
     <>
       <section className="mb-12">
-        <h2 className="text-2xl font-semibold mb-4">Planning the User Pathways
+        <h2 className="text-2xl font-semibold text-gray-800 mb-4 border-l-4 border-purple-500  pl-3">Planning the User Pathways
         </h2>
 
         <p>Based on the gathered insights, we will develop detailed case studies of various user personas, such as frequent travelers, tech-savvy influencers, and casual vacation planners, to illustrate how different users interact with the app and highlight areas for improvement.
