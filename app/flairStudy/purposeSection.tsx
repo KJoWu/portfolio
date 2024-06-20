@@ -37,7 +37,7 @@ const Takeaways = () => {
           </p>
         </blockquote>
 
-        <p className="mb-6 text-gray-700">
+        <p className="mb-6 text-gray-700 leading-8 mt-8">
           Through comprehensive visual investigation and user studies, we
           identified critical issues within the Flair app that significantly
           impact user experience. Users reported high stress levels when
@@ -49,28 +49,16 @@ const Takeaways = () => {
         <div className="max-w-7xl mx-auto">
           <section className="grid grid-cols-3 gap-10">
             <div className="col-span-2">
-              <h2 className="text-2xl font-semibold text-gray-800 mb-4 border-l-4 border-purple-500 pl-3">
+              <h2 className="text-2xl font-semibold text-gray-800 mt-10 mb-5 border-l-4 border-purple-500 pl-3">
                 Stress Reduction and User Satisfaction
               </h2>
-              <p className="text-gray-700 mb-4">
-                To remain competitive, Flair must enhance user loyalty and
-                reduce attrition rates by improving navigation, login processes,
-                design consistency, and information handling. Competitors have
-                already addressed similar issues, providing smoother and more
-                reliable user experiences. Airports are inherently stressful,
-                and a reliable app can reduce user stress with timely, accurate
-                information for a smoother travel experience. Redirects to the
-                website cause confusion, disrupt the user journey, and increase
-                stress levels. Inconsistent UI styles and coloring contribute to
-                user frustration. Users often screenshot QR codes, indicating a
-                need for better app functionality. The app must offer unique
-                benefits over the website to retain users and prevent revenue
-                loss due to user dissatisfaction.
+              <p className="font-light leading-8 text-base text-gray-700">
+              To remain competitive, Flair must enhance user loyalty and reduce attrition by improving navigation, login processes, design consistency, and information handling. Competitors have already addressed similar issues, offering smoother and more reliable user experiences. Airports are stressful, and a reliable app can reduce stress with timely, accurate information. Redirects to the website cause confusion and disrupt the user journey, increasing stress levels. Inconsistent UI styles and colors contribute to user frustration. Users often screenshot QR codes, indicating a need for better functionality. The app must offer unique benefits over the website to retain users and prevent revenue loss due to dissatisfaction.
               </p>
             </div>
             <div className="col-span-1 flex items-center">
               <blockquote className="border-l-4 border-blue-500 pl-4 italic text-gray-600">
-                <p>
+                <p className="leading-8 mt-8">
                   61 percent of travelers in the U.S. have booked and paid for
                   travel through their smartphone within the past year, and 64
                   percent use their smartphones en route to their destination.
@@ -89,11 +77,11 @@ const Takeaways = () => {
           </section>
         </div>
 
-        <section className="mb-10">
+        <section className="mb-2 mt-10">
           <h2 className="text-2xl font-semibold text-gray-800 mb-4 border-l-4 border-purple-500 pl-3">
             Technical Challenges
           </h2>
-          <p className="text-gray-700 mb-4">
+          <p className="font-light leading-8 text-base text-gray-700">
             Addressing these issues involves significant technical challenges.
             Ensuring seamless integration with existing backend systems for
             login and data retrieval requires robust APIs and reliable data
@@ -107,13 +95,13 @@ const Takeaways = () => {
         </section>
       </section>
 
-      <section className="bg-white">
+      <section>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div>
             <h2 className="text-2xl font-semibold text-gray-800 mb-4">
               Benefits for Users
             </h2>
-            <ul className="list-disc pl-6 space-y-3 text-black">
+            <ul className="list-disc space-y-3 font-light leading-8 text-base text-gray-700">
               {[
                 {
                   title: "Seamless Onboarding",
@@ -138,11 +126,11 @@ const Takeaways = () => {
               ].map((benefit, index) => (
                 <li
                   key={index}
-                  className="flex items-start hover:bg-blue-50 p-2 rounded transition"
+                  className="flex"
                 >
-                  <div className="text-blue-500 mr-2">&#8226;</div>
+                  <div className="text-purple-500 mr-2">&#8226;</div>
                   <div>
-                    <strong>{benefit.title}:</strong> {benefit.description}
+                    <span className="font-semibold">{benefit.title}:</span> {benefit.description}
                   </div>
                 </li>
               ))}
@@ -152,7 +140,7 @@ const Takeaways = () => {
             <h2 className="text-2xl font-semibold text-gray-800 mb-4">
               Benefits for the Company
             </h2>
-            <ul className="list-disc pl-6 space-y-3 text-black">
+            <ul className="list-disc space-y-3 font-light leading-8 text-base text-gray-700">
               {[
                 {
                   title: "Reputation Management",
@@ -172,11 +160,11 @@ const Takeaways = () => {
               ].map((benefit, index) => (
                 <li
                   key={index}
-                  className="flex items-start hover:bg-blue-50 p-2 rounded transition"
+                  className="flex"
                 >
-                  <div className="text-blue-500 mr-2">&#8226;</div>
+                  <div className="text-purple-500 mr-2">&#8226;</div>
                   <div>
-                    <strong>{benefit.title}:</strong> {benefit.description}
+                  <span className="font-semibold">{benefit.title}:</span> {benefit.description}
                   </div>
                 </li>
               ))}

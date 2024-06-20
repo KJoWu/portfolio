@@ -19,12 +19,16 @@
     "react": "^18",
     "react-dom": "^18",
     "react-icons": "^5.2.0",
+    "react-responsive-carousel": "^3.2.23",
+    "react-slick": "^0.30.2",
+    "slick-carousel": "^1.8.1",
     "three": "^0.164.1"
   },
   "devDependencies": {
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "@types/react-slick": "^0.23.13",
     "@types/three": "^0.164.0",
     "eslint": "^8",
     "eslint-config-next": "14.2.3",

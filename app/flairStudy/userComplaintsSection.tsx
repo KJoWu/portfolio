@@ -1,11 +1,11 @@
 import React from 'react';
 import Image from 'next/image';
 import { ExclamationCircleIcon, EllipsisHorizontalIcon } from "@heroicons/react/24/solid";
-import complaint1 from "../../public/complain_customer_loss.png";
-import complaint2 from "../../public/complaint_data.png";
-import complaint3 from "../../public/complaint_screenshot.png";
-import complaint4 from "../../public/complaint_web.png";
-import airlineReviews from "../../public/airline_reviews.png";
+import complaint1 from "../../public/complain_customer_loss.jpg";
+import complaint2 from "../../public/complaint_data.jpg";
+import complaint3 from "../../public/complaint_screenshot.jpg";
+import complaint4 from "../../public/complaint_web.jpg";
+import airlineReviews from "../../public/airline_reviews.jpg";
 
 interface FeedbackCardProps {
   imageSrc: StaticImageData;
@@ -17,12 +17,12 @@ function FeedbackCard({ imageSrc, title, description }: FeedbackCardProps){
   return (
     <div>
       <Image src={imageSrc} alt={title} quality={95} className="w-full object-cover mb-4" />
-      <div className="bg-white p-4 rounded-lg shadow-lg border-2 border-red-600">
+      <div className="bg-white p-4 rounded-lg shadow-lg border-[0.09em] border-red-600">
         <div className="inline-flex items-center bg-red-500 text-white text-sm px-3 py-1 rounded-full mb-4">
           <ExclamationCircleIcon className="h-5 w-5 mr-2" />
           {title}
         </div>
-        <p className="text-gray-800 text-sm">{description}</p>
+        <p className="text-gray-800 text-sm  leading-6">{description}</p>
       </div>
     </div>
   );
@@ -31,7 +31,7 @@ function FeedbackCard({ imageSrc, title, description }: FeedbackCardProps){
 export const UserComplaintsSection = () => {
   return (
     <>
-      <section className="mb-12 mt-[3em]">
+      <section className="mb-12 mt-[5em]">
         <h1 className="text-2xl font-semibold text-gray-800 mb-4 border-l-4 border-purple-500 pl-3">
           User Interaction Analysis: Understanding App Engagement and Behavior
         </h1>
@@ -39,7 +39,7 @@ export const UserComplaintsSection = () => {
           It became evident that the app had significant visual issues. To ensure these problems were not isolated incidents and to reduce potential biases, I conducted an extensive analysis of user behavior and engagement with the Flair app. This analysis included reviewing feedback from various platforms such as Facebook, Reddit, Google app reviews, and Apple App Store reviews, sorted by popularity.
         </p>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-8 mt-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-12 mt-6">
           <FeedbackCard
             imageSrc={complaint1}
             title="User Dissatisfaction Leading to Competitor Migration"
@@ -63,7 +63,7 @@ export const UserComplaintsSection = () => {
         </div>
 
         <div className="leading-8 mt-8">
-          User feedback underscores significant behavioral and emotional challenges with the app, confirming findings from the heuristic evaluation. Users encountered stress and financial losses when unable to retrieve boarding passes, affecting their confidence during security checks. Additionally, frustrations with the app's confusing design prompted consideration of switching to competitors. Addressing these issues in the UX case study will prioritize enhancing usability, restoring user confidence, and retaining loyalty amidst competitive alternatives.
+          The user feedback underscores significant behavioral and emotional challenges with the app, confirming findings from the heuristic evaluation. Users encountered stress and financial losses when unable to retrieve boarding passes, affecting their confidence during security checks. Additionally, frustrations with the app's confusing design prompted consideration of switching to competitors. 
         </div>
 
 
