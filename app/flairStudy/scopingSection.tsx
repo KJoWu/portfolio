@@ -11,13 +11,13 @@ const UserProfile = ({ image, name, age, occupation, travelFrequency, techSavvin
     <div className="bg-white shadow-md rounded-lg p-6 flex space-x-6">
       <div className="text-gray-700 leading-6">
         <Image src={image} alt={`Image of ${name}`} quality={95} className="w-full h-48 object-cover mb-4 rounded-lg shadow-lg" />
-        <h2 className="text-xl font-medium mb-2">{name}</h2>
+        <h2 className="text-xl font-semibold mb-2">{name}</h2>
         <p className="text-gray-600 mb-2"><strong>Age:</strong> {age}</p>
         <p className="text-gray-600 mb-2"><strong>Occupation:</strong> {occupation}</p>
         <p className="text-gray-600 mb-2"><strong>Travel Frequency:</strong> {travelFrequency}</p>
         <p className="text-gray-600 mb-4"><strong>Tech Savviness:</strong> {techSavviness}</p>
         <p className="mb-4" dangerouslySetInnerHTML={{ __html: description }}></p>
-        <blockquote className="italic text-gray-700 font-medium">"{quote}"</blockquote>
+        <blockquote className="italic text-gray-700 font-semibold">"{quote}"</blockquote>
       </div>
     </div>
   );
@@ -85,7 +85,7 @@ const UserStories = () => {
   ];
 
   return (
-    <div className="font-light text-sm">
+    <div className="font-base text-sm">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-3 ">
         {users.map((user, index) => (
           <UserProfile key={index} {...user} />
@@ -98,7 +98,7 @@ const UserStories = () => {
 export const ScopingSection = () => {
   return (
     <section className="mb-12  mt-[-5em]">
-      <h2 className="text-2xl font-medium text-gray-800 mb-4 border-l-8 border-purple-500 pl-3">Creating the User Personas</h2>
+      <h2 className="text-2xl font-semibold text-gray-800 mb-4 border-l-8 border-purple-500 pl-3">Creating the User Personas</h2>
       <p className="mb-6 text-gray-700 leading-8 mt-8">
         Leveraging our gathered insights, we will develop detailed case studies for various user personas, including frequent travelers, tech-savvy influencers, and casual vacation planners. These case studies will illustrate how different users interact with the app and identify key areas for improvement.
 

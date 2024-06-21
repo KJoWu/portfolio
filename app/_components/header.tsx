@@ -20,7 +20,7 @@ export default function Header() {
 
       <nav className="flex fixed top-[0.15rem] h-12 py-2 sm:top-[1.7rem] sm:right-12 sm:h-[initial] sm:py-0 sm:mr-[3rem]">
         <ul
-          className="flex w-[22rem] items-center justify-center gap-y-1 text-[0.9rem] font-medium text-gray-800
+          className="flex w-[22rem] items-center justify-center gap-y-1 text-[0.9rem] font-semibold text-gray-800
         sm:w-[initial] sm:flex-norwa- sm:gap-5 "
         >
           {links.map((link) => (

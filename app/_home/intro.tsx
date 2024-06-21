@@ -24,14 +24,14 @@ export default function Intro() {
                 duration: 0.2,
               }}
             >
-              <p className={`text-5xl font-medium ${poppins.className} bg-white`}>
+              <p className={`text-5xl font-semibold ${poppins.className} bg-white`}>
                 Hi, I'm <span className="text-[#4229d6]">Kim</span>.
               </p>
 
               <p className={`text-xl pt-5  ${poppins.className} leading-9 bg-white`}>
                 I'm a Senior Frontend Engineer, product designer and artist.
               </p>
-              <div className={`pt-3 leading-8  bg-white ${poppins.className} font-light`}>
+              <div className={`pt-3 leading-8  bg-white ${poppins.className} font-base`}>
                 <p>Recepient of the Meiya Reinking Art Award</p>
                 <p>District of Edmonton Art Award</p>
               </div>

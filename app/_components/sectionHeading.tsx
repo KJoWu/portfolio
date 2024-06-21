@@ -10,7 +10,7 @@ type SectionHeadingProps = {
 export default function SectionHeading({ children }: SectionHeadingProps) {
   return (
     <SectionContainer>
-      <div className="text-2xl text-left font-medium capitalize mb-8 ">
+      <div className="text-2xl text-left font-semibold capitalize mb-8 ">
         {children}
       </div>
     </SectionContainer>

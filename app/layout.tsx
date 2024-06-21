@@ -30,7 +30,7 @@ export default function RootLayout({
 
           <ThemeSwitch />
 
-          <div className={`p-3 text-center text-gray-600 font-light ${poppins.className} text-sm tracking-wide bg-white`}>
+          <div className={`p-3 text-center text-gray-600 font-base ${poppins.className} text-sm tracking-wide bg-white`}>
           &copy; Kim 2024. This site was deSigned-in Figma, coded in Next JS by yours truly, styled with Tailwind and Framer, and deployed on GitHub.
           </div>
         </ThemeContextProvider>

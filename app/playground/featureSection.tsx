@@ -14,7 +14,7 @@ export default function ProjectHighlightSection() {
       <SectionHeading>
         <h1 className="text-3xl">Playground</h1>
 
-        <p className=" text-lg  w-fit font-light pt-3  pb-2 w-[30rem]">
+        <p className=" text-lg  w-fit font-base pt-3  pb-2 w-[30rem]">
           In addition to software developement, I've also worked as a videographer and a graphic designer  
         </p>
       </SectionHeading>

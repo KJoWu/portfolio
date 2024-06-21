@@ -3,7 +3,7 @@ const Takeaways = () => {
     <div className="max-w-7xl mx-auto">
       <section className="mb-8">
         <header className="mb-8">
-        <h1 className="font-medium text-3xl text-gray-800 leading-[1.4em]">
+        <h1 className="font-semibold text-3xl text-gray-800 leading-[1.4em]">
                       Defining and Understanding the Critical Issues
           </h1>
           <hr className="border-t-4 border-[#b2ff94] my-4 w-40" />
@@ -19,7 +19,7 @@ const Takeaways = () => {
           >
             <path d="M6 0H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3H2a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Zm10 0h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3h-1a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Z" />
           </svg>
-          <p className="font-medium">
+          <p className="font-semibold">
             "A third of British respondents found the airport experience more
             stressful than the working week, and a quarter thought it even more
             stressful than moving."
@@ -38,7 +38,7 @@ const Takeaways = () => {
         <div className="max-w-7xl mx-auto">
           <section className="grid grid-cols-1 lg:grid-cols-3 gap-10">
             <article className="lg:col-span-2">
-              <h2 className="text-2xl font-medium text-gray-800 mb-4 border-l-8 border-purple-500 pl-3 mt-10 w-[30em] leading-9">
+              <h2 className="text-2xl font-semibold text-gray-800 mb-4 border-l-8 border-purple-500 pl-3 mt-10 w-[30em] leading-9">
                 Stress Reduction and User Satisfaction
               </h2>
               <div className="mx-auto text-gray-700 leading-8">
@@ -46,13 +46,13 @@ const Takeaways = () => {
                   Through visual analysis and user studies, we identified critical pain points in the Flair app that impact user experience. <span className="bg-[#b2ff94]">Users reported high stress when retrieving boarding passes, particularly in time-sensitive airport environments.</span>
                 </p>
                 <p className=" text-gray-700 leading-8 mt-4">
-                  To stay competitive, Flair must enhance user loyalty by optimizing navigation, login processes, design consistency, and information handling. Competitors offer smoother experiences. A reliable app can reduce user anxiety with accurate, timely information, fostering <span className="font-medium">customer loyalty</span> and a <span className="font-medium">positive reputation</span>.
+                  To stay competitive, Flair must enhance user loyalty by optimizing navigation, login processes, design consistency, and information handling. Competitors offer smoother experiences. A reliable app can reduce user anxiety with accurate, timely information, fostering <span className="font-semibold">customer loyalty</span> and a <span className="font-semibold">positive reputation</span>.
                 </p>
                 <p className=" text-gray-700 leading-8 mt-4">
-                  Website redirects cause confusion and disrupt the user journey. Inconsistent UI and frequent need to screenshot QR codes indicate functionality gaps. Unique benefits like <span className="font-medium">seamless onboarding</span> that reduce stress and build trust are crucial, increasing satisfaction and positive word-of-mouth.
+                  Website redirects cause confusion and disrupt the user journey. Inconsistent UI and frequent need to screenshot QR codes indicate functionality gaps. Unique benefits like <span className="font-semibold">seamless onboarding</span> that reduce stress and build trust are crucial, increasing satisfaction and positive word-of-mouth.
                 </p>
                 <p className=" text-gray-700 leading-8 mt-4">
-                  Implementing user profiles, enhancing login reliability, and ensuring design consistency will ensure a seamless experience. These steps enhance usability, leading to <span className="font-medium">higher retention rates</span> and a <span className="font-medium">competitive edge</span>. Satisfied users will likely recommend the app, increasing <span className="font-medium">customer lifetime value</span>.
+                  Implementing user profiles, enhancing login reliability, and ensuring design consistency will ensure a seamless experience. These steps enhance usability, leading to <span className="font-semibold">higher retention rates</span> and a <span className="font-semibold">competitive edge</span>. Satisfied users will likely recommend the app, increasing <span className="font-semibold">customer lifetime value</span>.
                 </p>
               </div>
             </article>
@@ -78,11 +78,11 @@ const Takeaways = () => {
         </div>
 
         <section className="mb-2 mt-10">
-          <h2 className="text-2xl font-medium text-gray-800 mb-4 border-l-8 border-purple-500 pl-3 mt-10  w-[30em] leading-9">
+          <h2 className="text-2xl font-semibold text-gray-800 mb-4 border-l-8 border-purple-500 pl-3 mt-10  w-[30em] leading-9">
             Possible Limitations
           </h2>
-          <p className="font-light leading-8 text-base text-gray-700">
-            <span className="font-medium">The current problems extend beyond visual issues;</span> a significant portion involves users experiencing login difficulties, which may be technical in nature. To enhance the app's value, we need to implement user profiles, likely requiring database integration or other technical solutions. This will be crucial and will complement the proposed design improvements.
+          <p className="font-base leading-8 text-base text-gray-700">
+            <span className="font-semibold">The current problems extend beyond visual issues;</span> a significant portion involves users experiencing login difficulties, which may be technical in nature. To enhance the app's value, we need to implement user profiles, likely requiring database integration or other technical solutions. This will be crucial and will complement the proposed design improvements.
           </p>
         </section>
       </section>

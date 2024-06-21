@@ -32,12 +32,12 @@ export const UserComplaintsSection = () => {
   return (
     <>
       <section className="mb-12 mt-[2em]">
-        <h1 className="text-2xl font-medium text-gray-800 mb-6 border-l-8 border-purple-500 pl-3 w-[30em] leading-9">
+        <h1 className="text-2xl font-semibold text-gray-800 mb-6 border-l-8 border-purple-500 pl-3 w-[30em] leading-9">
           User Interaction Analysis: Understanding App Engagement and Behavior
         </h1>
-        <p className="font-light leading-8 text-base text-gray-700">
+        <p className="font-base leading-8 text-base text-gray-700">
           It became evident that the app had significant visual issues. To ensure these problems were not isolated incidents and to
-          <span className="font-medium"> reduce potential biases</span>, I analyzed user behavior and engagement with the Flair app. This included <span className="bg-[#b2ff94]">identifying user pain points</span> from feedback on Facebook, Reddit, Google app reviews, and the Apple App Store.
+          <span className="font-semibold"> reduce potential biases</span>, I analyzed user behavior and engagement with the Flair app. This included <span className="bg-[#b2ff94]">identifying user pain points</span> from feedback on Facebook, Reddit, Google app reviews, and the Apple App Store.
         </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-y-10 gap-x-6 mt-6 mx-10">
@@ -64,17 +64,17 @@ export const UserComplaintsSection = () => {
         </div>
 
         <div className="leading-8 mt-8">
-          The user feedback underscores <span className="bg-[#b2ff94]">significant behavioral and emotional challenges </span> with the app,  <span className="font-medium">confirming our findings from the heuristic evaluation.</span>
+          The user feedback underscores <span className="bg-[#b2ff94]">significant behavioral and emotional challenges </span> with the app,  <span className="font-semibold">confirming our findings from the heuristic evaluation.</span>
         </div>
 
 
         <div className="leading-8">
-          <h1 className="text-2xl font-medium text-gray-800 mb-4 border-l-8 border-purple-500 pl-3 mt-10  w-[30em] leading-9">
+          <h1 className="text-2xl font-semibold text-gray-800 mb-4 border-l-8 border-purple-500 pl-3 mt-10  w-[30em] leading-9">
             Comparative Analysis: Benchmarking User Experience Across Airlines
           </h1>
           <Image src={airlineReviews} alt="Airline Reviews" quality={95} className="w-full py-5 pb-9" />
           <p>
-            <span className="font-medium">Higher ratings among Canadian and popular American competitors indicate they are succeeding where Flair is not.</span> This comparison <span className="bg-[#b2ff94]">highlights opportunities to learn from industry leaders and enhance our app's performance </span> , ultimately boosting user satisfaction and loyalty. We will reference these competitor apps during our redesign to incorporate best practices and elevate our user experience.
+            <span className="font-semibold">Higher ratings among Canadian and popular American competitors indicate they are succeeding where Flair is not.</span> This comparison <span className="bg-[#b2ff94]">highlights opportunities to learn from industry leaders and enhance our app's performance </span> , ultimately boosting user satisfaction and loyalty. We will reference these competitor apps during our redesign to incorporate best practices and elevate our user experience.
 
           </p>
         </div>

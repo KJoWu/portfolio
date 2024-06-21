@@ -76,7 +76,7 @@ const FlairCaseStudyData = () => {
 
         <motion.section
           id="section3"
-          className="relative font-light pb-20"
+          className="relative font-base pb-20"
           whileInView="visible"
           variants={sectionVariants}
           transition={{ duration: 0.5 }}
@@ -94,7 +94,7 @@ const FlairCaseStudyData = () => {
 
         <motion.section
           id="section3"
-          className="relative font-light pb-20"
+          className="relative font-base pb-20"
           whileInView="visible"
           variants={sectionVariants}
           transition={{ duration: 0.5 }}
@@ -110,7 +110,7 @@ const FlairCaseStudyData = () => {
 
         <motion.section
           id="section3"
-          className="relative font-light pb-20"
+          className="relative font-base pb-20"
           whileInView="visible"
           variants={sectionVariants}
           transition={{ duration: 0.5 }}
@@ -127,7 +127,7 @@ const FlairCaseStudyData = () => {
 
         <motion.section
           id="section3"
-          className="relative font-light pb-20"
+          className="relative font-base pb-20"
           whileInView="visible"
           variants={sectionVariants}
           transition={{ duration: 0.5 }}
@@ -144,7 +144,7 @@ const FlairCaseStudyData = () => {
 
         <motion.section
           id="section3"
-          className="relative font-light pb-20"
+          className="relative font-base pb-20"
           whileInView="visible"
           variants={sectionVariants}
           transition={{ duration: 0.5 }}

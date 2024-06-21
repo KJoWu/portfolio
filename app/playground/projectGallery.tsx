@@ -30,7 +30,7 @@ export default function ProjectGallery({
   const gridClass = selectedOption === "video" || selectedOption === "web" ? "grid-cols-3" : "grid-cols-3";
   return (
     <div>
-      <p className="text-sm pb-5 font-light w-[40rem] leading-6">{description}</p>
+      <p className="text-sm pb-5 font-base w-[40rem] leading-6">{description}</p>
       <div className={`grid gap-10 ${gridClass}`}>{renderThumbnails()}</div>
     </div>
   );

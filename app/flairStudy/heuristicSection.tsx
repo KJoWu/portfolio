@@ -52,11 +52,11 @@ export const HeuristicSection = () => {
   return (
     <div className="leading-8 mt-8">
       <div className="mb-8">
-        <h1 className="font-medium text-3xl text-gray-800 leading-[1.4em]"> Market Discovery: Evaluating Interface Design, User Experience, and Product Usage
+        <h1 className="font-semibold text-3xl text-gray-800 leading-[1.4em]"> Market Discovery: Evaluating Interface Design, User Experience, and Product Usage
         </h1>
         <hr className="border-t-4 border-[#b2ff94] my-4 w-[10em]" />
       </div>
-      <p className="font-light leading-8 text-base text-gray-700">
+      <p className="font-base leading-8 text-base text-gray-700">
         To gain a comprehensive understanding of user interactions with the app, I conducted a <span className="bg-[#b2ff94]"> heuristic evaluation </span>on the primary pages, with a particular focus on those related to onboarding.
       </p>
 
@@ -69,15 +69,15 @@ export const HeuristicSection = () => {
               Excessive Website Redirects
             </div>
             <div className="relative flex items-center mb-8">
-              <h1 className="text-2xl font-medium text-gray-900">
+              <h1 className="text-2xl font-semibold text-gray-900">
                 Frequent Website Redirects Compromising App Value
               </h1>
             </div>
-            <div className="font-light leading-7 text-base text-gray-700 col-span-1 mb-2">
+            <div className="font-base leading-7 text-base text-gray-700 col-span-1 mb-2">
               <p>
                 <span className="bg-[#b2ff94]">Roughly 90% of the main action buttons in the app redirect to the website,</span> leading to inconsistent usability and disrupting the user experience. This practice compromises the unique value proposition of a native app.
               </p>
-              <p className="pt-3 font-medium">
+              <p className="pt-3 font-semibold">
                 If the app frequently redirects users to a website, it diminishes the perceived value of the app itself, as it forces users to rely on another product.
               </p>
             </div>
@@ -99,14 +99,14 @@ export const HeuristicSection = () => {
               Data Retention Issues
             </div>
             <div className="relative flex items-center mb-8">
-              <h1 className="text-2xl font-medium text-gray-900 mt-2">  Reduced Convenience Due to No Data Retention</h1>
+              <h1 className="text-2xl font-semibold text-gray-900 mt-2">  Reduced Convenience Due to No Data Retention</h1>
             </div>
 
 
-            <div className="font-light leading-8 text-base text-gray-700  col-span-1">
+            <div className="font-base leading-8 text-base text-gray-700  col-span-1">
               <p>
-                As mentioned, main user flows, such as user login, are redirected to the website. Because of this, <span className="bg-[#b2ff94]">user information is not present on the app.</span>  This means users must repeatedly enter information like flight details, QR codes, and boarding passes, making the app less user-friendly and personalized. This is especially problematic for time-sensitive tasks like check-in and boarding, disrupting the seamless experience users expect.</p>
-              <p className="pt-2 font-medium">
+                As mentioned, main user flows, such as user login, are redirected to the website. Because of this, <span className="bg-[#b2ff94]">user information is not present on the app.</span>  This means users must repeatedly enter information like flight details, QR codes, and boarding passes, making the app less user-friendly and personalized. <span className="bg-[#b2ff94]">his is especially problematic for time-sensitive tasks</span> like check-in and boarding, disrupting the seamless experience users expect.</p>
+              <p className="pt-2 font-semibold">
                 If the app cannot retain and manage user data effectively, it fails to provide the personalized and streamlined experience users anticipate from a native application.</p>
             </div>
           </div>
@@ -123,17 +123,17 @@ export const HeuristicSection = () => {
             </div>
         
             <div className="relative flex items-center mb-8">
-              <h1 className="text-2xl font-medium text-gray-900"> Confusing Visuals and Inconsistent Design
+              <h1 className="text-2xl font-semibold text-gray-900"> Confusing Visuals and Inconsistent Design
               </h1>
             </div>
 
 
-            <div className="font-light leading-8 text-base text-gray-700  col-span-2">
+            <div className="font-base leading-8 text-base text-gray-700  col-span-2">
               <p >
                 The app's diverse colors, text sizes, and fonts <span className="bg-[#b2ff94]">create a fragmented visual hierarchy, resulting in a chaotic and unpolished appearance.</span> Inconsistent elements disrupt the user experience, complicating navigation and overwhelming users. This makes it challenging to understand the visual structure, causing frustration and inefficiency.
 
               </p>
-              <p className="pt-2 font-medium">
+              <p className="pt-2 font-semibold">
 
                 Implementing a unified design system is essential to maintaining the company's visual branding and ensuring a seamless, enjoyable user experience.
               </p>

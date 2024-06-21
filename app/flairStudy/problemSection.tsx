@@ -12,7 +12,7 @@ export const ProblemSection = () => {
           <div className="text-gray-800 w-full">
 
             <div className="mb-8">
-              <h1 className="font-medium text-3xl text-gray-800 leading-[1.5em]"> Setting the Scene: The Challenges of Flair Airlines</h1>
+              <h1 className="font-semibold text-3xl text-gray-800 leading-[1.5em]"> Setting the Scene: The Challenges of Flair Airlines</h1>
               <hr className="border-t-4 border-[#b2ff94] my-4 w-[10em]" />
             </div>
 
