@@ -41,7 +41,7 @@ export default function ProjectThumbnail({
         </div>
         <div className="text-gray-900 mt-3">
         {/* <div className="bg-slate-200 text-gray-900 p-5"> */}
-          <h3 className={`text-md font-bold  w-fit`}>
+          <h3 className={`text-md font-medium  w-fit`}>
             {title}
           </h3>
           <p className="pt-1 text-gray-500 font-light text-sm leading-relaxed ">
@@ -62,7 +62,7 @@ export default function ProjectThumbnail({
       />
       <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-30 bg-gray-950 bg-opacity-80 group-hover:opacity-100 text-center">
         <div className="text-white p-5">
-          <h3 className="text-2xl font-semibold">{title}</h3>
+          <h3 className="text-2xl font-medium">{title}</h3>
           <p className="text-sm pt-3 leading-6 font-thin">{description}</p>
         </div>
       </div>

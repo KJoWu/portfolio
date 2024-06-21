@@ -24,7 +24,7 @@ export default function Intro() {
                 duration: 0.2,
               }}
             >
-              <p className={`text-5xl font-bold ${poppins.className} bg-white`}>
+              <p className={`text-5xl font-medium ${poppins.className} bg-white`}>
                 Hi, I'm <span className="text-[#4229d6]">Kim</span>.
               </p>
 

@@ -11,13 +11,13 @@ const UserProfile = ({ image, name, age, occupation, travelFrequency, techSavvin
     <div className="bg-white shadow-md rounded-lg p-6 flex space-x-6">
       <div className="text-gray-700 leading-6">
         <Image src={image} alt={`Image of ${name}`} quality={95} className="w-full h-48 object-cover mb-4 rounded-lg shadow-lg" />
-        <h2 className="text-xl font-semibold mb-2">{name}</h2>
+        <h2 className="text-xl font-medium mb-2">{name}</h2>
         <p className="text-gray-600 mb-2"><strong>Age:</strong> {age}</p>
         <p className="text-gray-600 mb-2"><strong>Occupation:</strong> {occupation}</p>
         <p className="text-gray-600 mb-2"><strong>Travel Frequency:</strong> {travelFrequency}</p>
         <p className="text-gray-600 mb-4"><strong>Tech Savviness:</strong> {techSavviness}</p>
         <p className="mb-4" dangerouslySetInnerHTML={{ __html: description }}></p>
-        <blockquote className="italic text-gray-700">"{quote}"</blockquote>
+        <blockquote className="italic text-gray-700 font-medium">"{quote}"</blockquote>
       </div>
     </div>
   );
@@ -39,7 +39,7 @@ const UserStories = () => {
     },
     {
       image: profile1,
-      name: "David Loid",
+      name: "Jacob Loid",
       age: 40,
       occupation: "Industrial Manager",
       travelFrequency: "Twice a year",
@@ -48,18 +48,6 @@ const UserStories = () => {
                     <span class="bg-[#b2ff94]">needs a reliable, user-friendly app to ensure smooth travel for him and his large family </span>. 
                     He will use whatever method is easiest and prefers modern solutions.`,
       quote: "Traveling with kids is stressful enough. I need an app that makes things easier, not harder."
-    },
-    {
-      image: profile4,
-      name: "The Vlogging Squad",
-      age: "20-25",
-      occupation: "Social Media Influencers",
-      travelFrequency: "Frequently",
-      techSavviness: "High",
-      description: `The squad is a dynamic group of young influencers who frequently travel to create unique content. They are tech-savvy users who 
-                    <span class="bg-[#b2ff94]">prefer modern, sleek apps </span> 
-                    and will quickly share their experiences, good or bad, with their large online audience.`,
-      quote: "Our followers expect the best from us, and we expect the same from our travel app. If it fails, our audience will definitely hear about it."
     },
     {
       image: profile5,
@@ -73,9 +61,21 @@ const UserStories = () => {
       quote: "I’m always on the lookout for great travel deals. I need an app that helps me find and book trips affordably, without interfering with my studies."
     },
     {
+      image: profile4,
+      name: "The Vlogging Squad",
+      age: "20-25",
+      occupation: "Social Media Influencers",
+      travelFrequency: "Frequently",
+      techSavviness: "High",
+      description: `The squad is a dynamic group of young influencers who frequently travel to create content. They are tech-savvy, 
+                    <span class="bg-[#b2ff94]">prefer modern, sleek apps </span> 
+                    and will share their experiences, good or bad, with their online audience.`,
+      quote: "Our followers expect the best from us. If we run into trouble with the app, our audience will definitely hear about it."
+    },
+    {
       image: profile2,
       name: "Bob Anderson",
-      age: 50,
+      age: 67,
       occupation: "Retired School Principal",
       travelFrequency: "Rarely travels",
       techSavviness: "Low",
@@ -86,7 +86,7 @@ const UserStories = () => {
 
   return (
     <div className="font-light text-sm">
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-10 ">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-3 ">
         {users.map((user, index) => (
           <UserProfile key={index} {...user} />
         ))}
@@ -97,10 +97,12 @@ const UserStories = () => {
 
 export const ScopingSection = () => {
   return (
-    <section className="mb-12">
-      <h2 className="text-2xl font-semibold text-gray-800 mb-4 border-l-4 border-purple-500 pl-3">Planning the User Pathways</h2>
-      <p className="mb-6 text-gray-700 leading-8 mt-8">
-        Based on the gathered insights, we will develop detailed case studies of various user personas, such as frequent travelers, tech-savvy influencers, and casual vacation planners, to illustrate how different users interact with the app and highlight areas for improvement.
+    <section className="mb-12  mt-[-5em]">
+      <h2 className="text-2xl font-medium text-gray-800 mb-4 border-l-8 border-purple-500 pl-3">Creating the User Personas</h2>
+      <p className="mb-6 text-gray-700 leading-8 mt-8">F
+        Leveraging our gathered insights, we will develop detailed case studies for various user personas, including frequent travelers, tech-savvy influencers, and casual vacation planners. These case studies will illustrate how different users interact with the app and identify key areas for improvement.
+
+
       </p>
       <UserStories />
       <div className="flex justify-center items-center pb-[3em] pt-[13em]">

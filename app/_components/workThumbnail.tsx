@@ -27,7 +27,7 @@ export default function WorkThumbnail({
         />
       </section>
       <div>
-        <h3 className={`text-xl font-semibold mb-3 tracking-wide  ${inter.className}`}>{title}</h3>
+        <h3 className={`text-xl font-medium mb-3 tracking-wide  ${inter.className}`}>{title}</h3>
         {/* <p className={`font-light text-sm ${inter.className} leading-relaxed text-gray-500 tracking-wider`}>{type}</p> */}
         <p className={`mt-1 ${poppins.className}  font-light  text-sm leading-relaxed`}>
           {description}
