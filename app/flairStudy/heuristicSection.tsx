@@ -54,8 +54,7 @@ export const HeuristicSection = () => {
       <div className="mb-8">
         <h1 className="font-semibold text-3xl text-gray-800 leading-[1.4em]"> Market Discovery: Evaluating Interface Design, User Experience, and Product Usage
         </h1>
-        <hr className="border-t-4 border-[#b2ff94] my-4 w-[10em]" />
-      </div>
+        <hr className="border-t-8 border-[#b2ff94] my-2 w-[10em]" />      </div>
       <p className="font-base leading-8 text-base text-gray-700">
         To gain a comprehensive understanding of user interactions with the app, I conducted a <span className="bg-[#b2ff94]"> heuristic evaluation </span>on the primary pages, with a particular focus on those related to onboarding.
       </p>
@@ -105,7 +104,7 @@ export const HeuristicSection = () => {
 
             <div className="font-base leading-8 text-base text-gray-700  col-span-1">
               <p>
-                As mentioned, main user flows, such as user login, are redirected to the website. Because of this, <span className="bg-[#b2ff94]">user information is not present on the app.</span>  This means users must repeatedly enter information like flight details, QR codes, and boarding passes, making the app less user-friendly and personalized. <span className="bg-[#b2ff94]">his is especially problematic for time-sensitive tasks</span> like check-in and boarding, disrupting the seamless experience users expect.</p>
+                As mentioned, main user flows, such as user login, are redirected to the website. Because of this, <span className="bg-[#b2ff94]">user information is not present on the app.</span>  This means users must repeatedly enter information like flight details, QR codes, and boarding passes, making the app less user-friendly and personalized. <span className="bg-[#b2ff94]">his is especFially problematic for time-sensitive tasks</span> like check-in and boarding, disrupting the seamless experience users expect.</p>
               <p className="pt-2 font-semibold">
                 If the app cannot retain and manage user data effectively, it fails to provide the personalized and streamlined experience users anticipate from a native application.</p>
             </div>

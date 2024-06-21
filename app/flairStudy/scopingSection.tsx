@@ -97,7 +97,7 @@ const UserStories = () => {
 
 export const ScopingSection = () => {
   return (
-    <section className="mb-12  mt-[-5em]">
+    <section className="mb-3  mt-[-5em]">
       <h2 className="text-2xl font-semibold text-gray-800 mb-4 border-l-8 border-purple-500 pl-3">Creating the User Personas</h2>
       <p className="mb-6 text-gray-700 leading-8 mt-8">
         Leveraging our gathered insights, we will develop detailed case studies for various user personas, including frequent travelers, tech-savvy influencers, and casual vacation planners. These case studies will illustrate how different users interact with the app and identify key areas for improvement.
@@ -105,8 +105,8 @@ export const ScopingSection = () => {
 
       </p>
       <UserStories />
-      <div className="flex justify-center items-center pb-[3em] pt-[13em]">
-        <EllipsisHorizontalIcon className="h-6 w-6 text-black" />
+      <div className="flex justify-center items-center pt-[7em]">
+      <EllipsisHorizontalIcon className="h-10 w-10 text-black text-3xl" />
       </div>
     </section>
   );

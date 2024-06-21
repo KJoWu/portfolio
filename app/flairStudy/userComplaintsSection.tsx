@@ -44,7 +44,7 @@ export const UserComplaintsSection = () => {
           <FeedbackCard
             imageSrc={complaint1}
             title="Dissatisfaction Fueling Customer Loss"
-            description="Due to poor design and the inability to obtain necessary information, users were left highly dissatisfied. This frustration led many to cancel flights, abandon the app, and switch to competitors, resulting in a significant loss of customer loyalty and engagement."
+            description="Due to poor design and lack of necessary information, users were highly dissatisfied. This frustration led to many canceling flights, abandoning the app, and switching to competitors, resulting in a significant loss of customer loyalty and engagement.            "
           />
           <FeedbackCard
             imageSrc={complaint2}
@@ -59,7 +59,8 @@ export const UserComplaintsSection = () => {
           <FeedbackCard
             imageSrc={complaint4}
             title="User Frustration Due to Website Redirections"
-            description="Users consistently expressed frustration with the app's frequent redirections to the website, which disrupted their experience and undermined the app's purpose and value. This repeated need to switch between platforms led users to question the app's effectiveness and reliability."
+            description="Users consistently expressed frustration with the app's frequent redirections to the website, disrupting their experience and undermining the app's value. This constant switching led users to question the app's effectiveness and reliability.
+            "
           />
         </div>
 
@@ -79,8 +80,8 @@ export const UserComplaintsSection = () => {
           </p>
         </div>
       </section>
-      <div className="flex justify-center items-center py-[6em]">
-        <EllipsisHorizontalIcon className="h-6 w-6 text-black" />
+      <div className="flex justify-center items-center pb-[2em] pt-[3em]">
+        <EllipsisHorizontalIcon className="h-10 w-10 text-black text-3xl" />
       </div>
     </>
   );

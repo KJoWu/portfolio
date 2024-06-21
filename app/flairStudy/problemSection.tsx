@@ -6,14 +6,14 @@ import { EllipsisHorizontalIcon } from '@heroicons/react/24/solid';
 export const ProblemSection = () => {
   return (
     <div className="">
-      <div className="grid grid-cols-5 gap-20 text-md h-full py-12 ">
+      <div className="grid grid-cols-5 gap-20 text-md h-full">
         <section
           className="col-span-3 rounded-xl">
           <div className="text-gray-800 w-full">
 
             <div className="mb-8">
               <h1 className="font-semibold text-3xl text-gray-800 leading-[1.5em]"> Setting the Scene: The Challenges of Flair Airlines</h1>
-              <hr className="border-t-4 border-[#b2ff94] my-4 w-[10em]" />
+              <hr className="border-t-8 border-[#b2ff94] my-2 w-[10em]" />
             </div>
 
 
@@ -46,8 +46,8 @@ export const ProblemSection = () => {
         How can we redesign the digital boarding pass process to be more <b>intuitive, reliable, and stress-free</b> for Flair Airlines passengers?
       </blockquote>
 
-      <div className="flex justify-center items-center py-[7em]">
-        <EllipsisHorizontalIcon className="h-6 w-6 text-black" />
+      <div className="flex justify-center items-center pb-[5em] pt-[4em]">
+      <EllipsisHorizontalIcon className="h-10 w-10 text-black text-3xl" />
       </div>
     </div>
   )

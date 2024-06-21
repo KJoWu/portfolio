@@ -46,18 +46,18 @@ const Takeaways = () => {
                   Through visual analysis and user studies, we identified critical pain points in the Flair app that impact user experience. <span className="bg-[#b2ff94]">Users reported high stress when retrieving boarding passes, particularly in time-sensitive airport environments.</span>
                 </p>
                 <p className=" text-gray-700 leading-8 mt-4">
-                  To stay competitive, Flair must enhance user loyalty by optimizing navigation, login processes, design consistency, and information handling. Competitors offer smoother experiences. A reliable app can reduce user anxiety with accurate, timely information, fostering <span className="font-semibold">customer loyalty</span> and a <span className="font-semibold">positive reputation</span>.
+                  To stay competitive, Flair must enhance user loyalty by optimizing navigation, login processes, design consistency, and information handling. Competitors offer smoother experiences. <span className="bg-[#b2ff94]">A reliable app can reduce user anxiety with accurate, timely information, fostering <span className="font-semibold">customer loyalty</span> and a <span className="font-semibold">positive reputation</span>.</span>
                 </p>
                 <p className=" text-gray-700 leading-8 mt-4">
                   Website redirects cause confusion and disrupt the user journey. Inconsistent UI and frequent need to screenshot QR codes indicate functionality gaps. Unique benefits like <span className="font-semibold">seamless onboarding</span> that reduce stress and build trust are crucial, increasing satisfaction and positive word-of-mouth.
                 </p>
                 <p className=" text-gray-700 leading-8 mt-4">
-                  Implementing user profiles, enhancing login reliability, and ensuring design consistency will ensure a seamless experience. These steps enhance usability, leading to <span className="font-semibold">higher retention rates</span> and a <span className="font-semibold">competitive edge</span>. Satisfied users will likely recommend the app, increasing <span className="font-semibold">customer lifetime value</span>.
+                  Implementing user profiles, enhancing login reliability, and ensuring design consistency will ensure a seamless experience. These steps enhance usability, leading to <span className="font-semibold">higher retention rates</span> and a <span className="font-semibold">competitive edge</span>.  <span className="bg-[#b2ff94]">Satisfied users will likely recommend the app, increasing <span className="font-semibold">customer lifetime value</span> </span>.
                 </p>
               </div>
             </article>
             <aside className="lg:col-span-1 flex items-center ">
-              <blockquote className="border-l-4 border-purple-700 pl-4 italic text-gray-600 bg-slate-900 px-5 py-8 rounded-lg text-slate-100">
+              <blockquote className="border-l-4 border-purple-600 pl-4 italic text-gray-600 bg-slate-900 px-5 py-8 rounded-lg text-slate-100">
                 <p className="leading-7 p-4 font-base">
                   "61 percent of travelers in the U.S. have booked and paid for
                   travel through their smartphone within the past year, and 64

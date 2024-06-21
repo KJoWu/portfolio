@@ -26,8 +26,7 @@ export const RedesignSection = () => {
     <>
       <div className="mb-8">
         <h1 className="font-semibold text-3xl text-gray-800 leading-[1.4em]">Redesigning the App</h1>
-        <hr className="border-t-4 border-[#b2ff94] my-4 w-[10em]" />
-      </div>
+        <hr className="border-t-8 border-[#b2ff94] my-2 w-[10em]" />      </div>
 
       <div className="space-y-4">
         <Section
@@ -40,6 +39,17 @@ export const RedesignSection = () => {
           text={`Establishing a <span class="bg-[#b2ff94]">consistent color theme across all platforms would improve brand recognition and user experience.</span> While promotional ads use the signature green, black, and purple, the app and web app lean more into pastel colors with images. Since the color theme is not defined for this project, we will adhere to the current design and make necessary adjustments within this framework.`}
         />
 
+        <Section
+          title="Scope"
+          text={`We will limit the scope to two user pathways: one for signed-in users and one for guests. These pathways will cover the processes for flight boarding and check-in.
+
+
+
+
+
+
+          `}
+        />
         <ContentWithImage
           title="Revamping Navigation Bar"
           subtitle="Consolidating Navigational Flow"
@@ -53,7 +63,7 @@ export const RedesignSection = () => {
           title="Modernizing the Booking Experience"
           subtitle="Revamping the Flight Booking Form"
           text={`<span class="font-bold mt-4 block">Airplane Icon:</span> Icon now transformed to a toggle button to improve usability.
-          <br/><span class="font-bold mt-4 block">Traveler Info Display:</span> Field now shows detailed traveler info for quick comprehension.
+          <br/><span class="font-bold mt-4 block">Traveler Info Display:</span> Field now shows conveniently shows full details of travellers types.
           <br/><span class="font-bold mt-4 block">Personalized Greeting (Optional):</span> A greeting has been added making the app more welcoming.
           <br/><span class="font-bold mt-4 block">Modernized Styling:</span> Form style has been updated for a more modern look.`}
           image={designHome}
@@ -85,7 +95,7 @@ export const RedesignSection = () => {
         <ContentWithImage
           title="Implementing More Personalization"
           subtitle="Introducing Personalized Notifications"
-          text={`<span class="font-bold mt-4 block">Data Retention:</span> Building on the personalized widget mentioned earlier, we can further enhance the user experience by incorporating notifications that provide detailed flight information. <p className="mt-2"/>By adding these notifications to the main page, we will <span class="bg-[#b2ff94]">increase user convenience</span> by displaying <span class="bg-[#b2ff94]">relevant, up-to-date information such as the time left until check-in and boarding status</span>.</p>`}
+          text={`<span class="font-bold mt-4 block">Data Retention:</span> Building on the personalized widget mentioned earlier, we can further enhance the user experience by. <span class="bg-[#b2ff94]"> incorporating notifications</span> that provide detailed flight information. <p className="mt-2"/>By adding these notifications to the main page, we will <span class="bg-[#b2ff94]">increase user convenience</span> by displaying <span class="bg-[#b2ff94]">relevant, up-to-date information such as the time left until check-in and boarding status</span>.</p>`}
           image={designNotification}
           alt="issue 4"
         />

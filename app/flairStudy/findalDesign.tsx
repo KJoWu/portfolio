@@ -13,37 +13,76 @@ export const FinalDesign = () => {
     <>
 
 
-      <div className="mb-8">
-        <h1 className="font-semibold text-gray-800  text-3xl leading-[1.4em]"> Final Design</h1>
-        <hr className="border-t-4 border-[#b2ff94] my-4 w-[10em]" />
+      <div className="mb-8 flex flex-col items-center">
+        <h1 className="font-semibold text-gray-800 text-3xl leading-[1.4em]">Final Design</h1>
+        <hr className="border-t-8 border-[#b2ff94] my-2 w-[10em]" />
       </div>
-
-
-
       <div className="space-y-4">
 
-        <div>
+
           <div className="grid grid-cols-5 gap-10 text-md h-full py-30">
             <Image src={designMenu} alt="menu" quality={95} className="rounded-xl w-full h-full object-contain bg-white col-span-3" />
 
             <section className="col-span-2 flex items-center rounded-xl">
               <div className="text-gray-800 w-full">
                 <div className="relative flex items-center mb-8">
-                  <h1 className="text-2xl font-semibold text-gray-900">Enhancing the Menu Options</h1>
+                  <h1 className="text-2xl font-semibold text-gray-900">Improved Booking</h1>
                 </div>
                 <div className="font-base leading-relaxed text-base text-gray-700 col-span-3">
-                  <h2 className="text-xl font-semibold text-gray-800">Improving the Menu Options</h2>
-                  <ul className="list-disc list-inside ml-4 text-gray-700 space-y-2">
-                    <li><span className="semibold">Simplify Navigation:</span> Consolidate the top hamburger menu and bottom menu into a single bottom menu to reduce user confusion and streamline access.</li>
-                    <li><span className="bold">Relocate In-Flight Page:</span> Move the in-flight suggestion page to the hamburger menu to declutter the main navigation and make the bottom menu more concise.</li>
-                    <li><span className="font-semibold">Track User Interactions:</span> Implement a heat map to monitor page usage, allowing for data-driven adjustments to optimize navigation based on actual user behavior.</li>
-                  </ul>
+                App now features a modernized UI with enhanced button functionality and streamlined access to information, significantly improving the booking experience
                 </div>
               </div>
             </section>
           </div>
 
-         </div>
+
+          <div className="grid grid-cols-5 gap-10 text-md h-full py-30">
+            <Image src={designMenu} alt="menu" quality={95} className="rounded-xl w-full h-full object-contain bg-white col-span-3" />
+
+            <section className="col-span-2 flex items-center rounded-xl">
+              <div className="text-gray-800 w-full">
+                <div className="relative flex items-center mb-8">
+                  <h1 className="text-2xl font-semibold text-gray-900">Easy access to Boarding Pass Information</h1>
+                </div>
+                <div className="font-base leading-relaxed text-base text-gray-700 col-span-3">
+                Users can now view their boarding time, pass status, and check-in schedule.
+                </div>
+              </div>
+            </section>
+          </div>
+
+
+          <div className="grid grid-cols-5 gap-10 text-md h-full py-30">
+            <Image src={designMenu} alt="menu" quality={95} className="rounded-xl w-full h-full object-contain bg-white col-span-3" />
+
+            <section className="col-span-2 flex items-center rounded-xl">
+              <div className="text-gray-800 w-full">
+                <div className="relative flex items-center mb-8">
+                  <h1 className="text-2xl font-semibold text-gray-900">Access to Flair's Latest Deals</h1>
+                </div>
+                <div className="font-base leading-relaxed text-base text-gray-700 col-span-3">
+                    <li>Signed in users have acess to deals near them</li>
+                </div>
+              </div>
+            </section>
+          </div>
+
+
+          <div className="grid grid-cols-5 gap-10 text-md h-full py-30">
+            <Image src={designMenu} alt="menu" quality={95} className="rounded-xl w-full h-full object-contain bg-white col-span-3" />
+
+            <section className="col-span-2 flex items-center rounded-xl">
+              <div className="text-gray-800 w-full">
+                <div className="relative flex items-center mb-8">
+                  <h1 className="text-2xl font-semibold text-gray-900">QR code convenience</h1>
+                </div>
+                <div className="font-base leading-relaxed text-base text-gray-700 col-span-3">
+                    <li>your boarding pass is only a step away! Downloadable and scrollable for larger families</li>
+                </div>
+              </div>
+            </section>
+          </div>
+
 
       </div>
     </>
