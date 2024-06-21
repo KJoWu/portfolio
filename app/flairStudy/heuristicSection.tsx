@@ -57,7 +57,7 @@ export const HeuristicSection = () => {
         <hr className="border-t-4 border-[#b2ff94] my-4 w-[10em]" />
       </div>
       <p className="font-light leading-8 text-base text-gray-700">
-        To gain a comprehensive understanding of user interactions with the app, I conducted a heuristic evaluation on the primary pages, with a particular focus on those related to onboarding.
+        To gain a comprehensive understanding of user interactions with the app, I conducted a <span className="bg-[#b2ff94]"> heuristic evaluation </span>on the primary pages, with a particular focus on those related to onboarding.
       </p>
 
       <div className="grid grid-cols-7 gap-10 text-md py-12">
@@ -99,7 +99,7 @@ export const HeuristicSection = () => {
               Data Retention Issues
             </div>
             <div className="relative flex items-center mb-8">
-              <h1 className="text-2xl font-medium text-gray-900">  Reduced Convenience Due to No Data Retention</h1>
+              <h1 className="text-2xl font-medium text-gray-900 mt-2">  Reduced Convenience Due to No Data Retention</h1>
             </div>
 
 

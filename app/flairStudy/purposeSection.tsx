@@ -3,8 +3,8 @@ const Takeaways = () => {
     <div className="max-w-7xl mx-auto">
       <section className="mb-8">
         <header className="mb-8">
-          <h1 className="font-semibold text-3xl text-gray-900 leading-tight">
-            Defining and Understanding the Critical Issues
+        <h1 className="font-medium text-3xl text-gray-800 leading-[1.4em]">
+                      Defining and Understanding the Critical Issues
           </h1>
           <hr className="border-t-4 border-[#b2ff94] my-4 w-40" />
         </header>
@@ -38,36 +38,36 @@ const Takeaways = () => {
         <div className="max-w-7xl mx-auto">
           <section className="grid grid-cols-1 lg:grid-cols-3 gap-10">
             <article className="lg:col-span-2">
-            <h2 className="text-2xl font-medium text-gray-800 mb-4 border-l-8 border-purple-500 pl-3 mt-10 w-[30em] leading-9">
+              <h2 className="text-2xl font-medium text-gray-800 mb-4 border-l-8 border-purple-500 pl-3 mt-10 w-[30em] leading-9">
                 Stress Reduction and User Satisfaction
               </h2>
               <div className="mx-auto text-gray-700 leading-8">
-              <p className=" text-gray-700 leading-8">
-        Through visual analysis and user studies, we identified critical pain points in the Flair app that impact user experience. Users reported high stress when retrieving boarding passes, particularly in time-sensitive airport environments.
-      </p>
-      <p className=" text-gray-700 leading-8 mt-4">
-        To stay competitive, Flair must enhance user loyalty by optimizing navigation, login processes, design consistency, and information handling. Competitors offer smoother experiences. A reliable app can reduce user anxiety with accurate, timely information, fostering <span className="font-medium">customer loyalty</span> and a <span className="font-medium">positive reputation</span>.
-      </p>
-      <p className=" text-gray-700 leading-8 mt-4">
-        Website redirects cause confusion and disrupt the user journey. Inconsistent UI and frequent need to screenshot QR codes indicate functionality gaps. Unique benefits like <span className="font-medium">seamless onboarding</span> that reduce stress and build trust are crucial, increasing satisfaction and positive word-of-mouth.
-      </p>
-      <p className=" text-gray-700 leading-8 mt-4">
-        Implementing user profiles, enhancing login reliability, and ensuring design consistency will ensure a seamless experience. These steps enhance usability, leading to <span className="font-medium">higher retention rates</span> and a <span className="font-medium">competitive edge</span>. Satisfied users will likely recommend the app, increasing <span className="font-medium">customer lifetime value</span>.
-      </p>
+                <p className=" text-gray-700 leading-8">
+                  Through visual analysis and user studies, we identified critical pain points in the Flair app that impact user experience. <span className="bg-[#b2ff94]">Users reported high stress when retrieving boarding passes, particularly in time-sensitive airport environments.</span>
+                </p>
+                <p className=" text-gray-700 leading-8 mt-4">
+                  To stay competitive, Flair must enhance user loyalty by optimizing navigation, login processes, design consistency, and information handling. Competitors offer smoother experiences. A reliable app can reduce user anxiety with accurate, timely information, fostering <span className="font-medium">customer loyalty</span> and a <span className="font-medium">positive reputation</span>.
+                </p>
+                <p className=" text-gray-700 leading-8 mt-4">
+                  Website redirects cause confusion and disrupt the user journey. Inconsistent UI and frequent need to screenshot QR codes indicate functionality gaps. Unique benefits like <span className="font-medium">seamless onboarding</span> that reduce stress and build trust are crucial, increasing satisfaction and positive word-of-mouth.
+                </p>
+                <p className=" text-gray-700 leading-8 mt-4">
+                  Implementing user profiles, enhancing login reliability, and ensuring design consistency will ensure a seamless experience. These steps enhance usability, leading to <span className="font-medium">higher retention rates</span> and a <span className="font-medium">competitive edge</span>. Satisfied users will likely recommend the app, increasing <span className="font-medium">customer lifetime value</span>.
+                </p>
               </div>
             </article>
-            <aside className="lg:col-span-1 flex items-center">
-              <blockquote className="border-l-4 border-blue-500 pl-4 italic text-gray-600">
-                <p className="leading-8 my-3">
-                  61 percent of travelers in the U.S. have booked and paid for
+            <aside className="lg:col-span-1 flex items-center ">
+              <blockquote className="border-l-4 border-purple-700 pl-4 italic text-gray-600 bg-slate-900 px-5 py-8 rounded-lg text-slate-100">
+                <p className="leading-7 p-4 font-base">
+                  "61 percent of travelers in the U.S. have booked and paid for
                   travel through their smartphone within the past year, and 64
-                  percent use their smartphones en route to their destination.
+                  percent use their smartphones en route to their destination."
                 </p>
-                <footer>
+                <footer className="text-slate-100 p-3">
                   Source:{" "}
                   <a
                     href="https://www.travelmarketreport.com/articles/US-Consumers-Increasingly-Rely-on-Smartphones-to-Book-Travel"
-                    className="underline text-blue-600"
+                    className="text-blue-400"
                   >
                     Travel Market Report
                   </a>
@@ -78,11 +78,11 @@ const Takeaways = () => {
         </div>
 
         <section className="mb-2 mt-10">
-        <h2 className="text-2xl font-medium text-gray-800 mb-4 border-l-8 border-purple-500 pl-3 mt-10  w-[30em] leading-9">
+          <h2 className="text-2xl font-medium text-gray-800 mb-4 border-l-8 border-purple-500 pl-3 mt-10  w-[30em] leading-9">
             Possible Limitations
           </h2>
           <p className="font-light leading-8 text-base text-gray-700">
-            The current problems extend beyond visual issues; a significant portion involves users experiencing login difficulties, which may be technical in nature. To enhance the app's value, we need to implement user profiles, likely requiring database integration or other technical solutions. This will be crucial and will complement the proposed design improvements.
+            <span className="font-medium">The current problems extend beyond visual issues;</span> a significant portion involves users experiencing login difficulties, which may be technical in nature. To enhance the app's value, we need to implement user profiles, likely requiring database integration or other technical solutions. This will be crucial and will complement the proposed design improvements.
           </p>
         </section>
       </section>

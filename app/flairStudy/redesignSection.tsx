@@ -37,7 +37,7 @@ export const RedesignSection = () => {
 
         <Section
           title="Consistency in Theme and Colors"
-          text="Establishing a consistent color theme across all platforms would enhance brand recognition and user experience. While promotional ads use the signature green, black, and purple, the app and web app lean more into pastel colors with images. Since the color theme is not defined for this project, we will adhere to the current design and make necessary adjustments within this framework."
+          text={`Establishing a <span class="bg-[#b2ff94]">consistent color theme across all platforms would improve brand recognition and user experience.</span> While promotional ads use the signature green, black, and purple, the app and web app lean more into pastel colors with images. Since the color theme is not defined for this project, we will adhere to the current design and make necessary adjustments within this framework.`}
         />
 
         <ContentWithImage
@@ -85,7 +85,7 @@ export const RedesignSection = () => {
         <ContentWithImage
           title="Implementing More Personalization"
           subtitle="Introducing Personalized Notifications"
-          text={`<span class="font-semibold mt-4 block">Data Retention:</span> Building on the personalized widget mentioned earlier, we can further enhance the user experience by incorporating notifications that provide detailed flight information. By adding these notifications to the main page, we will <span class="bg-[#b2ff94]">increase user convenience</span> by displaying <span class="bg-[#b2ff94]">relevant, up-to-date information such as the time left until check-in and boarding status</span>.`}
+          text={`<span class="font-semibold mt-4 block">Data Retention:</span> Building on the personalized widget mentioned earlier, we can further enhance the user experience by incorporating notifications that provide detailed flight information. <p className="mt-2"/>By adding these notifications to the main page, we will <span class="bg-[#b2ff94]">increase user convenience</span> by displaying <span class="bg-[#b2ff94]">relevant, up-to-date information such as the time left until check-in and boarding status</span>.</p>`}
           image={designNotification}
           alt="issue 4"
         />
@@ -93,7 +93,7 @@ export const RedesignSection = () => {
         <ContentWithImage
           title="Refining the Boarding Pass"
           subtitle="Elevating onboarding experience"
-          text={`<span class="font-semibold mt-4 block">Accessible Boarding Info:</span> Users reported issues with manually screenshotting QR codes. We've added a download button for easy access. For larger families, we implemented a carousel feature for seamless navigation of multiple items. Additionally, we enhanced QR codes with clear descriptions and strategically placed them for better visibility, improving overall user experience.`}
+          text={`<span class="font-semibold mt-4 block">Accessible Boarding Information:</span> Users reported issues with manually screenshotting QR codes. <span class="bg-[#b2ff94]">We've added a download button for easy access.</span> <p className="mt-2"/>For larger families, we implemented a <span class="bg-[#b2ff94]">carousel feature</span> for seamless navigation of multiple items.</p> <p className="pt-1">Additionally, we enhanced the boarding pass by strategically placing information in convenient locations, improving the overall user experience.</p>`}
           image={designBoardingPass}
           alt="issue 5"
           reverse
