@@ -1,8 +1,8 @@
 import issue1 from "../../public/issue1.png";
 import issueRedirect from "../../public/issue_redirect.jpg";
 import issueVisuals from "../../public/issue_visuals.jpg";
+import issueData from "../../public/issue_data.jpg";
 
-import issue2 from "../../public/issue2.jpg";
 import { ExclamationCircleIcon } from "@heroicons/react/24/solid"
 
 import Slider from "react-slick";
@@ -52,7 +52,7 @@ export const HeuristicSection = () => {
   return (
     <div className="leading-8 mt-8">
       <div className="mb-8">
-        <h1 className="font-bold text-4xl text-gray-800 leading-10 leading-[1.2em]"> Market Discovery: Evaluating Interface Design, User Experience, and Product Usage
+        <h1 className="font-bold text-3xl text-gray-800 leading-[1.4em]"> Market Discovery: Evaluating Interface Design, User Experience, and Product Usage
         </h1>
         <hr className="border-t-4 border-[#b2ff94] my-4 w-[10em]" />
       </div>
@@ -91,7 +91,7 @@ export const HeuristicSection = () => {
 
 
       <div className="grid grid-cols-12 gap-10 text-md h-full py-12 ">
-        <Image src={issue1} alt={"issue 1"} quality={95} className="rounded-xl w-full h-full object-contain bg-white col-span-7" />
+        <Image src={issueData} alt={"issue 1"} quality={95} className="rounded-xl w-full h-full object-contain bg-white col-span-7" />
         <section className="col-span-5 flex items-center">
           <div className="text-gray-800 w-full">
             <div className="inline-flex items-center bg-red-500 text-white text-sm px-3 py-1 rounded-full mb-4">

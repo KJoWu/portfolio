@@ -25,7 +25,7 @@ const sectionVariants = {
 
 const FlairCaseStudyData = () => {
   return (
-    <div className="ml-[5em] mt-44">
+    <div className="ml-[2em] mt-40">
       <div className={`container mx-auto px-4 ${poppins.className}`}>
 
         {/******************************************************** Section Cutoff */}

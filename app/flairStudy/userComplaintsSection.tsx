@@ -16,8 +16,8 @@ interface FeedbackCardProps {
 function FeedbackCard({ imageSrc, title, description }: FeedbackCardProps){
   return (
     <div>
-      <Image src={imageSrc} alt={title} quality={95} className="w-full object-cover mb-4" />
-      <div className="bg-white p-4 rounded-lg shadow-lg border-[0.09em] border-red-600">
+      <Image src={imageSrc} alt={title} quality={95} className="w-full object-cover mb-2" />
+      <div className="bg-white rounded-lg shadow-lg border-[0.09em] border-red-600 px-10 py-6">
         <div className="inline-flex items-center bg-red-500 text-white text-sm px-3 py-1 rounded-full mb-4">
           <ExclamationCircleIcon className="h-5 w-5 mr-2" />
           {title}
@@ -39,10 +39,10 @@ export const UserComplaintsSection = () => {
           It became evident that the app had significant visual issues. To ensure these problems were not isolated incidents and to reduce potential biases, I conducted an extensive analysis of user behavior and engagement with the Flair app. This analysis included reviewing feedback from various platforms such as Facebook, Reddit, Google app reviews, and Apple App Store reviews, sorted by popularity.
         </p>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-12 mt-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-y-10 gap-x-6 mt-6 mx-10">
           <FeedbackCard
             imageSrc={complaint1} 
-            title="User Dissatisfaction Leading to Competitor Migration"
+            title="Dissatisfaction Fueling Customer"
             description="Due to poor styling and the inability to obtain necessary information, users were left highly dissatisfied. This frustration led many to cancel flights, abandon the app, and switch to competitors, resulting in a significant loss of customer loyalty and engagement."
           />
           <FeedbackCard

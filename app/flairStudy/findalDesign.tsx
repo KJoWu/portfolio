@@ -1,8 +1,9 @@
 import designHome from "../../public/design_home.png";
 import designHome1 from "../../public/design_home1.png";
-import designMenu from "../../public/design_menu.png";
+import designSales from "../../public/design_sales.jpg";
+import designMenu from "../../public/design_menu.jpg";
 import designBooking from "../../public/design_fetchBooking.png";
-import designLoggedIn from "../../public/design_loggedIn.png";
+import designLoggedIn from "../../public/design_loggedIn.jpg";
 
 
 import Image from "next/image";
@@ -13,19 +14,13 @@ export const FinalDesign = () => {
 
 
       <div className="mb-8">
-        <h1 className="font-bold text-4xl text-gray-800  leading-[1.3em]"> Final Design</h1>
+        <h1 className="font-bold text-gray-800  text-3xl leading-[1.4em]"> Final Design</h1>
         <hr className="border-t-4 border-[#b2ff94] my-4 w-[10em]" />
       </div>
 
 
 
       <div className="space-y-4">
-        <div>
-          <h2 className="text-xl font-semibold text-gray-800">Consistency in Theme and Colors</h2>
-          <p className="text-gray-700">
-          Establishing a consistent color theme across all platforms would enhance brand recognition and user experience. Since the color theme is not defined for this project, we will adhere to the current design and make necessary adjustments within this framework.
-          </p>
-        </div>
 
         <div>
           <div className="grid grid-cols-5 gap-10 text-md h-full py-30">
@@ -69,7 +64,7 @@ export const FinalDesign = () => {
           </div>
 
           <div className="grid grid-cols-5 gap-10 text-md h-full pb-36">
-            <Image src={designHome} alt="issue 2" quality={95} className="rounded-xl w-full h-full object-contain bg-white col-span-3" />
+            <Image src={designSales} alt="issue 2" quality={95} className="rounded-xl w-full h-full object-contain bg-white col-span-3" />
 
             <section className="col-span-2 flex items-center rounded-xl">
               <div className="text-gray-800 w-full">

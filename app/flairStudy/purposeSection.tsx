@@ -3,7 +3,7 @@ const Takeaways = () => {
     <div className="max-w-7xl mx-auto p-6">
       <section className="mb-8">
         <div className="mb-8">
-          <h1 className="font-bold text-4xl text-gray-800 leading-[1.3em]">
+          <h1 className="font-bold text-3xl text-gray-800 leading-[1.4em]">
             Defining and Understanding the Critical Issues
           </h1>
           <hr className="border-t-4 border-[#b2ff94] my-4 w-[10em]" />
