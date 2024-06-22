@@ -1,7 +1,7 @@
 "use client";
 
 // import type { Metadata } from "next";
-import Header from "./_components/header";
+// import Header from "./_components/header";
 import "./globals.css";
 import ThemeSwitch from "./_components/themeSwitch";
 import ThemeContextProvider from "./_context/themeContext";
@@ -24,7 +24,7 @@ export default function RootLayout({
       </head>
       <body className={`${poppins.className} text-[##030712]`}>
         <ThemeContextProvider>
-          <Header />
+          {/* <Header /> */}
 
           {children}
 
