@@ -15,7 +15,7 @@ import { ProblemSection } from './problemSection';
 import { ScopingSection } from './scopingSection';
 import CaseSection from './caseSection';
 import { playFair, inter, poppins } from "../fonts";
-import { FinalDesign } from './findalDesign';
+import { FinalDesignSection } from './findalDesignSection';
 
 
 const sectionVariants = {
@@ -151,7 +151,7 @@ const FlairCaseStudyData = () => {
         >
           <CaseSection>
 
-            <FinalDesign />
+            <FinalDesignSection />
           </CaseSection>
 
 
