@@ -1,5 +1,5 @@
 import React from 'react';
-import Image from 'next/image';
+import Image, {StaticImageData} from 'next/image';
 import { ExclamationCircleIcon, EllipsisHorizontalIcon } from "@heroicons/react/24/solid";
 import complaint1 from "../../public/complain_customer_loss.jpg";
 import complaint2 from "../../public/complaint_data.jpg";

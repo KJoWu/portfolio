@@ -23,13 +23,55 @@ import hobby6 from "../../public/hobby6.jpg";
 import hobby7 from "../../public/hobby7.png";
 import app1 from "../../public/app1.jpg";
 import app2 from "../../public/app2.png";
-import app3 from "../../public/app3.png";
-import app4 from "../../public/app4.png";
-import app5 from "../../public/app5.png";
+// import app3 from "../../public/app3.png";
+// import app4 from "../../public/app4.png";
+// import app5 from "../../public/app5.png";
 import app6 from "../../public/app6.png";
 import other1 from "../../public/other1.png";
+import {StaticImageData} from "next/image";
 
-export const featuredData = [
+export type ProjectType = keyof typeof projects;
+
+export interface ProjectData {
+  title: string;
+  description: string;
+  url: string | StaticImageData;
+  contain?: boolean;
+}
+
+export interface VideoProjectData{
+  title: string;
+  url: string; 
+  description: string;
+  contain?: boolean;
+}
+
+export interface ProjectCategory {
+  label: string;
+  description: string;
+  data: ProjectData[]|VideoProjectData[];
+}
+
+export interface Projects {
+  [key: string]: ProjectCategory;
+}
+
+export interface ProjectThumbnailProps {
+  projectData: ProjectData;
+  selectedOption: SelectedOption;
+}
+
+export type SelectedOption =
+  | "video"
+  | "web"
+  | "graphic"
+  | "research"
+  | "editorials"
+  | "nonCode"
+  | "traditional";
+
+
+export const featuredData: ProjectData[] = [
   {
     title: "Hi Ai",
     url: p1,
@@ -40,9 +82,9 @@ export const featuredData = [
     url: app2,
     description: "New take on QR codes, won fan favorite. Built with React js",
   },
-]
+];
 
-export const webappData = [
+export const webappData: ProjectData[] = [
   {
     title: "Hi Ai",
     url: p1,
@@ -76,8 +118,7 @@ export const webappData = [
   },
 ];
 
-
-export const aiData = [
+export const aiData: ProjectData[] = [
   {
     title: "Hi Ai",
     url: p1,
@@ -93,10 +134,9 @@ export const aiData = [
     url: app2,
     description: "Extension that allows you to pick colors for a website",
   },
-]
+];
 
-
-export const designData = [
+export const designData: ProjectData[] = [
   {
     title: "UofA Science Week",
     url: shirt1,
@@ -117,10 +157,10 @@ export const designData = [
     title: "Crestwood School Mural Painting",
     url: design1,
     description: "Designed and painted an 8' x 10' mural for Crestwood School",
-  }
+  },
 ];
 
-export const researchData = [
+export const researchData: ProjectData[] = [
   {
     title: "Medical Research Article",
     url: research3,
@@ -130,17 +170,17 @@ export const researchData = [
     title: "Feather Lice Database Curation",
     url: research1,
     description: "Digitally extracted 100+ Albertan lice specimens, compiling them into a high-resolution database for future identification.",
-    cover: true
+    contain: true,
   },
   {
     title: "Feather Lice Database Curation",
     url: research2,
     description: "Digitally extracted 100+ Albertan lice specimens, compiling them into a high-resolution database for future identification.",
-    cover: true
-  }
+    contain: true,
+  },
 ];
 
-export const editorialsData = [
+export const editorialsData: ProjectData[] = [
   ...designData,
   {
     title: "Faculty of Engineering Newsletter ",
@@ -191,10 +231,9 @@ export const editorialsData = [
     description: "Editorial designer for the Faculty of Arts at the University of Alberta",
   },
   ...researchData,
-
 ];
 
-export const videoData = [
+export const videoData: VideoProjectData[] = [
   {
     title: "University of Alberta Orientation || ",
     url: "https://www.youtube.com/watch?v=75c2_TTHWYc",
@@ -228,9 +267,9 @@ export const videoData = [
     url: "https://www.youtube.com/watch?v=3J25JH9TEEo",
     description: "Produced a promo for a software engineer class",
   },
-] as const;
+];
 
-export const otherData = [
+export const otherData: ProjectData[] = [
   {
     title: "Hackathon",
     url: other1,
@@ -243,52 +282,42 @@ export const otherData = [
   },
 ];
 
-
-export const hobbyData = [
-
+export const hobbyData: ProjectData[] = [
   {
     title: "",
     url: hobby3,
-    description:
-      "",
+    description: "",
   },
   {
     title: "",
     url: hobby4,
-    description:
-      "",
+    description: "",
   },
   {
     title: "",
     url: hobby5,
-    description:
-      "",
+    description: "",
   },
   {
     title: "",
     url: hobby1,
-    description:
-      "",
+    description: "",
   },
   {
     title: "",
     url: hobby2,
-    description:
-      "",
-
+    description: "",
   },
   {
     title: "",
     url: hobby6,
-    description:
-      "",
+    description: "",
   },
   {
     title: "",
     url: hobby7,
-    description:
-      "",
-  }
+    description: "",
+  },
 ];
 
 export const projects = {
@@ -317,20 +346,18 @@ export const projects = {
     label: "Hobby",
     description: "Art is my passion. I love attending conventions and drawing caricatures of attendees as well as keeping up with the latest games and shows. My tools of choice are Cintiq 24 Pro and a black MUJI 0.5mm pen",
     data: hobbyData,
-  }
-} as const;
+  },
+};
 
-export const featuredPlaygroundProjects = [
+export const featuredPlaygroundProjects: ProjectData[] = [
   {
     title: "AI project",
     url: p1,
-    description:
-      "Directed and produced the orientation video for the faculty of science",
+    description: "Directed and produced the orientation video for the faculty of science",
   },
   {
     title: "UI Review",
     url: p1,
-    description:
-      "Directed and produced the orientation video for the faculty of science.",
+    description: "Directed and produced the orientation video for the faculty of science.",
   },
-] as const;
+];

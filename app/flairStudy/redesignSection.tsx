@@ -6,6 +6,7 @@ import designSales from "../../public/design_sales.jpg";
 import designLoggedIn from "../../public/design_loggedIn.jpg";
 import designBoardingPass from "../../public/design_boardingpass.jpg";
 import designNotification from "../../public/design_notification.jpg";
+import { StaticImageData } from "next/image";
 
 type SectionProps = {
   title: string;
@@ -42,12 +43,6 @@ export const RedesignSection = () => {
         <Section
           title="Scope"
           text={`We will limit the scope to two user pathways: one for signed-in users and one for guests. These pathways will cover the processes for flight boarding and check-in.
-
-
-
-
-
-
           `}
         />
         <ContentWithImage

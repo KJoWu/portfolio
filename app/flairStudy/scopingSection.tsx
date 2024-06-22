@@ -5,8 +5,21 @@ import profile2 from "../../public/profile_2.png";
 import profile3 from "../../public/profile_3.jpg";
 import profile4 from "../../public/profile_4.jpg";
 import profile5 from "../../public/profile_5.jpg";
+import { StaticImageData } from 'next/image';
 
-const UserProfile = ({ image, name, age, occupation, travelFrequency, techSavviness, description, quote }) => {
+interface UserProfileProps{
+  image:StaticImageData;
+  name:string;
+  age: string;
+  occupation:string;
+  travelFrequency:string;
+  techSavviness:string;
+  description:string;
+  quote:string;
+}
+
+
+const UserProfile = ({ image, name, age, occupation, travelFrequency, techSavviness, description, quote}:UserProfileProps) => {
   return (
     <div className="bg-white shadow-md rounded-lg p-6 flex space-x-6">
       <div className="text-gray-700 leading-6">
@@ -28,7 +41,7 @@ const UserStories = () => {
     {
       image: profile3,
       name: "Sarah Johnson",
-      age: 32,
+      age: "32",
       occupation: "International Business",
       travelFrequency: "Twice a month",
       techSavviness: "High",
@@ -40,7 +53,7 @@ const UserStories = () => {
     {
       image: profile1,
       name: "Jacob Loid",
-      age: 40,
+      age: "40",
       occupation: "Industrial Manager",
       travelFrequency: "Twice a year",
       techSavviness: "Low to Medium",
@@ -52,7 +65,7 @@ const UserStories = () => {
     {
       image: profile5,
       name: "Crystal Wang",
-      age: 24,
+      age: "24",
       occupation: "Undergrad Student",
       travelFrequency: "Based on travel deals",
       techSavviness: "Medium",
@@ -63,7 +76,7 @@ const UserStories = () => {
     {
       image: profile4,
       name: "The Vlogging Squad",
-      age: "20-25",
+      age: "21-25",
       occupation: "Social Media Influencers",
       travelFrequency: "Frequently",
       techSavviness: "High",
@@ -75,7 +88,7 @@ const UserStories = () => {
     {
       image: profile2,
       name: "Bob Anderson",
-      age: 67,
+      age: "67",
       occupation: "Retired School Principal",
       travelFrequency: "Rarely travels",
       techSavviness: "Low",

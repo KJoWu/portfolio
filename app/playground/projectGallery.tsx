@@ -1,12 +1,14 @@
+// ProjectGallery.tsx
 import React from "react";
 import ProjectThumbnail from "../_components/projectThumbnail";
+import { ProjectData } from "../lib/projectData";
+import { SelectedOption } from "../lib/projectData";
 
 interface ProjectGalleryProps {
-  selectedOption: string;
+  selectedOption: SelectedOption;
   description: string;
-  projectData: any;
+  projectData: ProjectData[];
 }
-
 
 export default function ProjectGallery({
   selectedOption,
@@ -17,7 +19,6 @@ export default function ProjectGallery({
   const renderThumbnails = () => {
     return projectData.map((project, index) => (
       <React.Fragment key={index}>
-        {/* Pass selectedOption to ProjectThumbnailSmall */}
         <ProjectThumbnail
           projectData={project}
           selectedOption={selectedOption}
@@ -26,7 +27,6 @@ export default function ProjectGallery({
     ));
   };
 
-  // Define grid styles based on selectedOption
   const gridClass = selectedOption === "video" || selectedOption === "web" ? "grid-cols-3" : "grid-cols-3";
   return (
     <div>

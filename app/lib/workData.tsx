@@ -1,8 +1,20 @@
 import app1 from "../../public/22.jpg";
 import app2 from "../../public/22.jpg";
 import app3 from "../../public/22.jpg";
+import { StaticImageData } from "next/image";
 
-export const workData = [
+export interface Work {
+  title: string;
+  type: string;
+  description: string;
+  imageUrl: StaticImageData;
+  skills: string[];
+  tags: string[];
+  bg: string;
+  tagsBg: string;
+  bgHover: string;
+}
+export const workData: Work[] = [
   {
     title: "FlyFlair Airline Case Study",
     type: "Progressive Mobile Application",
@@ -60,10 +72,10 @@ export const workData = [
   },
 ] as const;
 
-export const caseStudyData = [
+export const caseStudyData:Work[] = [
 ] as const;
 
-export const researchWorkData = [
+export const researchWorkData: Work[] = [
   {
     title: "Medical Research Illustrator",
     description: "Artist, designed the portfolio for a research paper",
