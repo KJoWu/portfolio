@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { EllipsisHorizontalIcon } from '@heroicons/react/24/solid';
 import { CheckCircleIcon } from "@heroicons/react/24/solid";
 import designHome from "../../public/design_home.jpg";
 import designMenu from "../../public/design_menu.jpg";
@@ -7,6 +8,7 @@ import designLoggedIn from "../../public/design_loggedIn.jpg";
 import designBoardingPass from "../../public/design_boardingpass.jpg";
 import designNotification from "../../public/design_notification.jpg";
 import { StaticImageData } from "next/image";
+
 
 type SectionProps = {
   title: string;
@@ -27,8 +29,8 @@ export const RedesignSection = () => {
     <>
       <div className="mb-8">
         <h1 className="font-semibold text-3xl text-gray-800 leading-[1.4em]">Redesigning the App</h1>
-        <hr className="border-t-8 border-gray-800 my-2 w-[10em]" /> 
-        </div>
+        <hr className="border-t-8 border-gray-800 my-2 w-[10em]" />
+      </div>
 
       <div className="space-y-4">
         <Section
@@ -105,6 +107,11 @@ export const RedesignSection = () => {
           reverse
         />
       </div>
+
+      <div className="flex justify-center items-center pb-[7em] pt-[7em]">
+      <EllipsisHorizontalIcon className="h-10 w-10 text-black text-3xl" />
+    </div>
+
     </>
   );
 };

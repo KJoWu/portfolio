@@ -42,7 +42,7 @@ export const ProblemSection = () => {
         <Image src={intro} alt={"issue 1"} quality={95} className="rounded-xl w-full object-contain col-span-2 border border-black-800 border-t-[.8em]" />
       </div>
 
-      <blockquote className="text-2xl font-base dark:text-white my-10 leading-8 text-center leading-[1.8em]">
+      <blockquote className="text-2xl font-base dark:text-white my-10 leading-8 text-center leading-[1.8em] pt-20">
         How can we redesign the digital boarding pass process to be more <b>intuitive, reliable, and stress-free</b> for Flair Airlines passengers?
       </blockquote>
 

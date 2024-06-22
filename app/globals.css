@@ -28,3 +28,6 @@
     margin: 0 5px;
   }
   
+  video {
+    clip-path: inset(1px 1px);
+    }

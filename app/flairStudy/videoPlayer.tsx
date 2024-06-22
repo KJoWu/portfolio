@@ -4,19 +4,19 @@ interface VideoPlayerProps {
   src: string;
   type: string;
   poster: string;
-  className?: string; // Add optional className prop
+  className?: string;
 }
 
 const VideoPlayer = ({ src, type, poster, className }: VideoPlayerProps) => {
   return (
-    <div className="video-container">
-      <video 
-        autoPlay 
-        loop 
-        muted 
-        playsInline 
-        poster={poster} 
-        className={`video-player ${className}`} // Apply className here
+    <div className={`video-container ${className}`}>
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        poster={poster}
+        className="video-player w-full h-full object-contain"
       >
         <source src={src} type={type} />
         Your browser does not support the video tag.

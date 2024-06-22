@@ -18,7 +18,7 @@ function FeedbackCard({ imageSrc, title, description }: FeedbackCardProps) {
     <div>
       <Image src={imageSrc} alt={title} quality={95} className="w-full object-cover mb-2" />
       <div className="bg-white rounded-lg shadow-lg border-[0.09em] border-red-600 p-5">
-      <div className="inline-flex items-center text-base py-1 rounded-full mb-3 text-red-500">
+      <div className="inline-flex items-center text-base py-1 rounded-full mb-3">
               <ExclamationCircleIcon className="h-6 w-6 mr-2 text-red-500 text-2xl" />
           {title}
         </div>
@@ -64,7 +64,7 @@ export const UserComplaintsSection = () => {
           />
         </div>
 
-        <div className="leading-8 mt-8">
+        <div className="leading-8 mt-10">
           The user feedback underscores <span className="bg-[#b2ff94]">significant behavioral and emotional challenges </span> with the app,  <span className="font-semibold">confirming our findings from the heuristic evaluation.</span>
         </div>
 

@@ -64,7 +64,7 @@ export const HeuristicSection = () => {
 
         <section className="col-span-3 h-auto flex items-center rounded-xl ">
           <div className="text-gray-800 w-full">
-          <div className="inline-flex items-center text-base py-1 rounded-full mb-3 text-red-500">
+          <div className="inline-flex items-center text-base py-1 rounded-full mb-3">
               <ExclamationCircleIcon className="h-6 w-6 mr-2 text-red-500 text-2xl" />
               Excessive Website Redirects
             </div>
@@ -94,7 +94,7 @@ export const HeuristicSection = () => {
         <Image src={issueData} alt={"issue 1"} quality={95} className="rounded-xl w-full h-full object-contain bg-white col-span-7" />
         <section className="col-span-5 flex items-center">
           <div className="text-gray-800 w-full">
-          <div className="inline-flex items-center text-base py-1 rounded-full mb-2 text-red-500">
+          <div className="inline-flex items-center text-base py-1 rounded-full mb-3">
               <ExclamationCircleIcon className="h-6 w-6 mr-2 text-red-500 text-2xl" />
               Data Retention Issues
             </div>
@@ -117,7 +117,7 @@ export const HeuristicSection = () => {
       <div className="grid grid-cols-5 gap-10 text-md h-full py-12">
         <section className="col-span-2  flex items-center">
           <div className="text-gray-800 w-full">
-          <div className="inline-flex items-center text-base py-1 rounded-full mb-3 text-red-500">
+          <div className="inline-flex items-center text-base py-1 rounded-full mb-3">
               <ExclamationCircleIcon className="h-6 w-6 mr-2 text-red-500 text-2xl" />
               Disjointed Visual Branding
             </div>

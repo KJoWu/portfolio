@@ -1,7 +1,6 @@
 "use client";
 
 import React from "react";
-import designMenu from "../../public/final_booking.jpg";
 import designQRCode from "../../public/final_qrcode.jpg";
 import designBooking from "../../public/final_booking.jpg";
 import designNotification from "../../public/final_notificaion.png";
@@ -16,7 +15,7 @@ export const BannerSection = () => {
       <div className="absolute inset-0 h-full w-full" />
       <div className="flex flex-col items-center text-center">
         <h1 className="text-5xl font-semibold  z-[10]">Flair Airlines Redesign</h1>
-        <hr className="border-t-[.8em] border-[#b2ff94] mt-[.9em] w-[25em] z-[1]" />
+        <hr className="border-t-[.8em] border-[#b2ff94] mt-[.9em] w-[21em] z-[1]" />
       </div>
 
       <section className="mb-[5em] flex justify-center items-center mt-[3em]">
