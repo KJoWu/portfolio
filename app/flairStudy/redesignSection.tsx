@@ -27,7 +27,8 @@ export const RedesignSection = () => {
     <>
       <div className="mb-8">
         <h1 className="font-semibold text-3xl text-gray-800 leading-[1.4em]">Redesigning the App</h1>
-        <hr className="border-t-8 border-[#b2ff94] my-2 w-[10em]" />      </div>
+        <hr className="border-t-8 border-gray-800 my-2 w-[10em]" /> 
+        </div>
 
       <div className="space-y-4">
         <Section

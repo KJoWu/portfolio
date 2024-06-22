@@ -6,7 +6,7 @@ const Takeaways = () => {
         <h1 className="font-semibold text-3xl text-gray-800 leading-[1.4em]">
                       Defining and Understanding the Critical Issues
           </h1>
-          <hr className="border-t-4 border-[#b2ff94] my-4 w-40" />
+          <hr className="border-t-8 border-gray-800 my-2 w-[10em]" /> 
         </header>
 
         <blockquote className="text-xl italic text-gray-800 dark:text-white my-4 leading-9">
@@ -38,7 +38,7 @@ const Takeaways = () => {
         <div className="max-w-7xl mx-auto">
           <section className="grid grid-cols-1 lg:grid-cols-3 gap-10">
             <article className="lg:col-span-2">
-              <h2 className="text-2xl font-semibold text-gray-800 mb-4 border-l-8 border-purple-500 pl-3 mt-10 w-[30em] leading-9">
+              <h2 className="text-2xl font-semibold text-gray-800 mb-4 border-l-8 border-slate-900 pl-3 mt-10 w-[30em] leading-9">
                 Stress Reduction and User Satisfaction
               </h2>
               <div className="mx-auto text-gray-700 leading-8">
@@ -57,7 +57,7 @@ const Takeaways = () => {
               </div>
             </article>
             <aside className="lg:col-span-1 flex items-center ">
-              <blockquote className="border-l-4 border-purple-600 pl-4 italic text-gray-600 bg-slate-900 px-5 py-8 rounded-lg text-slate-100">
+              <blockquote className="border-l-4 border-gray-600 pl-4 italic text-gray-600 bg-slate-900 px-5 py-8 rounded-lg text-slate-100">
                 <p className="leading-7 p-4 font-base">
                   "61 percent of travelers in the U.S. have booked and paid for
                   travel through their smartphone within the past year, and 64
@@ -78,7 +78,7 @@ const Takeaways = () => {
         </div>
 
         <section className="mb-2 mt-10">
-          <h2 className="text-2xl font-semibold text-gray-800 mb-4 border-l-8 border-purple-500 pl-3 mt-10  w-[30em] leading-9">
+        <h2 className="text-2xl font-semibold text-gray-800 mb-4 border-l-8 border-slate-900 pl-3 mt-10 w-[30em] leading-9">
             Possible Limitations
           </h2>
           <p className="font-base leading-8 text-base text-gray-700">

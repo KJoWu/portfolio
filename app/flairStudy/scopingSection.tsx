@@ -7,19 +7,19 @@ import profile4 from "../../public/profile_4.jpg";
 import profile5 from "../../public/profile_5.jpg";
 import { StaticImageData } from 'next/image';
 
-interface UserProfileProps{
-  image:StaticImageData;
-  name:string;
+interface UserProfileProps {
+  image: StaticImageData;
+  name: string;
   age: string;
-  occupation:string;
-  travelFrequency:string;
-  techSavviness:string;
-  description:string;
-  quote:string;
+  occupation: string;
+  travelFrequency: string;
+  techSavviness: string;
+  description: string;
+  quote: string;
 }
 
 
-const UserProfile = ({ image, name, age, occupation, travelFrequency, techSavviness, description, quote}:UserProfileProps) => {
+const UserProfile = ({ image, name, age, occupation, travelFrequency, techSavviness, description, quote }: UserProfileProps) => {
   return (
     <div className="bg-white shadow-md rounded-lg p-6 flex space-x-6">
       <div className="text-gray-700 leading-6">
@@ -111,7 +111,8 @@ const UserStories = () => {
 export const ScopingSection = () => {
   return (
     <section className="mb-3  mt-[-5em]">
-      <h2 className="text-2xl font-semibold text-gray-800 mb-4 border-l-8 border-purple-500 pl-3">Creating the User Personas</h2>
+      <h2 className="text-2xl font-semibold text-gray-800 mb-4 border-l-8 border-slate-900 pl-3 w-[30em] leading-9">
+        Creating the User Personas</h2>
       <p className="mb-6 text-gray-700 leading-8 mt-8">
         Leveraging our gathered insights, we will develop detailed case studies for various user personas, including frequent travelers, tech-savvy influencers, and casual vacation planners. These case studies will illustrate how different users interact with the app and identify key areas for improvement.
 
@@ -119,7 +120,7 @@ export const ScopingSection = () => {
       </p>
       <UserStories />
       <div className="flex justify-center items-center pt-[7em]">
-      <EllipsisHorizontalIcon className="h-10 w-10 text-black text-3xl" />
+        <EllipsisHorizontalIcon className="h-10 w-10 text-black text-3xl" />
       </div>
     </section>
   );

@@ -3,6 +3,7 @@ import designQRCode from "../../public/final_qrcode.jpg";
 import designBooking from "../../public/final_booking.jpg";
 import designNotification from "../../public/final_notificaion.png";
 import designCheckin from "../../public/final_checkin.png";
+import VideoPlayer from "./videoPlayer";
 
 
 import Image from "next/image";
@@ -20,8 +21,12 @@ export const FinalDesignSection = () => {
 
 
         <div className="grid grid-cols-5 gap-10 text-md h-full py-30">
-          <Image src={designMenu} alt="menu" quality={95} className="rounded-xl w-full h-full object-contain bg-white col-span-3" />
-
+        <VideoPlayer
+        src="/bookingVideo.mp4"  
+        type="video/mp4"
+        poster="/images/video-poster.jpg"
+        className="w-full h-[50em] object-contain col-span-3" // Adjust the size here
+      />
           <section className="col-span-2 flex items-center rounded-xl">
             <div className="text-gray-800 w-full">
               <div className="relative flex items-center mb-8">

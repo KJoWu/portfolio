@@ -32,7 +32,7 @@ export const UserComplaintsSection = () => {
   return (
     <>
       <section className="mb-12 mt-[2em]">
-        <h1 className="text-2xl font-semibold text-gray-800 mb-6 border-l-8 border-purple-500 pl-3 w-[30em] leading-9">
+        <h1 className="text-2xl font-semibold text-gray-800 mb-6 border-l-8 c pl-3 w-[30em] leading-9">
           User Interaction Analysis: Understanding App Engagement and Behavior
         </h1>
         <p className="font-base leading-8 text-base text-gray-700">
@@ -70,7 +70,7 @@ export const UserComplaintsSection = () => {
 
 
         <div className="leading-8">
-          <h1 className="text-2xl font-semibold text-gray-800 mb-4 border-l-8 border-purple-500 pl-3 mt-10  w-[30em] leading-9">
+          <h1 className="text-2xl font-semibold text-gray-800 mb-4 border-l-8 border-gray-800 pl-3 mt-10  w-[30em] leading-9">
             Comparative Analysis: Benchmarking User Experience Across Airlines
           </h1>
           <Image src={airlineReviews} alt="Airline Reviews" quality={95} className="w-full py-5 pb-9" />

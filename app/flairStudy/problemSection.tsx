@@ -13,14 +13,14 @@ export const ProblemSection = () => {
 
             <div className="mb-8">
               <h1 className="font-semibold text-3xl text-gray-800 leading-[1.5em]"> Setting the Scene: The Challenges of Flair Airlines</h1>
-              <hr className="border-t-8 border-[#b2ff94] my-2 w-[10em]" />
+              <hr className="border-t-8 border-gray-800 my-2 w-[10em]" /> 
             </div>
 
 
 
-            <blockquote className="text-lg italic border-l-4  border-purple-700 pl-4 italic text-gray-600 bg-slate-900 px-5 py-8 rounded-lg text-slate-100">
-              <div className="p-6 leading-8">
-                <svg className="w-8 h-8 text-gray-400 dark:text-gray-600 mb-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 18 14">
+            <blockquote className="text-lg italic border-l-4  border-gray-700 pl-4 italic text-gray-700 px-5 py-8 rounded-lg font-semibold">
+              <div className="px-5 leading-8">
+                <svg className="w-8 h-8 text-gray-400 dark:text-gray-600 mb-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="black" viewBox="0 0 18 14">
                   <path d="M6 0H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3H2a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Zm10 0h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3h-1a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Z" />
                 </svg>
                 <p> You're at the airport, rushing through security and feeling the pressure of time ticking down. </p>
@@ -39,7 +39,7 @@ export const ProblemSection = () => {
             </div>
           </div>
         </section>
-        <Image src={intro} alt={"issue 1"} quality={95} className="rounded-xl w-full h-full object-contain col-span-2" />
+        <Image src={intro} alt={"issue 1"} quality={95} className="rounded-xl w-full object-contain col-span-2 border border-black-800 border-t-[.8em]" />
       </div>
 
       <blockquote className="text-2xl font-base dark:text-white my-10 leading-8 text-center leading-[1.8em]">
