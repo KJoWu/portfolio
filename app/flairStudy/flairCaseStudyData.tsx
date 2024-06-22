@@ -17,6 +17,7 @@ import CaseSection from './caseSection';
 import { playFair, inter, poppins } from "../fonts";
 import { FinalDesignSection } from './findalDesignSection';
 import { BannerSection} from "./bannerSection";
+import { ConclusionSection } from './conclusionSection';
 
 
 const sectionVariants = {
@@ -158,6 +159,23 @@ const FlairCaseStudyData = () => {
           <CaseSection>
 
             <FinalDesignSection />
+          </CaseSection>
+
+
+        </motion.section>
+
+        {/******************************************************** Section Cutoff */}
+
+        <motion.section
+          id="section3"
+          className="relative font-base pb-20"
+          whileInView="visible"
+          variants={sectionVariants}
+          transition={{ duration: 0.5 }}
+        >
+          <CaseSection>
+
+            <ConclusionSection />
           </CaseSection>
 
 
