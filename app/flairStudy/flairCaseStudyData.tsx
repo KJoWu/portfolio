@@ -16,6 +16,7 @@ import { ScopingSection } from './scopingSection';
 import CaseSection from './caseSection';
 import { playFair, inter, poppins } from "../fonts";
 import { FinalDesignSection } from './findalDesignSection';
+import { BannerSection} from "./bannerSection";
 
 
 const sectionVariants = {
@@ -26,7 +27,12 @@ const sectionVariants = {
 const FlairCaseStudyData = () => {
   return (
     <div className="ml-[5em] mt-40">
+            <BannerSection />
+
       <div className={`container mx-auto px-4 ${poppins.className}`}>
+
+        
+
 
         {/******************************************************** Section Cutoff */}
 

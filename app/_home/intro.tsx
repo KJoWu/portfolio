@@ -24,7 +24,7 @@ export default function Intro() {
                 duration: 0.2,
               }}
             >
-              <p className={`text-5xl font-semibold ${poppins.className} bg-white`}>
+              <p className={`text-5xl font-medium ${poppins.className} bg-white`}>
                 Hi, I'm <span className="text-[#4229d6]">Kim</span>.
               </p>
 
@@ -37,7 +37,7 @@ export default function Intro() {
               </div>
             </motion.div>
 
-            {/* <motion.div
+            <motion.div
               className="flex flex-col sm:flex-row mt-16 gap-2"
               initial={{ opacity: 0, y: 100 }}
               animate={{ opacity: 1, y: 0 }}
@@ -54,7 +54,7 @@ export default function Intro() {
               <button className="bg-white hover:bg-gray-100 width-auto p-3 hover:scale-110 transition rounded-full text-gray-700">
                 <BsLinkedin />
               </button>
-            </motion.div> */}
+            </motion.div>
           </div>
 
           <div className="relative">
