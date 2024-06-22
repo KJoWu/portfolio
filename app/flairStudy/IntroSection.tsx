@@ -29,7 +29,7 @@ export const IntroSection = () => {
           </div>
           <div>
             <p className="font-semibold">Tools</p>
-            <p className="font-base">Figma, React</p>
+            <p className="font-base">Figma, Miro</p>
           </div>
         </div>
       </section>

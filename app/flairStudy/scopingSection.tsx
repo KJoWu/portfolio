@@ -1,7 +1,7 @@
 import { EllipsisHorizontalIcon } from '@heroicons/react/24/solid';
 import Image from "next/image";
 import profile1 from "../../public/profile_1.jpg";
-import profile2 from "../../public/profile_2.jpg";
+import profile2 from "../../public/profile_2.png";
 import profile3 from "../../public/profile_3.jpg";
 import profile4 from "../../public/profile_4.jpg";
 import profile5 from "../../public/profile_5.jpg";
