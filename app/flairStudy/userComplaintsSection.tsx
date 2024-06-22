@@ -18,8 +18,8 @@ function FeedbackCard({ imageSrc, title, description }: FeedbackCardProps) {
     <div>
       <Image src={imageSrc} alt={title} quality={95} className="w-full object-cover mb-2" />
       <div className="bg-white rounded-lg shadow-lg border-[0.09em] border-red-600 p-5">
-        <div className="inline-flex items-center bg-red-500 text-white text-sm px-3 py-1 rounded-full mb-4">
-          <ExclamationCircleIcon className="h-5 w-5 mr-2" />
+      <div className="inline-flex items-center text-base py-1 rounded-full mb-3 text-red-500">
+              <ExclamationCircleIcon className="h-6 w-6 mr-2 text-red-500 text-2xl" />
           {title}
         </div>
         <p className="text-gray-800 text-sm  leading-6">{description}</p>
@@ -32,7 +32,7 @@ export const UserComplaintsSection = () => {
   return (
     <>
       <section className="mb-12 mt-[2em]">
-        <h1 className="text-2xl font-semibold text-gray-800 mb-6 border-l-8 c pl-3 w-[30em] leading-9">
+        <h1 className="text-2xl font-semibold text-gray-800 mb-6 border-l-8 border-gray-800 pl-3 w-[30em] leading-8">
           User Interaction Analysis: Understanding App Engagement and Behavior
         </h1>
         <p className="font-base leading-8 text-base text-gray-700">
@@ -58,7 +58,7 @@ export const UserComplaintsSection = () => {
           />
           <FeedbackCard
             imageSrc={complaint4}
-            title="User Frustration Due to Website Redirections"
+            title="Frustration Due to Website Redirections"
             description="Users consistently expressed frustration with the app's frequent redirections to the website, disrupting their experience and undermining the app's value. This constant switching led users to question the app's effectiveness and reliability.
             "
           />
@@ -70,12 +70,10 @@ export const UserComplaintsSection = () => {
 
 
         <div className="leading-8">
-          <h1 className="text-2xl font-semibold text-gray-800 mb-4 border-l-8 border-gray-800 pl-3 mt-10  w-[30em] leading-9">
-            Comparative Analysis: Benchmarking User Experience Across Airlines
-          </h1>
+        <h2 className="text-xl font-semibold text-gray-800 pt-8"> Comparative Analysis: Benchmarking User Experience Across Airlines</h2>
           <Image src={airlineReviews} alt="Airline Reviews" quality={95} className="w-full py-5 pb-9" />
           <p>
-            <span className="font-semibold">Higher ratings among Canadian and popular American competitors indicate they are succeeding where Flair is not.</span> This comparison <span className="bg-[#b2ff94]">highlights opportunities to learn from industry leaders and enhance our app's performance </span> , ultimately boosting user satisfaction and loyalty. We will reference these competitor apps during our redesign to incorporate best practices and elevate our user experience.
+            <span className="font-semibold">Higher ratings among Canadian and popular American competitors indicate they are succeeding where Flair is not.</span> This comparison <span className="bg-[#b2ff94]">highlights opportunities to learn from industry leaders and enhance our app's performance </span> , ultimately boosting user satisfaction and loyalty. I will reference these competitor apps during our redesign to incorporate best practices and elevate our user experience.
 
           </p>
         </div>

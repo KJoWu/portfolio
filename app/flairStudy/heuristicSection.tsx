@@ -73,7 +73,7 @@ export const HeuristicSection = () => {
                 Frequent Website Redirects Compromising App Value
               </h1>
             </div>
-            <div className="font-base leading-7 text-base text-gray-700 col-span-1 mb-3">
+            <div className="font-base leading-8 text-base text-gray-700 col-span-1 mb-3">
               <p>
                 <span className="bg-[#b2ff94]">Roughly 90% of the main action buttons in the app redirect to the website,</span> leading to inconsistent usability and disrupting the user experience. This practice compromises the unique value proposition of a native app.
               </p>
@@ -94,7 +94,7 @@ export const HeuristicSection = () => {
         <Image src={issueData} alt={"issue 1"} quality={95} className="rounded-xl w-full h-full object-contain bg-white col-span-7" />
         <section className="col-span-5 flex items-center">
           <div className="text-gray-800 w-full">
-          <div className="inline-flex items-center text-base py-1 rounded-full mb-3 text-red-500">
+          <div className="inline-flex items-center text-base py-1 rounded-full mb-2 text-red-500">
               <ExclamationCircleIcon className="h-6 w-6 mr-2 text-red-500 text-2xl" />
               Data Retention Issues
             </div>

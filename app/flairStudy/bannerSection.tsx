@@ -16,10 +16,10 @@ export const BannerSection = () => {
       <div className="absolute inset-0 h-full w-full" />
       <div className="flex flex-col items-center text-center">
         <h1 className="text-5xl font-semibold  z-[10]">Flair Airlines Redesign</h1>
-        <hr className="border-t-[.8em] border-[#b2ff94] mt-[.5em] w-[25em] z-[1]" />
+        <hr className="border-t-[.8em] border-[#b2ff94] mt-[.9em] w-[25em] z-[1]" />
       </div>
 
-      <section className="mb-12 flex justify-center items-center mt-[2em]">
+      <section className="mb-[5em] flex justify-center items-center mt-[3em]">
         <p className="text-gray-700 font-semibold leading-8 text-center max-w-[55em]">
           This case study presents a detailed UX audit of Flair Airlines' digital platforms, aiming to enhance user satisfaction and streamline the boarding process. With increasing competition in the airline industry, delivering an exceptional user experience is crucial for customer retention and brand loyalty.
         </p>

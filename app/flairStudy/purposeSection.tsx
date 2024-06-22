@@ -3,13 +3,13 @@ const Takeaways = () => {
     <div className="max-w-7xl mx-auto">
       <section className="mb-8">
         <header className="mb-8">
-        <h1 className="font-semibold text-3xl text-gray-800 leading-[1.4em]">
-                      Defining and Understanding the Critical Issues
+          <h1 className="font-semibold text-3xl text-gray-800 leading-[1.4em]">
+            Defining and Understanding the Critical Issues
           </h1>
-          <hr className="border-t-8 border-gray-800 my-2 w-[10em]" /> 
+          <hr className="border-t-8 border-gray-800 my-2 w-[10em]" />
         </header>
 
-        <blockquote className="text-xl italic text-gray-800 dark:text-white my-4 leading-9">
+        <blockquote className="text-xl italic text-gray-800 dark:text-white my-4 leading-8">
           <svg
             className="w-8 h-8 text-gray-400 dark:text-gray-600 mb-4"
             aria-hidden="true"
@@ -38,12 +38,12 @@ const Takeaways = () => {
         <div className="max-w-7xl mx-auto">
           <section className="grid grid-cols-1 lg:grid-cols-3 gap-10">
             <article className="lg:col-span-2">
-              <h2 className="text-2xl font-semibold text-gray-800 mb-4 border-l-8 border-slate-900 pl-3 mt-10 w-[30em] leading-9">
+              <h2 className="text-2xl font-semibold text-gray-800 mb-4 border-l-8 border-slate-900 pl-3 mt-10 w-[30em] leading-8">
                 Stress Reduction and User Satisfaction
               </h2>
               <div className="mx-auto text-gray-700 leading-8">
                 <p className=" text-gray-700 leading-8">
-                  Through visual analysis and user studies, we identified critical pain points in the Flair app that impact user experience. <span className="bg-[#b2ff94]">Users reported high stress when retrieving boarding passes, particularly in time-sensitive airport environments.</span>
+                  Through visual analysis and user studies, I identified critical pain points in the Flair app that impact user experience. <span className="bg-[#b2ff94]">Users reported high stress when retrieving boarding passes, particularly in time-sensitive airport environments.</span>
                 </p>
                 <p className=" text-gray-700 leading-8 mt-4">
                   To stay competitive, Flair must enhance user loyalty by optimizing navigation, login processes, design consistency, and information handling. Competitors offer smoother experiences. <span className="bg-[#b2ff94]">A reliable app can reduce user anxiety with accurate, timely information, fostering <span className="font-semibold">customer loyalty</span> and a <span className="font-semibold">positive reputation</span>.</span>
@@ -58,7 +58,7 @@ const Takeaways = () => {
             </article>
             <aside className="lg:col-span-1 flex items-center ">
               <blockquote className="border-l-4 border-gray-600 pl-4 italic text-gray-600 bg-slate-900 px-5 py-8 rounded-lg text-slate-100">
-                <p className="leading-7 p-4 font-base">
+                <p className="leading-8 p-4 font-base">
                   "61 percent of travelers in the U.S. have booked and paid for
                   travel through their smartphone within the past year, and 64
                   percent use their smartphones en route to their destination."
@@ -77,14 +77,13 @@ const Takeaways = () => {
           </section>
         </div>
 
-        <section className="mb-2 mt-10">
-        <h2 className="text-2xl font-semibold text-gray-800 mb-4 border-l-8 border-slate-900 pl-3 mt-10 w-[30em] leading-9">
-            Possible Limitations
-          </h2>
-          <p className="font-base leading-8 text-base text-gray-700">
-            <span className="font-semibold">The current problems extend beyond visual issues;</span> a significant portion involves users experiencing login difficulties, which may be technical in nature. To enhance the app's value, we need to implement user profiles, likely requiring database integration or other technical solutions. This will be crucial and will complement the proposed design improvements.
+
+        <section className="mt-8">
+          <h2 className="text-xl font-semibold text-gray-800">Possible Limitations</h2>
+          <p className="mb-6 text-gray-700 leading-8 mt-6"><span className="font-semibold">The current problems extend beyond visual issues;</span> a significant portion involves users experiencing login difficulties, which may be technical in nature. To enhance the app's value, Flair needs to implement user profiles, likely requiring database integration or other technical solutions. This will be crucial and will complement the proposed design improvements.
           </p>
         </section>
+
       </section>
 
     </div>

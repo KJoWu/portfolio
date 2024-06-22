@@ -28,7 +28,7 @@ export default function Intro() {
                 Hi, I'm <span className="text-[#4229d6]">Kim</span>.
               </p>
 
-              <p className={`text-xl pt-5  ${poppins.className} leading-9 bg-white`}>
+              <p className={`text-xl pt-5  ${poppins.className} leading-8 bg-white`}>
                 I'm a Senior Frontend Engineer, product designer and artist.
               </p>
               <div className={`pt-3 leading-8  bg-white ${poppins.className} font-base`}>
