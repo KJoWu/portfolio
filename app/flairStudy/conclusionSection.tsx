@@ -70,13 +70,13 @@ export const ConclusionSection = () => {
 
       <section>
         <h2 className="text-xl font-semibold text-gray-800 pt-10">Final Thoughts</h2>
-        <p className="mb-6 text-gray-700 leading-8 mt-6">While there were many areas that required improvement with Flair, addressing the onboarding process was particularly interesting due to the real-life consequences of a poorly designed UI. I thoroughly enjoyed identifying pain points and developing features that significantly enhance the app. Often, a small feature can generate substantial returns. While UI design is crucial, understanding user pain points and creating solutions to address them is equally, if not more, important. This case study provided a valuable opportunity to delve into these aspects and improve the overall user experience.
+        <p className="mb-6 text-gray-700 leading-8 mt-6">While there were many areas that required improvement with Flair, addressing the onboarding process was particularly interesting due to the real-life consequences of a poorly designed UI. I thoroughly enjoyed identifying pain points and developing features that significantly enhance the app. <span className="bg-[#b2ff94]">Sometimes, a small feature can generate substantial returns.</span> While UI design is crucial, understanding user pain points and creating solutions is equally important. This case study provided a valuable opportunity to delve into these aspects and improve the overall user experience.
 
 
         </p>
       </section>
 
-      <div className="flex text-4xl justify-center items-center pb-[3em] pt-[4em]">
+      <div className="flex text-4xl font-semibold justify-center items-center pb-[3em] pt-[4em]">
         Thanks for Reading!
     </div>
 

@@ -22,10 +22,14 @@ export const BannerSection = () => {
       </section>
 
       <section className="mb-12 px-4 md:px-[10em]">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-2 text-gray-700">
+        <div className="grid grid-cols-1 md:grid-cols-5 gap-2 text-gray-700">
           <div>
             <p className="font-semibold">Timeline</p>
-            <p className="font-base">5 days</p>
+            <p className="font-base">1 week</p>
+          </div>
+          <div>
+            <p className="font-semibold">Possible Client</p>
+            <p className="font-base">Flair Airlines</p>
           </div>
           <div>
             <p className="font-semibold">Role</p>
