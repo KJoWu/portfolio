@@ -36,10 +36,13 @@ export const ConclusionSection = () => {
           <h2 className="text-xl font-semibold text-gray-800">How we can measure success</h2>
           <p className="mb-6 text-gray-700 leading-8 mt-6">One of the things I would want to do in the tudy is measure the hotposts of the pages. One way to measure the success is to see the conversion rate of Users Accessing their QR codes and creating accounts</p>
         </section>
-
-
         <section>
           <h2 className="text-xl font-semibold text-gray-800">Understanding the direction of Flair's branding</h2>
+          <p className="mb-6 text-gray-700 leading-8 mt-6">For this scope I limited the changes to what Flair currenty has, but it would be interesting to know if they would go back to their green branding. I played around with mockup</p>
+        </section>
+
+        <section>
+          <h2 className="text-xl font-semibold text-gray-800">Future Testing</h2>
           <p className="mb-6 text-gray-700 leading-8 mt-6">For this scope I limited the changes to what Flair currenty has, but it would be interesting to know if they would go back to their green branding. I played around with mockup</p>
         </section>
 

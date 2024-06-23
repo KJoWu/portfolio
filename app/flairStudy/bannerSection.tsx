@@ -6,6 +6,7 @@ import designBooking from "../../public/final_booking.jpg";
 import designNotification from "../../public/final_notificaion.png";
 import designCheckin from "../../public/final_checkin.png";
 import { EllipsisHorizontalIcon } from '@heroicons/react/24/solid';
+import VideoPlayer from "./videoPlayer";
 import Image from "next/image";
 
 
@@ -47,14 +48,29 @@ export const BannerSection = () => {
 
 
       <section className="col-span-4 flex items-center justify-center flex-nowrap">
-        <Image src={designCheckin} alt="menu" quality={95} className="rounded-xl object-contain flex-shrink-0 max-w-[20%] mr-4" />
+        <VideoPlayer
+          src="/booking.mp4"
+          type="video/mp4"
+          poster="/images/video-poster.jpg"
+          className="rounded-xl object-contain flex-shrink-0 max-w-[20%] pt-[.9em]" // Adjust the size here
+        />
+        <VideoPlayer
+          src="/guestBooking.mp4"
+          type="video/mp4"
+          poster="/images/video-poster.jpg"
+          className="h-[33em] overflow-hidden" // Adjust the size here
+        />
+        <VideoPlayer
+          src="/userNotification.mp4"
+          type="video/mp4"
+          poster="/images/video-poster.jpg"
+          className="h-[33em] overflow-hidden" // Adjust the size here
+        />
         <Image src={designQRCode} alt="menu" quality={95} className="rounded-xl object-contain flex-shrink-0 max-w-[20%] mr-4" />
-        <Image src={designBooking} alt="menu" quality={95} className="rounded-xl object-contain flex-shrink-0 max-w-[20%] mr-4" />
-        <Image src={designNotification} alt="menu" quality={95} className="rounded-xl object-contain flex-shrink-0 max-w-[20%]" />
       </section>
 
       <div className="flex justify-center items-center pb-[7em] pt-[7em]">
-      <EllipsisHorizontalIcon className="h-10 w-10 text-black text-3xl" />
+        <EllipsisHorizontalIcon className="h-10 w-10 text-black text-3xl" />
       </div>
 
 
