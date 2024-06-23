@@ -14,7 +14,7 @@ import { PurposeSection } from './purposeSection';
 import { ProblemSection } from './problemSection';
 import { ScopingSection } from './scopingSection';
 import CaseSection from './caseSection';
-import { playFair, inter, poppins } from "../fonts";
+import {  poppins } from "../fonts";
 import { FinalDesignSection } from './findalDesignSection';
 import { BannerSection } from "./bannerSection";
 import { ConclusionSection } from './conclusionSection';
