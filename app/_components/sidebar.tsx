@@ -6,7 +6,7 @@ const sections = [
   { id: 'section2', label: 'Discover' },
   { id: 'section3', label: 'Define' },
   { id: 'section4', label: 'Design' },
-  { id: 'section5', label: 'Evaluate' },
+  { id: 'section5', label: 'Product' },
   { id: 'section6', label: 'Future Steps' },
 ];
 
@@ -32,9 +32,9 @@ const Sidebar = () => {
                 e.preventDefault();
                 scrollToSection(section.id);
               }}
-              className="block text-sm hover:text-yellow-400 transition duration-300 pl-4"
+              className="block hover:text-purple-700 transition duration-300 pl-4"
             >
-              <span className="absolute left-0 h-full w-1 bg-transparent group-hover:bg-yellow-400 transition duration-300"></span>
+              <span className="absolute left-0 h-full w-1 bg-transparent group-hover:bg-purple-700 transition duration-300"></span>
               {section.label}
             </a>
           </li>

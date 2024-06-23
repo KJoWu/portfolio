@@ -5,13 +5,11 @@ import { motion } from "framer-motion";
 import { BsLinkedin } from "react-icons/bs";
 import SectionContainer from "../_components/sectionContainer";
 import { inter, poppins } from "../fonts";
-import Skills from "./skills";
-import Drawing from "./drawing";
 
 export default function Intro() {
   return (
     <div>
-      <div className="absolute inset-0 h-full w-full" />
+      <div className="" />
       <SectionContainer>
         <section className={`flex flex-col sm:flex-row justify-between pt-[8rem] pb-[5rem] ${inter.className}`}>
           <div className="w-[25rem] relative">

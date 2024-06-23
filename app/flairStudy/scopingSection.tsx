@@ -1,9 +1,9 @@
 import { EllipsisHorizontalIcon } from '@heroicons/react/24/solid';
 import Image from "next/image";
 import profile1 from "../../public/profile_1.jpg";
-import profile2 from "../../public/profile_2.png";
-import profile3 from "../../public/profile_3.jpg";
-import profile4 from "../../public/profile_4.jpg";
+import profile2 from "../../public/profile_2.webp";
+import profile3 from "../../public/profile_3.webp";
+import profile4 from "../../public/profile_4.webp";
 import profile5 from "../../public/profile_5.jpg";
 import { StaticImageData } from 'next/image';
 
@@ -39,17 +39,17 @@ const UserProfile = ({ image, name, age, occupation, travelFrequency, techSavvin
 const UserStories = () => {
   const users = [
     {
-      image: profile3,
-      name: "Sarah Johnson",
-      age: "32",
-      occupation: "International Business",
-      travelFrequency: "Twice a month",
-      techSavviness: "High",
-      description: `Sarah frequently travels for work and relies on airline apps. She values efficiency and clarity, 
-                    <span class="bg-[#b2ff94]">likes receiving notifications, and prefers having her information, including boarding times, readily available </span> 
-                    without navigating through multiple buttons.`,
-      quote: "I need to access my boarding pass in seconds, not minutes. My schedule is too tight for any delays."
+      image: profile5,
+      name: "Crystal Wang",
+      age: "24",
+      occupation: "Undergrad Student",
+      travelFrequency: "Based on travel deals",
+      techSavviness: "Medium",
+      description: `Crystal loves exploring new cities and countries whenever she finds a good deal. As a student, she is mindful of her budget and 
+                    <span class="bg-[#b2ff94]">looks for affordable travel options.</span>`,
+      quote: "I’m always on the lookout for great travel deals. I need an app that helps me find and book trips affordably, without interfering with my studies."
     },
+
     {
       image: profile1,
       name: "Jacob Loid",
@@ -63,16 +63,18 @@ const UserStories = () => {
       quote: "Traveling with kids is stressful enough. I need an app that makes things easier, not harder."
     },
     {
-      image: profile5,
-      name: "Crystal Wang",
-      age: "24",
-      occupation: "Undergrad Student",
-      travelFrequency: "Based on travel deals",
-      techSavviness: "Medium",
-      description: `Crystal loves exploring new cities and countries whenever she finds a good deal. As a student, she is mindful of her budget and 
-                    <span class="bg-[#b2ff94]">looks for affordable travel options.</span>`,
-      quote: "I’m always on the lookout for great travel deals. I need an app that helps me find and book trips affordably, without interfering with my studies."
+      image: profile3,
+      name: "Sarah Johnson",
+      age: "32",
+      occupation: "International Business",
+      travelFrequency: "Twice a month",
+      techSavviness: "High",
+      description: `Sarah frequently travels for work and relies on airline apps. She values efficiency and clarity, 
+                    <span class="bg-[#b2ff94]">likes receiving notifications, and prefers having her information, including boarding times, readily available </span> 
+                    without navigating through multiple buttons.`,
+      quote: "I need to access my boarding pass in seconds, not minutes. My schedule is too tight for any delays."
     },
+
     {
       image: profile4,
       name: "The Vlogging Squad",

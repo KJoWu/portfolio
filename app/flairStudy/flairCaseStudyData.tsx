@@ -16,7 +16,7 @@ import { ScopingSection } from './scopingSection';
 import CaseSection from './caseSection';
 import { playFair, inter, poppins } from "../fonts";
 import { FinalDesignSection } from './findalDesignSection';
-import { BannerSection} from "./bannerSection";
+import { BannerSection } from "./bannerSection";
 import { ConclusionSection } from './conclusionSection';
 
 
@@ -27,44 +27,37 @@ const sectionVariants = {
 
 const FlairCaseStudyData = () => {
   return (
-    <div className="ml-[5em] mt-40">
-            <BannerSection />
+    <div className="ml-[6em] mt-40">
+             <motion.section
+          id="section1"
+          className="relative"
+          whileInView="visible"
+          variants={sectionVariants}
+          transition={{ duration: 0.5 }}
+        >
+      
+      <BannerSection />
+      </motion.section>
 
       <div className={`container mx-auto px-4 ${poppins.className}`}>
 
-        
+
 
 
         {/******************************************************** Section Cutoff */}
 
-        <motion.section
-          id="section2"
-          className="relative"
-          whileInView="visible"
-          variants={sectionVariants}
-          transition={{ duration: 0.5 }}
-        >
+
           <CaseSection>
             <IntroSection />
           </CaseSection>
-        </motion.section>
 
         {/******************************************************** Section Cutoff */}
 
 
-
-        <motion.section
-          id="section2"
-          className="relative"
-          whileInView="visible"
-          variants={sectionVariants}
-          transition={{ duration: 0.5 }}
-        >
           <CaseSection>
             <ProblemSection />
           </CaseSection>
 
-        </motion.section>
         {/******************************************************** Section Cutoff */}
         <motion.section
           id="section2"
@@ -81,20 +74,13 @@ const FlairCaseStudyData = () => {
 
         {/******************************************************** Section Cutoff */}
 
-        <motion.section
-          id="section3"
-          className="relative font-base pb-20"
-          whileInView="visible"
-          variants={sectionVariants}
-          transition={{ duration: 0.5 }}
-        >
+
 
           <CaseSection>
             <UserComplaintsSection />
           </CaseSection>
 
 
-        </motion.section>
         {/******************************************************** Section Cutoff */}
 
 
@@ -115,32 +101,23 @@ const FlairCaseStudyData = () => {
 
         {/******************************************************** Section Cutoff */}
 
-        <motion.section
-          id="section3"
-          className="relative font-base pb-20"
-          whileInView="visible"
-          variants={sectionVariants}
-          transition={{ duration: 0.5 }}
-        >
           <CaseSection>
             <ScopingSection />
           </CaseSection>
 
 
-        </motion.section>
 
         {/******************************************************** Section Cutoff */}
 
 
         <motion.section
-          id="section3"
+          id="section4"
           className="relative font-base pb-20"
           whileInView="visible"
           variants={sectionVariants}
           transition={{ duration: 0.5 }}
         >
           <CaseSection>
-
             <RedesignSection />
           </CaseSection>
 
@@ -150,7 +127,7 @@ const FlairCaseStudyData = () => {
         {/******************************************************** Section Cutoff */}
 
         <motion.section
-          id="section3"
+          id="section5"
           className="relative font-base pb-20"
           whileInView="visible"
           variants={sectionVariants}
@@ -167,7 +144,7 @@ const FlairCaseStudyData = () => {
         {/******************************************************** Section Cutoff */}
 
         <motion.section
-          id="section3"
+          id="section6"
           className="relative font-base pb-20"
           whileInView="visible"
           variants={sectionVariants}
