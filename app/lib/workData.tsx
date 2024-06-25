@@ -1,6 +1,10 @@
 import app1 from "../../public/22.jpg";
 import app2 from "../../public/22.jpg";
-import app3 from "../../public/22.jpg";
+import flair from "../../public/flair.jpg";
+import vProperties from "../../public/vProperties.jpg";
+import vsElevator from "../../public/vsElevator.jpg"
+import vcAds from "../../public/vcAds.jpg"
+
 import { StaticImageData } from "next/image";
 
 export interface Work {
@@ -16,11 +20,11 @@ export interface Work {
 }
 export const workData: Work[] = [
   {
-    title: "FlyFlair Airline Case Study",
+    title: "Flair Airlines Case Study",
     type: "Progressive Mobile Application",
     description: "How can we improve the onboarding user experience for fliers",
-    imageUrl: app2,
-    skills: ["Figma", "React JS"],
+    imageUrl: flair,
+    skills: ["Figma", "Miro"],
     tags: ["Mobile", "React Native", "Product Design"],
     bg: "bg-zinc-50",
     tagsBg: "bg-zinc-400",
@@ -28,10 +32,10 @@ export const workData: Work[] = [
   },
   {
     title: "Screen Displays for Elevators",
-    type: "Progressive Web Applicatio",
+    type: "Progressive Web Application",
     description: "How can we improve Canada data for users across Canada",
-    imageUrl: app2,
-    skills: ["Figma", "Typescript", "Ruby on Rails"],
+    imageUrl: vsElevator,
+    skills: ["Figma", "Typescript", "React JS"],
     tags: ["Mobile", "React Native", "Product Design"],
     bg: "bg-zinc-50",
     tagsBg: "bg-zinc-400",
@@ -41,19 +45,8 @@ export const workData: Work[] = [
     title: "Advertising Platform for Campaign Proposal Creation",
     type: "Web Application",
     description: "How can we improve Canada data for users across Canada",
-    imageUrl: app2,
-    skills: ["Figma", "React", "Ruby on Rails"],
-    tags: ["Mobile", "React Native", "Product Design"],
-    bg: "bg-zinc-50",
-    tagsBg: "bg-zinc-400",
-    bgHover: "hover:bg-zinc-200",
-  },
-  {
-    title: "Campaign Creation Tool for Seameless Avertsing",
-    type: "Web Application",
-    description: "How can we improve Canada data for users across Canada",
-    imageUrl: app2,
-    skills: ["Figma", "React", "Ruby on Rails"],
+    imageUrl: vcAds,
+    skills: ["Figma", "React JS", "Javascript", "Ruby on Rails"],
     tags: ["Mobile", "React Native", "Product Design"],
     bg: "bg-zinc-50",
     tagsBg: "bg-zinc-400",
@@ -63,8 +56,8 @@ export const workData: Work[] = [
     title: "Content Management System for Property Managers",
     type: "Web Application",
     description: "How can we improve Canada data for users across Canada",
-    imageUrl: app2,
-    skills: ["Figma", "React", "Ruby on Rails"],
+    imageUrl: vProperties,
+    skills: ["Figma", "React JS", "Javascript", "Ruby on Rails"],
     tags: ["Mobile", "React Native", "Product Design"],
     bg: "bg-zinc-50",
     tagsBg: "bg-zinc-400",

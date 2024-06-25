@@ -21,15 +21,11 @@ export default function ProjectSection() {
         {Object.keys(projects).map((menuOption) => (
           <button
             key={menuOption}
-            className={`group text-indigo-700 transition duration-300 ${inter.className}`}
+            className={`group text-indigo-700  duration-300 ${inter.className}`}
             onClick={() => handleTypeClick(menuOption as ProjectType)}
           >
             {projects[menuOption as ProjectType].label}
-            <span
-              className={`
-              block group-hover:max-w-full transition-all duration-200 h-0.5 bg-indigo-700 
-              ${selectedOption === menuOption ? "max-w-full" : "max-w-0"}`}
-            />
+
           </button>
         ))}
       </div>

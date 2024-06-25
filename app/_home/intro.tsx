@@ -4,12 +4,11 @@ import React from "react";
 import { motion } from "framer-motion";
 import { BsLinkedin } from "react-icons/bs";
 import SectionContainer from "../_components/sectionContainer";
-import { inter, poppins } from "../fonts";
+import { inter, poppins, sourceSerfif,playFair, TiempoBold, TiempoSemi, dmSerif } from "../fonts";
 
 export default function Intro() {
   return (
-    <div>
-      <div className="" />
+    <div className="max-width-[em]">
       <SectionContainer>
         <section className={`flex flex-col sm:flex-row justify-between pt-[8rem] pb-[5rem] ${inter.className}`}>
           <div className="w-[25rem] relative">
@@ -22,14 +21,16 @@ export default function Intro() {
                 duration: 0.2,
               }}
             >
-              <p className={`text-5xl font-medium ${poppins.className} bg-white`}>
-                Hi, I'm <span className="text-[#4229d6]">Kim</span>.
+              <p className={`text-7xl  ${dmSerif.className} bg-white`}>
+                Hi!<br/> I
+                <span className={`${TiempoSemi.className} mt-3 mb-[-7px] relative`} style={{ top: '-47px', left: '1px' }}>,</span>
+                m <span className="text-[#4229d6]">Kim</span>.
               </p>
 
-              <p className={`text-xl pt-5  ${poppins.className} leading-8 bg-white`}>
+              <p className={`text-xl pt-5  ${sourceSerfif.className} leading-8 bg-white`}>
                 I'm a Senior Frontend Engineer, product designer and artist.
               </p>
-              <div className={`pt-3 leading-8  bg-white ${poppins.className} font-base`}>
+              <div className={`text-lg pt-20 leading-8  bg-white ${sourceSerfif.className} font-base`}>
                 <p>Recepient of the Meiya Reinking Art Award</p>
                 <p>District of Edmonton Art Award</p>
               </div>
@@ -43,10 +44,10 @@ export default function Intro() {
                 delay: 0.9,
               }}
             >
-              <button className="bg-[#4229d6] hover:scale-110 transition hover:bg-gray-800 text-[white] px-4 py-2 rounded-full ">
+              <button className={` ${sourceSerfif.className} bg-[#4229d6] hover:scale-110 transition hover:bg-gray-800 text-[white] px-4 py-2 rounded-full `}>
                 Contact Me
               </button>
-              <button className="bg-white hover:bg-gray-100 px-4 rounded-full hover:scale-110 transition text-gray-700">
+              <button className={`${sourceSerfif.className} bg-white hover:bg-gray-100 px-4 rounded-full hover:scale-110 transition text-gray-700`}>
                 My CSV
               </button>
               <button className="bg-white hover:bg-gray-100 width-auto p-3 hover:scale-110 transition rounded-full text-gray-700">

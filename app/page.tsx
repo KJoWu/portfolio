@@ -6,7 +6,7 @@ import { designTools, technicalTools, technicalSkills } from "./lib/workData";
 
 export default function Home() {
   return (
-    <main>
+    <main className="max-w-[50em] mx-auto">
       <Intro />
       <Work />
     </main>

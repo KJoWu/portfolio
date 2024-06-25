@@ -29,7 +29,7 @@ export default function WorkThumbnail({
       <div>
         <h3 className={`text-xl font-semibold mb-3 tracking-wide  ${inter.className}`}>{title}</h3>
         {/* <p className={`font-base text-sm ${inter.className} leading-relaxed text-gray-500 tracking-wider`}>{type}</p> */}
-        <p className={`mt-1 ${poppins.className}  font-base  text-sm leading-relaxed`}>
+        <p className={` ${poppins.className}  font-base  text-sm leading-relaxed`}>
           {description}
         </p>
         <ul className="flex flex-wrap gap-x-3 mt-1">

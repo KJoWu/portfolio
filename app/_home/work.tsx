@@ -3,15 +3,21 @@ import SectionHeading from "../_components/sectionHeading";
 import { workData, caseStudyData } from "../lib/workData";
 import WorkThumbnail from "../_components/workThumbnail";
 import SectionContainer from "../_components/sectionContainer";
+import {  TiempoBold } from "../fonts";
+import Image from "next/image";
+import issueRedirect from "../../public/issue_redirect.jpg";
+
+
 
 export default function Work() {
   return (
-    <section className="relative flex flex-col  sm:py-[3rem] bg-[white]">
+    <section className="relative flex flex-col sm:py-[3rem] bg-[white]">
       <SectionHeading>
-        <p >Work Experience + Case Studies</p>
+        <p className={`${TiempoBold.className} text-3xl`} >Selected Work Experience + Case Studies</p>
         {/* <p className={`${poppins.className} text-sm text-gray-500 pt-2 font-base tracking-wide`}>Password available upon request</p> */}
 
       </SectionHeading>
+
       <SectionContainer>
         <div className="grid grid-cols-2 gap-12">
           {workData.map((project, index) => (

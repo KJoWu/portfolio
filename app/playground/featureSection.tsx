@@ -3,6 +3,7 @@ import SectionHeading from "../_components/sectionHeading";
 import SectionContainer from "../_components/sectionContainer";
 import { featuredData } from "../lib/projectData";
 import ProjectThumbnail from "../_components/projectThumbnail";
+import {  TiempoBold } from "../fonts";
 
 export default function ProjectHighlightSection() {
 
@@ -12,7 +13,7 @@ export default function ProjectHighlightSection() {
       // style={{ backgroundImage: `url("./a2.png")` }}
     >
       <SectionHeading>
-        <h1 className="text-3xl">Playground</h1>
+        <h1 className={`text-5xl  ${TiempoBold.className}`}>Playground</h1>
 
         <p className=" text-lg  w-fit font-base pt-3  pb-2 w-[30rem]">
           In addition to software developement, I've also worked as a videographer and a graphic designer  
