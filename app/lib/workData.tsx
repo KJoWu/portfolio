@@ -1,9 +1,13 @@
-import app1 from "../../public/22.jpg";
-import app2 from "../../public/22.jpg";
 import flair from "../../public/flair.jpg";
 import vProperties from "../../public/vProperties.jpg";
 import vsElevator from "../../public/vsElevator.jpg"
 import vcAds from "../../public/vcAds.jpg"
+import banner2 from "../../public/banner2.png"
+import banner1 from "../../public/banner3.png"
+import banner3 from "../../public/banner1.png"
+import banner4 from "../../public/banner4.png"
+
+
 
 import { StaticImageData } from "next/image";
 
@@ -16,93 +20,63 @@ export interface Work {
   tags: string[];
   bg: string;
   tagsBg: string;
+  url:string;
   bgHover: string;
 }
 export const workData: Work[] = [
   {
     title: "Flair Airlines Case Study",
     type: "Progressive Mobile Application",
-    description: "How can we improve the onboarding user experience for fliers",
-    imageUrl: flair,
+    description: "Case study for examining ways to improve the onboarding user experience for fliers",
+    imageUrl: banner4,
     skills: ["Figma", "Miro"],
     tags: ["Mobile", "React Native", "Product Design"],
     bg: "bg-zinc-50",
     tagsBg: "bg-zinc-400",
     bgHover: "hover:bg-zinc-200",
+    url:"/flairStudy"
   },
   {
-    title: "Screen Displays for Elevators",
+    title: "Digital Elevator and Lobby Screen Displays",
     type: "Progressive Web Application",
-    description: "How can we improve Canada data for users across Canada",
-    imageUrl: vsElevator,
+    description: "Designed and developed the screen application for Elev8.",
+    imageUrl: banner1,
     skills: ["Figma", "Typescript", "React JS"],
     tags: ["Mobile", "React Native", "Product Design"],
     bg: "bg-zinc-50",
     tagsBg: "bg-zinc-400",
     bgHover: "hover:bg-zinc-200",
+    url:"https://www.verticalcity.com/elev8"
   },
   {
-    title: "Advertising Platform for Campaign Proposal Creation",
+    title: "Advertiser Platform for Campaign Creation",
     type: "Web Application",
-    description: "How can we improve Canada data for users across Canada",
-    imageUrl: vcAds,
+    description: "Developed a platform to which allows media buyers to create campaigns online",
+    imageUrl: banner3,
     skills: ["Figma", "React JS", "Javascript", "Ruby on Rails"],
     tags: ["Mobile", "React Native", "Product Design"],
     bg: "bg-zinc-50",
     tagsBg: "bg-zinc-400",
     bgHover: "hover:bg-zinc-200",
+    url:"https://www.verticalimpression.com"
   },
   {
     title: "Content Management System for Property Managers",
     type: "Web Application",
-    description: "How can we improve Canada data for users across Canada",
-    imageUrl: vProperties,
+    description: "Developed a platform that allows property managers to post notices and news feeds to elevators and lobby screens",
+    imageUrl: banner2,
     skills: ["Figma", "React JS", "Javascript", "Ruby on Rails"],
     tags: ["Mobile", "React Native", "Product Design"],
     bg: "bg-zinc-50",
     tagsBg: "bg-zinc-400",
     bgHover: "hover:bg-zinc-200",
+    url:"https://www.verticalcity.com/screen-solutions"
   },
 ] as const;
 
 export const caseStudyData:Work[] = [
 ] as const;
 
-export const researchWorkData: Work[] = [
-  {
-    title: "Medical Research Illustrator",
-    description: "Artist, designed the portfolio for a research paper",
-    type: "Desktop Application",
-    imageUrl: app1,
-    skills: ["Photoshop"],
-    tags: ["In House Illustrator"],
-    bg: "bg-violet-500",
-    tagsBg: "bg-violet-200",
-    bgHover: "bg-violet-300",
-  },
-  {
-    title: "Colledge Data Sharing",
-    type: "Mobile Application",
-    description: "How can we improve Canada data for users across Canada",
-    imageUrl: app2,
-    skills: ["Figma", "React", "Redux Forms", "Ruby on Rails"],
-    tags: ["Mobile", "React Native", "Product Design"],
-    tagsBg: "bg-violet-10",
-    bg: "bg-violet-50",
-    bgHover: "bg-violet-300",
-  },
-  {
-    title: "Colledge Data Sharing",
-    type: "Mobile Application",
-    description: "How can we improve Canada data for users across Canada",
-    imageUrl: app2,
-    skills: ["Figma", "React", "Redux Forms", "Ruby on Rails"],
-    tags: ["Mobile", "React Native", "Product Design"],
-    tagsBg: "bg-violet-10",
-    bg: "bg-violet-50",
-    bgHover: "bg-violet-300",
-  },
-] as const;
 
 export const designTools = [
   "Figma", "Sketch",

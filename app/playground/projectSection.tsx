@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import SectionContainer from "../_components/sectionContainer";
 import ProjectGallery from "./projectGallery";
 import { projects, ProjectType } from "../lib/projectData";
-import { inter } from "../fonts";
+import { poppins } from "../fonts";
 
 export default function ProjectSection() {
   const [selectedOption, setActiveType] = useState<ProjectType>("web");
@@ -21,7 +21,7 @@ export default function ProjectSection() {
         {Object.keys(projects).map((menuOption) => (
           <button
             key={menuOption}
-            className={`group text-indigo-700  duration-300 ${inter.className}`}
+            className={`group text-indigo-700  duration-300 ${poppins.className}`}
             onClick={() => handleTypeClick(menuOption as ProjectType)}
           >
             {projects[menuOption as ProjectType].label}

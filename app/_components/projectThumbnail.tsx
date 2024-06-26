@@ -3,6 +3,8 @@ import React from "react";
 import Image from "next/image";
 import YouTubeEmbed from "./video";
 import { ProjectData, SelectedOption } from "../lib/projectData";
+import { poppins, TiempoSemi } from "../fonts"; // Ensure this is actually used
+
 
 interface ProjectThumbnailProps {
   projectData: ProjectData;
@@ -26,8 +28,8 @@ export default function ProjectThumbnail({
             </div>
           </div>
           <div className="text-gray-900 mt-3">
-            <h3 className={`text-md font-semibold w-fit`}>{title}</h3>
-            <p className="pt-1 text-gray-500 font-base text-sm leading-relaxed ">
+            <h3 className={`text-md font-semibold w-fit ${TiempoSemi.className}`}>{title}</h3>
+            <p className="pt-1 text-gray-500 font-base text-sm ">
               {description}
             </p>
           </div>
@@ -58,8 +60,8 @@ export default function ProjectThumbnail({
       )}
       <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 bg-gray-950 bg-opacity-80 group-hover:opacity-100 text-center">
         <div className="text-white p-5">
-          <h3 className="text-2xl font-semibold">{title}</h3>
-          <p className="text-sm pt-3 leading-6 font-thin">{description}</p>
+          <h3 className={`TiempoSemi.className} text-2xl font-semibold`}>{title}</h3>
+          <p className="text-sm pt-3 leading-6">{description}</p>
         </div>
       </div>
     </div>

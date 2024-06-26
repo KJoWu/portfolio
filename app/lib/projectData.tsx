@@ -96,9 +96,9 @@ export const webappData: ProjectData[] = [
     description: "New take on QR codes, won fan favorite. Built with React js",
   },
   {
-    title: "Canadian University Finding App",
+    title: "iSight Eyecares",
     url: p1,
-    description: "The Canadian Open Data Hackathon (Figma)",
+    description: "Website developed for a boutique Optometry Business",
   },
   {
     title: "Interactive Property Selector",
@@ -250,13 +250,13 @@ export const videoData: VideoProjectData[] = [
     title: "Porphyrius: Draw my Life",
     url: "https://www.youtube.com/watch?v=N4UTFSjxV9U",
     description:
-      "Illustrated, voiced and produced a Draw my Life Animation Short",
+      'Illustrated, voiced and produced a "Draw my Life" animated short',
   },
-  {
-    title: "Games",
-    url: "https://drive.google.com/file/d/1ANh6OVhLOYORJFJuokruTSKsj4v5totM/view?usp=sharing",
-    description: "AWards: One best video for game. Game video promo",
-  },
+  // {
+  //   title: "Games",
+  //   url: "https://drive.google.com/file/d/1ANh6OVhLOYORJFJuokruTSKsj4v5totM/view?usp=sharing",
+  //   description: "AWards: One best video for game. Game video promo",
+  // },
   {
     title: "Kaye Institute Promotional",
     url: "https://www.youtube.com/watch?v=cRgB0sU_IpI",
@@ -273,12 +273,12 @@ export const otherData: ProjectData[] = [
   {
     title: "Hackathon",
     url: other1,
-    description: "Organized and ran a 2 Day Virtual Shark Tank themed Hackathon",
+    description: "Organized and ran a 2 Day Virtual Shark Tank themed Hackathon (also winning fan favorite for app",
   },
   {
     title: "Technical Wall",
     url: hobby4,
-    description: "Set up and built a technical lab",
+    description: "Planned, designed, built, and oversaw the development and installation of a technical wall for Vertical City",
   },
 ];
 

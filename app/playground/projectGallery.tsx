@@ -3,6 +3,7 @@ import React from "react";
 import ProjectThumbnail from "../_components/projectThumbnail";
 import { ProjectData } from "../lib/projectData";
 import { SelectedOption } from "../lib/projectData";
+import { inter, sourceSerfif, TiempoBold, TiempoSemi, poppins } from "../fonts";
 
 interface ProjectGalleryProps {
   selectedOption: SelectedOption;
@@ -27,10 +28,10 @@ export default function ProjectGallery({
     ));
   };
 
-  const gridClass = selectedOption === "video" || selectedOption === "web" ? "grid-cols-3" : "grid-cols-3";
+  const gridClass = selectedOption === "video" || selectedOption === "web" ? "grid-cols-2" : "grid-cols-2";
   return (
     <div>
-      <p className="text-sm pb-5 font-base w-[40rem] leading-6">{description}</p>
+      <p className={`pb-5  w-[40rem] leading-6 ${poppins.className}`}>{description}</p>
       <div className={`grid gap-10 ${gridClass}`}>{renderThumbnails()}</div>
     </div>
   );

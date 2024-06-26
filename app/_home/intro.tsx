@@ -4,11 +4,13 @@ import React from "react";
 import { motion } from "framer-motion";
 import { BsLinkedin } from "react-icons/bs";
 import SectionContainer from "../_components/sectionContainer";
-import { inter, poppins, sourceSerfif,playFair, TiempoBold, TiempoSemi, dmSerif } from "../fonts";
+import { inter, sourceSerfif, TiempoBold, TiempoSemi, dmSerif } from "../fonts";
+import Image from "next/image";
+import profile from "../../public/profile.jpg"
 
 export default function Intro() {
   return (
-    <div className="max-width-[em]">
+    <div className="mb-12 mt-10">
       <SectionContainer>
         <section className={`flex flex-col sm:flex-row justify-between pt-[8rem] pb-[5rem] ${inter.className}`}>
           <div className="w-[25rem] relative">
@@ -21,17 +23,23 @@ export default function Intro() {
                 duration: 0.2,
               }}
             >
-              <p className={`text-7xl  ${dmSerif.className} bg-white`}>
-                Hi!<br/> I
-                <span className={`${TiempoSemi.className} mt-3 mb-[-7px] relative`} style={{ top: '-47px', left: '1px' }}>,</span>
+
+              <div className="background-gradient flex items-center justify-center">
+                <div className="circle1 bg-circle"></div>
+                <div className="circle2 bg-circle"></div>
+                <div className="curve-line"></div>
+              </div>
+              <p className={`text-7xl  ${TiempoSemi.className} bg-white`}>
+                <span className={`${dmSerif.className}`}>Hello World!</span><br />
+                I<span className={`${TiempoSemi.className} mt-3 mb-[-7px] relative`} style={{ top: '-47px', left: '1px' }}>,</span>
                 m <span className="text-[#4229d6]">Kim</span>.
               </p>
 
-              <p className={`text-xl pt-5  ${sourceSerfif.className} leading-8 bg-white`}>
-                I'm a Senior Frontend Engineer, product designer and artist.
+              <p className={`text-lg pt-5  ${sourceSerfif.className} leading-8 bg-white`}>
+                I'm a senior frontend engineer, product designer and artist.
               </p>
-              <div className={`text-lg pt-20 leading-8  bg-white ${sourceSerfif.className} font-base`}>
-                <p>Recepient of the Meiya Reinking Art Award</p>
+              <div className={`text-base pt-20 leading-8  bg-white ${sourceSerfif.className} font-base`}>
+                <p>Recepient of the Meiya Reinking and</p>
                 <p>District of Edmonton Art Award</p>
               </div>
             </motion.div>
@@ -56,9 +64,23 @@ export default function Intro() {
             </motion.div>
           </div>
 
-          <div className="relative">
-            {/* <Drawing /> */}
-          </div>
+          <motion.div
+            className="w-[25em] ml-5"
+            whileHover={{
+              scale: 1.1, // Scale up the image by 10% when hovered
+              transition: { duration: 0.2 }, // Animation duration of 0.2 seconds
+            }}
+            whileTap={{
+              scale: 0.9, // Scale down the image by 10% when tapped or clicked
+            }}
+          >
+            <Image
+              src={profile}
+              alt="profile"
+              quality={95}
+              className="inset-0 w-full h-full object-contain"
+            />
+          </motion.div>
         </section>
       </SectionContainer>
     </div>

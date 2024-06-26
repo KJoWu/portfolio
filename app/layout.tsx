@@ -28,7 +28,7 @@ export default function RootLayout({
 
           {children}
 
-          <ThemeSwitch />
+          {/* <ThemeSwitch /> */}
 
           <div className={`p-3 text-center text-gray-600 font-light ${poppins.className} text-sm tracking-wide bg-white`}>
           &copy; Kim 2024. This site was designed in Figma, coded in Next JS by yours truly, styled with Tailwind and Framer, and deployed on Vercel.
