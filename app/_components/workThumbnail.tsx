@@ -1,24 +1,35 @@
 import React from "react";
 import { poppins, TiempoSemi } from "../fonts"; // Ensure this is actually used
 import { StaticImageData } from "next/image";
+import Link from 'next/link';
 
 interface WorkThumbnailProps {
   title: string;
   description: string;
   imageUrl: StaticImageData;
+  buttonDescription: string;
   skills: string[];
   bg: string;
+  buttonColor: string;
   url?: string;  // Optional url property
 }
 
 export default function WorkThumbnail({
   title,
   description,
+  buttonDescription,
   imageUrl,
   skills,
+  buttonColor,
   bg,
   url
 }: WorkThumbnailProps) {
+
+  const button = (
+    <button className={` hover:bg-${buttonColor}-700 text-white  py-2 px-4 rounded-md mt-5`} style={{ backgroundColor: `${buttonColor}` }}>
+    {buttonDescription}
+  </button>
+  );
 
   return (
     <div
@@ -43,19 +54,20 @@ export default function WorkThumbnail({
               </li>
             ))}
           </ul>
-          <p className={`${poppins.className}`}>
+          <p className={`${poppins.className} text-sm`}>
             {description}
-            
           </p>
+
+          {url ? (
+            <Link href={url} passHref target="_blank">
+              {button}
+            </Link>
+          ) : (
+            button
+          )
+          }
         </div>
       </div>
-      {/* <div className="absolute inset-0  flex items-center justify-center">
-
-
-        </div>
-        <div className="relative p-4 bg-opacity-100 m-4 ">
-         
-        </div> */}
     </div>
   );
 }
