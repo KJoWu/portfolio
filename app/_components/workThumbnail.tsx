@@ -27,19 +27,18 @@ export default function WorkThumbnail({
 
   const button = (
     <button className={` hover:bg-${buttonColor}-700 text-white  py-2 px-4 rounded-md mt-5`} style={{ backgroundColor: `${buttonColor}` }}>
-    {buttonDescription}
-  </button>
+      {buttonDescription}
+    </button>
   );
 
   return (
     <div
       className={`group ${bg} sm:h-[25rem] overflow-hidden relative 
         sm:flex content-center rounded-2xl
-        transition-all duration-300 ease-in-out transform hover:scale-105`}
+        transition-all duration-300 ease-in-out transform hover:scale-105 py-10 
+        sm:bg-cover sm:bg-center bg-none-on-sm`}
       style={{
         backgroundImage: `url(${imageUrl.src})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center'
       }}
     >
 
@@ -54,7 +53,7 @@ export default function WorkThumbnail({
               </li>
             ))}
           </ul>
-          <p className={`${poppins.className} text-sm`}>
+          <p className={`${poppins.className} text-sm leading-6`}>
             {description}
           </p>
 

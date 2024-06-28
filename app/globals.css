@@ -71,3 +71,7 @@ video {
   left: 15%;
   transform: rotate(45deg);
 }
+
+.bg-none-on-sm {
+  background-image: none;
+}

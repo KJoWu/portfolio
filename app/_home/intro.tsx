@@ -25,9 +25,9 @@ export default function Intro() {
             >
 
               <div className="background-gradient flex items-center justify-center">
-                <div className="circle1 bg-circle"></div>
-                <div className="circle2 bg-circle"></div>
-                <div className="curve-line"></div>
+                {/* <div className="circle1 bg-circle"></div>
+                <div className="circle2 bg-circle"></div> */}
+                {/* <div className="curve-line"></div> */}
               </div>
               <p className={`text-7xl  ${TiempoSemi.className} bg-white`}>
                 <span className={`${dmSerif.className}`}>Hello World!</span><br />
