@@ -10,7 +10,7 @@ import profile from "../../public/profile.jpg"
 
 export default function Intro() {
   return (
-    <div className="mb-12 mt-10">
+    <div className="mb-12 pt-10 bg-gradient-to-b from-cyan-100 to-white">
       <SectionContainer>
         <section className={`flex flex-col sm:flex-row justify-between pt-[8rem] pb-[5rem] ${inter.className}`}>
           <div className="w-[25rem] relative">
@@ -30,7 +30,7 @@ export default function Intro() {
               <p className={`text-2xl pt-5   ${sourceSerfif.className} leading-9`}>
                 I'm a senior frontend engineer, product designer and artist.
               </p>
-              <div className={`text-xl pt-20 leading-8  bg-white ${sourceSerfif.className} font-base`}>
+              <div className={`text-xl pt-20 leading-8  ${sourceSerfif.className} font-base`}>
                 <p>Recepient of the Meiya Reinking and</p>
                 <p>District of Edmonton Art Award</p>
               </div>

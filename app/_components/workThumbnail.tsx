@@ -28,7 +28,7 @@ export default function WorkThumbnail({
 }: WorkThumbnailProps) {
   const button = (
     <button
-      className={`hover:bg-opacity-75 text-white py-2 px-4 rounded-md mt-5`}
+      className={`hover:bg-opacity-75 text-white py-2 px-8 py-3 rounded-xl mt-5`}
       style={{ backgroundColor: buttonColor }}
     >
       {buttonDescription}

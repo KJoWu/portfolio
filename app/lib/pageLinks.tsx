@@ -4,8 +4,8 @@ export const links = [
     hash: "/",
   },
   {
-    name: "Playground",
-    hash: "/playground",
+    name: "Projects",
+    hash: "/projects",
   },
   // {
   //   name: "About",

@@ -10,7 +10,7 @@ export default function ProjectHighlightSection() {
       // style={{ backgroundImage: `url("./a2.png")` }}
     >
       <SectionHeading>
-        <h1 className={`text-5xl  ${TiempoSemi.className}`}>Playground</h1>
+        <h1 className={`text-5xl  ${TiempoSemi.className}`}>Additional Projects</h1>
 
       </SectionHeading>
       </div>
