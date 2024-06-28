@@ -20,6 +20,7 @@ export interface Work {
   buttonDescription:string;
   bgHover: string;
   buttonColor:string;
+  backgroundColor:string;
 }
 export const workData: Work[] = [
   {
@@ -34,7 +35,8 @@ export const workData: Work[] = [
     tagsBg: "bg-zinc-400",
     bgHover: "hover:bg-zinc-200",
     url:"/flairStudy",
-    buttonColor:"#313630"
+    buttonColor:"#313630",
+    backgroundColor:"#c1ffaa"
   },
   {
     title: "Developing Digital Signage to Elevate User Experience",
@@ -48,7 +50,9 @@ export const workData: Work[] = [
     tagsBg: "bg-zinc-400",
     bgHover: "hover:bg-zinc-200",
     url:"https://www.verticalcity.com/elev8",
-    buttonColor:"#123156"
+    buttonColor:"#123156",
+    backgroundColor:"#f2f9ff"
+
 
   },
   {
@@ -63,7 +67,9 @@ export const workData: Work[] = [
     tagsBg: "bg-zinc-400",
     bgHover: "hover:bg-zinc-200",
     url:"https://www.verticalimpression.com",
-    buttonColor:"#e81331"
+    buttonColor:"#e81331",
+    backgroundColor:"#fffeef"
+
 
   },
   {
@@ -78,7 +84,9 @@ export const workData: Work[] = [
     tagsBg: "bg-zinc-400",
     bgHover: "hover:bg-zinc-200",
     url:"https://www.verticalcity.com/screen-solutions",
-    buttonColor:"#0063ff"
+    buttonColor:"#0063ff",
+    backgroundColor:"#f4f2ff"
+
 
   },
 ] as const;

@@ -10,9 +10,9 @@ import Link from 'next/link'
 
 export default function Work() {
   return (
-    <section className="relative flex flex-col sm:py-[3rem] bg-[white]">
+    <section className="relative flex flex-col sm:py-[3rem] bg-[white] pb-10">
       <SectionHeading>
-        <p className={`${TiempoBold.className} text-3xl pb-10`} >Selected Work Experience + Case Studies</p>
+        <p className={`${TiempoBold.className} text-3xl`} >Selected Work Experience + Case Studies</p>
         {/* <p className={`${poppins.className} text-sm text-gray-500 pt-2 font-base tracking-wide`}>Password available upon request</p> */}
 
       </SectionHeading>
@@ -34,7 +34,7 @@ export default function Work() {
         </div>
       </SectionContainer>
       <SectionContainer>
-      <Link className="t-10 ${poppins.className} font-medium tracking-wide text-[#4229d6] font-base text-sm " href="/playground">View more projects here</Link>
+      <Link className="pt-10 pb-10 ${poppins.className} font-medium tracking-wide text-[#4229d6] font-base" href="/playground">View more projects here</Link>
       </SectionContainer>
 
     </section>

@@ -32,24 +32,26 @@ export const ConclusionSection = () => {
         <p className="text-gray-700 leading-8 mt-6">While having a direct test group of users evaluate the project is most effective, some tech-related observations we can make are as follows:
 
         </p>
-        <ul className="list-none mt-4 space-y-2 text-gray-800 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-4 leading-8">
-          <li>
-            <span className="font-semibold block">App Store Ratings:</span>
-            Track user ratings and reviews on Google Play and Apple App Store. Improvements in ratings and positive feedback signal success.
+        <ul className="list-none mt-4 text-gray-800 grid grid-cols-1 md:grid-cols-4 gap-x-8 gap-y-4 leading-8">
+          <li className="flex flex-col items-start">
+            <span className="font-semibold">App Store Ratings:</span>
+            <span>Track user ratings and reviews on Google Play and Apple App Store. Improvements in ratings and positive feedback signal success.</span>
           </li>
-          <li>
-            <span className="font-semibold block">App Retention and QR Code Usage:</span>
-            Track retention through app installs and uninstalls. Also, analyze app usage duration.
+          <li className="flex flex-col items-start">
+            <span className="font-semibold">App Retention and QR Code Usage:</span>
+            <span>Track retention through app installs and uninstalls. Also, analyze app usage duration.</span>
           </li>
-          <li>
-            <span className="font-semibold block">Conversion Rate:</span>
-            Monitor conversion rates for users accessing QR codes and creating accounts via the booking tab CTA.
+          <li className="flex flex-col items-start">
+            <span className="font-semibold">Conversion Rate:</span>
+            <span>Monitor conversion rates for users accessing QR codes and creating accounts via the booking tab CTA.</span>
           </li>
-          <li>
-            <span className="font-semibold block">Page Impressions:</span>
-            Analyze button interactions and page activity to identify high-engagement areas. Extend this analysis to the website for additional insights.
+          <li className="flex flex-col items-start">
+            <span className="font-semibold">Page Impressions:</span>
+            <span>Analyze button interactions and page activity to identify high-engagement areas. Extend this analysis to the website for additional insights.</span>
           </li>
         </ul>
+
+
       </section>
 
 
@@ -78,7 +80,7 @@ export const ConclusionSection = () => {
 
       <div className="flex text-4xl font-semibold justify-center items-center pb-[3em] pt-[4em]">
         Thanks for Reading!
-    </div>
+      </div>
 
     </>
   )

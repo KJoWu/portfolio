@@ -73,5 +73,13 @@ video {
 }
 
 .bg-none-on-sm {
-  background-image: none;
+  background-image: none !important;
+}
+
+@media (min-width: 768px) {
+  .bg-none-on-sm {
+    background-image: var(--bg-image) !important;
+    background-size: cover;
+    background-position: center;
+  }
 }
