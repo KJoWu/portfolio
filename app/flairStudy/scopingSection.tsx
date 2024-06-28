@@ -113,7 +113,7 @@ const UserStories = () => {
 export const ScopingSection = () => {
   return (
     <section className="mb-3  mt-[-5em]">
-      <h2 className="text-2xl font-semibold text-gray-800 mb-4 border-l-8 border-slate-900 pl-3 w-[30em] leading-8">
+      <h2 className="text-2xl font-semibold text-gray-800 mb-4 border-l-8 border-gray-900 pl-3 w-[30em] leading-8">
         Creating the User Personas</h2>
       <p className="mb-6 text-gray-700 leading-8 mt-8">
         Leveraging our gathered insights, I developed a detailed case studies for various user personas, including frequent travelers, tech-savvy influencers, and casual vacation planners. These case studies will illustrate how different users interact with the app and identify key areas for improvement.

@@ -4,7 +4,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { BsLinkedin } from "react-icons/bs";
 import SectionContainer from "../_components/sectionContainer";
-import { inter, sourceSerfif, TiempoBold, TiempoSemi, dmSerif } from "../fonts";
+import { inter, sourceSerfif, TiempoSemi, dmSerif } from "../fonts";
 import Image from "next/image";
 import profile from "../../public/profile.jpg"
 
@@ -23,22 +23,14 @@ export default function Intro() {
                 duration: 0.2,
               }}
             >
+              <span className={`text-2xl ${sourceSerfif.className}`}>hello world!</span>
+              <span className="block h-4"></span>
+              <span className={`text-6xl ${TiempoSemi.className}`}>I'm Kim.</span>
 
-              <div className="background-gradient flex items-center justify-center">
-                {/* <div className="circle1 bg-circle"></div>
-                <div className="circle2 bg-circle"></div> */}
-                {/* <div className="curve-line"></div> */}
-              </div>
-              <p className={`text-7xl  ${TiempoSemi.className} bg-white`}>
-                <span className={`${dmSerif.className}`}>Hello World!</span><br />
-                I<span className={`${TiempoSemi.className} mt-3 mb-[-7px] relative`} style={{ top: '-47px', left: '1px' }}>,</span>
-                m <span className="text-[#4229d6]">Kim</span>.
-              </p>
-
-              <p className={`text-lg pt-5  ${sourceSerfif.className} leading-8 bg-white`}>
+              <p className={`text-2xl pt-5   ${sourceSerfif.className} leading-9`}>
                 I'm a senior frontend engineer, product designer and artist.
               </p>
-              <div className={`text-base pt-20 leading-8  bg-white ${sourceSerfif.className} font-base`}>
+              <div className={`text-xl pt-20 leading-8  bg-white ${sourceSerfif.className} font-base`}>
                 <p>Recepient of the Meiya Reinking and</p>
                 <p>District of Edmonton Art Award</p>
               </div>
@@ -52,10 +44,10 @@ export default function Intro() {
                 delay: 0.9,
               }}
             >
-              <button className={` ${sourceSerfif.className} bg-[#4229d6] hover:scale-110 transition hover:bg-gray-800 text-[white] px-4 py-2 rounded-full `}>
+              <button className={` ${sourceSerfif.className} text-lg bg-[#4229d6] hover:scale-110 transition hover:bg-gray-800 text-[white] px-4 py-2 rounded-full `}>
                 Contact Me
               </button>
-              <button className={`${sourceSerfif.className} bg-white hover:bg-gray-100 px-4 rounded-full hover:scale-110 transition text-gray-700`}>
+              <button className={`${sourceSerfif.className}  text-lg bg-white hover:bg-gray-100 px-4 rounded-full hover:scale-110 transition text-gray-700`}>
                 My CSV
               </button>
               <button className="bg-white hover:bg-gray-100 width-auto p-3 hover:scale-110 transition rounded-full text-gray-700">

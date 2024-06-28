@@ -35,7 +35,7 @@ const SkillList = ({ skills, skillType }: SkillListProps) => {
         {skills.map((skill, index) => (
           <motion.li
             //className="bg-indigo-900  hover:bg-indigo-00 transition px-4 py-2 rounded-full"
-            //className="bg-white text-slate-800 hover:bg-indigo-100 transition px-4 py-2 rounded-full"
+            //className="bg-white text-gray-800 hover:bg-indigo-100 transition px-4 py-2 rounded-full"
             className="text-sm 	transition rounded-full mb-2"
 
             key={index}

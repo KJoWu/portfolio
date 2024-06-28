@@ -1,5 +1,5 @@
 import React from 'react';
-import { poppins, TiempoSemi } from '../fonts'; // Ensure this is actually used
+import { poppins, TiempoSemi,  } from '../fonts'; // Ensure this is actually used
 import { StaticImageData } from 'next/image';
 import Link from 'next/link';
 
@@ -37,7 +37,7 @@ export default function WorkThumbnail({
 
   return (
     <div
-      className={`bg-none-on-sm group ${bg} sm:h-[25rem] overflow-hidden relative 
+      className={`bg-none-on-sm group ${bg} sm:h-[27rem] overflow-hidden relative 
         sm:flex content-center rounded-2xl 
         transition-all duration-300 ease-in-out transform hover:scale-105 py-10`}
         style={{
@@ -56,7 +56,7 @@ export default function WorkThumbnail({
               </li>
             ))}
           </ul>
-          <p className={`${poppins.className} text-sm leading-6`}>{description}</p>
+          <p className={`${poppins.className} text-base leading-6 text-gray-800`}>{description}</p>
 
           {url ? (
             <Link href={url} passHref target="_blank" rel="noopener noreferrer">

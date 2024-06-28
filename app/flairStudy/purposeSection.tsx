@@ -38,7 +38,7 @@ const Takeaways = () => {
         <div className="max-w-7xl mx-auto">
           <section className="grid grid-cols-1 lg:grid-cols-3 gap-10">
             <article className="lg:col-span-2">
-              <h2 className="text-2xl font-semibold text-gray-800 mb-4 border-l-8 border-slate-900 pl-3 mt-10 w-[30em] leading-8">
+              <h2 className="text-2xl font-semibold text-gray-800 mb-4 border-l-8 border-gray-900 pl-3 mt-10 w-[30em] leading-8">
                 Stress Reduction and User Satisfaction
               </h2>
               <div className="mx-auto text-gray-700 leading-8">
@@ -57,13 +57,13 @@ const Takeaways = () => {
               </div>
             </article>
             <aside className="lg:col-span-1 flex items-center ">
-              <blockquote className="border-l-4 border-gray-600 pl-4 italic text-gray-600 bg-slate-900 px-5 py-8 rounded-lg text-slate-100">
+              <blockquote className="border-l-4 border-gray-600 pl-4 italic text-gray-600 bg-gray-900 px-5 py-8 rounded-lg text-gray-100">
                 <p className="leading-8 p-4 font-base">
                   "61 percent of travelers in the U.S. have booked and paid for
                   travel through their smartphone within the past year, and 64
                   percent use their smartphones en route to their destination."
                 </p>
-                <footer className="text-slate-100 p-3">
+                <footer className="text-gray-100 p-3">
                   Source:{" "}
                   <a
                     href="https://www.travelmarketreport.com/articles/US-Consumers-Increasingly-Rely-on-Smartphones-to-Book-Travel"
