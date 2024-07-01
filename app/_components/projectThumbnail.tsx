@@ -28,7 +28,7 @@ export default function ProjectThumbnail({
             </div>
           </div>
           <div className="text-gray-900 mt-3">
-            <h3 className={`text-md font-semibold w-fit ${TiempoSemi.className}`}>{title}</h3>
+            <h3 className={`text-lg font-semibold w-fit ${TiempoSemi.className}`}>{title}</h3>
             <p className={`pt-1 text-gray-700 font-base ${poppins.className}`}>
               {description}
             </p>

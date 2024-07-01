@@ -136,7 +136,7 @@ export const designData: ProjectData[] = [
     title: "UofA Science Week",
     url: shirt1,
     description:
-      "Official logo & design for University of Alberta's Science Week",
+      "Created the Official logo & promotional ads for University of Alberta's Science Week",
   },
   {
     title: "Kids Help Phone",
@@ -317,7 +317,7 @@ export const projects = {
   },
   nonCode: {
     label: "Non-dev Projects",
-    description: "List of Non-design/developer work",
+    description: "I've tackled a few non-development related tasks that pushed me out of my comfort zone, taught me a lot, and were surprisingly fun.",
     data: otherData,
   },
   traditional: {

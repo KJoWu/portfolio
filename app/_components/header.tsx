@@ -28,14 +28,14 @@ export default function Header() {
   return (
     <header className="z-[999] relative flex items-center justify-center">
       <motion.div
-        className="fixed top-0 right-20 h-[4.5rem] w-full max-w-[16rem] rounded-full 
+        className="fixed top-0 sm:right-20 sm:h-[4.5rem] w-full sm:max-w-[16rem] sm:rounded-full 
         bg-white bg-opacity-80 shadow-lg shadow-cyan-300/[0.2] backdrop-blur-[0.2rem] border border-1 border-[#4229d6]
-        sm:top-6 sm:h-[3rem]"
+        sm:top-6 h-[5rem] sm:h-[2.8rem]"
         initial={{ y: -100, x: '50%', opacity: 0 }}
         animate={{ y: 0, x: '0', opacity: 1 }}
       >
         <nav className="flex h-full items-center justify-center">
-          <ul className="flex w-full items-center justify-center  text-[0.9rem] text-gray-800">
+          <ul className="flex w-full items-center justify-center  text-gray-800">
             {links.map((link: LinkType) => (
               <motion.li
                 key={link.hash}
@@ -45,7 +45,7 @@ export default function Header() {
               >
                 <Link
                   href={link.hash}
-                  className={`${sourceSerif.className} text-base flex items-center justify-center px-4 py-3 transition h-full cursor-pointer ${getLinkClassName(link.hash)}`}
+                  className={`${sourceSerif.className} text-2xl sm:text-base flex items-center justify-center px-4 py-3 transition h-full cursor-pointer ${getLinkClassName(link.hash)}`}
                 >
                   {link.name}
                 </Link>

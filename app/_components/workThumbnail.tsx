@@ -31,7 +31,7 @@ export default function WorkThumbnail({
     <button
       className={`${sourceSerif.className} cursor-pointer hover:bg-opacity-75 text-white py-2 px-8 py-3 rounded-xl mt-9 text-lg`}
       style={{ borderColor: buttonColor, borderWidth: '1px', borderStyle: 'solid', color: buttonColor }}
-      >
+    >
       {buttonDescription}
     </button>
   );
@@ -41,10 +41,10 @@ export default function WorkThumbnail({
       className={`bg-none-on-sm group ${bg} sm:h-[30rem] overflow-hidden relative 
         sm:flex content-center rounded-2xl 
         transition-all duration-300 ease-in-out transform hover:scale-105 py-[2em]`}
-        style={{
-          '--bg-image': `url(${imageUrl.src})`,
-          backgroundColor: backgroundColor, 
-        } as React.CSSProperties}
+      style={{
+        '--bg-image': `url(${imageUrl.src})`,
+        backgroundColor: backgroundColor,
+      } as React.CSSProperties}
     >
       <div className="flex flex-col justify-center w-[23em] ml-12">
         <h3 className={`text-2xl font-semibold mb-3 tracking-wide leading-8 pt-5 ${TiempoSemi.className}`}>{title}</h3>
@@ -61,7 +61,7 @@ export default function WorkThumbnail({
 
           {url ? (
             <Link href={url} passHref target="_blank" rel="noopener noreferrer">
-                {button}
+              {button}
             </Link>
           ) : (
             button
