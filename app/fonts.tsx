@@ -28,7 +28,7 @@ export const dmSerif = DM_Serif_Display({
   display: 'swap',
 });
 
-export const sourceSerfif = Source_Serif_4({
+export const sourceSerif = Source_Serif_4({
   subsets:["latin"]
 })
 

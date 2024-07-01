@@ -52,21 +52,26 @@ export const BannerSection = () => {
           src="/booking.mp4"
           type="video/mp4"
           poster="/images/video-poster.jpg"
-          className="rounded-xl object-contain flex-shrink-0 max-w-[20%] pt-[.9em]" // Adjust the size here
-        />
+          className="h-[33em] w-auto mx-2"
+          />
         <VideoPlayer
           src="/guestBooking.mp4"
           type="video/mp4"
           poster="/images/video-poster.jpg"
-          className="h-[33em] overflow-hidden" // Adjust the size here
-        />
+          className="h-[33em] w-auto mx-2"
+          />
         <VideoPlayer
           src="/userNotification.mp4"
           type="video/mp4"
           poster="/images/video-poster.jpg"
-          className="h-[33em] overflow-hidden" // Adjust the size here
-        />
-        <Image src={designQRCode} alt="menu" quality={95} className="rounded-xl object-contain flex-shrink-0 max-w-[20%] mr-4" />
+          className="h-[33em] w-auto mx-2"
+          />
+        <Image
+          src={designQRCode}
+          alt="menu"
+          quality={95}
+          className="h-[33em] w-auto mx-2 rounded-xl object-contain"
+          />
       </section>
 
       <div className="flex justify-center items-center pb-[7em] pt-[7em]">

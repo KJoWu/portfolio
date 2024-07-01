@@ -3,7 +3,7 @@ import React from "react";
 import ProjectThumbnail from "../_components/projectThumbnail";
 import { ProjectData } from "../lib/projectData";
 import { SelectedOption } from "../lib/projectData";
-import { inter, sourceSerfif, TiempoBold, TiempoSemi, poppins } from "../fonts";
+import { inter, sourceSerif, TiempoBold, TiempoSemi, poppins } from "../fonts";
 
 interface ProjectGalleryProps {
   selectedOption: SelectedOption;

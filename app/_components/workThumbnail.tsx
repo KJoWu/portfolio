@@ -1,7 +1,8 @@
 import React from 'react';
-import { poppins, TiempoSemi,  } from '../fonts'; // Ensure this is actually used
+import { poppins, TiempoSemi, sourceSerif } from '../fonts'; // Ensure this is actually used
 import { StaticImageData } from 'next/image';
 import Link from 'next/link';
+
 
 interface WorkThumbnailProps {
   title: string;
@@ -28,7 +29,7 @@ export default function WorkThumbnail({
 }: WorkThumbnailProps) {
   const button = (
     <button
-      className={`hover:bg-opacity-75 text-white py-2 px-8 py-3 rounded-xl mt-5`}
+      className={`${sourceSerif.className} cursor-pointer hover:bg-opacity-75 text-white py-2 px-8 py-3 rounded-xl mt-9 text-lg`}
       style={{ backgroundColor: buttonColor }}
     >
       {buttonDescription}
@@ -37,16 +38,16 @@ export default function WorkThumbnail({
 
   return (
     <div
-      className={`bg-none-on-sm group ${bg} sm:h-[27rem] overflow-hidden relative 
+      className={`bg-none-on-sm group ${bg} sm:h-[30rem] overflow-hidden relative 
         sm:flex content-center rounded-2xl 
-        transition-all duration-300 ease-in-out transform hover:scale-105 py-10`}
+        transition-all duration-300 ease-in-out transform hover:scale-105 py-[2em]`}
         style={{
           '--bg-image': `url(${imageUrl.src})`,
           backgroundColor: backgroundColor, 
         } as React.CSSProperties}
     >
       <div className="flex flex-col justify-center w-[23em] ml-12">
-        <h3 className={`text-2xl font-semibold mb-3 tracking-wide ${TiempoSemi.className}`}>{title}</h3>
+        <h3 className={`text-2xl font-semibold mb-3 tracking-wide leading-8 pt-5 ${TiempoSemi.className}`}>{title}</h3>
         <div className={`${poppins.className}`}>
           <ul className="flex flex-wrap gap-x-2 mt-1">
             {skills.map((skill, index) => (
