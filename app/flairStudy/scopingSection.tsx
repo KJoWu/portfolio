@@ -121,7 +121,7 @@ export const ScopingSection = () => {
 
       </p>
       <UserStories />
-      <div className="flex justify-center items-center pt-[7em]">
+      <div className="flex justify-center items-center pt-[9em] pb-[5em]">
         <EllipsisHorizontalIcon className="h-10 w-10 text-black text-3xl" />
       </div>
     </section>

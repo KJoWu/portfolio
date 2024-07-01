@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import SectionContainer from "../_components/sectionContainer";
 import ProjectGallery from "./projectGallery";
 import { projects, ProjectType } from "../lib/projectData";
-import { poppins } from "../fonts";
+import { poppins, TiempoSemi } from "../fonts";
 
 export default function ProjectSection() {
   const [selectedOption, setActiveType] = useState<ProjectType>("web");
@@ -16,16 +16,22 @@ export default function ProjectSection() {
 
   return (
     <SectionContainer>
-      <div className="flex mb-7 gap-12">
+      <div className="flex mb-2 gap-5">
         {/* Menu Section */}
-        {Object.keys(projects).map((menuOption) => (
+        {Object.keys(projects).map((menuOption, index) => (
           <button
             key={menuOption}
-            className={`group text-indigo-700  duration-300 ${poppins.className}`}
+            className={`group text-indigo-600 duration-300 leading-9 text-[1.1em] ${poppins.className} ${selectedOption === menuOption ? 'font-semibold' : 'font-normal'}`}
             onClick={() => handleTypeClick(menuOption as ProjectType)}
+            style={{
+              width: '17em',
+              display: 'flex',
+              justifyContent: index === 0 ? 'flex-start' : 'center', // Align first item left, others center
+              alignItems: 'center', // Center items vertically
+              lineHeight: '1'  // Adjust line-height to keep vertical alignment consistent
+            }}
           >
-            {projects[menuOption as ProjectType].label}
-
+            <div className="leading-7">{projects[menuOption as ProjectType].label}</div>
           </button>
         ))}
       </div>

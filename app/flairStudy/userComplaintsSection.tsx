@@ -78,7 +78,7 @@ export const UserComplaintsSection = () => {
           </p>
         </div>
       </section>
-      <div className="flex justify-center items-center pb-[2em] pt-[3em]">
+      <div className="flex justify-center items-center pb-[6em] pt-[3em]">
         <EllipsisHorizontalIcon className="h-10 w-10 text-black text-3xl" />
       </div>
     </>

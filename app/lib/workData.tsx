@@ -70,7 +70,6 @@ export const workData: Work[] = [
     buttonColor:"#e81331",
     backgroundColor:"#fffeef"
 
-
   },
   {
     title: "Developing a Content Management System for Property Managers",
@@ -84,7 +83,7 @@ export const workData: Work[] = [
     tagsBg: "bg-zinc-400",
     bgHover: "hover:bg-zinc-200",
     url:"https://www.verticalcity.com/screen-solutions",
-    buttonColor:"#0063ff",
+    buttonColor:"#654aff",
     backgroundColor:"#f4f2ff"
 
 

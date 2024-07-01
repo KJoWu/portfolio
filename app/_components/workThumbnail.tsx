@@ -30,8 +30,8 @@ export default function WorkThumbnail({
   const button = (
     <button
       className={`${sourceSerif.className} cursor-pointer hover:bg-opacity-75 text-white py-2 px-8 py-3 rounded-xl mt-9 text-lg`}
-      style={{ backgroundColor: buttonColor }}
-    >
+      style={{ borderColor: buttonColor, borderWidth: '1px', borderStyle: 'solid', color: buttonColor }}
+      >
       {buttonDescription}
     </button>
   );
@@ -57,7 +57,7 @@ export default function WorkThumbnail({
               </li>
             ))}
           </ul>
-          <p className={`${poppins.className} text-base leading-6 text-gray-800`}>{description}</p>
+          <p className={`${poppins.className} text-base leading-6 text-gray-800 pt-2`}>{description}</p>
 
           {url ? (
             <Link href={url} passHref target="_blank" rel="noopener noreferrer">

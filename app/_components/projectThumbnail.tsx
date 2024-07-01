@@ -29,7 +29,7 @@ export default function ProjectThumbnail({
           </div>
           <div className="text-gray-900 mt-3">
             <h3 className={`text-md font-semibold w-fit ${TiempoSemi.className}`}>{title}</h3>
-            <p className="pt-1 text-gray-500 font-base text-sm ">
+            <p className={`pt-1 text-gray-700 font-base ${poppins.className}`}>
               {description}
             </p>
           </div>
@@ -60,8 +60,8 @@ export default function ProjectThumbnail({
       )}
       <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 bg-gray-950 bg-opacity-80 group-hover:opacity-100 text-center">
         <div className="text-white p-5">
-          <h3 className={`TiempoSemi.className} text-2xl font-semibold`}>{title}</h3>
-          <p className="text-sm pt-3 leading-6">{description}</p>
+          <h3 className={`text-2xl font-semibold ${TiempoSemi.className}`}>{title}</h3>
+          <p className="text-base pt-3 leading-7">{description}</p>
         </div>
       </div>
     </div>

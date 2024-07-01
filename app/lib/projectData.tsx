@@ -1,4 +1,4 @@
-import p1 from "../../public/placeholder.png";
+import p1 from "../../public/isight.png";
 import shirt1 from "../../public/shirt-1.jpg";
 import shirt2 from "../../public/shirt-2.jpg";
 import shirt3 from "../../public/shirt-3.jpg";
@@ -28,7 +28,7 @@ import app2 from "../../public/app2.png";
 // import app5 from "../../public/app5.png";
 import app6 from "../../public/app6.png";
 import other1 from "../../public/other1.png";
-import {StaticImageData} from "next/image";
+import { StaticImageData } from "next/image";
 
 export type ProjectType = keyof typeof projects;
 
@@ -39,9 +39,9 @@ export interface ProjectData {
   contain?: boolean;
 }
 
-export interface VideoProjectData{
+export interface VideoProjectData {
   title: string;
-  url: string; 
+  url: string;
   description: string;
   contain?: boolean;
 }
@@ -49,7 +49,7 @@ export interface VideoProjectData{
 export interface ProjectCategory {
   label: string;
   description: string;
-  data: ProjectData[]|VideoProjectData[];
+  data: ProjectData[] | VideoProjectData[];
 }
 
 export interface Projects {
@@ -91,14 +91,9 @@ export const webappData: ProjectData[] = [
     description: "Ai Chatbox built in NextJs and Open Ai",
   },
   {
-    title: "Bouncing QR Codes",
-    url: app2,
-    description: "New take on QR codes, won fan favorite. Built with React js",
-  },
-  {
-    title: "iSight Eyecares",
+    title: "iSight Eyecare",
     url: p1,
-    description: "Website developed for a boutique Optometry Business",
+    description: "Developed a website in webflow for a boutique Optometry Business",
   },
   {
     title: "Interactive Property Selector",
@@ -144,11 +139,6 @@ export const designData: ProjectData[] = [
       "Official logo & design for University of Alberta's Science Week",
   },
   {
-    title: "Link Crew",
-    url: shirt3,
-    description: "Official design for Harry Ainlay's Link Crew",
-  },
-  {
     title: "Kids Help Phone",
     url: shirt2,
     description: "1st place winning design",
@@ -169,15 +159,9 @@ export const researchData: ProjectData[] = [
   {
     title: "Feather Lice Database Curation",
     url: research1,
-    description: "Digitally extracted 100+ Albertan lice specimens, compiling them into a high-resolution database for future identification.",
+    description: "Digitally extracted and compiled over 100 Albertan lice specimens into a high-resolution database for the Faculty of Biology at the University of Alberta, facilitating future identification and research.    ",
     contain: true,
-  },
-  {
-    title: "Feather Lice Database Curation",
-    url: research2,
-    description: "Digitally extracted 100+ Albertan lice specimens, compiling them into a high-resolution database for future identification.",
-    contain: true,
-  },
+  }
 ];
 
 export const editorialsData: ProjectData[] = [
@@ -185,12 +169,6 @@ export const editorialsData: ProjectData[] = [
   {
     title: "Faculty of Engineering Newsletter ",
     url: editorial3,
-    contain: true,
-    description: "Editorial designer for the Faculty of Engineering at the University of Alberta",
-  },
-  {
-    title: "Faculty of Engineering Newsletter ",
-    url: editorial2,
     contain: true,
     description: "Editorial designer for the Faculty of Engineering at the University of Alberta",
   },
@@ -273,12 +251,12 @@ export const otherData: ProjectData[] = [
   {
     title: "Hackathon",
     url: other1,
-    description: "Organized and ran a 2 Day Virtual Shark Tank themed Hackathon (also winning fan favorite for app",
+    description: "Organized and ran a two-day virtual Shark Tank-themed hackathon, also winning the fan favorite award for the app.",
   },
   {
-    title: "Technical Wall",
+    title: "Tech Lab",
     url: hobby4,
-    description: "Planned, designed, built, and oversaw the development and installation of a technical wall for Vertical City",
+    description: "Planned, designed, and managed the development and installation of a technical wall featuring vendor screens, remote monitoring capabilities, and adjustable installation options.",
   },
 ];
 
@@ -322,28 +300,28 @@ export const hobbyData: ProjectData[] = [
 
 export const projects = {
   web: {
-    label: "Desktop & Mobile Apps",
-    description: "I've been an avid supporter of hackathons",
+    label: "Software Apps",
+    description: "I am an avid supporter of hackathons, actively participate in volunteer work, and love experimenting with new technology stacks to enhance my technical skills. Additionally, I frequently attend tech meetups to network with other professionals and stay updated with industry trends.",
     data: webappData,
   },
   video: {
-    label: "Videography",
+    label: "Videography Work",
     description:
-      "I've been involved with many fun and incredibly creative pursuits from music videos to animations",
+      "I've been involved in many fun and incredibly creative pursuits, ranging from music videos to animations.",
     data: videoData,
   },
   editorials: {
-    label: "Illustrations",
-    description: "I enjoy taking on a variety of design projects. This includes producing editorials, creating eye-catching promotional materials and illustrating graphics for corporate businesses and organizations",
+    label: "Design Ventures",
+    description: "I enjoy taking on a variety of design projects, including producing editorials, creating eye-catching promotional materials, and illustrating graphics for corporate businesses and organizations.",
     data: editorialsData,
   },
   nonCode: {
-    label: "Other",
+    label: "Non-dev Projects",
     description: "List of Non-design/developer work",
     data: otherData,
   },
   traditional: {
-    label: "Hobby",
+    label: "Artistic Endeavors",
     description: "Art is my passion. I love attending conventions and drawing caricatures of attendees as well as keeping up with the latest games and shows. My tools of choice are Cintiq 24 Pro and a black MUJI 0.5mm pen",
     data: hobbyData,
   },

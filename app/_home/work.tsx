@@ -16,7 +16,6 @@ export default function Work() {
         {/* <p className={`${poppins.className} text-sm text-gray-500 pt-2 font-base tracking-wide`}>Password available upon request</p> */}
 
       </SectionHeading>
-
       <SectionContainer>
         <div className="grid  gap-12">
           {workData.map((project, index) => (
@@ -34,7 +33,7 @@ export default function Work() {
         </div>
       </SectionContainer>
       <SectionContainer>
-      <Link className="pt-10 pb-10 ${poppins.className} font-medium tracking-wide text-[#4229d6] font-base" href="/playground">View more projects here</Link>
+        <Link className="mt-10 mb-10 ${poppins.className} font-medium tracking-wide text-indigo-600 text-lg" href="/projects">View more projects here</Link>
       </SectionContainer>
 
     </section>
