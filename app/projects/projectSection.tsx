@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import SectionContainer from "../_components/sectionContainer";
 import ProjectGallery from "./projectGallery";
 import { projects, ProjectType } from "../lib/projectData";
-import { poppins, TiempoSemi } from "../fonts";
+import { poppins, sourceSerif } from "../fonts";
 
 export default function ProjectSection() {
   const [selectedOption, setActiveType] = useState<ProjectType>("web");
@@ -21,17 +21,26 @@ export default function ProjectSection() {
         {Object.keys(projects).map((menuOption, index) => (
           <button
             key={menuOption}
-            className={`group text-indigo-600 duration-300 leading-9 text-[1.1em] ${poppins.className} ${selectedOption === menuOption ? 'font-semibold' : 'font-normal'}`}
+            className={`w-[6em] sm:w-[17em] group text-black-700 duration-300 leading-9 text-[1.1em] ${poppins.className} ${selectedOption === menuOption ? 'font-semibold text-indigo-600' : 'font-normal'}`}
             onClick={() => handleTypeClick(menuOption as ProjectType)}
             style={{
-              width: '17em',
               display: 'flex',
-              justifyContent: index === 0 ? 'flex-start' : 'center', // Align first item left, others center
+              justifyContent: 'flex-start', // Align first item left, others center
               alignItems: 'center', // Center items vertically
               lineHeight: '1'  // Adjust line-height to keep vertical alignment consistent
             }}
           >
-            <div className="leading-7">{projects[menuOption as ProjectType].label}</div>
+            <div className="leading-7">
+              {/* Text for small screens */}
+              <p className="block sm:hidden">
+                {projects[menuOption as ProjectType].shortLabel}
+              </p>
+
+              {/* Text for large screens */}
+              <p className="hidden sm:block">
+                {projects[menuOption as ProjectType].label}              </p>
+            </div>
+
           </button>
         ))}
       </div>

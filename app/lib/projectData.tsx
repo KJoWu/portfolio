@@ -72,33 +72,19 @@ export type SelectedOption =
 
 
 export const featuredData: ProjectData[] = [
-  {
-    title: "Hi Ai",
-    url: p1,
-    description: "Ai Chatbox built in NextJs and Open Ai",
-  },
-  {
-    title: "Bouncing QR Codes",
-    url: app2,
-    description: "New take on QR codes, won fan favorite. Built with React js",
-  },
+
 ];
 
 export const webappData: ProjectData[] = [
   {
     title: "Hi Ai",
     url: p1,
-    description: "Ai Chatbox built in NextJs and Open Ai",
+    description: "An AI-powered chatbox in TypeScript using Next.js for the frontend, Vercel for deployment, and OpenAI API for conversational intelligence",
   },
   {
     title: "iSight Eyecare",
     url: p1,
     description: "Developed a website in webflow for a boutique Optometry Business",
-  },
-  {
-    title: "Interactive Property Selector",
-    url: app2,
-    description: "A property selecting tool using the cluster feature from Mapbox built on React.js",
   },
   {
     title: "Detective Murder Mystery Game",
@@ -114,33 +100,21 @@ export const webappData: ProjectData[] = [
 ];
 
 export const aiData: ProjectData[] = [
-  {
-    title: "Hi Ai",
-    url: p1,
-    description: "Ai Chatbox built in NextJs and Open Ai",
-  },
-  {
-    title: "Lorem Ipsum Ai Builder",
-    url: p1,
-    description: "Extension for fun Lorem Ipsum",
-  },
-  {
-    title: "Color Theory",
-    url: app2,
-    description: "Extension that allows you to pick colors for a website",
-  },
+
 ];
 
 export const designData: ProjectData[] = [
   {
     title: "UofA Science Week",
     url: shirt1,
+    contain: true,
     description:
       "Created the Official logo & promotional ads for University of Alberta's Science Week",
   },
   {
     title: "Kids Help Phone",
     url: shirt2,
+    contain: true,
     description: "1st place winning design",
   },
   {
@@ -216,13 +190,13 @@ export const videoData: VideoProjectData[] = [
     title: "University of Alberta Orientation || ",
     url: "https://www.youtube.com/watch?v=75c2_TTHWYc",
     description:
-      "Directed and produced the orientation  video for the Faculty of Science",
+      "Directed and produced the orientation  video for the Faculty of Science at the University of Alberta",
   },
   {
     title: "University of Alberta Orientation |",
     url: "https://www.youtube.com/watch?v=3qGofRsp6nc",
     description:
-      "Directed and produced the orientation video for the Faculty of Science",
+      "Directed and produced the orientation video for the Faculty of Science at the University of Alberta",
   },
   {
     title: "Porphyrius: Draw my Life",
@@ -264,6 +238,7 @@ export const hobbyData: ProjectData[] = [
   {
     title: "",
     url: hobby3,
+    contain: true,
     description: "",
   },
   {
@@ -279,6 +254,7 @@ export const hobbyData: ProjectData[] = [
   {
     title: "",
     url: hobby1,
+    contain: true,
     description: "",
   },
   {
@@ -300,28 +276,33 @@ export const hobbyData: ProjectData[] = [
 
 export const projects = {
   web: {
-    label: "Software Apps",
+    label: "Web Applications",
+    shortLabel:"Apps",
     description: "I am an avid supporter of hackathons, actively participate in volunteer work, and love experimenting with new technology stacks to enhance my technical skills. Additionally, I frequently attend tech meetups to network with other professionals and stay updated with industry trends.",
     data: webappData,
   },
   video: {
     label: "Videography Work",
+    shortLabel:"Videos",
     description:
       "I've been involved in many fun and incredibly creative pursuits, ranging from music videos to animations.",
     data: videoData,
   },
   editorials: {
     label: "Design Ventures",
+    shortLabel:"Design",
     description: "I enjoy taking on a variety of design projects, including producing editorials, creating eye-catching promotional materials, and illustrating graphics for corporate businesses and organizations.",
     data: editorialsData,
   },
   nonCode: {
     label: "Non-dev Projects",
+    shortLabel:"Non-dev",
     description: "I've tackled a few non-development related tasks that pushed me out of my comfort zone, taught me a lot, and were surprisingly fun.",
     data: otherData,
   },
   traditional: {
     label: "Artistic Endeavors",
+    shortLabel:"My Art",
     description: "Art is my passion. I love attending conventions and drawing caricatures of attendees as well as keeping up with the latest games and shows. My tools of choice are Cintiq 24 Pro and a black MUJI 0.5mm pen",
     data: hobbyData,
   },

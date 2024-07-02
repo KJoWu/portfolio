@@ -22,7 +22,7 @@ export default function ProjectThumbnail({
     if (typeof url === 'string') {
       return (
         <div>
-          <div className={`sm:h-[20rem] overflow-hidden relative`}>
+          <div className={`h-[20rem] overflow-hidden relative`}>
             <div className="container mx-auto mt-1">
               <YouTubeEmbed url={url} />
             </div>

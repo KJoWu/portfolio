@@ -28,9 +28,7 @@ export default function Header() {
   return (
     <header className="z-[999] relative flex items-center justify-center">
       <motion.div
-        className="fixed top-0 sm:right-20 sm:h-[4.5rem] w-full sm:max-w-[16rem] sm:rounded-full 
-        bg-white bg-opacity-80 shadow-lg shadow-cyan-300/[0.2] backdrop-blur-[0.2rem] border border-1 border-[#4229d6]
-        sm:top-6 h-[5rem] sm:h-[2.8rem]"
+        className="fixed top-0 w-full h-[5rem] bg-white bg-opacity-80 shadow-lg shadow-cyan-300/[0.2] backdrop-blur-[0.2rem] border-b border-indigo-600 sm:border sm:border-indigo-600 sm:border-1 sm:border-solid sm:top-6 sm:right-20 sm:h-[4.5rem] sm:max-w-[16rem] sm:rounded-full sm:h-[2.8rem]"
         initial={{ y: -100, x: '50%', opacity: 0 }}
         animate={{ y: 0, x: '0', opacity: 1 }}
       >

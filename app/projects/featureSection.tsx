@@ -22,7 +22,7 @@ export default function ProjectHighlightSection() {
             duration: 0.2,
           }}
         >
-          <h1 className={`text-5xl  ${TiempoSemi.className}`}>Additional Projects</h1>
+          <h1 className={`text-center md:text-left text-5xl  ${TiempoSemi.className}`}>Additional Projects</h1>
         </motion.div>
 
       </SectionHeading>

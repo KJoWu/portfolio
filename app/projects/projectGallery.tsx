@@ -28,7 +28,7 @@ export default function ProjectGallery({
     ));
   };
 
-  const gridClass = selectedOption === "video" || selectedOption === "web" ? "grid-cols-2" : "grid-cols-2";
+  const gridClass = selectedOption === "video" || selectedOption === "web" ? "sm:grid-cols-2" : "sm:grid-cols-2";
   return (
     <div>
       <motion.div
@@ -44,7 +44,7 @@ export default function ProjectGallery({
         <p className={`pb-5 w-[40rem] leading-7 text-gray-800 mt-10 mb-5 ${poppins.className}`}>{description}</p>
       </motion.div>
 
-      <div className={`grid gap-10 ${gridClass}`}>{renderThumbnails()}</div>
+      <div className={`grid gap-10 grid-cols-1 ${gridClass}`}>{renderThumbnails()}</div>
     </div>
   );
 }
