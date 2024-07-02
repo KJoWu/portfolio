@@ -16,16 +16,15 @@ export default function ProjectSection() {
 
   return (
     <SectionContainer>
-      <div className="flex flex-wrap justify-center mb-2 gap-5 md:flex-nowrap">
+      <div className="flex flex-wrap justify-center	 mb-2 gap-5 md:flex-nowrap">
         {/* Menu Section */}
         {Object.keys(projects).map((menuOption, index) => (
           <button
             key={menuOption}
-            className={`w-[6em] md:w-[17em] group text-black-700 duration-300 leading-9 text-[1.1em] ${poppins.className} ${selectedOption === menuOption ? 'font-semibold text-indigo-600' : 'font-normal'}`}
+            className={`w-[6em] md:w-[17em] group text-black-700 duration-300 leading-9 text-[1.1em] font-semibold  ${poppins.className} ${selectedOption === menuOption ? 'text-indigo-600' : 'font-normal'}`}
             onClick={() => handleTypeClick(menuOption as ProjectType)}
             style={{
               display: 'flex',
-              justifyContent: 'center', // Center items horizontally
               alignItems: 'center', // Center items vertically
               lineHeight: '1'  // Adjust line-height to keep vertical alignment consistent
             }}
