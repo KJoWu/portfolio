@@ -4,7 +4,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { FaLinkedinIn } from "react-icons/fa";
 import SectionContainer from "../_components/sectionContainer";
-import { inter, sourceSerif, TiempoSemi, dmSerif } from "../fonts";
+import { inter, sourceSerif, TiempoSemi } from "../fonts";
 import Typewriter from 'typewriter-effect';
 
 export default function Intro() {
@@ -93,7 +93,7 @@ export default function Intro() {
               </button>
               <button
                 onClick={openLinkedIn}
-                className="bg-white border border-1 border-indigo-600 sm:hover:bg-indigo-100 px-3 sm:rounded-full rounded-lg hover:scale-110 transition text-indigo-600 flex justify-center items-center py-4 sm:py-2"
+                className="bg-white border border-1 border-indigo-600 sm:hover:bg-indigo-100 px-3 sm:rounded-full rounded-lg sm:hover:scale-110 transition text-indigo-600 flex justify-center items-center py-4 sm:py-2"
               >
                 <FaLinkedinIn className="w-5 h-5" />
               </button>

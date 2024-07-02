@@ -1,6 +1,6 @@
 import p1 from "../../public/isight.png";
-import shirt1 from "../../public/shirt-1.jpg";
-import shirt2 from "../../public/shirt-2.jpg";
+import shirt1 from "../../public/shirt-1.webp";
+import shirt2 from "../../public/shirt-2.webp";
 import shirt3 from "../../public/shirt-3.jpg";
 import research1 from "../../public/research1.webp";
 import research2 from "../../public/research2.jpg";
@@ -15,12 +15,16 @@ import editorial10 from "../../public/editorial10.jpg";
 import editorial11 from "../../public/editorial11.jpg";
 import design1 from "../../public/design1.webp";
 import hobby1 from "../../public/hobby1.webp";
-import hobby2 from "../../public/hobby2.webp";
 import hobby3 from "../../public/hobby3.webp";
 import hobby4 from "../../public/hobby4.jpg";
 import hobby5 from "../../public/hobby5.webp";
 import hobby6 from "../../public/hobby6.webp";
 import hobby7 from "../../public/hobby7.webp";
+import hobby8 from "../../public/hobby8.webp";
+import hobby9 from "../../public/hobby9.webp";
+import hobby10 from "../../public/hobby10.webp";
+import hobby11 from "../../public/hobby11.webp";
+
 import app1 from "../../public/app1.jpg";
 import app2 from "../../public/app2.png";
 // import app3 from "../../public/app3.png";
@@ -238,7 +242,6 @@ export const hobbyData: ProjectData[] = [
   {
     title: "",
     url: hobby3,
-    contain: true,
     description: "",
   },
   {
@@ -254,12 +257,17 @@ export const hobbyData: ProjectData[] = [
   {
     title: "",
     url: hobby1,
-    contain: true,
     description: "",
   },
   {
     title: "",
-    url: hobby2,
+    url: hobby9,
+    description: "",
+  },
+
+  {
+    title: "",
+    url: hobby7,
     description: "",
   },
   {
@@ -269,7 +277,17 @@ export const hobbyData: ProjectData[] = [
   },
   {
     title: "",
-    url: hobby7,
+    url: hobby8,
+    description: "",
+  },
+  {
+    title: "",
+    url: hobby10,
+    description: "",
+  },
+  {
+    title: "",
+    url: hobby11,
     description: "",
   },
 ];
@@ -303,7 +321,7 @@ export const projects = {
   traditional: {
     label: "Artistic Endeavors",
     shortLabel:"My Art",
-    description: "Art is my passion. I love attending conventions and drawing caricatures of attendees as well as keeping up with the latest games and shows. My tools of choice are Cintiq 24 Pro and a black MUJI 0.5mm pen",
+    description: "Art is my passion. I love attending conventions, drawing caricatures of attendees, and creating charms. Additionally, I enjoy keeping up with the latest games and shows. My tools of choice are the Cintiq 24 Pro and a black MUJI 0.5mm pen.",
     data: hobbyData,
   },
 };

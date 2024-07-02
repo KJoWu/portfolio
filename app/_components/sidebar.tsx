@@ -18,7 +18,7 @@ const Sidebar = () => {
 
   return (
     <motion.div 
-      className="fixed top-0 left-0 h-full text-sm p-4 space-y-8 content-center"
+      className="invisible sm:visible fixed top-0 left-0 h-full text-sm p-4 space-y-8 content-center"
       initial={{ x: -100 }}
       animate={{ x: 0 }}
       transition={{ type: "spring", stiffness: 120 }}

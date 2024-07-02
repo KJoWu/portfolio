@@ -2,14 +2,9 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import Image from 'next/image';
-import bannerImage from "../../public/banner.png";
-import SectionContainer from '../_components/sectionContainer';
-// import { FlairCaseStudy } from './flairCaseStudy';
 import { HeuristicSection } from './heuristicSection';
 import { UserComplaintsSection } from './userComplaintsSection';
 import { RedesignSection } from './redesignSection';
-import { IntroSection } from './IntroSection';
 import { PurposeSection } from './purposeSection';
 import { ProblemSection } from './problemSection';
 import { ScopingSection } from './scopingSection';
@@ -27,7 +22,7 @@ const sectionVariants = {
 
 const FlairCaseStudyData = () => {
   return (
-    <div className="ml-[6em] mt-40">
+    <div className="px-10 sm:px-0 sm:ml-[6em] mt-40">
              <motion.section
           id="section1"
           className="relative"
@@ -40,16 +35,6 @@ const FlairCaseStudyData = () => {
       </motion.section>
 
       <div className={`container mx-auto px-4 ${poppins.className}`}>
-
-
-
-
-        {/******************************************************** Section Cutoff */}
-
-
-          <CaseSection>
-            <IntroSection />
-          </CaseSection>
 
         {/******************************************************** Section Cutoff */}
 

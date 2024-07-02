@@ -41,7 +41,7 @@ export default function ProjectGallery({
           duration: 0.9,
         }}
       >
-        <p className={`pb-5 w-[40rem] leading-7 text-gray-800 mt-10 mb-5 ${poppins.className}`}>{description}</p>
+        <p className={`pb-5 sm:w-[40rem] leading-7 text-gray-800 mt-10 mb-5 ${poppins.className}`}>{description}</p>
       </motion.div>
 
       <div className={`grid gap-10 grid-cols-1 ${gridClass}`}>{renderThumbnails()}</div>
