@@ -41,8 +41,8 @@ export default function Intro() {
               <span className="block h-4"></span>
               <span className={`text-6xl ${TiempoSemi.className} text-indigo-500`}>I'm Kim.</span>
 
-              <div className={`sm:align-center md:items-start md:justify-left text-2xl pt-5 leading-9 flex flex-col items-center justify-center ${sourceSerif.className}`}>
-                <div className="flex items-center justify-center md:justify-left md:items-start">
+              <div className={`sm:align-center sm:items-start sm:justify-left text-2xl pt-5 leading-9 flex flex-col items-center justify-center ${sourceSerif.className}`}>
+                <div className="flex items-center justify-center sm:justify-left sm:items-start">
                   <span className="mr-1">I'm</span>
                   <Typewriter
                     options={{

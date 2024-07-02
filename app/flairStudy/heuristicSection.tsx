@@ -54,7 +54,7 @@ export const HeuristicSection = () => {
       <div className="mb-8">
         <h1 className="font-semibold text-3xl text-gray-800 leading-[1.4em]"> Market Discovery: Evaluating Interface Design, User Experience, and Product Usage
         </h1>
-        <hr className="border-t-8 border-gray-800 my-2 w-[10em]" /> 
+        <hr className="border-t-8 border-gray-800 my-2 w-[10em]" />
       </div>
       <p className="font-base leading-8 text-base text-gray-700">
         To gain a comprehensive understanding of user interactions with the app, I conducted a <span className="bg-[#b2ff94]"> heuristic evaluation </span>on the primary pages, with a particular focus on those related to onboarding.
@@ -62,9 +62,9 @@ export const HeuristicSection = () => {
 
       <div className="grid grid-cols-7 gap-10 text-md py-12">
 
-        <section className="col-span-full sm:col-span-3 h-auto flex items-center rounded-xl ">
+        <section className="col-span-full md:col-span-3 h-auto flex items-center rounded-xl ">
           <div className="text-gray-800 w-full">
-          <div className="inline-flex items-center text-base py-1 rounded-full mb-3">
+            <div className="inline-flex items-center text-base py-1 rounded-full mb-3">
               <ExclamationCircleIcon className="h-6 w-6 mr-2 text-red-500 text-2xl" />
               Excessive Website Redirects
             </div>
@@ -83,45 +83,49 @@ export const HeuristicSection = () => {
             </div>
           </div>
         </section>
-        <Image src={issueRedirect} alt={"issue 1"} quality={95} className="col-span-full rounded-xl w-full h-[30em] object-contain bg-white sm:col-span-4" />
+        <Image src={issueRedirect} alt={"issue 1"} quality={95} className="col-span-full rounded-xl w-full h-[30em] object-contain bg-white md:col-span-4" />
 
       </div>
 
 
 
-
-      <div className="grid grid-cols-12 gap-10 text-md h-full py-12 ">
-        <Image src={issueData} alt={"issue 1"} quality={95} className="col-span-full rounded-xl w-full h-full object-contain bg-white sm:col-span-7" />
-        <section className="col-span-full sm:col-span-5 flex items-center">
+      <div className="grid grid-cols-5 gap-10 text-md h-full py-12">
+        <Image
+          src={issueData}
+          alt={"issue 1"}
+          quality={95}
+          className="col-span-full md:col-span-3 rounded-xl w-full h-full object-contain bg-white"
+        />
+        <section className="col-span-full md:col-span-2 flex items-center">
           <div className="text-gray-800 w-full">
-          <div className="inline-flex items-center text-base py-1 rounded-full mb-3">
+            <div className="inline-flex items-center text-base py-1 rounded-full mb-3">
               <ExclamationCircleIcon className="h-6 w-6 mr-2 text-red-500 text-2xl" />
               Data Retention Issues
             </div>
             <div className="relative flex items-center mb-8">
-              <h1 className="text-2xl font-semibold text-gray-900 mt-2">  Reduced Convenience Due to No Data Retention</h1>
+              <h1 className="text-2xl font-semibold text-gray-900 mt-2">Reduced Convenience Due to No Data Retention</h1>
             </div>
-
-
-            <div className="font-base leading-8 text-base text-gray-700  col-span-1">
+            <div className="font-base leading-8 text-base text-gray-700 col-span-full md:col-span-1">
               <p>
-                As mentioned, main user flows, such as user login, are redirected to the website. Because of this, <span className="bg-[#b2ff94]">user information is not present on the app.</span>  This means users must repeatedly enter information like flight details, QR codes, and boarding passes, making the app less user-friendly and personalized. <span className="bg-[#b2ff94]">his is especFially problematic for time-sensitive tasks</span> like check-in and boarding, disrupting the seamless experience users expect.</p>
+                As mentioned, main user flows, such as user login, are redirected to the website. Because of this, <span className="bg-[#b2ff94]">user information is not present on the app.</span> This means users must repeatedly enter information like flight details, QR codes, and boarding passes, making the app less user-friendly and personalized. <span className="bg-[#b2ff94]">This is especially problematic for time-sensitive tasks</span> like check-in and boarding, disrupting the seamless experience users expect.
+              </p>
               <p className="pt-2 font-semibold">
-                If the app cannot retain and manage user data effectively, it fails to provide the personalized and streamlined experience users anticipate from a native application.</p>
+                If the app cannot retain and manage user data effectively, it fails to provide the personalized and streamlined experience users anticipate from a native application.
+              </p>
             </div>
           </div>
         </section>
+      </div>
 
-      </div >
 
       <div className="grid grid-cols-5 gap-10 text-md h-full py-12">
-        <section className="col-span-full sm:col-span-2  flex items-center">
+        <section className="col-span-full md:col-span-2  flex items-center">
           <div className="text-gray-800 w-full">
-          <div className="inline-flex items-center text-base py-1 rounded-full mb-3">
+            <div className="inline-flex items-center text-base py-1 rounded-full mb-3">
               <ExclamationCircleIcon className="h-6 w-6 mr-2 text-red-500 text-2xl" />
               Disjointed Visual Branding
             </div>
-        
+
             <div className="relative flex items-center mb-8">
               <h1 className="text-2xl font-semibold text-gray-900"> Confusing Visuals and Inconsistent Design
               </h1>
@@ -142,7 +146,7 @@ export const HeuristicSection = () => {
           </div>
         </section>
 
-        <Image src={issueVisuals} alt={"issue 1"} quality={95} className="col-span-full rounded-xl w-full h-full object-contain bg-white sm:col-span-3" />
+        <Image src={issueVisuals} alt={"issue 1"} quality={95} className="col-span-full rounded-xl w-full h-full object-contain bg-white md:col-span-3" />
       </div>
     </div >
 

@@ -17,12 +17,12 @@ function FeedbackCard({ imageSrc, title, description }: FeedbackCardProps) {
   return (
     <div>
       <Image src={imageSrc} alt={title} quality={95} className="w-full object-cover mb-2" />
-      <div className="bg-white rounded-lg shadow-lg border-[0.09em] border-red-600 p-5">
-      <div className="inline-flex items-center text-base py-1 rounded-full mb-3">
-              <ExclamationCircleIcon className="h-6 w-6 mr-2 text-red-500 text-2xl" />
+      <div className="bg-white rounded-lg shadow-lg border-[0.09em] border-red-600 sm:p-5 p-3">
+      <div className="sm:inline-flex sm:items-center text-base py-1 rounded-full mb-3 font-semibold">
+          <ExclamationCircleIcon className="hidden sm:block sm:visible h-6 w-6 sm:mr-2 text-red-500 text-2xl" />
           {title}
         </div>
-        <p className="text-gray-800 text-sm  leading-6">{description}</p>
+        <p className="text-gray-800 text-sm leading-6">{description}</p>
       </div>
     </div>
   );
@@ -40,7 +40,7 @@ export const UserComplaintsSection = () => {
           <span className="font-semibold"> reduce potential biases</span>, I analyzed user behavior and engagement with the Flair app. This included <span className="bg-[#b2ff94]">identifying user pain points</span> from feedback on Facebook, Reddit, Google app reviews, and the Apple App Store.
         </p>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-y-10 gap-x-6 mt-6 mx-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-y-10 gap-x-6 mt-6 sm:mx-10">
           <FeedbackCard
             imageSrc={complaint1}
             title="Dissatisfaction Fueling Customer Loss"

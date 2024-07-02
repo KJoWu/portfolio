@@ -16,7 +16,7 @@ export default function ProjectSection() {
 
   return (
     <SectionContainer>
-      <div className="flex mb-2 gap-5">
+      <div className="flex flex-wrap justify-center mb-2 gap-5 sm:flex-nowrap">
         {/* Menu Section */}
         {Object.keys(projects).map((menuOption, index) => (
           <button
@@ -25,12 +25,12 @@ export default function ProjectSection() {
             onClick={() => handleTypeClick(menuOption as ProjectType)}
             style={{
               display: 'flex',
-              justifyContent: 'flex-start', // Align first item left, others center
+              justifyContent: 'center', // Center items horizontally
               alignItems: 'center', // Center items vertically
               lineHeight: '1'  // Adjust line-height to keep vertical alignment consistent
             }}
           >
-            <div className="leading-7">
+            <div className="leading-7 text-center">
               {/* Text for small screens */}
               <p className="block sm:hidden">
                 {projects[menuOption as ProjectType].shortLabel}
@@ -38,12 +38,15 @@ export default function ProjectSection() {
 
               {/* Text for large screens */}
               <p className="hidden sm:block">
-                {projects[menuOption as ProjectType].label}              </p>
+                {projects[menuOption as ProjectType].label}
+              </p>
             </div>
-
           </button>
         ))}
       </div>
+
+
+
       {/* Gallery Section */}
       <ProjectGallery
         selectedOption={selectedOption}

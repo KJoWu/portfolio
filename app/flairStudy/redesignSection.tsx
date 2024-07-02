@@ -128,8 +128,8 @@ const ContentWithImage = ({ title, subtitle, text, image, alt, reverse }: Conten
     <section className="col-span-full sm:col-span-3 flex items-center rounded-xl">
       <div className="text-gray-800 w-full">
         <div className="font-base leading-relaxed text-base text-gray-700 col-span-3">
-          <div className="inline-flex items-center bg-[#b2ff94] text-black text-sm px-3 py-1 rounded-full mb-5">
-            <CheckCircleIcon className="h-5 w-5 mr-2" />
+          <div className="inline-flex items-center bg-[#b2ff94] text-black text-sm px-3 py-1 rounded-lg sm:rounded-full mb-5">
+            <CheckCircleIcon className="hidden sm:block h-5 w-5 mr-2" />
             {subtitle}
           </div>
           <h2 className="text-2xl font-semibold text-gray-900">{title}</h2>
