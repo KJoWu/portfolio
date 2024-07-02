@@ -46,7 +46,7 @@ export default function WorkThumbnail({
     backgroundColor: backgroundColor,
   } as React.CSSProperties}
 >
-  <div className="px-8 flex flex-col justify-center md:w-[23em] w-full ml-4 md:ml-12">
+  <div className="px-8 flex flex-col justify-center md:w-[23em] w-full md:ml-4 md:ml-12">
     <h3 className={`text-2xl font-semibold mb-3 tracking-wide leading-8 pt-5 ${TiempoSemi.className}`}>{title}</h3>
     <div className={`${poppins.className}`}>
       <ul className="flex flex-wrap gap-x-2 mt-1">
