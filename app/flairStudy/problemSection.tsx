@@ -8,7 +8,7 @@ export const ProblemSection = () => {
     <div className="">
       <div className="grid grid-cols-5 gap-20 text-md h-full">
         <section
-          className="col-span-5 sm:col-span-3 rounded-xl">
+          className="col-span-5 md:col-span-3 rounded-xl">
           <div className="text-gray-800 w-full">
 
             <div className="mb-8">
@@ -36,7 +36,7 @@ export const ProblemSection = () => {
             </div>
           </div>
         </section>
-        <Image src={intro} alt={"issue 1"} quality={95} className=" invisible sm:visible  rounded-xl w-full object-contain sm:col-span-2 border border-black-800 border-t-[.8em]" />
+        <Image src={intro} alt={"issue 1"} quality={95} className=" invisible md:visible  rounded-xl w-full object-contain md:col-span-2 border border-black-800 border-t-[.8em]" />
       </div>
 
       <blockquote className="text-2xl font-base dark:text-white my-10 leading-8 text-center leading-[1.8em] pt-20">

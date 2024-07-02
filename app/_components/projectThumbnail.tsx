@@ -48,14 +48,14 @@ export default function ProjectThumbnail({
           src={url}
           alt={title}
           quality={95}
-          className={`${containTag} sm:h-[20rem] bg-black`}
+          className={`${containTag} md:h-[20rem] bg-black`}
         />
       ) : (
         <Image
           src={url}
           alt={title}
           quality={95}
-          className={`${containTag} sm:h-[20rem] bg-black`}
+          className={`${containTag} md:h-[20rem] bg-black`}
         />
       )}
       <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 bg-gray-950 bg-opacity-80 group-hover:opacity-100 text-center">

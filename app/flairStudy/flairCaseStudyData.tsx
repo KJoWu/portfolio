@@ -22,7 +22,7 @@ const sectionVariants = {
 
 const FlairCaseStudyData = () => {
   return (
-    <div className="px-10 sm:px-0 sm:ml-[6em] mt-40">
+    <div className="px-10 md:px-0 md:ml-[6em] mt-40">
       <motion.section
         id="section1"
         className="relative"

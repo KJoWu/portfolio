@@ -45,7 +45,7 @@ export const BannerSection = () => {
       </section>
 
 
-      <section className="sm:col-span-4 sm:flex items-center justify-center flex-nowrap">
+      <section className="md:col-span-4 md:flex items-center justify-center flex-nowrap">
         <VideoPlayer
           src="/booking.mp4"
           type="video/mp4"

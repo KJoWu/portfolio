@@ -21,7 +21,7 @@ interface UserProfileProps {
 
 const UserProfile = ({ image, name, age, occupation, travelFrequency, techSavviness, description, quote }: UserProfileProps) => {
   return (
-    <div className="bg-white shadow-md rounded-lg p-6 flex sm:space-x-6">
+    <div className="bg-white shadow-md rounded-lg p-6 flex md:space-x-6">
       <div className="text-gray-700 leading-6">
         <Image src={image} alt={`Image of ${name}`} quality={95} className="w-full h-48 object-cover mb-4 rounded-lg shadow-lg" />
         <h2 className="text-xl font-semibold mb-2">{name}</h2>
@@ -113,7 +113,7 @@ const UserStories = () => {
 export const ScopingSection = () => {
   return (
     <section className="mb-3  mt-[-5em]">
-      <h2 className="text-2xl font-semibold text-gray-800 mb-4 border-l-8 border-gray-900 pl-3 sm:w-[30em] leading-8">
+      <h2 className="text-2xl font-semibold text-gray-800 mb-4 border-l-8 border-gray-900 pl-3 md:w-[30em] leading-8">
         Creating the User Personas</h2>
       <p className="mb-6 text-gray-700 leading-8 mt-8">
         Leveraging our gathered insights, I developed a detailed case studies for various user personas, including frequent travelers, tech-savvy influencers, and casual vacation planners. These case studies will illustrate how different users interact with the app and identify key areas for improvement.

@@ -9,7 +9,7 @@ type CaseSectionProps = {
   export default function CaseSection({ children, bg }: CaseSectionProps) {
     return (
         <div className={bg}>
-        <div className="sm:max-w-[65em] sm:pl-20">
+        <div className="md:max-w-[65em] md:pl-20">
           {children}
         </div>
       </div>

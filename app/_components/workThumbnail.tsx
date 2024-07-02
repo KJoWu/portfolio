@@ -38,15 +38,15 @@ export default function WorkThumbnail({
 
   return (
 <div
-  className={`bg-none-on-sm group ${bg} sm:h-[30rem] overflow-hidden relative 
-    sm:flex content-center rounded-2xl 
+  className={`bg-none-on-sm group ${bg} md:h-[30rem] overflow-hidden relative 
+    md:flex content-center rounded-2xl 
     transition-all duration-300 ease-in-out transform hover:scale-105 py-[2em]`}
   style={{
     '--bg-image': `url(${imageUrl.src})`,
     backgroundColor: backgroundColor,
   } as React.CSSProperties}
 >
-  <div className="px-8 flex flex-col justify-center sm:w-[23em] w-full ml-4 sm:ml-12">
+  <div className="px-8 flex flex-col justify-center md:w-[23em] w-full ml-4 md:ml-12">
     <h3 className={`text-2xl font-semibold mb-3 tracking-wide leading-8 pt-5 ${TiempoSemi.className}`}>{title}</h3>
     <div className={`${poppins.className}`}>
       <ul className="flex flex-wrap gap-x-2 mt-1">

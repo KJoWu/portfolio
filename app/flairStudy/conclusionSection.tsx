@@ -32,7 +32,7 @@ export const ConclusionSection = () => {
         <p className="text-gray-700 leading-8 mt-6">While having a direct test group of users evaluate the project is most effective, some tech-related observations we can make are as follows:
 
         </p>
-        <ul className="list-none mt-4 text-gray-800 grid grid-cols-1 md:grid-cols-4 gap-x-8 gap-y-4 leading-8">
+        <ul className="pt-5 list-none mt-4 text-gray-800 grid grid-cols-1 md:grid-cols-4 gap-x-8 gap-y-4 leading-8">
           <li className="flex flex-col items-start">
             <span className="font-semibold">App Store Ratings:</span>
             <span>Track user ratings and reviews on Google Play and Apple App Store. Improvements in ratings and positive feedback signal success.</span>
@@ -71,7 +71,7 @@ export const ConclusionSection = () => {
       </section>
 
       <section>
-        <h2 className="text-xl font-semibold text-gray-800 pt-10">Final Thoughts</h2>
+        <h2 className="text-2xl font-semibold text-gray-800 pt-16">Final Thoughts</h2>
         <p className="mb-6 text-gray-700 leading-8 mt-6">While there were many areas that required improvement with Flair, addressing the onboarding process was particularly interesting due to the real-life consequences of a poorly designed UI. I thoroughly enjoyed identifying pain points and developing features that significantly enhance the app. <span className="bg-[#b2ff94]">Sometimes, a small feature can generate substantial returns.</span> While UI design is crucial, understanding user pain points and creating solutions is equally important. This case study provided a valuable opportunity to delve into these aspects and improve the overall user experience.
 
 

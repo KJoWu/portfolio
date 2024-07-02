@@ -38,7 +38,7 @@ const Takeaways = () => {
         <div className="max-w-7xl mx-auto">
           <section className="grid grid-cols-1 lg:grid-cols-3 gap-10">
             <article className="lg:col-span-2">
-              <h2 className="text-2xl font-semibold text-gray-800 mb-4 border-l-8 border-gray-900 pl-3 mt-10 sm:w-[30em] leading-8">
+              <h2 className="text-2xl font-semibold text-gray-800 mb-4 border-l-8 border-gray-900 pl-3 mt-10 md:w-[30em] leading-8">
                 Stress Reduction and User Satisfaction
               </h2>
               <div className="mx-auto text-gray-700 leading-8">

@@ -16,12 +16,12 @@ export default function ProjectSection() {
 
   return (
     <SectionContainer>
-      <div className="flex flex-wrap justify-center mb-2 gap-5 sm:flex-nowrap">
+      <div className="flex flex-wrap justify-center mb-2 gap-5 md:flex-nowrap">
         {/* Menu Section */}
         {Object.keys(projects).map((menuOption, index) => (
           <button
             key={menuOption}
-            className={`w-[6em] sm:w-[17em] group text-black-700 duration-300 leading-9 text-[1.1em] ${poppins.className} ${selectedOption === menuOption ? 'font-semibold text-indigo-600' : 'font-normal'}`}
+            className={`w-[6em] md:w-[17em] group text-black-700 duration-300 leading-9 text-[1.1em] ${poppins.className} ${selectedOption === menuOption ? 'font-semibold text-indigo-600' : 'font-normal'}`}
             onClick={() => handleTypeClick(menuOption as ProjectType)}
             style={{
               display: 'flex',
@@ -32,12 +32,12 @@ export default function ProjectSection() {
           >
             <div className="leading-7 text-center">
               {/* Text for small screens */}
-              <p className="block sm:hidden">
+              <p className="block md:hidden">
                 {projects[menuOption as ProjectType].shortLabel}
               </p>
 
               {/* Text for large screens */}
-              <p className="hidden sm:block">
+              <p className="hidden md:block">
                 {projects[menuOption as ProjectType].label}
               </p>
             </div>

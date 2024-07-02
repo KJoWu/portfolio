@@ -17,9 +17,9 @@ function FeedbackCard({ imageSrc, title, description }: FeedbackCardProps) {
   return (
     <div>
       <Image src={imageSrc} alt={title} quality={95} className="w-full object-cover mb-2" />
-      <div className="bg-white rounded-lg shadow-lg border-[0.09em] border-red-600 sm:p-5 p-3">
-      <div className="sm:inline-flex sm:items-center text-base py-1 rounded-full mb-3 font-semibold">
-          <ExclamationCircleIcon className="hidden sm:block sm:visible h-6 w-6 sm:mr-2 text-red-500 text-2xl" />
+      <div className="bg-white rounded-lg shadow-lg border-[0.09em] border-red-600 md:p-5 p-3">
+      <div className="md:inline-flex md:items-center text-base py-1 rounded-full mb-3 font-semibold">
+          <ExclamationCircleIcon className="hidden md:block md:visible h-6 w-6 md:mr-2 text-red-500 text-2xl" />
           {title}
         </div>
         <p className="text-gray-800 text-sm leading-6">{description}</p>
@@ -32,7 +32,7 @@ export const UserComplaintsSection = () => {
   return (
     <>
       <section className="mb-12 mt-[2em]">
-        <h1 className="text-2xl font-semibold text-gray-800 mb-6 border-l-8 border-gray-800 pl-3 sm:w-[30em] leading-8">
+        <h1 className="text-2xl font-semibold text-gray-800 mb-6 border-l-8 border-gray-800 pl-3 md:w-[30em] leading-8">
           User Interaction Analysis: Understanding App Engagement and Behavior
         </h1>
         <p className="font-base leading-8 text-base text-gray-700">
@@ -40,7 +40,7 @@ export const UserComplaintsSection = () => {
           <span className="font-semibold"> reduce potential biases</span>, I analyzed user behavior and engagement with the Flair app. This included <span className="bg-[#b2ff94]">identifying user pain points</span> from feedback on Facebook, Reddit, Google app reviews, and the Apple App Store.
         </p>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-y-10 gap-x-6 mt-6 sm:mx-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 md:grid-cols-2 gap-y-10 gap-x-6 mt-6 md:mx-10">
           <FeedbackCard
             imageSrc={complaint1}
             title="Dissatisfaction Fueling Customer Loss"
