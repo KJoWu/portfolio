@@ -8,16 +8,13 @@ export const ProblemSection = () => {
     <div className="">
       <div className="grid grid-cols-5 gap-20 text-md h-full">
         <section
-          className="col-span-3 rounded-xl">
+          className="col-span-5 sm:col-span-3 rounded-xl">
           <div className="text-gray-800 w-full">
 
             <div className="mb-8">
               <h1 className="font-semibold text-3xl text-gray-800 leading-[1.5em]"> Setting the Scene: The Challenges of Flair Airlines</h1>
-              <hr className="border-t-8 border-gray-800 my-2 w-[10em]" /> 
+              <hr className="border-t-8 border-gray-800 my-2 w-[10em]" />
             </div>
-
-
-
             <blockquote className="text-lg italic border-l-4  border-gray-700 pl-4 italic text-gray-700 px-5 py-8 rounded-lg font-semibold">
               <div className="px-5 leading-8">
                 <svg className="w-8 h-8 text-gray-400 dark:text-gray-600 mb-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="black" viewBox="0 0 18 14">
@@ -39,7 +36,7 @@ export const ProblemSection = () => {
             </div>
           </div>
         </section>
-        <Image src={intro} alt={"issue 1"} quality={95} className="rounded-xl w-full object-contain col-span-2 border border-black-800 border-t-[.8em]" />
+        <Image src={intro} alt={"issue 1"} quality={95} className=" invisible sm:visible  rounded-xl w-full object-contain sm:col-span-2 border border-black-800 border-t-[.8em]" />
       </div>
 
       <blockquote className="text-2xl font-base dark:text-white my-10 leading-8 text-center leading-[1.8em] pt-20">
@@ -47,7 +44,7 @@ export const ProblemSection = () => {
       </blockquote>
 
       <div className="flex justify-center items-center pb-[5em] pt-[4em]">
-      <EllipsisHorizontalIcon className="h-10 w-10 text-black text-3xl" />
+        <EllipsisHorizontalIcon className="h-10 w-10 text-black text-3xl" />
       </div>
     </div>
   )

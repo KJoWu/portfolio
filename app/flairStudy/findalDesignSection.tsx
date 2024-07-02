@@ -20,7 +20,7 @@ export const FinalDesignSection = () => {
 
 
 
-        <div className="flex items-center justify-center pl-[5em]">
+        <div className="sm:flex items-center justify-center sm:pl-[5em]">
           <VideoPlayer
             src="/booking.mp4"
             type="video/mp4"
@@ -28,49 +28,29 @@ export const FinalDesignSection = () => {
             className="h-[33em] overflow-hidden" // Adjust the size here
           />
 
-          <section className="flex items-center rounded-xl w-[30em] pl-[5em] mt-[-5em]">
+          <section className="flex items-center rounded-xl sm:w-[30em] sm:pl-[5em] mt-[3em] sm:mt-[-5em]">
             <div className="text-gray-800 w-full">
               <div className="relative flex items-center mb-8">
                 <h1 className="text-2xl font-semibold text-gray-900">Improved Flight Search</h1>
               </div>
               <div className="font-base leading-relaxed text-base text-gray-700 col-span-1">
               The app now boasts a modern UI with improved button functionality and streamlined access to information, enhancing the booking experience. Users can also view the latest sales at their location.
-
-
-
-
-
-
-
-
-
-
-
-
-
               </div>
             </div>
           </section>
         </div>
 
-        <div className="grid grid-cols-5 gap-10 text-md h-full pt-[8em] ml-[2em]">
-          <section className="col-span-2 flex items-center rounded-xl mt-[-1em] ml-[3em]">
+        <div className="grid grid-cols-5 gap-10 text-md h-full pt-[8em] sm:ml-[2em]">
+          <section className="col-span-full sm:col-span-2 flex sm:items-center rounded-xl mt-[-1em] sm:ml-[3em]">
             <div className="text-gray-800 w-full">
               <div className="relative flex items-center mb-8">
                 <h1 className="text-2xl font-semibold text-gray-900">Easily Access Booking Information</h1>
               </div>
               <div className="font-base leading-relaxed text-base text-gray-700">
-              Users can now easily view their flight status and guests can easily upload their booking details
-
-
-
-
-
-
-</div>
+              Users can now easily view their flight status and guests can easily upload their booking details</div>
             </div>
           </section>
-          <div className="col-span-3 flex h-[30em] space-x-4">
+          <div className="col-span-full sm:col-span-3 flex h-[30em] space-x-4">
           <div className="w-1/2 h-full">
               <Image
                 src={userBooking}
@@ -94,7 +74,7 @@ export const FinalDesignSection = () => {
 
         <div className="grid grid-cols-5 gap-10 text-md h-full pt-[8em] ml-[2em]">
 
-          <div className="col-span-3 flex h-[30em] space-x-4">
+          <div className="col-span-full sm:col-span-3 flex h-[30em] space-x-4">
             <div className="w-1/2 h-full">
               <VideoPlayer
                 src="/userNotification.mp4"
@@ -112,20 +92,14 @@ export const FinalDesignSection = () => {
               />
             </div>
           </div>
-          <section className="col-span-2 flex items-center rounded-xl mt-[-1em] ml-[3em]">
+
+          <section className="col-span-full sm:col-span-2 sm:flex sm:items-center rounded-xl mt-[-1em] sm:ml-[3em]">
             <div className="text-gray-800 w-full">
-              <div className="relative flex items-center mb-8">
+              <div className="relative flex sm:items-center mb-8">
                 <h1 className="text-2xl font-semibold text-gray-900">Access Notifications About your Flight</h1>
               </div>
               <div className="font-base leading-relaxed text-base text-gray-700">
               Receive notifications about the status of your upcoming flight and check-in details right at your fingertips.
-
-
-
-
-
-
-
               </div>
             </div>
           </section>
@@ -133,13 +107,10 @@ export const FinalDesignSection = () => {
 
 
 
-
-
-        <div className="flex items-center justify-center pt-[7em] ml-[4em]">
-
-          <section className="flex w-[30em] pl-[5em] ml-[3em] z-10">
+        <div className="sm:flex items-center sm:justify-center pt-[7em] sm:ml-[4em]">
+          <section className="sm:flex sm:w-[30em] sm:pl-[5em] sm:ml-[3em] z-10">
             <div className="text-gray-800">
-              <div className="relative flex items-center mb-8">
+              <div className="sm:relative sm:flex sm:items-center mb-8">
                 <h1 className="text-2xl font-semibold text-gray-900 ">Conveniently Access Boarding Pass</h1>
               </div>
               <div className="font-base leading-relaxed text-base text-gray-700 col-span-3">

@@ -125,7 +125,7 @@ const Section = ({ title, text }: SectionProps) => (
 
 const ContentWithImage = ({ title, subtitle, text, image, alt, reverse }: ContentWithImageProps) => (
   <div className={`grid grid-cols-7 gap-5 text-md h-full py-[2em] ${reverse ? 'flex-row-reverse' : ''}`}>
-    <section className="col-span-3 flex items-center rounded-xl">
+    <section className="col-span-full sm:col-span-3 flex items-center rounded-xl">
       <div className="text-gray-800 w-full">
         <div className="font-base leading-relaxed text-base text-gray-700 col-span-3">
           <div className="inline-flex items-center bg-[#b2ff94] text-black text-sm px-3 py-1 rounded-full mb-5">
@@ -137,6 +137,6 @@ const ContentWithImage = ({ title, subtitle, text, image, alt, reverse }: Conten
         </div>
       </div>
     </section>
-    <Image src={image} alt={alt} quality={95} className="rounded-xl w-full object-contain bg-white col-span-4" />
+    <Image src={image} alt={alt} quality={95} className="col-span-full rounded-xl w-full object-contain bg-white sm:col-span-4" />
   </div>
 );

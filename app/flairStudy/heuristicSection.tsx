@@ -62,7 +62,7 @@ export const HeuristicSection = () => {
 
       <div className="grid grid-cols-7 gap-10 text-md py-12">
 
-        <section className="col-span-3 h-auto flex items-center rounded-xl ">
+        <section className="col-span-full sm:col-span-3 h-auto flex items-center rounded-xl ">
           <div className="text-gray-800 w-full">
           <div className="inline-flex items-center text-base py-1 rounded-full mb-3">
               <ExclamationCircleIcon className="h-6 w-6 mr-2 text-red-500 text-2xl" />
@@ -83,7 +83,7 @@ export const HeuristicSection = () => {
             </div>
           </div>
         </section>
-        <Image src={issueRedirect} alt={"issue 1"} quality={95} className="rounded-xl w-full h-[30em] object-contain bg-white col-span-4" />
+        <Image src={issueRedirect} alt={"issue 1"} quality={95} className="col-span-full rounded-xl w-full h-[30em] object-contain bg-white sm:col-span-4" />
 
       </div>
 
@@ -91,8 +91,8 @@ export const HeuristicSection = () => {
 
 
       <div className="grid grid-cols-12 gap-10 text-md h-full py-12 ">
-        <Image src={issueData} alt={"issue 1"} quality={95} className="rounded-xl w-full h-full object-contain bg-white col-span-7" />
-        <section className="col-span-5 flex items-center">
+        <Image src={issueData} alt={"issue 1"} quality={95} className="col-span-full rounded-xl w-full h-full object-contain bg-white sm:col-span-7" />
+        <section className="col-span-full sm:col-span-5 flex items-center">
           <div className="text-gray-800 w-full">
           <div className="inline-flex items-center text-base py-1 rounded-full mb-3">
               <ExclamationCircleIcon className="h-6 w-6 mr-2 text-red-500 text-2xl" />
@@ -115,7 +115,7 @@ export const HeuristicSection = () => {
       </div >
 
       <div className="grid grid-cols-5 gap-10 text-md h-full py-12">
-        <section className="col-span-2  flex items-center">
+        <section className="col-span-full sm:col-span-2  flex items-center">
           <div className="text-gray-800 w-full">
           <div className="inline-flex items-center text-base py-1 rounded-full mb-3">
               <ExclamationCircleIcon className="h-6 w-6 mr-2 text-red-500 text-2xl" />
@@ -142,7 +142,7 @@ export const HeuristicSection = () => {
           </div>
         </section>
 
-        <Image src={issueVisuals} alt={"issue 1"} quality={95} className="rounded-xl w-full h-full object-contain bg-white col-span-3" />
+        <Image src={issueVisuals} alt={"issue 1"} quality={95} className="col-span-full rounded-xl w-full h-full object-contain bg-white sm:col-span-3" />
       </div>
     </div >
 

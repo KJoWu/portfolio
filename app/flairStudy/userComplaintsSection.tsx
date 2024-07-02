@@ -32,7 +32,7 @@ export const UserComplaintsSection = () => {
   return (
     <>
       <section className="mb-12 mt-[2em]">
-        <h1 className="text-2xl font-semibold text-gray-800 mb-6 border-l-8 border-gray-800 pl-3 w-[30em] leading-8">
+        <h1 className="text-2xl font-semibold text-gray-800 mb-6 border-l-8 border-gray-800 pl-3 sm:w-[30em] leading-8">
           User Interaction Analysis: Understanding App Engagement and Behavior
         </h1>
         <p className="font-base leading-8 text-base text-gray-700">
