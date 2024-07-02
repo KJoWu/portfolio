@@ -1,11 +1,11 @@
-import p1 from "../../public/isight.png";
+import app3 from "../../public/app3.webp";
+import app4 from "../../public/app4.webp";
+import app6 from "../../public/app6.webp";
+
 import shirt1 from "../../public/shirt-1.webp";
 import shirt2 from "../../public/shirt-2.webp";
-import shirt3 from "../../public/shirt-3.jpg";
 import research1 from "../../public/research1.webp";
-import research2 from "../../public/research2.jpg";
 import research3 from "../../public/research3.png";
-import editorial2 from "../../public/editorial2.png";
 import editorial3 from "../../public/editorial3.png";
 import editorial4 from "../../public/editorial4.jpg";
 import editorial5 from "../../public/editorial5.jpg";
@@ -16,7 +16,7 @@ import editorial11 from "../../public/editorial11.jpg";
 import design1 from "../../public/design1.webp";
 import hobby1 from "../../public/hobby1.webp";
 import hobby3 from "../../public/hobby3.webp";
-import hobby4 from "../../public/hobby4.jpg";
+import hobby4 from "../../public/hobby4.webp";
 import hobby5 from "../../public/hobby5.webp";
 import hobby6 from "../../public/hobby6.webp";
 import hobby7 from "../../public/hobby7.webp";
@@ -25,12 +25,6 @@ import hobby9 from "../../public/hobby9.webp";
 import hobby10 from "../../public/hobby10.webp";
 import hobby11 from "../../public/hobby11.webp";
 
-import app1 from "../../public/app1.jpg";
-import app2 from "../../public/app2.png";
-// import app3 from "../../public/app3.png";
-// import app4 from "../../public/app4.png";
-// import app5 from "../../public/app5.png";
-import app6 from "../../public/app6.png";
 import other1 from "../../public/other1.png";
 import { StaticImageData } from "next/image";
 
@@ -81,13 +75,8 @@ export const featuredData: ProjectData[] = [
 
 export const webappData: ProjectData[] = [
   {
-    title: "Hi Ai",
-    url: p1,
-    description: "An AI-powered chatbox in TypeScript using Next.js for the frontend, Vercel for deployment, and OpenAI API for conversational intelligence",
-  },
-  {
     title: "iSight Eyecare",
-    url: p1,
+    url: app4,
     description: "Developed a website in webflow for a boutique Optometry Business",
   },
   {
@@ -95,11 +84,11 @@ export const webappData: ProjectData[] = [
     url: app6,
     description: "An interactive web game built with React.js",
   },
+ 
   {
-    title: "Cultr",
-    contain: true,
-    url: app1,
-    description: "Website equipped with a web scraping tool designed to collect data on BCorp corporations. Built with Python and Bootstrap",
+    title: "School Finder",
+    url: app3,
+    description: "An app developed for finding universities in Canada for the Canada Open Data Hackathon (currently being redesigned)",
   },
 ];
 
@@ -259,11 +248,7 @@ export const hobbyData: ProjectData[] = [
     url: hobby1,
     description: "",
   },
-  {
-    title: "",
-    url: hobby9,
-    description: "",
-  },
+
 
   {
     title: "",
@@ -273,6 +258,11 @@ export const hobbyData: ProjectData[] = [
   {
     title: "",
     url: hobby6,
+    description: "",
+  },
+  {
+    title: "",
+    url: hobby9,
     description: "",
   },
   {
@@ -296,7 +286,7 @@ export const projects = {
   web: {
     label: "Web Applications",
     shortLabel:"Apps",
-    description: "I am an avid supporter of hackathons, actively participate in volunteer work, and love experimenting with new technology stacks to enhance my technical skills. Additionally, I frequently attend tech meetups to network with other professionals and stay updated with industry trends.",
+    description: "I am an avid supporter of hackathons, have previously volunteered with Canada Learning Code, and love experimenting with new technology stacks to enhance my technical skills.",
     data: webappData,
   },
   video: {
@@ -327,14 +317,5 @@ export const projects = {
 };
 
 export const featuredPlaygroundProjects: ProjectData[] = [
-  {
-    title: "AI project",
-    url: p1,
-    description: "Directed and produced the orientation video for the faculty of science",
-  },
-  {
-    title: "UI Review",
-    url: p1,
-    description: "Directed and produced the orientation video for the faculty of science.",
-  },
+
 ];
