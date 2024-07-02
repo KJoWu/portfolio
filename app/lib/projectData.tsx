@@ -24,6 +24,7 @@ import hobby8 from "../../public/hobby8.webp";
 import hobby9 from "../../public/hobby9.webp";
 import hobby10 from "../../public/hobby10.webp";
 import hobby11 from "../../public/hobby11.webp";
+import other2 from "../../public/other2.jpeg"
 
 import other1 from "../../public/other1.png";
 import { StaticImageData } from "next/image";
@@ -82,7 +83,7 @@ export const webappData: ProjectData[] = [
   {
     title: "Detective Murder Mystery Game",
     url: app6,
-    description: "An interactive web game built with React.js",
+    description: "An interactive web game built with React.js (in beta)",
   },
  
   {
@@ -222,7 +223,7 @@ export const otherData: ProjectData[] = [
   },
   {
     title: "Tech Lab",
-    url: hobby4,
+    url: other2,
     description: "Planned, designed, and managed the development and installation of a technical wall featuring vendor screens, remote monitoring capabilities, and adjustable installation options.",
   },
 ];

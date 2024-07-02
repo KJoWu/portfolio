@@ -9,7 +9,7 @@ import { PurposeSection } from './purposeSection';
 import { ProblemSection } from './problemSection';
 import { ScopingSection } from './scopingSection';
 import CaseSection from './caseSection';
-import {  poppins } from "../fonts";
+import { poppins } from "../fonts";
 import { FinalDesignSection } from './findalDesignSection';
 import { BannerSection } from "./bannerSection";
 import { ConclusionSection } from './conclusionSection';
@@ -23,15 +23,15 @@ const sectionVariants = {
 const FlairCaseStudyData = () => {
   return (
     <div className="px-10 sm:px-0 sm:ml-[6em] mt-40">
-             <motion.section
-          id="section1"
-          className="relative"
-          whileInView="visible"
-          variants={sectionVariants}
-          transition={{ duration: 0.5 }}
-        >
-      
-      <BannerSection />
+      <motion.section
+        id="section1"
+        className="relative"
+        whileInView="visible"
+        variants={sectionVariants}
+        transition={{ duration: 0.5 }}
+      >
+
+        <BannerSection />
       </motion.section>
 
       <div className={`container mx-auto px-4 ${poppins.className}`}>
@@ -39,9 +39,9 @@ const FlairCaseStudyData = () => {
         {/******************************************************** Section Cutoff */}
 
 
-          <CaseSection>
-            <ProblemSection />
-          </CaseSection>
+        <CaseSection>
+          <ProblemSection />
+        </CaseSection>
 
         {/******************************************************** Section Cutoff */}
         <motion.section
@@ -61,9 +61,9 @@ const FlairCaseStudyData = () => {
 
 
 
-          <CaseSection>
-            <UserComplaintsSection />
-          </CaseSection>
+        <CaseSection>
+          <UserComplaintsSection />
+        </CaseSection>
 
 
         {/******************************************************** Section Cutoff */}
@@ -86,9 +86,9 @@ const FlairCaseStudyData = () => {
 
         {/******************************************************** Section Cutoff */}
 
-          <CaseSection>
-            <ScopingSection />
-          </CaseSection>
+        <CaseSection>
+          <ScopingSection />
+        </CaseSection>
 
 
 

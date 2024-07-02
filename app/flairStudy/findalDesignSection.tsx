@@ -1,8 +1,6 @@
 import designQRCode from "../../public/final_qrcode.jpg";
-import designBooking from "../../public/final_booking.jpg";
 import userBooking from "../../public/userBooking.png"
 import designNotification from "../../public/final_notificaion.png";
-import designCheckin from "../../public/final_checkin.png";
 import VideoPlayer from "./videoPlayer";
 import { EllipsisHorizontalIcon } from '@heroicons/react/24/solid';
 
@@ -106,22 +104,26 @@ export const FinalDesignSection = () => {
         </div>
 
 
-
-        <div className="sm:flex items-center sm:justify-center pt-[7em] sm:ml-[4em]">
-          <section className="sm:flex sm:w-[30em] sm:pl-[5em] sm:ml-[3em] z-10">
-            <div className="text-gray-800">
-              <div className="sm:relative sm:flex sm:items-center mb-8">
-                <h1 className="text-2xl font-semibold text-gray-900 ">Conveniently Access Boarding Pass</h1>
+        <div className="grid grid-cols-5 gap-10 text-md h-full pt-[8em] sm:ml-[2em]">
+          <section className="col-span-full sm:col-span-2 flex sm:items-center rounded-xl mt-[-1em] sm:ml-[3em]">
+            <div className="text-gray-800 w-full">
+              <div className="relative flex items-center mb-8">
+                <h1 className="text-2xl font-semibold text-gray-900">Conveniently Access Boarding Pass</h1>
               </div>
-              <div className="font-base leading-relaxed text-base text-gray-700 col-span-3">
-              Your boarding pass is only a step away! Easily downloadable and scrollable for all your passes.
-              </div>
+              <div className="font-base leading-relaxed text-base text-gray-700">
+              Your boarding pass is just a step away! Now easily downloadable and scrollable for all your passes.              </div>
             </div>
           </section>
-          <Image src={designQRCode} alt="menu" quality={95} className="rounded-xl h-[30em] object-contain bg-white  ml-[-8em] z-1" />
+          <div className="col-span-full sm:col-span-3 flex h-[30em] space-x-4">
 
+            <div className="w-1/2 h-full">
+            <Image src={designQRCode} alt="menu" quality={95} className="pt-5 sm:pt-0 block mx-auto rounded-xl h-[30em] object-contain bg-white z-1" />
+
+            </div>
+
+          </div>
         </div>
-
+           
         <div className="flex justify-center items-center pb-[5em] pt-[9em]">
           <EllipsisHorizontalIcon className="h-10 w-10 text-black text-3xl" />
         </div>

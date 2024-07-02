@@ -1,10 +1,8 @@
 "use client";
 
 import React from "react";
-import designQRCode from "../../public/final_qrcode.jpg";
 import { EllipsisHorizontalIcon } from '@heroicons/react/24/solid';
 import VideoPlayer from "./videoPlayer";
-import Image from "next/image";
 
 
 export const BannerSection = () => {
@@ -47,31 +45,32 @@ export const BannerSection = () => {
       </section>
 
 
-      <section className="col-span-4 flex items-center justify-center flex-nowrap">
+      <section className="sm:col-span-4 sm:flex items-center justify-center flex-nowrap">
         <VideoPlayer
           src="/booking.mp4"
           type="video/mp4"
           poster="/images/video-poster.jpg"
           className="h-[33em] w-auto mx-2"
-          />
+        />
         <VideoPlayer
           src="/guestBooking.mp4"
           type="video/mp4"
           poster="/images/video-poster.jpg"
           className="h-[33em] w-auto mx-2"
-          />
+        />
         <VideoPlayer
           src="/userNotification.mp4"
           type="video/mp4"
           poster="/images/video-poster.jpg"
           className="h-[33em] w-auto mx-2"
-          />
-        <Image
-          src={designQRCode}
-          alt="menu"
-          quality={95}
-          className="h-[33em] w-auto mx-2 rounded-xl object-contain"
-          />
+        />
+
+        <VideoPlayer
+          src="/qrCode.mp4"
+          type="video/mp4"
+          poster="/images/video-poster.jpg"
+          className="h-[33em] w-auto mx-2"
+        />
       </section>
 
       <div className="flex justify-center items-center pb-[7em] pt-[7em]">
