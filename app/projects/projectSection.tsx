@@ -21,7 +21,7 @@ export default function ProjectSection() {
         {Object.keys(projects).map((menuOption, index) => (
           <button
             key={menuOption}
-            className={`w-[6em] md:w-[17em] group text-black-700 duration-300 leading-9 text-[1.1em] font-semibold  ${poppins.className} ${selectedOption === menuOption ? 'text-indigo-600' : 'font-normal'}`}
+            className={`w-[6em] md:w-[17em] group text-black-700 duration-300 leading-9 text-[1.1em] font-bold sm:font-medium ${poppins.className} ${selectedOption === menuOption ? 'text-indigo-600' : 'font-normal'}`}
             onClick={() => handleTypeClick(menuOption as ProjectType)}
             style={{
               display: 'flex',
