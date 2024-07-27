@@ -50,7 +50,7 @@ export default function Intro() {
                     }}
 
                     onInit={(typewriter) => {
-                      typewriter.typeString(`I'm a senior frontend engineer`)
+                      typewriter.typeString(`I'm a senior software engineer`)
                         .pauseFor(2000)
                         .deleteChars(24)
                         .typeString('product designer')
