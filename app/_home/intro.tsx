@@ -43,25 +43,7 @@ export default function Intro() {
 
               <div className={`sm:align-center sm:items-start sm:justify-left text-2xl pt-5 leading-9 flex flex-col items-center justify-center ${sourceSerif.className}`}>
                 <div className="flex justify-center sm:justify-left sm:items-start h-[3em]">
-                  <Typewriter
-                    options={{
-                      autoStart: true,
-                      loop: true,
-                    }}
-
-                    onInit={(typewriter) => {
-                      typewriter.typeString(`I'm a senior software engineer`)
-                        .pauseFor(2000)
-                        .deleteChars(24)
-                        .typeString('product designer')
-                        .pauseFor(2000)
-                        .deleteChars(18)
-                        .typeString('an artist')
-                        .pauseFor(3000)
-                        .deleteAll()
-                        .start();
-                    }}
-                  />
+                  <p> Senior software engineer, product designer and artist</p>
                 </div>
               </div>
               <div className={`text-center sm:text-left text-lg mt-36 leading-8 ${sourceSerif.className} font-base`}>
