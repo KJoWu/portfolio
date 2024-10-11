@@ -35,7 +35,7 @@ export const workData: Work[] = [
     bg: "bg-zinc-50",
     tagsBg: "bg-zinc-400",
     bgHover: "hover:bg-zinc-200",
-    url: "https://www.leetnight.com/elev8",
+    url: "https://www.leetnight.com",
     buttonColor: "#313630",
     backgroundColor: "#c1ffaa"
   },
