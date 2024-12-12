@@ -10,6 +10,8 @@ export const BannerSection = () => {
     <div className="text-center pt-15">
       <div className="flex flex-col items-center text-center">
         <h1 className="text-5xl font-semibold  z-[10]">Flair Airlines Redesign</h1>
+        <h1 className="text-2xl pt-3 font-semibold  z-[10]">by Kimberly Wu </h1>
+
         <hr className="border-t-[.8em] border-[#b2ff94] mt-[.9em] w-[21em] z-[1]" />
       </div>
 
@@ -47,26 +49,26 @@ export const BannerSection = () => {
 
       <section className="md:col-span-4 md:flex items-center justify-center flex-nowrap">
         <VideoPlayer
-          src="/booking.mp4"
+          src="https://vyefnififypgtaykhppx.supabase.co/storage/v1/object/public/Media/booking.mp4"
           type="video/mp4"
           poster="/images/video-poster.jpg"
           className="h-[33em] w-auto mx-2"
         />
         <VideoPlayer
-          src="/guestBooking.mp4"
+          src="https://vyefnififypgtaykhppx.supabase.co/storage/v1/object/public/Media/guestBooking.mp4"
           type="video/mp4"
           poster="/images/video-poster.jpg"
           className="h-[33em] w-auto mx-2"
         />
         <VideoPlayer
-          src="/userNotification.mp4"
+          src="https://vyefnififypgtaykhppx.supabase.co/storage/v1/object/public/Media/userNotification.mp4"
           type="video/mp4"
           poster="/images/video-poster.jpg"
           className="h-[33em] w-auto mx-2"
         />
 
         <VideoPlayer
-          src="/qrCode.mp4"
+          src="https://vyefnififypgtaykhppx.supabase.co/storage/v1/object/public/Media/qrCode.mp4"
           type="video/mp4"
           poster="/images/video-poster.jpg"
           className="h-[33em] w-auto mx-2"

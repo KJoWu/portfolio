@@ -1,4 +1,3 @@
-import issue1 from "../../public/issue1.png";
 import issueRedirect from "../../public/issue_redirect.jpg";
 import issueVisuals from "../../public/issue_visuals.jpg";
 import issueData from "../../public/issue_data.jpg";
