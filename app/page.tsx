@@ -1,11 +1,9 @@
-import Intro from "./_home/intro";
-import Work from "./_home/work";
+import Main from "./_home/main";
 
 export default function Home() {
   return (
     <>
-      <Intro />
-      <Work />
+      <Main />
     </>
   );
 }
