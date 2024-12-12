@@ -52,7 +52,7 @@ const devProjects: Project[] = [
     link: "https://www.leetnight.com",
     github: "",
     image:
-      "https://vyefnififypgtaykhppx.supabase.co/storage/v1/object/public/Media/leetnight.png",
+      "https://vyefnififypgtaykhppx.supabase.co/storage/v1/object/public/Media/leetnight%20(1).png",
   },
   {
     title: "Flair Airlines Case Study",
@@ -74,7 +74,7 @@ const devProjects: Project[] = [
     link: "https://www.verticalcity.com/elev8",
     github: "#",
     image:
-      "https://vyefnififypgtaykhppx.supabase.co/storage/v1/object/public/Media/%20Digital%20Signage%202.png",
+      "https://vyefnififypgtaykhppx.supabase.co/storage/v1/object/public/Media/ad.png",
   },
   {
     title: "Media Buyer Platform for DOOH Campaigns",
@@ -85,18 +85,18 @@ const devProjects: Project[] = [
     link: "https://www.verticalimpression.com",
     github: "#",
     image:
-      "https://images.pexels.com/photos/6476776/pexels-photo-6476776.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    "https://vyefnififypgtaykhppx.supabase.co/storage/v1/object/public/Media/pm.png",
   },
   {
     title: "Content Management System for Property Managers",
     description:
       "Developed a platform enabling property managers to publish notices, news feeds, and various content on elevator and lobby screens",
     tech: "React,Ruby on Rails, TypeScript, Figma",
-    color: "from-rose-500 to-pink-500",
+    color: "from-blue-800 to-blue-600",
     link: "#",
     github: "https://www.verticalimpression.com/",
     image:
-      "https://www.verticalcity.com/screen-solutions",
+      "https://vyefnififypgtaykhppx.supabase.co/storage/v1/object/public/Media/pm2.png",
   },
 ];
 
@@ -152,14 +152,14 @@ const creativeWorks: Record<string, CreativeWork[] | Video[]> = {
       description:
         "Developed a website in webflow for a boutique Optometry Business",
       image:
-        "https://vyefnififypgtaykhppx.supabase.co/storage/v1/object/public/Media/app4.webp",
+        "https://vyefnififypgtaykhppx.supabase.co/storage/v1/object/public/Media/Screenshot%202024-12-11%20at%2011.21.35%20PM.png",
       link: "#",
     },
     {
       title: "Detective Murder Mystery Game",
       description: "An interactive web game built with React.js (in beta)",
       image:
-        "https://vyefnififypgtaykhppx.supabase.co/storage/v1/object/public/Media/app6.webp",
+        "https://vyefnififypgtaykhppx.supabase.co/storage/v1/object/public/Media/Screenshot%202024-12-11%20at%2011.19.26%20PM.png",
       link: "#",
     },
     {
