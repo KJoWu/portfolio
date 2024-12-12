@@ -2,7 +2,6 @@
 
 // import type { Metadata } from "next";
 import "./globals.css";
-import ThemeSwitch from "./_components/themeSwitch";
 import { ThemeProvider } from "./_context/themeContext";
 import { poppins, inter } from "./fonts";
 
@@ -25,8 +24,6 @@ export default function RootLayout({
         <ThemeProvider>
 
           {children}
-
-          {/* <ThemeSwitch /> */}
 
           <div className={`p-3 text-center text-gray-600 font-light ${poppins.className} text-sm tracking-wide bg-white`}>
           &copy; Kim 2024. This site was designed in Figma, coded in Next JS by yours truly, styled with Tailwind and deployed on Vercel.

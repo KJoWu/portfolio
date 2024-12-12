@@ -22,13 +22,12 @@ type Project = {
   image: string;
 };
 
-type VideoProject = {
+type Video = {
+  url: string;
+  thumbnail: string;
   title: string;
   description: string;
-  thumbnail: string;
-  url: string;
   link: string;
-  category: string;
 };
 
 type CreativeWork = {
@@ -101,33 +100,27 @@ const devProjects: Project[] = [
   },
 ];
 
-const videoProjects: VideoProject[] = [
+const videoProjects: Video[] = [
   {
     title: "Rich Laughify",
-    description:
-      "Designed a video for a hackathon",
+    description: "Designed a video for a hackathon",
     thumbnail: "https://images.unsplash.com/photo-1492691527719-9d1e07e534b4",
     url: "",
     link: "#",
-    category: "Commercial",
-  },
- {
-    title: "University of Alberta Orientation",
-    description:
-      "Directed and produced the orientation video for the Faculty of Science at the University of Alberta",
-    thumbnail: "https://images.unsplash.com/photo-1492691527719-9d1e07e534b4",
-    url: "https://www.youtube.com/watch?v=75c2_TTHWYc&t=145s",
-    link: "#",
-    category: "Commercial",
   },
   {
     title: "University of Alberta Orientation",
-    description:
-      "Directed and produced the orientation video for the Faculty of Science at the University of Alberta (fun fact, this was filmed with a Macbook)",
+    description: "Directed and produced the orientation video for the Faculty of Science at the University of Alberta",
+    thumbnail: "https://images.unsplash.com/photo-1492691527719-9d1e07e534b4",
+    url: "https://www.youtube.com/watch?v=75c2_TTHWYc&t=145s",
+    link: "#",
+  },
+  {
+    title: "University of Alberta Orientation",
+    description: "Directed and produced the orientation video for the Faculty of Science at the University of Alberta (fun fact, this was filmed with a Macbook)",
     thumbnail: "https://images.unsplash.com/photo-1485846234645-a62644f84728",
     url: "https://www.youtube.com/watch?v=3qGofRsp6nc",
     link: "#",
-    category: "Commercial",
   },
   {
     title: "Short Film - 'Connected'",
@@ -135,7 +128,6 @@ const videoProjects: VideoProject[] = [
     thumbnail: "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4",
     url: "https://example.com/video3.mp4",
     link: "#",
-    category: "Narrative",
   },
   {
     title: "Music Video - 'Neon Dreams'",
@@ -143,7 +135,6 @@ const videoProjects: VideoProject[] = [
     thumbnail: "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4",
     url: "https://example.com/video4.mp4",
     link: "#",
-    category: "Music",
   },
   {
     title: "Documentary Excerpt",
@@ -151,7 +142,6 @@ const videoProjects: VideoProject[] = [
     thumbnail: "https://images.unsplash.com/photo-1485846234645-a62644f84728",
     url: "https://example.com/video5.mp4",
     link: "#",
-    category: "Documentary",
   },
   {
     title: "Motion Graphics Reel",
@@ -159,11 +149,10 @@ const videoProjects: VideoProject[] = [
     thumbnail: "https://images.unsplash.com/photo-1492691527719-9d1e07e534b4",
     url: "https://example.com/video6.mp4",
     link: "#",
-    category: "Motion",
-  },
+  }
 ];
 
-const creativeWorks: Record<string, CreativeWork[]> = {
+const creativeWorks: Record<string, CreativeWork[] | Video[]> = {
   Photography: [
     {
       title: "RichLaughify",
@@ -627,13 +616,13 @@ const Main: React.FC = () => {
 
             {activeGallery === "Videography" ? (
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                {creativeWorks[activeGallery].map((video, index) => (
+                {(creativeWorks[activeGallery] as Video[]).map((video, index) => (
                   <VideoCard key={index} video={video} isDark={isDark} />
                 ))}
               </div>
             ) : (
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                {creativeWorks[activeGallery].map((work, index) => (
+                {(creativeWorks[activeGallery] as CreativeWork[]).map((work, index) => (
                   <div
                     key={index}
                     className="group relative overflow-hidden rounded-xl aspect-square"
@@ -685,6 +674,5 @@ const Main: React.FC = () => {
     </div>
   );
 }
-
 
 export default Main;
