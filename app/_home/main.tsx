@@ -12,6 +12,7 @@ import { useTheme } from "../_context/themeContext";
 import ThemeToggle from "../_context/themeToggle";
 import VideoCard from "../_components/videoCard";
 
+
 type Project = {
   title: string;
   description: string;
@@ -85,7 +86,7 @@ const devProjects: Project[] = [
     link: "https://www.verticalimpression.com",
     github: "#",
     image:
-    "https://vyefnififypgtaykhppx.supabase.co/storage/v1/object/public/Media/pm.png",
+      "https://vyefnififypgtaykhppx.supabase.co/storage/v1/object/public/Media/pm.png",
   },
   {
     title: "Content Management System for Property Managers",
@@ -124,7 +125,7 @@ const videoProjects: Video[] = [
   },
   {
     title: "Porphyrius: Draw my Life",
-    description: 'Illustrated, voiced and produced a "Draw my Life" animated short '   ,
+    description: 'Illustrated, voiced and produced a "Draw my Life" animated short ',
     thumbnail: "",
     url: "https://www.youtube.com/watch?v=N4UTFSjxV9U",
     link: "#",
@@ -172,7 +173,7 @@ const creativeWorks: Record<string, CreativeWork[] | Video[]> = {
     },
   ],
   Videography: videoProjects,
-   "Design Ventures": [
+  "Design Ventures": [
     {
       title: "UofA Science Week",
       description:
@@ -351,6 +352,15 @@ const Main: React.FC = () => {
     setIsVisible(true);
   }, []);
 
+  const openNewTab = () => {
+    window.open('/KimberlyWu Resume.pdf', '_blank');
+  };
+  
+  const sendEmail = () => {
+    window.location.href = 'mailto:kim.jokwah@gmail.com';
+  }
+
+
   return (
     <div
       className={`min-h-screen transition-colors duration-300
@@ -370,31 +380,34 @@ const Main: React.FC = () => {
           Kimberly Wu
         </div>
         <div className="flex items-center gap-6">
-          {[FiGithub, FiLinkedin,FiMail].map((Icon, i) => (
+          {[
+            { Icon: FiLinkedin, url: "https://www.linkedin.com/in/kimberly-wu/" },
+            { Icon: FiMail, url: "mailto:kim.jokwah@gmail.com" },
+          ].map(({ Icon, url }, i) => (
             <a
               key={i}
-              href="#"
-              className={`${
-                isDark
+              href={url}
+              target="_blank" // Opens the link in a new tab
+              rel="noopener noreferrer" // Security best practice for external links
+              className={`${isDark
                   ? "text-gray-400 hover:text-white"
                   : "text-gray-600 hover:text-gray-900"
-              }
-                transition-colors transform hover:scale-110 duration-200`}
+                } transition-colors transform hover:scale-110 duration-200`}
             >
               <Icon size={24} />
             </a>
           ))}
         </div>
+
       </nav>
 
       <main className="max-w-6xl mx-auto px-4 mt-28">
-      <section className="mb-20 flex flex-col md:flex-row items-center gap-12">
+        <section className="mb-20 flex flex-col md:flex-row items-center gap-12">
           <div
-            className={`flex-1 transition-all duration-1000 ${
-              isVisible
+            className={`flex-1 transition-all duration-1000 ${isVisible
                 ? "opacity-100 translate-x-0"
                 : "opacity-0 -translate-x-10"
-            }`}
+              }`}
           >
             <h1 className="text-6xl md:text-4xl font-bold mb-6 leading-tight">
               hello world! 👋
@@ -407,31 +420,29 @@ const Main: React.FC = () => {
               </span>
             </h1>
             <p
-              className={`${
-                isDark ? "text-gray-400" : "text-gray-600"
-              } mt-3 text-xl md:text-2xl max-w-2xl mb-3`}
+              className={`${isDark ? "text-gray-400" : "text-gray-600"
+                } mt-3 text-xl md:text-2xl max-w-2xl mb-3`}
             >
               Software Engineer & Designer
             </p>
             <p
-              className={`${
-                isDark ? "text-gray-400" : "text-gray-600"
-              } text-xl md:text-2xl max-w-2xl mb-8`}
+              className={`${isDark ? "text-gray-400" : "text-gray-600"
+                } text-xl md:text-2xl max-w-2xl mb-8`}
             >
               Recepient of the Meiya Reinking & District of Edmonton Art Award
             </p>
             <div className="flex gap-4">
-              <button className="group flex items-center gap-2 bg-indigo-600 text-white px-6 py-3 rounded-full hover:bg-indigo-700 transition-all text-lg">
+              <button onClick={openNewTab} className="group flex items-center gap-2 bg-indigo-600 text-white px-6 py-3 rounded-full hover:bg-indigo-700 transition-all text-lg ">
                 View Resume
                 <FiArrowRight className="group-hover:translate-x-1 transition-transform" />
               </button>
               <button
+                onClick={sendEmail}
                 className={`group flex items-center gap-2 px-6 py-3 rounded-full transition-all text-lg
-                ${
-                  isDark
+                ${isDark
                     ? "bg-gray-800 text-white hover:bg-gray-700"
                     : "bg-gray-100 text-gray-900 hover:bg-gray-200"
-                }`}
+                  }`}
               >
                 Contact Me
               </button>
@@ -439,18 +450,16 @@ const Main: React.FC = () => {
           </div>
 
           <div
-            className={`relative transition-all duration-1000 delay-300 ${
-              isVisible
+            className={`relative transition-all duration-1000 delay-300 ${isVisible
                 ? "opacity-100 translate-x-0"
                 : "opacity-0 translate-x-10"
-            }`}
+              }`}
           >
             <div className="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden relative group">
               <div className="absolute inset-0 bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 opacity-75" />
               <div
-                className={`absolute inset-1 rounded-full ${
-                  isDark ? "bg-[#0a0a0a]" : "bg-white"
-                }`}
+                className={`absolute inset-1 rounded-full ${isDark ? "bg-[#0a0a0a]" : "bg-white"
+                  }`}
               />
               <div className="absolute inset-2 rounded-full overflow-hidden">
                 <img
@@ -470,9 +479,8 @@ const Main: React.FC = () => {
             {skills.map((skillSet) => (
               <div
                 key={skillSet.category}
-                className={`p-6 rounded-xl ${
-                  isDark ? "bg-gray-900/50" : "bg-gray-50"
-                }`}
+                className={`p-6 rounded-xl ${isDark ? "bg-gray-900/50" : "bg-gray-50"
+                  }`}
               >
                 <h3 className="text-xl font-semibold mb-4">
                   {skillSet.category}
@@ -482,10 +490,9 @@ const Main: React.FC = () => {
                     <span
                       key={skill}
                       className={`px-3 py-1 rounded-full text-base
-                        ${
-                          isDark
-                            ? "bg-gray-800 text-gray-300"
-                            : "bg-gray-200 text-gray-700"
+                        ${isDark
+                          ? "bg-gray-800 text-gray-300"
+                          : "bg-gray-200 text-gray-700"
                         }`}
                     >
                       {skill}
@@ -503,14 +510,12 @@ const Main: React.FC = () => {
               key={tab}
               onClick={() => setActiveTab(tab)}
               className={`px-6 py-2 rounded-full text-base font-medium transition-all
-                ${
-                  activeTab === tab
-                    ? "bg-indigo-600 text-white"
-                    : `${
-                        isDark
-                          ? "bg-gray-900 text-gray-400 hover:bg-gray-800"
-                          : "bg-gray-100 text-gray-600 hover:bg-gray-200"
-                      }`
+                ${activeTab === tab
+                  ? "bg-indigo-600 text-white"
+                  : `${isDark
+                    ? "bg-gray-900 text-gray-400 hover:bg-gray-800"
+                    : "bg-gray-100 text-gray-600 hover:bg-gray-200"
+                  }`
                 }`}
             >
               {tab === "dev" ? "Development" : "Creative Works"}
@@ -524,11 +529,10 @@ const Main: React.FC = () => {
               <div
                 key={index}
                 className={`group backdrop-blur-sm rounded-2xl overflow-hidden transition-all
-            ${
-              isDark
-                ? "bg-gray-900/50 hover:bg-gray-800/50"
-                : "bg-gray-50/50 hover:bg-gray-100/50"
-            }`}
+            ${isDark
+                    ? "bg-gray-900/50 hover:bg-gray-800/50"
+                    : "bg-gray-50/50 hover:bg-gray-100/50"
+                  }`}
               >
                 <div className="flex flex-col md:flex-row">
                   <div className="md:w-1/2 relative aspect-video">
@@ -549,17 +553,15 @@ const Main: React.FC = () => {
                     </div>
                     <h3 className="text-2xl font-bold mb-4">{project.title}</h3>
                     <p
-                      className={`${
-                        isDark ? "text-gray-400" : "text-gray-600"
-                      } text-lg mb-6`}
+                      className={`${isDark ? "text-gray-400" : "text-gray-600"
+                        } text-lg mb-6`}
                     >
                       {project.description}
                     </p>
                     <div className="flex justify-between items-center">
                       <p
-                        className={`text-lg ${
-                          isDark ? "text-gray-500" : "text-gray-400"
-                        }`}
+                        className={`text-lg ${isDark ? "text-gray-500" : "text-gray-400"
+                          }`}
                       >
                         {project.tech}
                       </p>
@@ -585,14 +587,12 @@ const Main: React.FC = () => {
                   key={category}
                   onClick={() => setActiveGallery(category)}
                   className={`px-6 py-2 rounded-full text-base font-medium transition-all
-                    ${
-                      activeGallery === category
-                        ? "bg-indigo-600 text-white"
-                        : `${
-                            isDark
-                              ? "bg-gray-900 text-gray-400 hover:bg-gray-800"
-                              : "bg-gray-100 text-gray-600 hover:bg-gray-200"
-                          }`
+                    ${activeGallery === category
+                      ? "bg-indigo-600 text-white"
+                      : `${isDark
+                        ? "bg-gray-900 text-gray-400 hover:bg-gray-800"
+                        : "bg-gray-100 text-gray-600 hover:bg-gray-200"
+                      }`
                     }`}
                 >
                   {category}
@@ -625,7 +625,7 @@ const Main: React.FC = () => {
                       <p className="text-gray-200 text-base mt-2">
                         {work.description}
                       </p>
-                      {work.link.length>0 ? (
+                      {work.link.length > 0 ? (
                         <a
                           href={work.link}
                           className="mt-4 inline-flex items-center text-white gap-2 text-base"
@@ -657,9 +657,8 @@ const Main: React.FC = () => {
       </main>
 
       <div
-        className={`p-3 text-center font-light text-sm tracking-wide text-lg  ${
-          isDark ? "text-gray-400 bg-black" : "text-gray-600 bg-white"
-        }`}
+        className={`p-3 text-center font-light text-sm tracking-wide text-lg  ${isDark ? "text-gray-400 bg-black" : "text-gray-600 bg-white"
+          }`}
       >
         This site was designed in Figma, coded in Next JS by yours truly, styled with
         Tailwind and deployed on Vercel.
