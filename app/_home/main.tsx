@@ -375,8 +375,8 @@ const Main: React.FC = () => {
         <div className="absolute bottom-0 left-1/2 w-96 h-96 bg-pink-500 rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-blob animation-delay-4000" />
       </div>
 
-      <nav className="max-w-6xl mx-auto flex justify-between items-center py-8 px-4">
-        <div className="text-2xl font-bold bg-gradient-to-r from-indigo-500 to-purple-500 bg-clip-text text-transparent">
+      <nav className="max-w-5xl mx-auto flex justify-between items-center py-8 px-4">
+        <div className="text-xl font-bold bg-gradient-to-r from-indigo-500 to-purple-500 bg-clip-text text-transparent">
           Kimberly Wu
         </div>
         <div className="flex items-center gap-6">
@@ -401,7 +401,7 @@ const Main: React.FC = () => {
 
       </nav>
 
-      <main className="max-w-6xl mx-auto px-4 mt-28">
+      <main className="max-w-5xl mx-auto px-4 mt-28">
         <section className="mb-20 flex flex-col md:flex-row items-center gap-12">
           <div
             className={`flex-1 transition-all duration-1000 ${isVisible
@@ -409,25 +409,25 @@ const Main: React.FC = () => {
                 : "opacity-0 -translate-x-10"
               }`}
           >
-            <h1 className="text-6xl md:text-4xl font-bold mb-6 leading-tight">
+            <h1 className="text-4xl md:text-3xl font-bold mb-6 leading-tight">
               hello world! 👋
               <br />
             </h1>
 
             <h1>
-              <span className="text-6xl md:text-8xl font-bold bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
+              <span className="text-4xl md:text-7xl font-bold bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
                 I'm Kim.
               </span>
             </h1>
             <p
               className={`${isDark ? "text-gray-400" : "text-gray-600"
-                } mt-3 text-xl md:text-2xl max-w-2xl mb-3`}
+                } mt-3 text-lg max-w-2xl mb-3`}
             >
               Software Engineer & Designer
             </p>
             <p
               className={`${isDark ? "text-gray-400" : "text-gray-600"
-                } text-xl md:text-2xl max-w-2xl mb-8`}
+                } text-lg  max-w-2xl mb-8`}
             >
               Recepient of the Meiya Reinking & District of Edmonton Art Award
             </p>
@@ -474,7 +474,7 @@ const Main: React.FC = () => {
         </section>
 
         <section className="mb-20">
-          <h2 className="text-3xl font-bold mb-8">Skills & Expertise</h2>
+          <h2 className="text-2xl font-bold mb-8">Skills & Expertise</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {skills.map((skillSet) => (
               <div
@@ -482,14 +482,14 @@ const Main: React.FC = () => {
                 className={`p-6 rounded-xl ${isDark ? "bg-gray-900/50" : "bg-gray-50"
                   }`}
               >
-                <h3 className="text-xl font-semibold mb-4">
+                <h3 className="text-lg font-semibold mb-4">
                   {skillSet.category}
                 </h3>
                 <div className="flex flex-wrap gap-2">
                   {skillSet.items.map((skill) => (
                     <span
                       key={skill}
-                      className={`px-3 py-1 rounded-full text-base
+                      className={`px-3 py-1 rounded-full text-sm
                         ${isDark
                           ? "bg-gray-800 text-gray-300"
                           : "bg-gray-200 text-gray-700"
@@ -551,16 +551,16 @@ const Main: React.FC = () => {
                     >
                       {index + 1}
                     </div>
-                    <h3 className="text-2xl font-bold mb-4">{project.title}</h3>
+                    <h3 className="text-xl font-bold mb-4">{project.title}</h3>
                     <p
-                      className={`${isDark ? "text-gray-400" : "text-gray-600"
+                      className={`text-base ${isDark ? "text-gray-400" : "text-gray-600"
                         } text-lg mb-6`}
                     >
                       {project.description}
                     </p>
                     <div className="flex justify-between items-center">
                       <p
-                        className={`text-lg ${isDark ? "text-gray-500" : "text-gray-400"
+                        className={`text-base ${isDark ? "text-gray-500" : "text-gray-400"
                           }`}
                       >
                         {project.tech}
@@ -643,7 +643,7 @@ const Main: React.FC = () => {
 
         <footer className="mt-20 text-center pb-8">
           <p
-            className={`${isDark ? "text-gray-400" : "text-gray-600"} text-lg`}
+            className={`text-sm ${isDark ? "text-gray-400" : "text-gray-600"} text-lg`}
           >
             Open for collaborative projects —{" "}
             <a
