@@ -63,7 +63,7 @@ export const ConclusionSection = () => {
           </p>
         </div>
         <VideoPlayer
-          src="/future.mp4"
+          src="https://vyefnififypgtaykhppx.supabase.co/storage/v1/object/public/Media/future.mp4"
           type="video/mp4"
           poster="/images/video-poster.jpg"
           className="w-full h-[30em] rounded-xl object-cover"

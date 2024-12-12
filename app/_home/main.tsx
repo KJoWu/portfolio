@@ -53,7 +53,7 @@ const devProjects: Project[] = [
     link: "https://www.leetnight.com",
     github: "",
     image:
-      "https://vyefnififypgtaykhppx.supabase.co/storage/v1/object/public/Media/leetnight%20(1).png",
+      "https://vyefnififypgtaykhppx.supabase.co/storage/v1/object/public/Media/5.jpg",
   },
   {
     title: "Flair Airlines Case Study",
@@ -64,7 +64,7 @@ const devProjects: Project[] = [
     link: "/flairStudy",
     github: "#",
     image:
-      "https://vyefnififypgtaykhppx.supabase.co/storage/v1/object/public/Media/flair.png",
+      "https://vyefnififypgtaykhppx.supabase.co/storage/v1/object/public/Media/flair.jpg",
   },
   {
     title: "Digital Signage for Elevators",
@@ -75,7 +75,7 @@ const devProjects: Project[] = [
     link: "https://www.verticalcity.com/elev8",
     github: "#",
     image:
-      "https://vyefnififypgtaykhppx.supabase.co/storage/v1/object/public/Media/ad.png",
+      "https://vyefnififypgtaykhppx.supabase.co/storage/v1/object/public/Media/2.jpg",
   },
   {
     title: "Media Buyer Platform for DOOH Campaigns",
@@ -86,7 +86,7 @@ const devProjects: Project[] = [
     link: "https://www.verticalimpression.com",
     github: "#",
     image:
-      "https://vyefnififypgtaykhppx.supabase.co/storage/v1/object/public/Media/pm.png",
+      "https://vyefnififypgtaykhppx.supabase.co/storage/v1/object/public/Media/3.jpg",
   },
   {
     title: "Content Management System for Property Managers",
@@ -97,7 +97,7 @@ const devProjects: Project[] = [
     link: "#",
     github: "https://www.verticalimpression.com/",
     image:
-      "https://vyefnififypgtaykhppx.supabase.co/storage/v1/object/public/Media/pm2.png",
+      "https://vyefnififypgtaykhppx.supabase.co/storage/v1/object/public/Media/1.jpg",
   },
 ];
 

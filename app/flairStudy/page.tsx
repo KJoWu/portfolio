@@ -11,7 +11,7 @@ export default function FlairCaseStudy() {
     // Simulate content loading
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 3000); // Give enough time for videos to start loading
+    }, 2000); // Give enough time for videos to start loading
 
     return () => clearTimeout(timer);
   }, []);
