@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React from 'react';
 import { FiPlay, FiPause, FiMaximize } from 'react-icons/fi';
 
 interface Video {
@@ -15,60 +15,29 @@ interface VideoCardProps {
 }
 
 const VideoCard: React.FC<VideoCardProps> = ({ video, isDark }) => {
-  const [isHovered, setIsHovered] = useState(false);
-  const [isPlaying, setIsPlaying] = useState(false);
-  const [isLoading, setIsLoading] = useState(true);
-  const videoRef = useRef<HTMLVideoElement | null>(null);
-
-  const handlePlayPause = (e: React.MouseEvent<HTMLButtonElement>) => {
-    e.stopPropagation();
-    if (isPlaying) {
-      videoRef.current?.pause();
-    } else {
-      videoRef.current?.play();
-    }
-    setIsPlaying(!isPlaying);
+  // Extract video ID from YouTube URL
+  const getYouTubeVideoId = (url: string) => {
+    const match = url.match(/[?&]v=([^&]+)/);
+    return match ? match[1] : '';
   };
 
-  const handleVideoEnd = () => {
-    setIsPlaying(false);
-    if (videoRef.current) {
-      videoRef.current.currentTime = 0;
-    }
-  };
+  const videoId = getYouTubeVideoId(video.url);
+  const embedUrl = `https://www.youtube.com/embed/${videoId}`;
 
   return (
-    <div 
-      className="relative aspect-video rounded-xl overflow-hidden group"
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => {
-        setIsHovered(false);
-        if (isPlaying) {
-          videoRef.current?.pause();
-          setIsPlaying(false);
-        }
-      }}
-    >
-      <video
-        ref={videoRef}
-        className="w-full h-full object-cover"
-        poster={video.thumbnail}
-        onEnded={handleVideoEnd}
-        onLoadedData={() => setIsLoading(false)}
-        muted
-        loop
-      >
-        <source src={video.url} type="video/mp4" />
-      </video>
-
-      {isLoading && (
-        <div className="absolute inset-0 flex items-center justify-center bg-gray-900">
-          <div className="animate-spin rounded-full h-8 w-8 border-t-2 border-b-2 border-white"></div>
-        </div>
-      )}
-
+    <div className="relative aspect-video rounded-xl overflow-hidden group">
+      <div className="w-full h-full">
+        <iframe
+          src={embedUrl}
+          title={video.title}
+          className="w-full h-full"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        />
+      </div>
+      
       <div className={`absolute inset-0 transition-opacity duration-300
-        ${isHovered ? 'opacity-100' : 'opacity-0'}
+        opacity-0 group-hover:opacity-100
         bg-gradient-to-t from-black/80 via-black/40 to-transparent`}
       >
         <div className="absolute bottom-0 left-0 right-0 p-6">
@@ -76,14 +45,8 @@ const VideoCard: React.FC<VideoCardProps> = ({ video, isDark }) => {
           <p className="text-gray-200 text-sm mb-4">{video.description}</p>
           
           <div className="flex items-center gap-4">
-            <button
-              onClick={handlePlayPause}
-              className="bg-white/20 hover:bg-white/30 backdrop-blur-sm text-white p-2 rounded-full transition-colors"
-            >
-              {isPlaying ? <FiPause size={20} /> : <FiPlay size={20} />}
-            </button>
             <a
-              href={video.link}
+              href={video.url}
               className="bg-white/20 hover:bg-white/30 backdrop-blur-sm text-white p-2 rounded-full transition-colors"
               target="_blank"
               rel="noopener noreferrer"

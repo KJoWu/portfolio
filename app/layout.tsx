@@ -6,6 +6,7 @@ import { ThemeProvider } from "./_context/themeContext";
 import { poppins, inter } from "./fonts";
 
 
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -25,9 +26,6 @@ export default function RootLayout({
 
           {children}
 
-          <div className={`p-3 text-center text-gray-600 font-light ${poppins.className} text-sm tracking-wide bg-white`}>
-          &copy; Kim 2024. This site was designed in Figma, coded in Next JS by yours truly, styled with Tailwind and deployed on Vercel.
-          </div>
         </ThemeProvider>
       </body>
     </html>

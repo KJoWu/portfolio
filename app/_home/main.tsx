@@ -104,56 +104,42 @@ const videoProjects: Video[] = [
   {
     title: "Rich Laughify",
     description: "Designed a video for a hackathon",
-    thumbnail: "https://images.unsplash.com/photo-1492691527719-9d1e07e534b4",
-    url: "",
+    thumbnail: "",
+    url: "https://www.youtube.com/watch?v=MRzpy4sC7Go&t=1s",
     link: "#",
   },
   {
     title: "University of Alberta Orientation",
     description: "Directed and produced the orientation video for the Faculty of Science at the University of Alberta",
-    thumbnail: "https://images.unsplash.com/photo-1492691527719-9d1e07e534b4",
+    thumbnail: "",
     url: "https://www.youtube.com/watch?v=75c2_TTHWYc&t=145s",
     link: "#",
   },
   {
     title: "University of Alberta Orientation",
     description: "Directed and produced the orientation video for the Faculty of Science at the University of Alberta (fun fact, this was filmed with a Macbook)",
-    thumbnail: "https://images.unsplash.com/photo-1485846234645-a62644f84728",
+    thumbnail: "",
     url: "https://www.youtube.com/watch?v=3qGofRsp6nc",
     link: "#",
   },
   {
-    title: "Short Film - 'Connected'",
-    description: "Award-winning short film about digital relationships",
-    thumbnail: "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4",
-    url: "https://example.com/video3.mp4",
+    title: "Porphyrius: Draw my Life",
+    description: 'Illustrated, voiced and produced a "Draw my Life" animated short '   ,
+    thumbnail: "",
+    url: "https://www.youtube.com/watch?v=N4UTFSjxV9U",
     link: "#",
   },
   {
-    title: "Music Video - 'Neon Dreams'",
-    description: "Experimental music video with dynamic visuals",
-    thumbnail: "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4",
-    url: "https://example.com/video4.mp4",
-    link: "#",
-  },
-  {
-    title: "Documentary Excerpt",
-    description: "Preview of documentary about urban artists",
-    thumbnail: "https://images.unsplash.com/photo-1485846234645-a62644f84728",
-    url: "https://example.com/video5.mp4",
-    link: "#",
-  },
-  {
-    title: "Motion Graphics Reel",
-    description: "Compilation of motion design work",
-    thumbnail: "https://images.unsplash.com/photo-1492691527719-9d1e07e534b4",
-    url: "https://example.com/video6.mp4",
+    title: "Kaye Institute Promotional    ",
+    description: "Created the promotional video for Kaye Institute    ",
+    thumbnail: "",
+    url: "https://www.youtube.com/watch?v=cRgB0sU_IpI",
     link: "#",
   }
 ];
 
 const creativeWorks: Record<string, CreativeWork[] | Video[]> = {
-  Photography: [
+  Applications: [
     {
       title: "RichLaughify",
       description: "Developed a website, mobile app and video for a hackathon",
@@ -357,7 +343,7 @@ const skills: SkillSet[] = [
 
 const Main: React.FC = () => {
   const [activeTab, setActiveTab] = useState<string>("dev");
-  const [activeGallery, setActiveGallery] = useState<string>("Photography");
+  const [activeGallery, setActiveGallery] = useState<string>("Applications");
   const [isVisible, setIsVisible] = useState<boolean>(false);
   const { isDark } = useTheme();
 
@@ -670,6 +656,14 @@ const Main: React.FC = () => {
         </footer>
       </main>
 
+      <div
+        className={`p-3 text-center font-light text-sm tracking-wide text-lg  ${
+          isDark ? "text-gray-400 bg-black" : "text-gray-600 bg-white"
+        }`}
+      >
+        This site was designed in Figma, coded in Next JS by yours truly, styled with
+        Tailwind and deployed on Vercel.
+      </div>
       <ThemeToggle />
     </div>
   );
