@@ -145,7 +145,7 @@ const creativeWorks: Record<string, CreativeWork[] | Video[]> = {
       title: "RichLaughify",
       description: "Developed a website, mobile app and video for a hackathon",
       image:
-        "https://vyefnififypgtaykhppx.supabase.co/storage/v1/object/public/Media/Screenshot%202024-12-11%20at%2011.03.39%20PM.png",
+      "https://vyefnififypgtaykhppx.supabase.co/storage/v1/object/public/Media/app333.jpg",
       link: "https://devpost.com/software/richlaughify",
     },
     {
@@ -153,14 +153,14 @@ const creativeWorks: Record<string, CreativeWork[] | Video[]> = {
       description:
         "Developed a website in webflow for a boutique Optometry Business",
       image:
-        "https://vyefnififypgtaykhppx.supabase.co/storage/v1/object/public/Media/Screenshot%202024-12-11%20at%2011.21.35%20PM.png",
+        "https://vyefnififypgtaykhppx.supabase.co/storage/v1/object/public/Media/app4.jpg",
       link: "#",
     },
     {
       title: "Detective Murder Mystery Game",
       description: "An interactive web game built with React.js (in beta)",
       image:
-        "https://vyefnififypgtaykhppx.supabase.co/storage/v1/object/public/Media/Screenshot%202024-12-11%20at%2011.19.26%20PM.png",
+        "https://vyefnififypgtaykhppx.supabase.co/storage/v1/object/public/Media/app6.jpg",
       link: "#",
     },
     {
@@ -168,7 +168,7 @@ const creativeWorks: Record<string, CreativeWork[] | Video[]> = {
       description:
         "An app developed for finding universities in Canada for the Canada Open Data Hackathon (currently being redesigned)",
       image:
-        "https://vyefnififypgtaykhppx.supabase.co/storage/v1/object/public/Media/app3.webp",
+        "https://vyefnififypgtaykhppx.supabase.co/storage/v1/object/public/Media/app3.jpg",
       link: "#",
     },
   ],
