@@ -330,11 +330,11 @@ const creativeWorks: Record<string, CreativeWork[] | Video[]> = {
 const skills: SkillSet[] = [
   {
     category: "Development",
-    items: ["TypeScript", "React JS", "Next JS", "Ruby on Rails", "Redux"],
+    items: ["TypeScript", "React JS", "Next JS", "Ruby on Rails", "Redux", "Python", "React Native"],
   },
   {
     category: "Design",
-    items: ["Figma", "Adobe CC", "UI/UX", "Design Systems"],
+    items: ["Figma", "Adobe CC", "UI/UX", "Design Systems", "Tailwind", "BEM"],
   },
   {
     category: "Tools",
@@ -455,7 +455,7 @@ const Main: React.FC = () => {
                 : "opacity-0 translate-x-10"
               }`}
           >
-            <div className="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden relative group">
+            {/* <div className="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden relative group">
               <div className="absolute inset-0 bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 opacity-75" />
               <div
                 className={`absolute inset-1 rounded-full ${isDark ? "bg-[#0a0a0a]" : "bg-white"
@@ -469,13 +469,13 @@ const Main: React.FC = () => {
                 />
               </div>
               <div className="absolute -inset-1 rounded-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 animate-spin-slow -z-10" />
-            </div>
+            </div> */}
           </div>
         </section>
 
         <section className="mb-20">
           <h2 className="text-2xl font-bold mb-8">Skills & Expertise</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             {skills.map((skillSet) => (
               <div
                 key={skillSet.category}
@@ -547,25 +547,25 @@ const Main: React.FC = () => {
                   </div>
                   <div className="md:w-1/2 p-8">
                     <div
-                      className={`w-14 h-14 rounded-xl bg-gradient-to-r ${project.color} mb-6 flex items-center justify-center text-white font-bold text-2xl group-hover:scale-110 transition-transform`}
+                      className={`w-12 h-12 rounded-xl bg-gradient-to-r ${project.color} mb-6 flex items-center justify-center text-white font-bold text-xl group-hover:scale-110 transition-transform`}
                     >
                       {index + 1}
                     </div>
                     <h3 className="text-xl font-bold mb-4">{project.title}</h3>
                     <p
-                      className={`text-base ${isDark ? "text-gray-400" : "text-gray-600"
-                        } text-lg mb-6`}
+                      className={`text-sm ${isDark ? "text-gray-400" : "text-gray-600"
+                        } text-lg mb-6 leading-relaxed`}
                     >
                       {project.description}
                     </p>
                     <div className="flex justify-between items-center">
                       <p
-                        className={`text-base ${isDark ? "text-gray-500" : "text-gray-400"
+                        className={`text-sm gap-5 ${isDark ? "text-gray-500" : "text-gray-400"
                           }`}
                       >
                         {project.tech}
                       </p>
-                      <div className="flex gap-4">
+                      <div className="flex">
                         <a
                           href={project.link}
                           className="text-gray-400 hover:text-indigo-500 transition-colors"
