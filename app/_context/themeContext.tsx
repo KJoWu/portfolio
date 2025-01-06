@@ -23,8 +23,8 @@ export function ThemeProvider({ children }: ThemeProviderProps) {
   // Set the theme after component mounts
   useEffect(() => {
     const storedTheme = localStorage.getItem('theme');
-    const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    setIsDark(storedTheme === 'dark' || (!storedTheme && systemPrefersDark));
+    // Only use stored theme if it exists, otherwise default to light
+    setIsDark(storedTheme === 'dark');
   }, []);
 
   useEffect(() => {

@@ -33,7 +33,7 @@ export const ProjectCard = ({ project, index }: ProjectCardProps) => {
         </div>
         <div className="md:w-1/2 p-8">
           <div
-            className={`w-12 h-12 rounded-xl bg-gradient-to-r ${project.color} mb-6 flex items-center justify-center text-white font-bold text-xl group-hover:scale-110 transition-transform`}
+            className={`w-10 h-10 rounded-xl bg-gradient-to-r ${project.color} mb-6 flex items-center justify-center text-white font-bold text-xl group-hover:scale-110 transition-transform`}
           >
             {index + 1}
           </div>
@@ -54,12 +54,14 @@ export const ProjectCard = ({ project, index }: ProjectCardProps) => {
               {project.tech}
             </p>
             <div className="flex">
-              <a
-                href={project.link}
-                className="text-gray-400 hover:text-indigo-500 transition-colors"
-              >
-                <FiExternalLink size={24} />
-              </a>
+              {project.link && (
+                <a
+                  href={project.link}
+                  className="text-gray-400 hover:text-indigo-500 transition-colors"
+                >
+                  <FiExternalLink size={24} />
+                </a>
+              )}
             </div>
           </div>
         </div>

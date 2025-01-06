@@ -2,10 +2,9 @@
 
 import React from "react";
 import SectionContainer from "../_components/sectionContainer";
-import { designTools, technicalTools, technicalSkills } from "../lib/workData";
-
 import { motion } from "framer-motion";
 import SectionHeading from "../_components/sectionHeading";
+import { skills } from "./data/skills";
 
 const fadeInAnimationVariants = {
   initial: {
@@ -22,17 +21,16 @@ const fadeInAnimationVariants = {
 };
 
 type SkillListProps = {
-  skills: readonly string[];
-  skillType: string;
+  items: string[];
+  category: string;
 };
 
-const SkillList = ({ skills, skillType }: SkillListProps) => {
+const SkillList = ({ items, category }: SkillListProps) => {
   return (
     <ul className="mb-4">
-      <h3 className="mb-2 text-[#4229d6]">{skillType}:</h3>
-      < div className="flex flex-wrap gap-x-[1rem]">
-
-        {skills.map((skill, index) => (
+      <h3 className="mb-2 text-[#4229d6]">{category}:</h3>
+      <div className="flex flex-wrap gap-x-[1rem]">
+        {items.map((skill, index) => (
           <motion.li
             //className="bg-indigo-900  hover:bg-indigo-00 transition px-4 py-2 rounded-full"
             //className="bg-white text-gray-800 hover:bg-indigo-100 transition px-4 py-2 rounded-full"
@@ -61,12 +59,15 @@ export default function Skills() {
     <section className="pb-[3rem] skillls">
       <SectionContainer>
         <div className="grid grid-row-2 gap-5">
-        <SkillList skills={technicalSkills} skillType={"Languages & Frameworks"} />
-        <SkillList skills={technicalTools} skillType={"Tools"} />
+          {skills.map((skillSet, index) => (
+            <SkillList 
+              key={skillSet.category}
+              items={skillSet.items} 
+              category={skillSet.category} 
+            />
+          ))}
         </div>
       </SectionContainer>
     </section>
   );
 }
-
-

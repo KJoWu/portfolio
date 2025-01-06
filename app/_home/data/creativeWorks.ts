@@ -66,14 +66,14 @@ export const creativeWorks: Record<string, CreativeWork[] | Video[]> = {
         "Developed a website in webflow for a boutique Optometry Business",
       image:
         "https://vyefnififypgtaykhppx.supabase.co/storage/v1/object/public/Media/app4.jpg",
-      link: "#",
+      link: "",
     },
     {
       title: "Detective Murder Mystery Game",
       description: "An interactive web game built with React.js (in beta)",
       image:
         "https://vyefnififypgtaykhppx.supabase.co/storage/v1/object/public/Media/app6.jpg",
-      link: "#",
+        link: "",
     },
     {
       title: "School Finder",
@@ -81,7 +81,7 @@ export const creativeWorks: Record<string, CreativeWork[] | Video[]> = {
         "An app developed for finding universities in Canada for the Canada Open Data Hackathon (currently being redesigned)",
       image:
         "https://vyefnififypgtaykhppx.supabase.co/storage/v1/object/public/Media/app3.jpg",
-      link: "#",
+        link: "",
     },
   ],
   Videography: videoProjects,
