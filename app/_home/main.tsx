@@ -12,7 +12,6 @@ import { useTheme } from "../_context/themeContext";
 import ThemeToggle from "../_context/themeToggle";
 import VideoCard from "../_components/videoCard";
 
-
 type Project = {
   title: string;
   description: string;
@@ -357,9 +356,8 @@ const Main: React.FC = () => {
   };
   
   const sendEmail = () => {
-    window.location.href = 'mailto:kim.jokwah@gmail.com';
+    window.open('mailto:kim.jokwah@gmail.com', '_blank');
   }
-
 
   return (
     <div
@@ -438,7 +436,7 @@ const Main: React.FC = () => {
               </button>
               <button
                 onClick={sendEmail}
-                className={`group flex items-center gap-2 px-6 py-3 rounded-full transition-all text-lg
+                className={`group flex items-center gap-2 px-6 py-3 rounded-full transition-all text-lg cursor-pointer
                 ${isDark
                     ? "bg-gray-800 text-white hover:bg-gray-700"
                     : "bg-gray-100 text-gray-900 hover:bg-gray-200"
