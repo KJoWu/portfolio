@@ -12,7 +12,7 @@ export const devProjects: Project[] = [
   {
     title: "LeetNight: Social for Tech Enthusiasts",
     description:
-      "Founder of LeetNight, a way to connect coding enthusiasts for collaborative LeetCode problem-solving through workshops, levtures and guest speakers. This organization is proudly supported by Dev Edmonton Society",
+      "Founder of LeetNight, a platform dedicated to connecting coding enthusiasts for collaborative LeetCode problem-solving through workshops, lectures, and guest speaker events. This initiative is proudly supported by the Dev Edmonton Society.",
     tech: "NextJS, Tailwind, Leadership, Community",
     color: "from-purple-500 to-purple-400",
     link: "https://www.leetnight.com",
