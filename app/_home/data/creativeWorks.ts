@@ -15,6 +15,13 @@ export type CreativeWork = {
 
 export const videoProjects: Video[] = [
   {
+    title: "ETHDenver/Aleo Grantee Outreach",
+    description: "Coordinatd, filmed and produced videos at ETHDenver including highlights, recaps and interviews with Grantees",
+    thumbnail: "",
+    url: "https://www.youtube.com/watch?v=H9t8YR19stQ",
+    link: "#",
+  },
+  {
     title: "Rich Laughify",
     description: "Designed a video for a hackathon",
     thumbnail: "",

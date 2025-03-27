@@ -30,7 +30,7 @@ export const Projects = () => {
                 }`
               }`}
           >
-            {tab === "dev" ? "Development" : "Creative Works"}
+            {tab === "dev" ? "Work + Development" : "Creative"}
           </button>
         ))}
       </div>

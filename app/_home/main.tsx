@@ -73,10 +73,10 @@ const Main = () => {
           <p className={`text-sm ${isDark ? "text-gray-400" : "text-gray-600"} text-lg`}>
             Open for collaborative projects —{" "}
             <a
-              href="mailto:kim.jokwah@gmail.com"
+              href="mailto:workwith.kim.wu@gmail.com"
               className="text-indigo-600 hover:text-indigo-700"
             >
-              kim.jokwah@gmail.com
+              workwith.kim.wu@gmail.com
             </a>
           </p>
         </footer>

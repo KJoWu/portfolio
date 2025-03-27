@@ -22,17 +22,17 @@ export const Hero = () => {
           <br />
         </h1>
 
-        <h1>
-          <span className="text-4xl md:text-7xl font-bold bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
+        <h1 className="pb-3">
+          <span className="text-4xl  md:text-7xl font-bold bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
             I'm Kim.
           </span>
         </h1>
-        <p
+        <b
           className={`${isDark ? "text-gray-400" : "text-gray-600"
-            } mt-3 text-lg max-w-2xl mb-3`}
+            } mt-5 pt-5 text-lg max-w-2xl mb-3`}
         >
-          Software Engineer & Designer
-        </p>
+          Software Engineer & Digital Marketing Specialist
+        </b>
         <p
           className={`${isDark ? "text-gray-400" : "text-gray-600"
             } text-lg max-w-2xl mb-8`}
