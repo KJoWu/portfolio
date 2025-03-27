@@ -12,7 +12,7 @@ export const devProjects: Project[] = [
   {
     title: "DevRel Ambassador @ Aleo",
     description:
-      "Led North American workshops to promote privacy-focused blockchain development. Created marketing assets (Canva, Photoshop) to boost brand visibility. Partnered with groups such as Google Developer Groups & Edmonton Unlimited, securing 60+ RSVPs/event.",
+      "Led North American workshops to promote privacy-focused blockchain development. Created marketing assets (Canva, Photoshop) to boost brand visibility. Partnered with groups such as Google Developer Groups & Edmonton Unlimited, securing 90+ RSVPs/event.",
     color: "from-gray-500 to-gray-400",
     tech: "Aleo (Leo) | ZKP Advocacy | Workshop Architect | DevRel Strategist | Technical Storyteller",
     github: "",

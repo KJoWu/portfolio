@@ -9,6 +9,11 @@ export const Hero = () => {
   const openNewTab = () => {
     window.open('/KimberlyWu Resume.pdf', '_blank');
   };
+
+  const openSocialTab = () => {
+    window.open('/GrowthKimWu.pdf', '_blank');
+  };
+  
   
   const sendEmail = () => {
     window.open('mailto:kim.jokwah@gmail.com', '_blank');
@@ -40,11 +45,18 @@ export const Hero = () => {
           Recepient of the Meiya Reinking & District of Edmonton Art Award
         </p>
         <div className="flex gap-4">
+        <button 
+            onClick={openSocialTab} 
+            className="group flex items-center gap-2 bg-indigo-600 text-white px-6 py-3 rounded-full hover:bg-indigo-700 transition-all text-lg"
+          >
+            Growth Resume
+            <FiArrowRight className="group-hover:translate-x-1 transition-transform" />
+          </button>
           <button 
             onClick={openNewTab} 
             className="group flex items-center gap-2 bg-indigo-600 text-white px-6 py-3 rounded-full hover:bg-indigo-700 transition-all text-lg"
           >
-            View Resume
+            Software Resume
             <FiArrowRight className="group-hover:translate-x-1 transition-transform" />
           </button>
           <button
