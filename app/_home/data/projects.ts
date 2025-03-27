@@ -15,7 +15,6 @@ export const devProjects: Project[] = [
       "Led North American workshops to promote privacy-focused blockchain development. Created marketing assets (Canva, Photoshop) to boost brand visibility. Partnered with groups such as Google Developer Groups & Edmonton Unlimited, securing 60+ RSVPs/event.",
     color: "from-gray-500 to-gray-400",
     tech: "Aleo (Leo) | ZKP Advocacy | Workshop Architect | DevRel Strategist | Technical Storyteller",
-    link: "https://www.leetnight.com",
     github: "",
     image:
       "https://vyefnififypgtaykhppx.supabase.co/storage/v1/object/public/Media//ALEO.jpg",
@@ -25,7 +24,7 @@ export const devProjects: Project[] = [
     description:"Coordinated, conducted and produced interviews with Aleo grantees/partners. Created viral short-form videos relating to ZKP. Launched and grew social channels (Twitter, TikTok, Instagram, YouTube, Telegram) to boost ecosystem visibility. ",
     color: "from-yellow-500 to-yellow-400",
     tech: "Content Strategy | Community Growth | Viral + Technical Storytelling | Brand Amplification",
-    link: "https://www.leetnight.com",
+    link: "https://linktr.ee/aleo.builders.community",
     github: "",
     image:
       "https://vyefnififypgtaykhppx.supabase.co/storage/v1/object/public/Media//Interviews.png",
