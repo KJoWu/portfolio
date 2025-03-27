@@ -16,6 +16,7 @@ export const devProjects: Project[] = [
     color: "from-gray-500 to-gray-400",
     tech: "Aleo (Leo) | ZKP Advocacy | Workshop Architect | DevRel Strategist | Technical Storyteller",
     github: "",
+    link:"",
     image:
       "https://vyefnififypgtaykhppx.supabase.co/storage/v1/object/public/Media//ALEO.jpg",
   },
