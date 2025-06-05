@@ -115,7 +115,7 @@ export const videoProjects: Video[] = [
 
   },
   {
-    title: "#BUIDLathon at EthDenver: 2025 Recap",
+    title: "#BUIDLathon at ETHDenver: 2025 Recap",
     description: "Generated and executed video content during ETHDenver for distribution across YouTube, TikTok, YouTube Shorts, and Instagram.",
     location: "ETHDenver, Denver",
     url: "https://youtu.be/2Jltw6x05lg",
