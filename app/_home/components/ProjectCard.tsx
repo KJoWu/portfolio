@@ -51,7 +51,6 @@ export const ProjectCard = ({ project, index }: ProjectCardProps) => {
                 isDark ? "text-gray-500" : "text-gray-400"
               }`}
             >
-              {project.tech}
             </p>
             <div className="flex">
               {project.link && (

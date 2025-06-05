@@ -5,7 +5,6 @@ export type Video = {
   location: string;
   title: string;
   description: string;
-  type: string;
 };
 
 export type PortfolioImages = {
@@ -43,11 +42,12 @@ export const portfolioImages: PortfolioImages[] = [
     link: "",
   },
   {
-    title: "Community Brochures",
-    description: "Developed and designed marketing material for Aleo",
-    image: "https://vyefnififypgtaykhppx.supabase.co/storage/v1/object/public/Media//ALEO.jpg",
+    title: "Thumbnails for Social Media",
+    description: "Created captivating, catchy thhumbnails for videos on TikTok and Instagram",
+    image: "https://vyefnififypgtaykhppx.supabase.co/storage/v1/object/public/Media//Interviews.png",
     link: "",
   },
+
   {
     title: "Consensus Promotional Brochures",
     description: "Developed and designed marketing material for Aleo",
@@ -85,9 +85,9 @@ export const portfolioImages: PortfolioImages[] = [
     link: "",
   },
   {
-    title: "Short Clips and Vids on EthBlocks",
-    description: "Scientific illustrator for Dr. Khouloud and colleagues' medical article",
-    image: "https://vyefnififypgtaykhppx.supabase.co/storage/v1/object/public/Media//bannerevent2.png",
+    title: "Community Brochures",
+    description: "Developed and designed marketing material for Aleo",
+    image: "https://vyefnififypgtaykhppx.supabase.co/storage/v1/object/public/Media//ALEO.jpg",
     link: "",
   },
   {
@@ -112,91 +112,80 @@ export const videoProjects: Video[] = [
     description: "Oversaw the planning of a Tech Social event at the Aleo Hackerhouse, including contracting videography to document the experience",
     location: "Consensus, Toronto",
     url: "https://www.youtube.com/watch?v=iJZFsqqu4Vw",
-    type: "horizontal",
+
   },
   {
     title: "ETHDenver 2025 Recap",
     description: "Generated and executed video content during ETHDenver for distribution across YouTube, TikTok, YouTube Shorts, and Instagram.",
     location: "ETHDenver, Denver",
     url: "https://youtu.be/2Jltw6x05lg",
-    type: "horizontal",
   },
   {
     title: "Aleo at ETHDenver: Builders, Vibes & ZK Things 🔐",
     description: "Generated and executed video content during ETHDenver for distribution across YouTube, TikTok, YouTube Shorts, and Instagram.",
     location: "ETHDenver, Denver",
     url: "https://youtube.com/shorts/S-IpZSX3L8k",
-    type: "vertical",
   },
   {
     title: "Full Day Workshops @ ETHDenver",
     description: "Generated and executed video content during ETHDenver for distribution across YouTube, TikTok, YouTube Shorts, and Instagram.",
     location: "ETHDenver, Denver",
     url: "https://www.youtube.com/shorts/o2A3iAlSRDc",
-    type: "vertical",
   },
   {
     title: "PLAY3.ai Interview",
     description: "Directed grantee interviews and crafted dynamic video content at ETHDenver, tailored for high engagement across YouTube, TikTok, Shorts, and Instagram",
     location: "ETHDenver, Denver",
     url: "https://www.youtube.com/watch?v=JCghjzYCDSk",
-    type: "horizontal",
+
   },
   {
     title: "Humine Interview",
     description: "Directed grantee interviews and crafted dynamic video content at ETHDenver, tailored for high engagement across YouTube, TikTok, Shorts, and Instagram",
     location: "ETHDenver, Denver",
     url: "https://www.youtube.com/watch?v=H9t8YR19stQ",
-    type: "vertical",
   },
   {
     title: "Demox Labs Interview",
     description: "Directed grantee interviews and crafted dynamic video content at ETHDenver, tailored for high engagement across YouTube, TikTok, Shorts, and Instagram",
     location: "ETHDenver, Denver",
     url: "https://www.youtube.com/watch?v=49WWQp4aILM",
-    type: "vertical",
   },
   {
     title: "Fox Wallet Interview",
     description: "Directed grantee interviews and crafted dynamic video content at ETHDenver, tailored for high engagement across YouTube, TikTok, Shorts, and Instagram",
     location: "ETHDenver, Denver",
     url: "https://www.youtube.com/watch?v=e__LZwaK7wo",
-    type: "vertical",
   },
   {
     title: "3oC Interview",
     description: "Directed grantee interviews and crafted dynamic video content at ETHDenver, tailored for high engagement across YouTube, TikTok, Shorts, and Instagram",
     location: "ETHDenver, Denver",
     url: "https://www.youtube.com/shorts/cRxB2HZC07U",
-    type: "vertical",
   },
   {
     title: "Predicate Interview",
     description: "Directed grantee interviews and crafted dynamic video content at ETHDenver, tailored for high engagement across YouTube, TikTok, Shorts, and Instagram",
     location: "ETHDenver, Denver",
     url: "https://www.youtube.com/shorts/_yI3qGaGu2k",
-    type: "vertical",
   },
   {
     title: "🏰 Inside the $Spork Castle at ETHDenver!",
     description: "Directed grantee interviews and crafted dynamic video content at ETHDenver, tailored for high engagement across YouTube, TikTok, Shorts, and Instagram",
     location: "ETHDenver, Denver",
     url: "https://www.youtube.com/shorts/v3NVNlufZxc",
-    type: "vertical",
   },
   {
     title: "🚀 Last Night at ETHDenver: Where Builders Unwind",
     description: "Created fun videos at ETHDenver, tailored for high engagement across YouTube, TikTok, Shorts, and Instagram",
     location: "ETHDenver, Denver",
     url: "https://youtube.com/shorts/efrnHzmjt50",
-    type: "vertical",
   },
   {
     title: "Dance Break w/ Pondo @ ETHDenver 🕺🕺🕺",
     description: "Created fun videos at ETHDenver, tailored for high engagement across YouTube, TikTok, Shorts, and Instagram",
     location: "ETHDenver, Denver",
     url: "https://youtube.com/shorts/7ou2uVPAwg4",
-    type: "vertical",
   },
 ];
 
@@ -227,7 +216,7 @@ export const eventProjects: Record<string, ProjectCategory> = {
     },
     {
       title: "DevCon Hackathon",
-      description:"Judged the DevCon Hackathon on Edmonton Transit, organized by Edmonton Unlimited:Edmonton’s leading tech innovation hub and sponsored by ATB",
+      description: "Judged the DevCon Hackathon on Edmonton Transit, organized by Edmonton Unlimited:Edmonton’s leading tech innovation hub and sponsored by ATB",
       image: "https://vyefnififypgtaykhppx.supabase.co/storage/v1/object/public/Media//PhotoEvent7.jpg",
       eventLink: "https://devcon-hackakthon.devpost.com/",
       recapLink: "https://www.linkedin.com/posts/edmonton-unlimited_devconyeg-students-yegtech-ugcPost-7302380743601664003-rAC3?utm_source=share&utm_medium=member_desktop&rcm=ACoAABbSpBYB-q3t2p0nXRPzDgAbgfAOn1HhtyY",

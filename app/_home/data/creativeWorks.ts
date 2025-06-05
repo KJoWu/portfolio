@@ -1,10 +1,8 @@
 export type Video = {
   url: string;
-  thumbnail: string;
+  location: string;
   title: string;
   description: string;
-  link: string;
-  location: string;
 };
 
 export type CreativeWork = {
@@ -19,40 +17,30 @@ export const videoProjects: Video[] = [
     title: "Rich Laughify",
     description: "Designed a video for a hackathon",
     location: "Virtual",
-    thumbnail: "",
     url: "https://www.youtube.com/watch?v=MRzpy4sC7Go&t=1s",
-    link: "#",
   },
   {
     title: "University of Alberta Orientation",
     description: "Directed and produced the orientation video for the Faculty of Science at the University of Alberta",
-    thumbnail: "",
     url: "https://www.youtube.com/watch?v=75c2_TTHWYc&t=145s",
-    link: "#",
     location: "University of Alberta, Edmonton",
   },
   {
     title: "University of Alberta Orientation",
     description: "Directed and produced the orientation video for the Faculty of Science at the University of Alberta (fun fact, this was filmed with a Macbook)",
-    thumbnail: "",
     url: "https://www.youtube.com/watch?v=3qGofRsp6nc",
-    link: "#",
     location: "University of Alberta, Edmonton",
   },
   {
     title: "Porphyrius: Draw my Life",
     description: 'Illustrated, voiced and produced a "Draw my Life" animated short ',
-    thumbnail: "",
     url: "https://www.youtube.com/watch?v=N4UTFSjxV9U",
-    link: "#",
     location: "Virtual",
   },
   {
     title: "Kaye Institute Promotional    ",
     description: "Created the promotional video for Kaye Institute    ",
-    thumbnail: "",
     url: "https://www.youtube.com/watch?v=cRgB0sU_IpI",
-    link: "#",
     location: "University of Alberta, Edmonton",
   }
 ];

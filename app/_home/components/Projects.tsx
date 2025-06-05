@@ -40,28 +40,6 @@ const CardSkeleton = ({ type = "default" }: { type?: "default" | "video" }) => {
   );
 };
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //  HighlightedEventCard component with title below image and reduced padding
 const HighlightedEventCard = ({ event, isDark }: { event: any; isDark: boolean }) => {
   const [imageLoaded, setImageLoaded] = useState(false);
@@ -103,10 +81,6 @@ const HighlightedEventCard = ({ event, isDark }: { event: any; isDark: boolean }
 
         {/* Full Description */}
         <div className="space-y-2">
-          {/* <h4 className={`text-sm font-semibold uppercase tracking-wider ${isDark ? "text-purple-400" : "text-purple-600"
-            }`}>
-            Event Details
-          </h4> */}
           <p className={`text-sm text-gray-600 mb-3 ${isDark ? "text-gray-300" : "text-gray-700"
             }`}>
             {event.description || event.fullDescription || "Experience this amazing event that brings together creativity, innovation, and community in an unforgettable celebration."}
@@ -203,50 +177,6 @@ const HighlightedEventCard = ({ event, isDark }: { event: any; isDark: boolean }
   );
 };
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // Enhanced CreativeWorkCard with loading state
 const CreativeWorkCard = ({ work, isHighlightedEvent = false }: { work: any; isHighlightedEvent?: boolean }) => {
   const { isDark } = useTheme();
@@ -310,8 +240,11 @@ const CreativeWorkCard = ({ work, isHighlightedEvent = false }: { work: any; isH
   );
 };
 
+//VIDEO SECTION
 
-
+const isVideo = (item: any): item is Video => {
+  return item && typeof item.url === 'string' && typeof item.location === 'string' && typeof item.type === 'string';
+};
 
 const getYouTubeVideoId = (url: string) => {
   const match = url.match(/(?:v=|\/)([0-9A-Za-z_-]{11})(?:&|$)/);
@@ -478,12 +411,54 @@ const VideoCard = ({ video, isDark }: { video: Video; isDark: boolean }) => {
   );
 };
 
+// Reusable Videography Grid Component
+const VideographyGrid = ({ 
+  videos, 
+  isDark, 
+  isLoading 
+}: { 
+  videos: any[]; 
+  isDark: boolean; 
+  isLoading: boolean; 
+}) => {
+  if (isLoading) {
+    return (
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        {Array.from({ length: 4 }).map((_, index) => (
+          <CardSkeleton key={index} type="video" />
+        ))}
+      </div>
+    );
+  }
 
+  return (
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      {videos.map((video, index) => {
+        // Normalize the video data structure
+        const normalizedVideo = {
+          ...video,
+          // Handle different property names for location
+          location: video.location || video.venue || video.event || "Video",
+          // Ensure we have required properties
+          type: video.type || "video",
+          url: video.url || video.link || "#"
+        };
 
-
-
-
-
+        // Check if it's actually a video (has video platform URL)
+        if (normalizedVideo.url && 
+            (normalizedVideo.url.includes('youtube') || 
+             normalizedVideo.url.includes('tiktok') || 
+             normalizedVideo.url.includes('vimeo') ||
+             normalizedVideo.url.includes('youtu.be'))) {
+          return <VideoCard key={index} video={normalizedVideo} isDark={isDark} />;
+        } else {
+          // Fall back to regular creative work card if not a video
+          return <CreativeWorkCard key={index} work={video} />;
+        }
+      })}
+    </div>
+  );
+};
 
 // Enhanced ProjectCard with modern design
 const ModernProjectCard = ({ project, index }: { project: any; index: number }) => {
@@ -743,26 +718,21 @@ export const Projects = () => {
               </div>
             </div>
 
-            {isLoading ? (
-              // Loading skeletons for event projects
-              <div className={`grid ${activeGallery === "Videography" ? "grid-cols-1 md:grid-cols-2" :
-                activeGallery === "Highlighted Events" ? "grid-cols-1 lg:grid-cols-2 xl:grid-cols-3" :
-                  "grid-cols-1 md:grid-cols-3"
-                } gap-6`}>
-                {Array.from({ length: activeGallery === "Videography" ? 4 : 6 }).map((_, index) => (
-                  <CardSkeleton key={index} type={activeGallery === "Videography" ? "video" : "default"} />
-                ))}
-              </div>
-            ) : (
-              eventProjects[activeGallery] && (
-                activeGallery === "Videography" ? (
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    {(eventProjects[activeGallery] as Video[]).map((video, index) => (
-                      <VideoCard key={index} video={video} isDark={isDark} />
+            {eventProjects[activeGallery] && (
+              activeGallery === "Videography" ? (
+                <VideographyGrid 
+                  videos={eventProjects[activeGallery] as any[]} 
+                  isDark={isDark} 
+                  isLoading={isLoading} 
+                />
+              ) : activeGallery === "Highlighted Events" ? (
+                isLoading ? (
+                  <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8">
+                    {Array.from({ length: 6 }).map((_, index) => (
+                      <CardSkeleton key={index} type="default" />
                     ))}
                   </div>
-                ) : activeGallery === "Highlighted Events" ? (
-                  // Use the new HighlightedEventCard for this specific category
+                ) : (
                   <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8">
                     {(eventProjects[activeGallery] as any[]).map((event, index) => (
                       <HighlightedEventCard
@@ -770,6 +740,14 @@ export const Projects = () => {
                         event={event}
                         isDark={isDark}
                       />
+                    ))}
+                  </div>
+                )
+              ) : (
+                isLoading ? (
+                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    {Array.from({ length: 6 }).map((_, index) => (
+                      <CardSkeleton key={index} type="default" />
                     ))}
                   </div>
                 ) : (
@@ -811,20 +789,18 @@ export const Projects = () => {
               </div>
             </div>
 
-            {isLoading ? (
-              // Loading skeletons for creative works
-              <div className={`grid ${activeGallery === "Videography" ? "grid-cols-1 md:grid-cols-2" : "grid-cols-1 md:grid-cols-2 lg:grid-cols-3"
-                } gap-6`}>
-                {Array.from({ length: activeGallery === "Videography" ? 4 : 6 }).map((_, index) => (
-                  <CardSkeleton key={index} type={activeGallery === "Videography" ? "video" : "default"} />
-                ))}
-              </div>
-            ) : (
-              creativeWorks[activeGallery] && (
-                activeGallery === "Videography" ? (
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    {(creativeWorks[activeGallery] as Video[]).map((video, index) => (
-                      <VideoCard key={index} video={video} isDark={isDark} />
+            {creativeWorks[activeGallery] && (
+              activeGallery === "Videography" ? (
+                <VideographyGrid 
+                  videos={creativeWorks[activeGallery] as any[]} 
+                  isDark={isDark} 
+                  isLoading={isLoading} 
+                />
+              ) : (
+                isLoading ? (
+                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    {Array.from({ length: 6 }).map((_, index) => (
+                      <CardSkeleton key={index} type="default" />
                     ))}
                   </div>
                 ) : (
