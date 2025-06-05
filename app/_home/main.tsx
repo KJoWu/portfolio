@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useEffect } from "react";
-import { FiLinkedin, FiMail } from "react-icons/fi";
+import { FiLinkedin, FiMail, FiGithub } from "react-icons/fi";
 import { useTheme } from "../_context/themeContext";
 import ThemeToggle from "../_context/themeToggle";
 import Hero from "./components/Hero";
@@ -11,50 +11,79 @@ import Projects from "./components/Projects";
 const Main = () => {
   const { isDark } = useTheme();
   const [isVisible, setIsVisible] = useState<boolean>(false);
+  const [scrollY, setScrollY] = useState(0);
 
   useEffect(() => {
     setIsVisible(true);
+    
+    const handleScroll = () => setScrollY(window.scrollY);
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   return (
     <div
-      className={`min-h-screen transition-colors duration-300
-      ${isDark ? "bg-[#0a0a0a] text-white" : "bg-white text-gray-900"}`}
+      className={`min-h-screen transition-all duration-500 relative overflow-x-hidden
+      ${isDark ? "bg-gradient-to-br from-[#0a0a0a] via-[#111111] to-[#0a0a0a] text-white" : "bg-gradient-to-br from-white via-gray-50 to-white text-gray-900"}`}
     >
-      {/* Background Effects */}
+      {/* Enhanced Background Effects */}
       <div className="fixed inset-0 -z-10">
         <div
-          className={`absolute inset-0 ${isDark ? "bg-[#0a0a0a]" : "bg-white"}`}
+          className={`absolute inset-0 ${isDark ? "bg-gradient-to-br from-[#0a0a0a] via-[#111111] to-[#0a0a0a]" : "bg-gradient-to-br from-white via-gray-50 to-white"}`}
         />
-        <div className="absolute top-0 -left-4 w-96 h-96 bg-purple-500 rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-blob" />
-        <div className="absolute top-0 -right-4 w-96 h-96 bg-blue-500 rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-blob animation-delay-2000" />
-        <div className="absolute bottom-0 left-1/2 w-96 h-96 bg-pink-500 rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-blob animation-delay-4000" />
+        
+        {/* Animated gradient orbs */}
+        <div className="absolute top-0 -left-4 w-96 h-96 bg-gradient-to-r from-purple-500 to-indigo-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob" />
+        <div className="absolute top-0 -right-4 w-96 h-96 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-2000" />
+        <div className="absolute bottom-0 left-1/2 w-96 h-96 bg-gradient-to-r from-pink-500 to-rose-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-4000" />
+        
+        {/* Floating geometric shapes */}
+        <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-indigo-400 rounded-full opacity-60 animate-pulse" />
+        <div className="absolute top-1/3 right-1/4 w-1 h-1 bg-purple-400 rounded-full opacity-40 animate-ping" />
+        <div className="absolute bottom-1/4 left-1/3 w-3 h-3 bg-blue-400 rounded-full opacity-30 animate-bounce" />
+        
+        {/* Grid pattern overlay */}
+        <div 
+          className={`absolute inset-0 opacity-[0.02] ${isDark ? 'bg-white' : 'bg-black'}`}
+          style={{
+            backgroundImage: `radial-gradient(circle at 1px 1px, currentColor 1px, transparent 0)`,
+            backgroundSize: '50px 50px',
+            transform: `translateY(${scrollY * 0.1}px)`
+          }}
+        />
       </div>
 
-      {/* Navigation */}
-      <nav className="max-w-5xl mx-auto flex justify-between items-center py-8 px-4">
-        <div className="text-xl font-bold bg-gradient-to-r from-indigo-500 to-purple-500 bg-clip-text text-transparent">
-          Kimberly Wu
-        </div>
-        <div className="flex items-center gap-6">
-          {[
-            { Icon: FiLinkedin, url: "https://www.linkedin.com/in/kimberly-wu/" },
-            { Icon: FiMail, url: "mailto:kim.jokwah@gmail.com" },
-          ].map(({ Icon, url }, i) => (
-            <a
-              key={i}
-              href={url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className={`${
-                isDark
-                  ? "text-gray-400 hover:text-white"
-                  : "text-gray-600 hover:text-gray-900"
-              } transition-colors transform hover:scale-110 duration-200`}
-            >
-              <Icon size={24} />
-            </a>
-          ))}
+      {/* Modern Navigation */}
+      <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        scrollY > 50 
+          ? `backdrop-blur-xl ${isDark ? 'bg-black/20 border-gray-800' : 'bg-white/20 border-gray-200'} border-b`
+          : 'bg-transparent'
+      }`}>
+        <div className="max-w-6xl mx-auto flex justify-between items-center py-6 px-6">
+          <div className="text-2xl font-bold bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
+            Kimberly Wu
+          </div>
+          <div className="flex items-center gap-4">
+            {[
+              { Icon: FiLinkedin, url: "https://www.linkedin.com/in/kimberly-wu/", label: "LinkedIn" },
+              { Icon: FiMail, url: "mailto:kim.jokwah@gmail.com", label: "Email" },
+            ].map(({ Icon, url, label }, i) => (
+              <a
+                key={i}
+                href={url}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={label}
+                className={`p-3 rounded-full transition-all duration-300 transform hover:scale-110 hover:-translate-y-1 ${
+                  isDark
+                    ? "text-gray-400 hover:text-white hover:bg-gray-800/50"
+                    : "text-gray-600 hover:text-gray-900 hover:bg-gray-100/50"
+                } backdrop-blur-sm`}
+              >
+                <Icon size={20} />
+              </a>
+            ))}
+          </div>
         </div>
       </nav>
 

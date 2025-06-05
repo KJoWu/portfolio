@@ -4,6 +4,7 @@ export type Video = {
   title: string;
   description: string;
   link: string;
+  location: string;
 };
 
 export type CreativeWork = {
@@ -15,15 +16,9 @@ export type CreativeWork = {
 
 export const videoProjects: Video[] = [
   {
-    title: "ETHDenver/Aleo Grantee Outreach",
-    description: "Coordinatd, filmed and produced videos at ETHDenver including highlights, recaps and interviews with Grantees",
-    thumbnail: "",
-    url: "https://www.youtube.com/watch?v=H9t8YR19stQ",
-    link: "#",
-  },
-  {
     title: "Rich Laughify",
     description: "Designed a video for a hackathon",
+    location: "Virtual",
     thumbnail: "",
     url: "https://www.youtube.com/watch?v=MRzpy4sC7Go&t=1s",
     link: "#",
@@ -34,6 +29,7 @@ export const videoProjects: Video[] = [
     thumbnail: "",
     url: "https://www.youtube.com/watch?v=75c2_TTHWYc&t=145s",
     link: "#",
+    location: "University of Alberta, Edmonton",
   },
   {
     title: "University of Alberta Orientation",
@@ -41,6 +37,7 @@ export const videoProjects: Video[] = [
     thumbnail: "",
     url: "https://www.youtube.com/watch?v=3qGofRsp6nc",
     link: "#",
+    location: "University of Alberta, Edmonton",
   },
   {
     title: "Porphyrius: Draw my Life",
@@ -48,6 +45,7 @@ export const videoProjects: Video[] = [
     thumbnail: "",
     url: "https://www.youtube.com/watch?v=N4UTFSjxV9U",
     link: "#",
+    location: "Virtual",
   },
   {
     title: "Kaye Institute Promotional    ",
@@ -55,6 +53,7 @@ export const videoProjects: Video[] = [
     thumbnail: "",
     url: "https://www.youtube.com/watch?v=cRgB0sU_IpI",
     link: "#",
+    location: "University of Alberta, Edmonton",
   }
 ];
 
@@ -64,7 +63,7 @@ export const creativeWorks: Record<string, CreativeWork[] | Video[]> = {
       title: "Winning entry: RichLaughify",
       description: "Developed a website, mobile app and video for a hackathon",
       image:
-      "https://vyefnififypgtaykhppx.supabase.co/storage/v1/object/public/Media/app333.jpg",
+        "https://vyefnififypgtaykhppx.supabase.co/storage/v1/object/public/Media/app333.jpg",
       link: "https://devpost.com/software/richlaughify",
     },
     {
@@ -80,7 +79,7 @@ export const creativeWorks: Record<string, CreativeWork[] | Video[]> = {
       description: "An interactive web game built with React.js (in beta)",
       image:
         "https://vyefnififypgtaykhppx.supabase.co/storage/v1/object/public/Media/app6.jpg",
-        link: "",
+      link: "",
     },
     {
       title: "School Finder",
@@ -88,7 +87,7 @@ export const creativeWorks: Record<string, CreativeWork[] | Video[]> = {
         "An app developed for finding universities in Canada for the Canada Open Data Hackathon (currently being redesigned)",
       image:
         "https://vyefnififypgtaykhppx.supabase.co/storage/v1/object/public/Media/app3.jpg",
-        link: "",
+      link: "",
     },
   ],
   Videography: videoProjects,
