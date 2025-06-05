@@ -66,7 +66,7 @@ const Main = () => {
           <div className="flex items-center gap-4">
             {[
               { Icon: FiLinkedin, url: "https://www.linkedin.com/in/kimberly-wu/", label: "LinkedIn" },
-              { Icon: FiMail, url: "mailto:kim.jokwah@gmail.com", label: "Email" },
+              { Icon: FiMail, url: "mailto:workwith.kim.wu@gmail.com", label: "Email" },
             ].map(({ Icon, url, label }, i) => (
               <a
                 key={i}
