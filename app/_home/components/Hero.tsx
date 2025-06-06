@@ -17,7 +17,7 @@ export const Hero = () => {
   };
 
   const openSocialTab = () => {
-    window.open('/GrowthKimWu.pdf', '_blank');
+    window.open('/Kimberly%20Wu%20Events%20&%20Social%20Media%20Resume.pdf', '_blank');
   };
 
   const sendEmail = () => {
@@ -88,7 +88,7 @@ export const Hero = () => {
               >
                 <div className="flex items-center gap-3 relative z-10">
                   <FiDownload size={28} />
-                  <span className="font-medium text-left">Growth Resume</span>
+                  <span className="font-medium text-left">Events & Social Lead Resume</span>
                 </div>
                 <div className="absolute inset-0 bg-gradient-to-r from-fuchsia-400 to-purple-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               </button>
@@ -109,8 +109,8 @@ export const Hero = () => {
               <button
                 onClick={sendEmail}
                 className={`group relative overflow-hidden px-5 py-3 rounded-2xl transition-all duration-300 transform hover:scale-105 font-medium w-full sm:w-auto ${isDark
-                    ? "bg-blue-900/30 text-blue-200 hover:bg-blue-800/40 border border-blue-700/50 hover:border-blue-600/70"
-                    : "bg-blue-50/70 text-blue-700 hover:bg-blue-100/80 border border-blue-200/70 hover:border-blue-300/80"
+                  ? "bg-blue-900/30 text-blue-200 hover:bg-blue-800/40 border border-blue-700/50 hover:border-blue-600/70"
+                  : "bg-blue-50/70 text-blue-700 hover:bg-blue-100/80 border border-blue-200/70 hover:border-blue-300/80"
                   } backdrop-blur-sm hover:shadow-xl hover:shadow-blue-500/10`}
               >
                 <div className="flex items-center justify-start gap-3 w-full text-left relative z-10">
