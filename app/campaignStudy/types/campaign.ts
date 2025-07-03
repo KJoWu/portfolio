@@ -121,6 +121,5 @@ export interface TableFilter {
 }
 
 export interface ModalState {
-  advancedSettings: boolean;
   adCreation: boolean;
 }

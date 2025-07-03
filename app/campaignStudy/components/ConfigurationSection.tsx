@@ -9,13 +9,11 @@ import PropertiesTable from './PropertiesTable';
 
 interface ConfigurationSectionProps {
   campaign: Campaign;
-  onAdvancedSettings: () => void;
   onUpdateCampaign: (updates: Partial<Campaign>) => void;
 }
 
 export default function ConfigurationSection({ 
   campaign, 
-  onAdvancedSettings, 
   onUpdateCampaign 
 }: ConfigurationSectionProps) {
   const [selectedProperties, setSelectedProperties] = useState<string[]>([]);
@@ -61,7 +59,7 @@ export default function ConfigurationSection({
 
   return (
     <div className="bg-white/80 backdrop-blur-xl border border-white/20 rounded-3xl p-6 mb-6 shadow-xl relative">
-      <div className="flex justify-between items-start mb-6 pb-4 border-b-2 border-indigo-100">
+      <div className="mb-6 pb-4 border-b-2 border-indigo-100">
         <div>
           <h2 className="text-2xl font-bold text-gray-900 mb-2 flex items-center gap-4">
             <div className="w-1 h-8 bg-gradient-to-b from-indigo-500 to-cyan-500 rounded-full"></div>
@@ -71,13 +69,6 @@ export default function ConfigurationSection({
             Configure the main settings that will apply to all campaign flights
           </p>
         </div>
-        <button 
-          onClick={onAdvancedSettings}
-          className="px-6 py-3 bg-white/90 text-gray-700 border border-white/30 backdrop-blur-xl rounded-2xl font-semibold text-xs transition-all duration-300 hover:bg-white hover:-translate-y-1 hover:shadow-lg relative overflow-hidden group"
-        >
-          <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-500"></div>
-          Advanced Settings
-        </button>
       </div>
 
       <form onSubmit={handleSubmit(onSubmit)}>

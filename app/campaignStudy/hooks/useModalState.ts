@@ -3,7 +3,6 @@ import { ModalState } from '../types/campaign';
 
 export function useModalState() {
   const [modalState, setModalState] = useState<ModalState>({
-    advancedSettings: false,
     adCreation: false,
   });
 
@@ -23,7 +22,6 @@ export function useModalState() {
 
   const closeAllModals = () => {
     setModalState({
-      advancedSettings: false,
       adCreation: false,
     });
   };

@@ -4,10 +4,9 @@ import { Campaign } from '../types/campaign';
 
 interface CampaignHeaderProps {
   campaign: Campaign;
-  onAdvancedSettings: () => void;
 }
 
-export default function CampaignHeader({ campaign, onAdvancedSettings }: CampaignHeaderProps) {
+export default function CampaignHeader({ campaign }: CampaignHeaderProps) {
   return (
     <div className="flex justify-between items-start mb-6 p-6 bg-white/80 backdrop-blur-xl border border-white/20 rounded-3xl shadow-xl">
       <div className="campaign-title">

@@ -71,7 +71,7 @@ export default function FlightManagement({
         <div>
           <h2 className="text-2xl font-bold text-gray-900 mb-2 flex items-center gap-4">
             <div className="w-1 h-8 bg-gradient-to-b from-indigo-500 to-cyan-500 rounded-full"></div>
-            Flight Management
+            Campaign Management
           </h2>
           <p className="text-gray-500 font-medium leading-relaxed">
             Configure individual campaign flights with specific targeting and scheduling
@@ -79,7 +79,7 @@ export default function FlightManagement({
         </div>
         <button className="px-6 py-3 bg-gradient-to-r from-indigo-500 to-indigo-600 text-white rounded-2xl font-semibold text-xs transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-indigo-500/40 relative overflow-hidden group">
           <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-500"></div>
-          Create New Flight
+          Create New Campaign
         </button>
       </div>
 

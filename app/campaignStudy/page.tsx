@@ -6,7 +6,6 @@ import CampaignHeader from './components/CampaignHeader';
 import SummarySection from './components/SummarySection';
 import ConfigurationSection from './components/ConfigurationSection';
 import FlightManagement from './components/FlightManagement';
-import AdvancedSettingsModal from './components/modals/AdvancedSettingsModal';
 import AdCreationModal from './components/modals/AdCreationModal';
 import { useModalState } from './hooks/useModalState';
 import { useCampaignData } from './hooks/useCampaignData';
@@ -34,14 +33,12 @@ export default function CampaignStudy() {
 
         <CampaignHeader 
           campaign={campaignData}
-          onAdvancedSettings={() => openModal('advancedSettings')}
         />
         
         <SummarySection campaign={campaignData} />
         
         <ConfigurationSection 
           campaign={campaignData}
-          onAdvancedSettings={() => openModal('advancedSettings')}
           onUpdateCampaign={updateCampaign}
         />
         
@@ -53,11 +50,6 @@ export default function CampaignStudy() {
       </main>
 
       {/* Modals */}
-      <AdvancedSettingsModal 
-        isOpen={modalState.advancedSettings}
-        onClose={() => closeModal('advancedSettings')}
-      />
-      
       <AdCreationModal 
         isOpen={modalState.adCreation}
         onClose={() => closeModal('adCreation')}
