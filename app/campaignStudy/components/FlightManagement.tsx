@@ -189,19 +189,6 @@ export default function FlightManagement({
             </select>
           </div>
 
-          <div className="flex flex-col gap-2">
-            <label className="font-semibold text-gray-700 text-xs uppercase tracking-wider">
-              Discount
-            </label>
-            <input
-              type="number"
-              value={activeFlight.discount}
-              onChange={(e) => handleFlightUpdate(activeFlight.id, { discount: parseFloat(e.target.value) })}
-              placeholder="0.00"
-              step="0.01"
-              className="px-4 py-3 bg-white/90 border-2 border-gray-300 rounded-2xl text-gray-900 text-xs font-medium transition-all duration-300 backdrop-blur-xl focus:outline-none focus:border-indigo-500 focus:ring-4 focus:ring-indigo-500/20 focus:bg-white"
-            />
-          </div>
         </div>
 
         {/* Flight Ads Table */}

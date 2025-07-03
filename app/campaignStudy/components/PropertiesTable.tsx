@@ -230,45 +230,7 @@ export default function PropertiesTable({
           ))}
         </tbody>
       </table>
-      
-      {showPagination && totalPages > 1 && (
-        <div className="flex justify-between items-center px-6 py-4 bg-gray-50 border-t border-gray-200">
-          <div className="text-gray-500 font-medium text-xs">
-            Showing {startIndex + 1} to {Math.min(startIndex + itemsPerPage, filteredProperties.length)} of {filteredProperties.length} properties
-          </div>
-          <div className="flex items-center gap-4">
-            <button
-              onClick={() => setCurrentPage(prev => Math.max(prev - 1, 1))}
-              disabled={currentPage === 1}
-              className="px-4 py-2 bg-white text-gray-700 border border-gray-300 rounded-lg font-semibold text-xs transition-all duration-300 hover:bg-gray-50 disabled:opacity-50 disabled:cursor-not-allowed"
-            >
-              Previous
-            </button>
-            <div className="flex gap-2">
-              {Array.from({ length: totalPages }, (_, i) => i + 1).map(page => (
-                <button
-                  key={page}
-                  onClick={() => setCurrentPage(page)}
-                  className={`w-10 h-10 rounded-lg font-semibold text-xs transition-all duration-300 ${
-                    page === currentPage
-                      ? 'bg-gradient-to-r from-indigo-500 to-indigo-600 text-white'
-                      : 'bg-white text-gray-600 border border-gray-200 hover:border-indigo-500 hover:text-indigo-500 hover:-translate-y-0.5'
-                  }`}
-                >
-                  {page}
-                </button>
-              ))}
-            </div>
-            <button
-              onClick={() => setCurrentPage(prev => Math.min(prev + 1, totalPages))}
-              disabled={currentPage === totalPages}
-              className="px-4 py-2 bg-white text-gray-700 border border-gray-300 rounded-lg font-semibold text-xs transition-all duration-300 hover:bg-gray-50 disabled:opacity-50 disabled:cursor-not-allowed"
-            >
-              Next
-            </button>
-          </div>
-        </div>
-      )}
+    
     </div>
   );
 }

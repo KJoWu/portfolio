@@ -164,7 +164,7 @@ export default function ConfigurationSection({
 
           <div className="flex flex-col gap-2">
             <label className="font-semibold text-gray-700 text-xs uppercase tracking-wider">
-              Budget
+              Discount
             </label>
             <input
               type="number"

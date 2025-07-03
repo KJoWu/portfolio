@@ -18,9 +18,9 @@ export const campaignConfigSchema = z.object({
 
 export type CampaignConfigFormData = z.infer<typeof campaignConfigSchema>;
 
-// Flight Configuration Schema
+// Flight Configuration Schema <-- RENAMED TO TRACK FOR CLARITY
 export const flightConfigSchema = z.object({
-  name: z.string().min(1, 'Flight name is required').max(100, 'Flight name must be less than 100 characters'),
+  name: z.string().min(1, 'Track name is required').max(100, 'Track name must be less than 100 characters'),
   startDate: z.string().min(1, 'Start date is required'),
   endDate: z.string().min(1, 'End date is required'),
   fullScreen: z.boolean(),
