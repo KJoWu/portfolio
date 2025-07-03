@@ -1,6 +1,5 @@
 "use client";
 
-import { useState } from 'react';
 import Header from './components/Header';
 import CampaignHeader from './components/CampaignHeader';
 import SummarySection from './components/SummarySection';
@@ -19,7 +18,7 @@ export default function CampaignStudy() {
       <Header />
       
       <main className="max-w-7xl mx-auto p-6">
-        {/* Privacy Notice */}
+        {/************************************** Privacy Notice ***************************************/}
         <div className="mb-6 p-4 bg-gradient-to-r from-indigo-50 to-cyan-50 border border-indigo-200 rounded-xl backdrop-blur-sm shadow-sm">
           <div className="flex items-center gap-3">
             <div className="w-6 h-6 bg-gradient-to-r from-indigo-500 to-cyan-500 rounded-full flex items-center justify-center text-white text-xs font-bold flex-shrink-0">

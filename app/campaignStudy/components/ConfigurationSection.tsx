@@ -63,10 +63,10 @@ export default function ConfigurationSection({
         <div>
           <h2 className="text-2xl font-bold text-gray-900 mb-2 flex items-center gap-4">
             <div className="w-1 h-8 bg-gradient-to-b from-indigo-500 to-cyan-500 rounded-full"></div>
-            Campaign Configuration
+            Main Configuration
           </h2>
           <p className="text-gray-500 font-medium leading-relaxed">
-            Configure the main settings that will apply to all campaign flights
+            Configure the main settings that will apply to all tracks
           </p>
         </div>
       </div>

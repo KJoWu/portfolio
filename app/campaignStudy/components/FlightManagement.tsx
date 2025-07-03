@@ -71,10 +71,10 @@ export default function FlightManagement({
         <div>
           <h2 className="text-2xl font-bold text-gray-900 mb-2 flex items-center gap-4">
             <div className="w-1 h-8 bg-gradient-to-b from-indigo-500 to-cyan-500 rounded-full"></div>
-            Campaign Management
+            Track Management
           </h2>
           <p className="text-gray-500 font-medium leading-relaxed">
-            Configure individual campaign flights with specific targeting and scheduling
+            Configure individual track with specific targeting and scheduling
           </p>
         </div>
         <button className="px-6 py-3 bg-gradient-to-r from-indigo-500 to-indigo-600 text-white rounded-2xl font-semibold text-xs transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-indigo-500/40 relative overflow-hidden group">
@@ -104,7 +104,7 @@ export default function FlightManagement({
       <div className="bg-white/90 backdrop-blur-xl border border-white/30 rounded-2xl p-6 mb-6 shadow-lg">
         <div className="flex justify-between items-center mb-6">
           <h3 className="text-lg font-bold text-gray-900">
-            Flight {activeFlightIndex + 1}: {activeFlight.name}
+            Track {activeFlightIndex + 1}: {activeFlight.name}
           </h3>
           <div className="flex gap-3">
             <button 
@@ -126,7 +126,7 @@ export default function FlightManagement({
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-6">
           <div className="flex flex-col gap-2">
             <label className="font-semibold text-gray-700 text-xs uppercase tracking-wider">
-              Flight Name
+              Track Name
             </label>
             <input
               type="text"
@@ -207,7 +207,7 @@ export default function FlightManagement({
         {/* Flight Ads Table */}
         <div className="mt-8">
           <div className="flex justify-between items-center mb-4">
-            <h4 className="text-lg font-bold text-gray-900">Flight Ads</h4>
+            <h4 className="text-lg font-bold text-gray-900">Track Ads</h4>
             <button 
               onClick={onCreateAd}
               className="px-6 py-3 bg-gradient-to-r from-indigo-500 to-indigo-600 text-white rounded-2xl font-semibold text-xs transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-indigo-500/40"
@@ -313,7 +313,7 @@ export default function FlightManagement({
       {/* Flight Summary */}
       <div className="bg-gradient-to-br from-green-50/50 to-cyan-50/50 border border-green-200/50 rounded-2xl p-6 backdrop-blur-xl">
         <div className="flex justify-between items-center mb-6">
-          <h4 className="text-xl font-bold text-gray-900">Flight Performance Summary</h4>
+          <h4 className="text-xl font-bold text-gray-900">Track Performance Summary</h4>
           <div className="px-6 py-3 bg-gradient-to-r from-green-500 to-cyan-500 text-white rounded-2xl text-base font-bold">
             ${activeFlight.cost.toLocaleString()}
           </div>

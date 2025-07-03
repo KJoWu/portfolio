@@ -13,7 +13,7 @@ export default function SummarySection({ campaign }: SummarySectionProps) {
     { label: 'Active Screens', value: '156' },
     { label: 'Properties', value: campaign.properties.length.toString() },
     { label: 'Avg Ad Length', value: '8.3s' },
-    { label: 'Campaign Count', value: campaign.flights.length.toString() },
+    { label: 'Tracks', value: campaign.flights.length.toString() },
     { label: 'Avg CPM', value: '$12.08' },
   ];
 
