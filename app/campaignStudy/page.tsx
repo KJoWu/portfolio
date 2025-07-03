@@ -27,7 +27,7 @@ export default function CampaignStudy() {
               ℹ
             </div>
             <div className="text-gray-700 text-sm font-medium leading-relaxed">
-              <strong>Privacy Notice:</strong> This is a demonstration of a campaign management interface I developed. Some styling, branding, and data have been modified to protect the privacy of my real company while showcasing the UI/UX functionality and design capabilities.
+              <strong>Privacy Notice:</strong> This is a demonstration of a campaign management interface I developed. Some styling, branding, and data have been modified to protect the privacy of the real company while showcasing the UI/UX functionality and design capabilities.
             </div>
           </div>
         </div>
