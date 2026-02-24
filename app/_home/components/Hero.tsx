@@ -74,15 +74,22 @@ export const Hero = () => {
 
           {/* Enhanced CTA buttons */}
           <div className={`transition-all duration-1000 delay-800 ${isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
+            <div className="flex flex-col mb-2">
+              <span
+                className={`text-lg leading-relaxed ${isDark ? "text-gray-400" : "text-gray-600"}`}
+              >
+                Resumes
+              </span>
+            </div>
             <div className="flex flex-col sm:flex-row gap-3">
               {/* Software Resume Button (left) */}
               <button
                 onClick={openNewTab}
-                className="group relative overflow-hidden bg-gradient-to-r from-sky-500 to-blue-500 text-white px-6 py-3 rounded-2xl hover:from-blue-500 hover:to-blue-600 transition-all duration-300 transform hover:scale-105 hover:shadow-2xl hover:shadow-blue-600/40 text-left min-w-[260px]"
+                className="group relative overflow-hidden bg-gradient-to-r from-sky-500 to-blue-500 text-white pl-6 pr-3 py-3 rounded-2xl hover:from-blue-500 hover:to-blue-600 transition-all duration-300 transform hover:scale-105 hover:shadow-2xl hover:shadow-blue-600/40 text-left min-w-[260px]"
               >
                 <div className="flex items-center gap-2 relative z-10 text-base">
+                  <span className="font-medium text-left">Software Developer</span>
                   <FiDownload size={22} />
-                  <span className="font-medium text-left">Software Resume</span>
                 </div>
                 <div className="absolute inset-0 bg-gradient-to-r from-sky-500 to-blue-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               </button>
@@ -90,11 +97,11 @@ export const Hero = () => {
               {/* Growth Resume Button (right) */}
               <button
                 onClick={openSocialTab}
-                className="group relative overflow-hidden bg-gradient-to-r from-orange-400 to-rose-500 text-white px-6 py-3 rounded-2xl hover:from-orange-500 hover:to-rose-600 transition-all duration-300 transform hover:scale-105 hover:shadow-2xl hover:shadow-orange-400/30 text-left min-w-[260px]"
+                className="group relative overflow-hidden bg-gradient-to-r from-orange-400 to-rose-500 text-white pl-6 pr-3 py-3 rounded-2xl hover:from-orange-500 hover:to-rose-600 transition-all duration-300 transform hover:scale-105 hover:shadow-2xl hover:shadow-orange-400/30 text-left min-w-[260px]"
               >
                 <div className="flex items-center gap-2 relative z-10 text-base">
+                  <span className="font-medium text-left">Events & Social Lead</span>
                   <FiDownload size={22} />
-                  <span className="font-medium text-left">Events & Social Lead Resume</span>
                 </div>
                 <div className="absolute inset-0 bg-gradient-to-r from-orange-400 to-rose-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               </button>
