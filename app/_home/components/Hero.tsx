@@ -113,15 +113,19 @@ export const Hero = () => {
               <div className="absolute inset-10 rounded-full bg-gradient-to-br from-indigo-500/30 via-purple-500/30 to-pink-500/30 blur-xl animate-pulse"></div>
               <div className="absolute inset-14 rounded-full bg-gradient-to-br from-indigo-400/40 via-purple-400/40 to-pink-400/40 animate-pulse delay-1000"></div>
 
-              {/* Profile image */}
-              <div className="absolute inset-6 lg:inset-10 rounded-full overflow-hidden border-4 border-white/60 shadow-xl">
-                <Image
-                  src="/profile.webp"
-                  alt="Portrait of Kimberly Wu"
-                  fill
-                  className="object-cover"
-                  priority
-                />
+              {/* Profile image with colorful border */}
+              <div className="absolute inset-6 lg:inset-10 rounded-full shadow-xl">
+                <div className="relative w-full h-full rounded-full p-[3px] bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500">
+                  <div className="relative w-full h-full rounded-full overflow-hidden bg-black">
+                    <Image
+                      src="/profile.webp"
+                      alt="Portrait of Kimberly Wu"
+                      fill
+                      className="object-cover"
+                      priority
+                    />
+                  </div>
+                </div>
               </div>
 
             </div>
