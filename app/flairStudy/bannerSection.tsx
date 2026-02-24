@@ -49,26 +49,26 @@ export const BannerSection = () => {
 
       <section className="md:col-span-4 md:flex items-center justify-center flex-nowrap">
         <VideoPlayer
-          src="https://vyefnififypgtaykhppx.supabase.co/storage/v1/object/public/Media/booking.mp4"
+          src="/booking.mp4"
           type="video/mp4"
           poster="/images/video-poster.jpg"
           className="h-[33em] w-auto mx-2"
         />
         <VideoPlayer
-          src="https://vyefnififypgtaykhppx.supabase.co/storage/v1/object/public/Media/guestBooking.mp4"
+          src="/guestBooking.mp4"
           type="video/mp4"
           poster="/images/video-poster.jpg"
           className="h-[33em] w-auto mx-2"
         />
         <VideoPlayer
-          src="https://vyefnififypgtaykhppx.supabase.co/storage/v1/object/public/Media/userNotification.mp4"
+          src="/userNotification.mp4"
           type="video/mp4"
           poster="/images/video-poster.jpg"
           className="h-[33em] w-auto mx-2"
         />
 
         <VideoPlayer
-          src="https://vyefnififypgtaykhppx.supabase.co/storage/v1/object/public/Media/qrCode.mp4"
+          src="/qrCode.mp4"
           type="video/mp4"
           poster="/images/video-poster.jpg"
           className="h-[33em] w-auto mx-2"

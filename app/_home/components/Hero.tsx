@@ -1,5 +1,6 @@
-'use client'
+"use client";
 
+import Image from "next/image";
 import { useState, useEffect } from "react";
 import { FiArrowRight, FiDownload, FiMail, FiStar } from "react-icons/fi";
 import { useTheme } from "../../_context/themeContext";
@@ -125,19 +126,25 @@ export const Hero = () => {
 
         </div>
 
-        {/* Enhanced visual element */}
+        {/* Enhanced visual element with profile image */}
         <div className="relative lg:flex-shrink-0">
           <div className={`transition-all duration-1000 delay-1000 ${isLoaded ? "opacity-100 scale-100" : "opacity-0 scale-95"
             }`}>
-            <div className="relative w-80 h-80 lg:w-96 lg:h-96">
-              {/* Animated rings */}
-              <div className="absolute inset-0 rounded-full border-2 border-indigo-500/20 animate-spin-slow"></div>
-              <div className="absolute inset-4 rounded-full border-2 border-purple-500/20 animate-spin-reverse"></div>
-              <div className="absolute inset-8 rounded-full border-2 border-pink-500/20 animate-spin-slow"></div>
-
+            <div className="relative w-80 h-80 lg:w-[28rem] lg:h-[28rem]">
               {/* Center gradient orb */}
-              <div className="absolute inset-16 rounded-full bg-gradient-to-br from-indigo-500/30 via-purple-500/30 to-pink-500/30 blur-xl animate-pulse"></div>
-              <div className="absolute inset-20 rounded-full bg-gradient-to-br from-indigo-400/40 via-purple-400/40 to-pink-400/40 animate-pulse delay-1000"></div>
+              <div className="absolute inset-10 rounded-full bg-gradient-to-br from-indigo-500/30 via-purple-500/30 to-pink-500/30 blur-xl animate-pulse"></div>
+              <div className="absolute inset-14 rounded-full bg-gradient-to-br from-indigo-400/40 via-purple-400/40 to-pink-400/40 animate-pulse delay-1000"></div>
+
+              {/* Profile image */}
+              <div className="absolute inset-6 lg:inset-10 rounded-full overflow-hidden border-4 border-white/60 shadow-xl">
+                <Image
+                  src="/profile.webp"
+                  alt="Portrait of Kimberly Wu"
+                  fill
+                  className="object-cover"
+                  priority
+                />
+              </div>
 
               {/* Floating elements */}
               <div className="absolute top-8 right-8 w-4 h-4 bg-indigo-400 rounded-full animate-bounce delay-500"></div>

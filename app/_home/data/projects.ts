@@ -10,6 +10,16 @@ export type Project = {
 
 export const devProjects: Project[] = [
   {
+    title: "Lead UX Engineer for Repacket",
+    description:
+      "Served as Lead UX Engineer and Frontend Developer, driving the redesign and development of multiple client-facing experiences and core platform interfaces in preparation for launch.",
+    tags: "Lead UX Engineer | Frontend Developer | Product Design | React | TypeScript",
+    color: "from-emerald-500 to-teal-400",
+    link: "",
+    github: "",
+    image: "/repacketLogo.png",
+  },
+  {
     title: "DevRel Ambassador @ Aleo",
     description:
       "Led North American workshops to promote privacy-focused blockchain development. Created marketing assets (Canva, Photoshop) to boost brand visibility. Partnered with groups such as Google Developer Groups & Edmonton Unlimited, securing 100+ RSVPs/event.",
@@ -17,8 +27,7 @@ export const devProjects: Project[] = [
     tags: "Aleo (Leo) | ZKP Advocacy | Event Coordinator | Marketing | Workshop Architect | DevRel Strategist | Technical Storyteller",
     github: "",
     link:"https://aleo.org/",
-    image:
-      "https://vyefnififypgtaykhppx.supabase.co/storage/v1/object/public/Media//logo1.png",
+    image: "/logo1.png",
   },
   {
     title: "Social Media Strategist",
@@ -27,8 +36,7 @@ export const devProjects: Project[] = [
     tags: "Content Strategy | Community Growth | Viral + Technical Storytelling | Brand Amplification",
     link: "https://linktr.ee/aleo.builders.community",
     github: "",
-    image:
-      "https://vyefnififypgtaykhppx.supabase.co/storage/v1/object/public/Media//Interviews.png",
+    image: "/Interviews.png",
   },
   {
     title: "Founder of LeetNight",
@@ -38,8 +46,7 @@ export const devProjects: Project[] = [
     color: "from-purple-500 to-purple-400",
     link: "https://www.leetnight.com",
     github: "",
-    image:
-      "https://vyefnififypgtaykhppx.supabase.co/storage/v1/object/public/Media//logo4.png",
+    image: "/logo4.png",
   },
   {
     title: "Flair Airlines Case Study",
@@ -49,8 +56,7 @@ export const devProjects: Project[] = [
     color: "from-green-400 to-green-400",
     link: "/flairStudy",
     github: "#",
-    image:
-      "https://vyefnififypgtaykhppx.supabase.co/storage/v1/object/public/Media/project33.jpg",
+    image: "/project33.jpg",
   },
   {
     title: "Digital Signage for Elevators @ Vertical Impression",
@@ -60,8 +66,7 @@ export const devProjects: Project[] = [
     color: "from-orange-400 to-amber-500",
     link: "https://www.verticalcity.com/elev8",
     github: "#",
-    image:
-      "https://vyefnififypgtaykhppx.supabase.co/storage/v1/object/public/Media//logo3.png",
+    image: "/logo3.png",
   },
   {
     title: "Media Buyer Platform for DOOH Campaigns  @ Vertical City",
@@ -71,8 +76,7 @@ export const devProjects: Project[] = [
     color: "from-rose-500 to-pink-500",
     link: "https://www.verticalimpression.com",
     github: "#",
-    image:
-      "https://vyefnififypgtaykhppx.supabase.co/storage/v1/object/public/Media/project11.jpg",
+    image: "/project11.jpg",
   },
   {
     title: "Content Management System for Property Managers  @ Vertical City",
@@ -82,7 +86,6 @@ export const devProjects: Project[] = [
     color: "from-blue-600 to-sky-600",
     link: "#",
     github: "https://www.verticalimpression.com/",
-    image:
-      "https://vyefnififypgtaykhppx.supabase.co/storage/v1/object/public/Media//Logo2.png",
+    image: "/Logo2.png",
   },
 ];
