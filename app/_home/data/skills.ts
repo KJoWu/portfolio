@@ -6,7 +6,7 @@ export type SkillSet = {
 export const skills: SkillSet[] = [
   {
     category: "Development",
-    items: ["Smart Contracts", "Leo", "TypeScript", "React JS", "Next JS", "Ruby on Rails", "Redux", "Python", "React Native", "Tailwind"],
+    items: ["Smart Contracts", "Leo", "TypeScript", "React JS", "Next JS", "Ruby on Rails", "Redux", "Python", "React Native", "Tailwind", "AI"],
   },
   {
     category: "Marketing & Design",

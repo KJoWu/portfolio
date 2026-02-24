@@ -44,82 +44,60 @@ export const Hero = () => {
             </h1>
           </div>
 
-          {/* Main heading with enhanced gradient */}
+          {/* Main heading with modern gradient */}
           <div className={`transition-all duration-1000 delay-400 ${isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
             }`}>
-            <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold leading-tight mb-6">
+            <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold leading-tight mb-4">
               <span className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent animate-gradient-x">
                 I'm Kim.
               </span>
             </h1>
           </div>
 
-          {/* Enhanced role description */}
+          {/* Role + value prop */}
           <div className={`transition-all duration-1000 delay-600 ${isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
             }`}>
             <div className="space-y-4">
               <h2 className="text-xl md:text-2xl font-semibold">
                 <span className={`${isDark ? "text-gray-200" : "text-gray-800"}`}>
-                  Software Engineer & Digital Marketing Specialist
+                  UX Engineer & Frontend Developer
                 </span>
               </h2>
 
-              <div className="flex items-center gap-2">
-                <FiStar className="text-yellow-500" size={18} />
-                <p className={`text-lg ${isDark ? "text-gray-400" : "text-gray-600"}`}>
-                  Recipient of the Meiya Reinking & District of Edmonton Art Award
-                </p>
-              </div>
-
               <p className={`text-lg leading-relaxed max-w-2xl ${isDark ? "text-gray-400" : "text-gray-600"
                 }`}>
-                Crafting digital experiences that blend technical excellence with creative innovation.
-                Passionate about building solutions that make a meaningful impact.
+                I design and build product experiences that sit at the intersection of UX, engineering, and
+                storytelling, shipping interfaces that feel clear, fast, and intentional.
               </p>
             </div>
           </div>
 
           {/* Enhanced CTA buttons */}
           <div className={`transition-all duration-1000 delay-800 ${isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
-            <div className="flex flex-col sm:flex-row gap-4">
-              {/* Growth Resume Button */}
-              <button
-                onClick={openSocialTab}
-                className="group relative overflow-hidden bg-gradient-to-r from-purple-400 to-fuchsia-400 text-white px-5 py-3 rounded-2xl hover:from-purple-600 hover:to-fuchsia-600 transition-all duration-300 transform hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/25"
-              >
-                <div className="flex items-center gap-3 relative z-10">
-                  <FiDownload size={28} />
-                  <span className="font-medium text-left">Events & Social Lead Resume</span>
-                </div>
-                <div className="absolute inset-0 bg-gradient-to-r from-fuchsia-400 to-purple-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-              </button>
-
-              {/* Software Resume Button */}
+            <div className="flex flex-col sm:flex-row gap-3">
+              {/* Software Resume Button (left) */}
               <button
                 onClick={openNewTab}
-                className="group relative overflow-hidden bg-gradient-to-r from-blue-500 to-sky-400 text-white px-5 py-3 rounded-2xl hover:from-blue-700 hover:to-indigo-700 transition-all duration-300 transform hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/25"
+                className="group relative overflow-hidden bg-gradient-to-r from-sky-500 to-blue-500 text-white px-6 py-3 rounded-2xl hover:from-blue-500 hover:to-blue-600 transition-all duration-300 transform hover:scale-105 hover:shadow-2xl hover:shadow-blue-600/40 text-left min-w-[260px]"
               >
-                <div className="flex items-center gap-3 relative z-10">
-                  <FiDownload size={28} />
-                  <span className="font-medium">Software Resume</span>
+                <div className="flex items-center gap-2 relative z-10 text-base">
+                  <FiDownload size={22} />
+                  <span className="font-medium text-left">Software Resume</span>
                 </div>
                 <div className="absolute inset-0 bg-gradient-to-r from-sky-500 to-blue-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               </button>
 
-              {/* Contact Me Button */}
+              {/* Growth Resume Button (right) */}
               <button
-                onClick={sendEmail}
-                className={`group relative overflow-hidden px-5 py-3 rounded-2xl transition-all duration-300 transform hover:scale-105 font-medium w-full sm:w-auto ${isDark
-                  ? "bg-blue-900/30 text-blue-200 hover:bg-blue-800/40 border border-blue-700/50 hover:border-blue-600/70"
-                  : "bg-blue-50/70 text-blue-700 hover:bg-blue-100/80 border border-blue-200/70 hover:border-blue-300/80"
-                  } backdrop-blur-sm hover:shadow-xl hover:shadow-blue-500/10`}
+                onClick={openSocialTab}
+                className="group relative overflow-hidden bg-gradient-to-r from-orange-400 to-rose-500 text-white px-6 py-3 rounded-2xl hover:from-orange-500 hover:to-rose-600 transition-all duration-300 transform hover:scale-105 hover:shadow-2xl hover:shadow-orange-400/30 text-left min-w-[260px]"
               >
-                <div className="flex items-center justify-start gap-3 w-full text-left relative z-10">
-                  <FiMail size={28} />
-                  <span>Contact Me</span>
+                <div className="flex items-center gap-2 relative z-10 text-base">
+                  <FiDownload size={22} />
+                  <span className="font-medium text-left">Events & Social Lead Resume</span>
                 </div>
+                <div className="absolute inset-0 bg-gradient-to-r from-orange-400 to-rose-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               </button>
-
             </div>
           </div>
 
@@ -146,10 +124,6 @@ export const Hero = () => {
                 />
               </div>
 
-              {/* Floating elements */}
-              <div className="absolute top-8 right-8 w-4 h-4 bg-indigo-400 rounded-full animate-bounce delay-500"></div>
-              <div className="absolute bottom-8 left-8 w-3 h-3 bg-purple-400 rounded-full animate-bounce delay-1000"></div>
-              <div className="absolute top-1/2 left-4 w-2 h-2 bg-pink-400 rounded-full animate-ping delay-1500"></div>
             </div>
           </div>
         </div>

@@ -473,20 +473,57 @@ const ModernProjectCard = ({ project, index }: { project: any; index: number }) 
       {/* Gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-r from-purple-500/5 to-blue-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
 
-      <div className="relative p-8">
-        <div className="flex flex-col lg:flex-row gap-8 items-center">
+      <div className="relative p-5 md:p-6">
+        <div className="flex flex-col lg:flex-row gap-5 items-center">
           {/* Content */}
-          <div className="flex-1 space-y-6">
-            {/* Project number */}
-            <div className="flex items-center gap-3">
-              <span className={`text-xs font-bold px-3 py-1 rounded-full ${isDark
-                ? "bg-gradient-to-r from-purple-600 to-blue-600 text-white"
-                : "bg-gradient-to-r from-purple-500 to-blue-500 text-white"
-                }`}>
-                #{String(index + 1).padStart(2, '0')}
-              </span>
-              <div className={`h-px flex-1 ${isDark ? "bg-gradient-to-r from-gray-600 to-transparent" : "bg-gradient-to-r from-gray-300 to-transparent"
-                }`}></div>
+          <div className="flex-1 space-y-6 pl-5">
+            {/* Project number + small More Info button */}
+            <div className="flex items-center justify-between gap-3">
+              <div className="flex items-center gap-3 flex-1">
+                <span
+                  className={`text-xs font-bold px-3 py-1 rounded-full ${isDark
+                    ? "bg-gradient-to-r from-purple-600 to-blue-600 text-white"
+                    : "bg-gradient-to-r from-purple-500 to-blue-500 text-white"
+                    }`}
+                >
+                  #{String(index + 1).padStart(2, "0")}
+                </span>
+                <div
+                  className={`h-px flex-1 ${
+                    isDark
+                      ? "bg-gradient-to-r from-gray-600 to-transparent"
+                      : "bg-gradient-to-r from-gray-300 to-transparent"
+                  }`}
+                ></div>
+              </div>
+
+              {project.link && (
+                <a
+                  href={project.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`inline-flex items-center gap-1 px-3 py-1 text-[11px] font-medium rounded-full border transition-colors ${
+                    isDark
+                      ? "border-gray-600 text-gray-200 hover:bg-gray-800"
+                      : "border-gray-300 text-gray-700 hover:bg-gray-100"
+                  }`}
+                >
+                  <span>More info</span>
+                  <svg
+                    className="w-3 h-3"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                    />
+                  </svg>
+                </a>
+              )}
             </div>
 
             {/* Title */}
@@ -506,7 +543,7 @@ const ModernProjectCard = ({ project, index }: { project: any; index: number }) 
               {project.technologies?.map((tech: string, techIndex: number) => (
                 <span
                   key={techIndex}
-                  className={`px-3 py-1.5 text-sm font-medium rounded-full transition-all duration-300 hover:scale-105 ${isDark
+                  className={`px-3 py-1 text-sm font-medium rounded-full transition-all duration-300 hover:scale-105 ${isDark
                     ? "bg-gray-700/50 text-gray-300 border border-gray-600/50 hover:bg-gray-600/50"
                     : "bg-gray-100/80 text-gray-700 border border-gray-200/50 hover:bg-gray-200/80"
                     }`}
@@ -517,7 +554,7 @@ const ModernProjectCard = ({ project, index }: { project: any; index: number }) 
               {project.tags?.split(' | ').map((tag: string, tagIndex: number) => (
                 <span
                   key={`tag-${tagIndex}`}
-                  className={`px-3 py-1.5 text-sm font-medium rounded-full transition-all duration-300 hover:scale-105 ${isDark
+                  className={`px-3 py-1 text-sm font-medium rounded-full transition-all duration-300 hover:scale-105 ${isDark
                     ? "bg-gray-700/50 text-gray-300 border border-gray-600/50 hover:bg-gray-600/50"
                     : "bg-gray-100/80 text-gray-700 border border-gray-200/50 hover:bg-gray-200/80"
                     }`}
@@ -527,38 +564,35 @@ const ModernProjectCard = ({ project, index }: { project: any; index: number }) 
               ))}
             </div>
 
-            {/* Action buttons */}
-            <div className="flex flex-wrap gap-4 pt-2">
+            {/* Action buttons (optional live URL) */}
+            <div className="">
               {project.liveUrl && (
                 <a
                   href={project.liveUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group/btn inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-purple-500 to-blue-500 text-white font-medium rounded-lg transition-all duration-300 hover:shadow-lg hover:scale-105"
+                  className="group/btn inline-flex items-center gap-2 px-5 py-2.5 bg-gradient-to-r from-purple-500 to-blue-500 text-white text-sm font-medium rounded-lg transition-all duration-300 hover:shadow-lg hover:scale-105"
                 >
-                  <span>View Live</span>
-                  <svg className="w-4 h-4 transition-transform group-hover/btn:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                  </svg>
-                </a>
-              )}
-              {project.link && (
-                <a
-                  href={project.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="group/btn inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-purple-500 to-blue-500 text-white font-medium rounded-lg transition-all duration-300 hover:shadow-lg hover:scale-105"
-                >
-                  <span>More Info</span>
-                  <svg className="w-4 h-4 transition-transform group-hover/btn:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                  <span>View live</span>
+                  <svg
+                    className="w-4 h-4 transition-transform group-hover/btn:translate-x-1"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                    />
                   </svg>
                 </a>
               )}
             </div>
           </div>
 
-          {/* Project image */}
+          {/* Project image / logo */}
           <div className="lg:w-96 lg:flex-shrink-0">
             <div className="relative overflow-hidden rounded-xl bg-black">
               {!imageLoaded && (
@@ -637,16 +671,16 @@ export const Projects = () => {
   ];
 
   return (
-    <section id="projects-section" className="mb-32">
+    <section id="projects-section" className="mb-24">
       <div className={`transition-all duration-1000 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
         {/* Enhanced section header */}
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold mb-3">
             <span className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
               Featured Work
             </span>
           </h2>
-          <p className={`text-lg max-w-2xl mx-auto ${isDark ? "text-gray-400" : "text-gray-600"}`}>
+          <p className={`text-base max-w-2xl mx-auto ${isDark ? "text-gray-400" : "text-gray-600"}`}>
             Explore my journey through development, creativity, and strategic planning
           </p>
         </div>
@@ -667,7 +701,7 @@ export const Projects = () => {
                   }`
                   }`}
               >
-                <span className="text-base sm:text-lg mb-0.5 sm:mb-0">{tab.icon}</span>
+                <span className="text-sm sm:text-base mb-0.5 sm:mb-0">{tab.icon}</span>
                 <span className="text-center leading-tight sm:leading-normal">
                   <span className="block sm:hidden text-[10px] font-semibold">
                     {tab.key === "dev" ? "Dev" : tab.key === "creative" ? "Creative" : "Events"}
@@ -681,7 +715,7 @@ export const Projects = () => {
 
         {/* Content sections with loading states */}
         {activeTab === "dev" && (
-          <div className="space-y-12">
+          <div className="space-y-8">
             {isLoading ? (
               // Loading skeletons for dev projects
               Array.from({ length: 3 }).map((_, index) => (

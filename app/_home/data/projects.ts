@@ -13,14 +13,14 @@ export const devProjects: Project[] = [
     title: "Lead UX Engineer for Repacket",
     description:
       "Served as Lead UX Engineer and Frontend Developer, driving the redesign and development of multiple client-facing experiences and core platform interfaces in preparation for launch.",
-    tags: "Lead UX Engineer | Frontend Developer | Product Design | React | TypeScript",
+    tags: "Lead UX Engineer | Frontend Developer | Product Design | React | TypeScript | AI",
     color: "from-emerald-500 to-teal-400",
-    link: "",
+    link: "https://www.repacket.com",
     github: "",
     image: "/repacketLogo.png",
   },
   {
-    title: "DevRel Ambassador @ Aleo",
+    title: "DevRel Ambassador for Aleo",
     description:
       "Led North American workshops to promote privacy-focused blockchain development. Created marketing assets (Canva, Photoshop) to boost brand visibility. Partnered with groups such as Google Developer Groups & Edmonton Unlimited, securing 100+ RSVPs/event.",
     color: "from-gray-500 to-gray-400",
@@ -59,7 +59,7 @@ export const devProjects: Project[] = [
     image: "/project33.jpg",
   },
   {
-    title: "Digital Signage for Elevators @ Vertical Impression",
+    title: "Digital Signage for Elevators for Vertical Impression",
     description:
       "Created and implemented a screen application for showcasing media buyer campaigns and property manager notifications on elevator and lobby displays",
     tags: "Frontend Developer | Figma | Typescript | ReactJS | Tailwind",
@@ -69,7 +69,7 @@ export const devProjects: Project[] = [
     image: "/logo3.png",
   },
   {
-    title: "Media Buyer Platform for DOOH Campaigns  @ Vertical City",
+    title: "Media Buyer Platform for DOOH Campaigns for Vertical City",
     description:
       "Developed a platform enabling media buyers to create online campaigns for digital out-of-home advertising",
     tags: "Full Stack Developer | React,TypeScript | Heroku | Ruby on Rails | AWS/GCP | Tailwind | Figma",
@@ -79,7 +79,7 @@ export const devProjects: Project[] = [
     image: "/project11.jpg",
   },
   {
-    title: "Content Management System for Property Managers  @ Vertical City",
+    title: "Content Management System for Property Managers for Vertical City",
     description:
       "Developed a platform enabling property managers to publish notices, news feeds, and various content on elevator and lobby screens",
     tags: "Full Stack Developer | React,Ruby on Rails | Heroku | AWS/GCP | TypeScript | Tailwind | Figma",

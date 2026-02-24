@@ -26,21 +26,15 @@ const Main = () => {
       className={`min-h-screen transition-all duration-500 relative overflow-x-hidden
       ${isDark ? "bg-gradient-to-br from-[#0a0a0a] via-[#111111] to-[#0a0a0a] text-white" : "bg-gradient-to-br from-white via-gray-50 to-white text-gray-900"}`}
     >
-      {/* Enhanced Background Effects */}
+      {/* Subtle Background Effects */}
       <div className="fixed inset-0 -z-10">
         <div
           className={`absolute inset-0 ${isDark ? "bg-gradient-to-br from-[#0a0a0a] via-[#111111] to-[#0a0a0a]" : "bg-gradient-to-br from-white via-gray-50 to-white"}`}
         />
         
-        {/* Animated gradient orbs */}
-        <div className="absolute top-0 -left-4 w-96 h-96 bg-gradient-to-r from-purple-500 to-indigo-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob" />
-        <div className="absolute top-0 -right-4 w-96 h-96 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-2000" />
-        <div className="absolute bottom-0 left-1/2 w-96 h-96 bg-gradient-to-r from-pink-500 to-rose-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-4000" />
-        
-        {/* Floating geometric shapes */}
-        <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-indigo-400 rounded-full opacity-60 animate-pulse" />
-        <div className="absolute top-1/3 right-1/4 w-1 h-1 bg-purple-400 rounded-full opacity-40 animate-ping" />
-        <div className="absolute bottom-1/4 left-1/3 w-3 h-3 bg-blue-400 rounded-full opacity-30 animate-bounce" />
+        {/* Soft gradient orbs */}
+        <div className="absolute top-[-6rem] right-[-2rem] w-96 h-96 bg-gradient-to-r from-purple-500 to-indigo-500 rounded-full mix-blend-multiply filter blur-3xl opacity-15 animate-blob" />
+        <div className="absolute bottom-[-6rem] left-1/3 w-96 h-96 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-blob animation-delay-3000" />
         
         {/* Grid pattern overlay */}
         <div 
@@ -88,7 +82,7 @@ const Main = () => {
       </nav>
 
       {/* Main Content */}
-      <main className="max-w-5xl mx-auto px-4 mt-28">
+      <main className="max-w-5xl mx-auto px-6 md:px-8 mt-28">
         <div className={`transition-all duration-1000 ${
           isVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-10"
         }`}>
@@ -98,21 +92,21 @@ const Main = () => {
         </div>
 
         {/* Footer */}
-        <footer className="mt-20 text-center pb-8">
-          <p className={`text-sm ${isDark ? "text-gray-400" : "text-gray-600"} text-lg`}>
+        <footer className="mt-16 text-center pb-1">
+          <p className={`text-sm ${isDark ? "text-gray-400" : "text-gray-600"}`}>
             Open for collaborative projects —{" "}
             <a
-              href="mailto:workwith.kim.wu@gmail.com"
+              href="mailto:kim.jokwah@gmail.com"
               className="text-indigo-600 hover:text-indigo-700"
             >
-              workwith.kim.wu@gmail.com
+              kim.jokwah@gmail.com
             </a>
           </p>
         </footer>
       </main>
 
       {/* Site Info */}
-      <div className={`p-3 text-center font-light text-sm tracking-wide text-lg ${
+      <div className={`p-3 text-center font-light text-xs tracking-wide ${
         isDark ? "text-gray-400 bg-black" : "text-gray-600 bg-white"
       }`}>
         This site was designed in Figma, coded in Next JS by yours truly, styled with

@@ -41,7 +41,7 @@ export const ProjectCard = ({ project, index }: ProjectCardProps) => {
           <p
             className={`text-sm ${
               isDark ? "text-gray-400" : "text-gray-600"
-            } text-lg mb-6 leading-relaxed`}
+            } mb-4 leading-relaxed`}
           >
             {project.description}
           </p>
