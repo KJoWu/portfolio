@@ -115,7 +115,7 @@ export const Hero = () => {
         <div className="relative lg:flex-shrink-0">
           <div className={`transition-all duration-1000 delay-1000 ${isLoaded ? "opacity-100 scale-100" : "opacity-0 scale-95"
             }`}>
-            <div className="relative w-80 h-80 lg:w-[28rem] lg:h-[28rem]">
+            <div className="relative w-96 h-96 lg:w-[30rem] lg:h-[30rem]">
               {/* Center gradient orb */}
               <div className="absolute inset-10 rounded-full bg-gradient-to-br from-indigo-500/30 via-purple-500/30 to-pink-500/30 blur-xl animate-pulse"></div>
               <div className="absolute inset-14 rounded-full bg-gradient-to-br from-indigo-400/40 via-purple-400/40 to-pink-400/40 animate-pulse delay-1000"></div>
