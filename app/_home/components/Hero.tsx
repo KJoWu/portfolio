@@ -14,7 +14,7 @@ export const Hero = () => {
   }, []);
 
   const openNewTab = () => {
-    window.open('/KimberlyWu Resume.pdf', '_blank');
+    window.open('/Kimberly%20Wu%20Senior%20Engineer%20Resume.pdf', '_blank');
   };
 
   const openSocialTab = () => {
